@@ -6,6 +6,13 @@ interface StatsPanelProps {
   completedPercentage?: number
 }
 
-export default function StatsPanel(_props: StatsPanelProps) {
-  return null
+export default function StatsPanel({ total = 0, completed = 0, active, overdue }: StatsPanelProps) {
+  return (
+    <div id="stats-panel">
+      <p>Total: {total}</p>
+      <p>Completed: {completed}</p>
+      <p>Active: {active ?? total - completed}</p>
+      {overdue !== undefined && <p>Overdue: {overdue}</p>}
+    </div>
+  )
 }
