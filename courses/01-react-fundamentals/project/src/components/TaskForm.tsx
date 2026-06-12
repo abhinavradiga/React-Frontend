@@ -6,6 +6,8 @@ interface TaskFormProps {
 
 export default function TaskForm({ onAddTask }: TaskFormProps) {
   const [title, setTitle] = useState('')
+  const [description, setDescription] = useState('')
+  const [priority, setPriority] = useState('Medium')
   const [error, setError] = useState('')
 
   function handleSubmit() {
@@ -16,11 +18,13 @@ export default function TaskForm({ onAddTask }: TaskFormProps) {
     onAddTask?.({
       id: Date.now(),
       title: title.trim(),
-      description: '',
-      priority: 'Medium',
+      description: description.trim(),
+      priority,
       completed: false,
     })
     setTitle('')
+    setDescription('')
+    setPriority('Medium')
     setError('')
   }
 
@@ -34,6 +38,24 @@ export default function TaskForm({ onAddTask }: TaskFormProps) {
         value={title}
         onChange={e => setTitle(e.target.value)}
       />
+      <label htmlFor="task-description">Description</label>
+      <input
+        id="task-description"
+        type="text"
+        placeholder="Task description"
+        value={description}
+        onChange={e => setDescription(e.target.value)}
+      />
+      <label htmlFor="task-priority">Priority</label>
+      <select
+        id="task-priority"
+        value={priority}
+        onChange={e => setPriority(e.target.value)}
+      >
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
       {error && <p id="task-form-error">{error}</p>}
       <button onClick={handleSubmit}>Add Task</button>
     </div>
