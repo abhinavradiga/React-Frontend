@@ -1,4 +1,4 @@
-name: SOLO Challenges: Review
+name: SOLO Challenges Review
 
 on:
   push:
@@ -31,70 +31,54 @@ jobs:
         with:
           fetch-depth: 2
           token: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
-
       - name: Install dependencies (Course 1)
         working-directory: courses/01-react-fundamentals/project
         run: npm ci
-
       - name: Install dependencies (Course 2)
         working-directory: courses/02-redux-rtk-query/project
         run: npm ci
-
       - name: Install dependencies (Course 3)
         working-directory: courses/03-nextjs-app-router/project
         run: npm ci
-
       - name: Install review engine dependencies (Course 1)
         working-directory: courses/01-react-fundamentals/review-engine
         run: npm ci
-
       - name: Install review engine dependencies (Course 2)
         working-directory: courses/02-redux-rtk-query/review-engine
         run: npm ci
-
       - name: Install review engine dependencies (Course 3)
         working-directory: courses/03-nextjs-app-router/review-engine
         run: npm ci
-
       - name: Install Playwright browsers (Course 1)
         working-directory: courses/01-react-fundamentals/project
         run: npx playwright install --with-deps chromium
-
       - name: Install Playwright browsers (Course 2)
         working-directory: courses/02-redux-rtk-query/project
         run: npx playwright install --with-deps chromium
-
       - name: Install Playwright browsers (Course 3)
         working-directory: courses/03-nextjs-app-router/project
         run: npx playwright install --with-deps chromium
-
       - name: Get changed challenges
         id: changed-challenges
         run: |
-          # Get changed files compared to previous commit (for push events)
-          # For PRs, compare against base branch
           if [ "${{ github.event_name }}" == "pull_request" ]; then
             BASE_SHA="${{ github.event.pull_request.base.sha }}"
-            CHANGED_FILES=$(git diff --name-only $BASE_SHA HEAD 2>/dev/null || echo "")
+            CHANGED_FILES=$(git diff --name-only $BASE_SHA HEAD 2>/dev/null || echo ")
           else
-            # For push events, compare against previous commit
-            CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD 2>/dev/null || echo "")
+            CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD 2>/dev/null || echo ")
           fi
-          
           if [ -z "$CHANGED_FILES" ]; then
             echo "No changes detected, running all reviews"
             echo "run-all=true" >> $GITHUB_OUTPUT
           else
-            echo "Changed files detected, running reviews for changed challenges only"
+            echo "Changed files detected"
             echo "run-all=false" >> $GITHUB_OUTPUT
           fi
-
       - name: Run Review for Changed Challenges
         if: steps.changed-challenges.outputs.run-all == 'false'
         run: |
@@ -106,27 +90,23 @@ jobs:
           fi
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-
       - name: Run All Reviews (if no changes detected)
         if: steps.changed-challenges.outputs.run-all == 'true'
         run: |
           node global-review/run-all-reviews.js
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-
       - name: Update progress and README evidence
         run: node scripts/update-progress.js
-
       - name: Commit results
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add courses/*/results/*.json pathway-review/*.json learner-results/progress.json
           git add courses/*/project/README.md README.md
-          git diff --staged --quiet || git commit -m "chore: update review results and README evidence [skip ci]"
+          git diff --staged --quiet || git commit -m "chore: update review results [skip ci]"
           git push
         continue-on-error: true
-
       - name: Upload results as artifact
         uses: actions/upload-artifact@v4
         with:
