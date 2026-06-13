@@ -83,5 +83,213 @@
       "maintainability": 80,
       "overall": "The code is well-structured and well-organized, but could benefit from some improvements in terms of maintainability and readability. With some refactoring and additional comments, this code could be even more robust and easy to understand."
     }
+  },
+  {
+    "challengeId": "05-task-deletion",
+    "challengeName": "Task Deletion",
+    "aiReview": {
+      "challengeId": "05-task-deletion",
+      "timestamp": "2026-06-13T07:43:40.328Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
+    }
+  },
+  {
+    "challengeId": "06-task-filtering",
+    "challengeName": "Task Filtering",
+    "aiReview": {
+      "challengeId": "06-task-filtering",
+      "timestamp": "2026-06-13T07:45:57.740Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
+    }
+  },
+  {
+    "challengeId": "07-priority-based-sorting",
+    "challengeName": "Priority-Based Sorting",
+    "aiReview": {
+      "challengeId": "07-priority-based-sorting",
+      "timestamp": "2026-06-13T07:46:04.846Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
+    }
+  },
+  {
+    "challengeId": "08-task-editing",
+    "challengeName": "Task Editing",
+    "aiReview": {
+      "challengeId": "08-task-editing",
+      "timestamp": "2026-06-13T07:46:11.581Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
+    }
+  },
+  {
+    "challengeId": "09-search-functionality",
+    "challengeName": "Search Functionality",
+    "aiReview": {
+      "challengeId": "09-search-functionality",
+      "timestamp": "2026-06-13T07:46:36.205Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
+    }
+  },
+  {
+    "challengeId": "11-useeffect-debounced-search",
+    "challengeName": "useEffect - Debounced Search",
+    "aiReview": {
+      "challengeId": "11-useeffect-debounced-search",
+      "timestamp": "2026-06-13T07:46:42.675Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
+    }
+  },
+  {
+    "challengeId": "13-due-dates-and-sorting",
+    "challengeName": "Due Dates and Sorting",
+    "aiReview": {
+      "challengeId": "13-due-dates-and-sorting",
+      "timestamp": "2026-06-13T07:46:49.186Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
+    }
+  },
+  {
+    "challengeId": "14-task-statistics-dashboard",
+    "challengeName": "Task Statistics Dashboard",
+    "aiReview": {
+      "challengeId": "14-task-statistics-dashboard",
+      "timestamp": "2026-06-13T07:47:13.975Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
+    }
+  },
+  {
+    "challengeId": "18-usereducer-complex-state",
+    "challengeName": "useReducer - Complex State Management",
+    "aiReview": {
+      "challengeId": "18-usereducer-complex-state",
+      "timestamp": "2026-06-13T07:47:20.411Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
+    }
+  },
+  {
+    "challengeId": "19-performance-optimization",
+    "challengeName": "Performance Optimization",
+    "aiReview": {
+      "challengeId": "19-performance-optimization",
+      "timestamp": "2026-06-13T07:47:27.142Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
+    }
+  },
+  {
+    "challengeId": "20-error-boundaries",
+    "challengeName": "Error Boundaries and Error Handling",
+    "aiReview": {
+      "challengeId": "20-error-boundaries",
+      "timestamp": "2026-06-13T07:47:36.546Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
+    }
+  },
+  {
+    "challengeId": "21-react-router",
+    "challengeName": "React Router - Routing and Navigation",
+    "aiReview": {
+      "challengeId": "21-react-router",
+      "timestamp": "2026-06-13T07:47:43.560Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
+    }
+  },
+  {
+    "challengeId": "23-useref-focus-management",
+    "challengeName": "useRef - Focus Management",
+    "aiReview": {
+      "challengeId": "23-useref-focus-management",
+      "timestamp": "2026-06-13T07:48:27.264Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
+    }
   }
 ]

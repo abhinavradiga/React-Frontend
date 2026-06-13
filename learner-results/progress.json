@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "2026-06-13T07:36:34.093Z",
+  "lastUpdated": "2026-06-13T07:48:27.574Z",
   "pathway": {
     "name": "Modern React Engineer",
     "version": "1.0.0",
-    "overallScore": 31.3,
-    "completionPercentage": 7.5,
+    "overallScore": 27.3,
+    "completionPercentage": 20.8,
     "badgeLevel": "none",
     "totalChallenges": 53,
-    "completedChallenges": 4
+    "completedChallenges": 11
   },
   "courses": {
     "01-react-fundamentals": {
       "courseId": "01-react-fundamentals",
       "courseName": "React Fundamentals",
-      "averageScore": 94.7,
-      "completionPercentage": 17.4,
+      "averageScore": 82.8,
+      "completionPercentage": 47.8,
       "badgeLevel": "none",
       "totalChallenges": 23,
-      "completedChallenges": 4,
+      "completedChallenges": 11,
       "challenges": {
         "01-static-task-display": {
           "challengeId": "01-static-task-display",
@@ -77,6 +77,201 @@
             "bestPractices": 100,
             "e2eTests": 100,
             "aiReview": 83
+          }
+        },
+        "05-task-deletion": {
+          "challengeId": "05-task-deletion",
+          "challengeName": "Task Deletion",
+          "passed": true,
+          "score": 85,
+          "lastRun": "2026-06-13T07:43:33.140Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 100,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 0
+          }
+        },
+        "06-task-filtering": {
+          "challengeId": "06-task-filtering",
+          "challengeName": "Task Filtering",
+          "passed": false,
+          "score": 73.75,
+          "lastRun": "2026-06-13T07:43:40.677Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 100,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 25,
+            "aiReview": 0
+          }
+        },
+        "07-priority-based-sorting": {
+          "challengeId": "07-priority-based-sorting",
+          "challengeName": "Priority-Based Sorting",
+          "passed": true,
+          "score": 85,
+          "lastRun": "2026-06-13T07:45:58.113Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 100,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 0
+          }
+        },
+        "08-task-editing": {
+          "challengeId": "08-task-editing",
+          "challengeName": "Task Editing",
+          "passed": true,
+          "score": 85,
+          "lastRun": "2026-06-13T07:46:05.201Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 100,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 0
+          }
+        },
+        "09-search-functionality": {
+          "challengeId": "09-search-functionality",
+          "challengeName": "Search Functionality",
+          "passed": false,
+          "score": 77.5,
+          "lastRun": "2026-06-13T07:46:11.958Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 100,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 50,
+            "aiReview": 0
+          }
+        },
+        "11-useeffect-debounced-search": {
+          "challengeId": "11-useeffect-debounced-search",
+          "challengeName": "useEffect - Debounced Search",
+          "passed": true,
+          "score": 80,
+          "lastRun": "2026-06-13T07:46:36.538Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 100,
+            "architecture": 50,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 0
+          }
+        },
+        "13-due-dates-and-sorting": {
+          "challengeId": "13-due-dates-and-sorting",
+          "challengeName": "Due Dates and Sorting",
+          "passed": true,
+          "score": 85,
+          "lastRun": "2026-06-13T07:46:43.042Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 100,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 0
+          }
+        },
+        "14-task-statistics-dashboard": {
+          "challengeId": "14-task-statistics-dashboard",
+          "challengeName": "Task Statistics Dashboard",
+          "passed": false,
+          "score": 74.17,
+          "lastRun": "2026-06-13T07:46:49.556Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 100,
+            "architecture": 66.7,
+            "bestPractices": 100,
+            "e2eTests": 50,
+            "aiReview": 0
+          }
+        },
+        "18-usereducer-complex-state": {
+          "challengeId": "18-usereducer-complex-state",
+          "challengeName": "useReducer - Complex State Management",
+          "passed": true,
+          "score": 80,
+          "lastRun": "2026-06-13T07:47:14.313Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 100,
+            "architecture": 50,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 0
+          }
+        },
+        "19-performance-optimization": {
+          "challengeId": "19-performance-optimization",
+          "challengeName": "Performance Optimization",
+          "passed": false,
+          "score": 77.5,
+          "lastRun": "2026-06-13T07:47:20.758Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 100,
+            "architecture": 25,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 0
+          }
+        },
+        "20-error-boundaries": {
+          "challengeId": "20-error-boundaries",
+          "challengeName": "Error Boundaries and Error Handling",
+          "passed": false,
+          "score": 70,
+          "lastRun": "2026-06-13T07:47:27.536Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 100,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 0,
+            "aiReview": 0
+          }
+        },
+        "21-react-router": {
+          "challengeId": "21-react-router",
+          "challengeName": "React Router - Routing and Navigation",
+          "passed": true,
+          "score": 85,
+          "lastRun": "2026-06-13T07:47:36.920Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 100,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 0
+          }
+        },
+        "23-useref-focus-management": {
+          "challengeId": "23-useref-focus-management",
+          "challengeName": "useRef - Focus Management",
+          "passed": false,
+          "score": 71.665,
+          "lastRun": "2026-06-13T07:47:43.935Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 100,
+            "architecture": 66.7,
+            "bestPractices": 100,
+            "e2eTests": 33.3,
+            "aiReview": 0
           }
         }
       }

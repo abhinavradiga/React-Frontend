@@ -1,11 +1,11 @@
 {
   "courseId": "01-react-fundamentals",
   "courseName": "React Fundamentals",
-  "lastUpdated": "2026-06-13T07:36:34.024Z",
+  "lastUpdated": "2026-06-13T07:48:27.265Z",
   "totalChallenges": 23,
-  "completedChallenges": 4,
-  "averageScore": 94.7,
-  "completionPercentage": 17.4,
+  "completedChallenges": 11,
+  "averageScore": 82.8,
+  "completionPercentage": 47.8,
   "badgeLevel": "none",
   "challengeResults": [
     {
@@ -31,13 +31,98 @@
       "challengeName": "Task Completion Toggle",
       "score": 97.45,
       "passed": true
+    },
+    {
+      "challengeId": "05-task-deletion",
+      "challengeName": "Task Deletion",
+      "score": 85,
+      "passed": true
+    },
+    {
+      "challengeId": "06-task-filtering",
+      "challengeName": "Task Filtering",
+      "score": 73.75,
+      "passed": false
+    },
+    {
+      "challengeId": "07-priority-based-sorting",
+      "challengeName": "Priority-Based Sorting",
+      "score": 85,
+      "passed": true
+    },
+    {
+      "challengeId": "08-task-editing",
+      "challengeName": "Task Editing",
+      "score": 85,
+      "passed": true
+    },
+    {
+      "challengeId": "09-search-functionality",
+      "challengeName": "Search Functionality",
+      "score": 77.5,
+      "passed": false
+    },
+    {
+      "challengeId": "11-useeffect-debounced-search",
+      "challengeName": "useEffect - Debounced Search",
+      "score": 80,
+      "passed": true
+    },
+    {
+      "challengeId": "13-due-dates-and-sorting",
+      "challengeName": "Due Dates and Sorting",
+      "score": 85,
+      "passed": true
+    },
+    {
+      "challengeId": "14-task-statistics-dashboard",
+      "challengeName": "Task Statistics Dashboard",
+      "score": 74.17,
+      "passed": false
+    },
+    {
+      "challengeId": "18-usereducer-complex-state",
+      "challengeName": "useReducer - Complex State Management",
+      "score": 80,
+      "passed": true
+    },
+    {
+      "challengeId": "19-performance-optimization",
+      "challengeName": "Performance Optimization",
+      "score": 77.5,
+      "passed": false
+    },
+    {
+      "challengeId": "20-error-boundaries",
+      "challengeName": "Error Boundaries and Error Handling",
+      "score": 70,
+      "passed": false
+    },
+    {
+      "challengeId": "21-react-router",
+      "challengeName": "React Router - Routing and Navigation",
+      "score": 85,
+      "passed": true
+    },
+    {
+      "challengeId": "23-useref-focus-management",
+      "challengeName": "useRef - Focus Management",
+      "score": 71.665,
+      "passed": false
     }
   ],
   "skillStrengths": [
     "Static Task Display",
     "Dynamic Task Rendering",
     "Adding New Tasks",
-    "Task Completion Toggle"
+    "Task Completion Toggle",
+    "Task Deletion",
+    "Priority-Based Sorting",
+    "Task Editing",
+    "useEffect - Debounced Search",
+    "Due Dates and Sorting",
+    "useReducer - Complex State Management",
+    "React Router - Routing and Navigation"
   ],
   "improvementAreas": []
 }
