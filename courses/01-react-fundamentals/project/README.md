@@ -68,12 +68,12 @@ npm run review -- --challenge=01-static-task-display
 
 ## 📊 Progress Evidence
 
-*Auto-updated when you run review. Last run: 13/6/2026, 1:22:04 pm*
+*Auto-updated when you run review. Last run: 6/13/2026, 7:48:27 AM*
 
 | Metric | Value |
 |--------|-------|
-| Challenges completed | 5 / 23 (21.7%) |
-| Average score | 95.4% |
+| Challenges completed | 11 / 23 (47.8%) |
+| Average score | 82.8% |
 
 | Challenge | Skills covered | Status |
 |-----------|----------------|--------|
@@ -82,24 +82,24 @@ npm run review -- --challenge=01-static-task-display
 | Adding New Tasks | Controlled inputs, Event handlers, Form validation, Form handling, Immutable state | Passed |
 | Task Completion Toggle | Updating array state, Event handlers with params, Conditional styling | Passed |
 | Task Deletion | filter, Immutable state, Confirmation patterns, Prop functions with arguments | Passed |
-| Task Filtering | Derived state, Conditional rendering, Filter logic composition | — |
-| Priority-Based Sorting | Array sort, Sort stability, Multiple sort criteria, Select dropdowns | — |
-| Task Editing | Inline editing, Conditional rendering, Edit mode state, Controlled inputs, Form handling, State synchronization | — |
-| Search Functionality | Text search, Combining filters, String methods, Search UI patterns | — |
+| Task Filtering | Derived state, Conditional rendering, Filter logic composition | Not passed |
+| Priority-Based Sorting | Array sort, Sort stability, Multiple sort criteria, Select dropdowns | Passed |
+| Task Editing | Inline editing, Conditional rendering, Edit mode state, Controlled inputs, Form handling, State synchronization | Passed |
+| Search Functionality | Text search, Combining filters, String methods, Search UI patterns | Not passed |
 | useEffect - Local Storage Persistence | useEffect, Side effects, localStorage, JSON serialization, Effect dependencies | — |
-| useEffect - Debounced Search | useEffect cleanup, setTimeout, Debouncing, Memory leak prevention | — |
+| useEffect - Debounced Search | useEffect cleanup, setTimeout, Debouncing, Memory leak prevention | Passed |
 | Categories and Tags | Complex state, Array fields, Multi-select/tags input, Nested data, Filtering by array membership | — |
-| Due Dates and Sorting | Date handling, Date objects and formatting, Date comparison, Overdue detection | — |
-| Task Statistics Dashboard | Computed statistics, useMemo, Performance optimization, Data aggregation | — |
+| Due Dates and Sorting | Date handling, Date objects and formatting, Date comparison, Overdue detection | Passed |
+| Task Statistics Dashboard | Computed statistics, useMemo, Performance optimization, Data aggregation | Not passed |
 | Component Organization with Props | Component extraction, Props interface design, Single Responsibility, Reusability, Props destructuring | — |
 | Context API - Theme Management | React Context, createContext, Provider, useContext, Global state, Custom hook | — |
 | Custom Hook - useLocalStorage | Custom hooks, Hook composition, Reusable logic, localStorage abstraction | — |
-| useReducer - Complex State Management | useReducer, Reducer functions, Action objects, Dispatch pattern, Complex state logic | — |
-| Performance Optimization | React.memo, useCallback, useMemo, Re-render optimization | — |
-| Error Boundaries and Error Handling | Error boundaries, Class component, Error handling, Fallback UI, try-catch | — |
-| React Router - Routing and Navigation | React Router, Route, Link, useNavigate, useParams, URL-driven UI, Dynamic segments | — |
+| useReducer - Complex State Management | useReducer, Reducer functions, Action objects, Dispatch pattern, Complex state logic | Passed |
+| Performance Optimization | React.memo, useCallback, useMemo, Re-render optimization | Not passed |
+| Error Boundaries and Error Handling | Error boundaries, Class component, Error handling, Fallback UI, try-catch | Not passed |
+| React Router - Routing and Navigation | React Router, Route, Link, useNavigate, useParams, URL-driven UI, Dynamic segments | Passed |
 | Data Fetching - Loading and Error State | fetch, useEffect, Loading state, Error state, Async data, Conditional rendering | — |
-| useRef - Focus Management | useRef, ref.current, Focus management, DOM access, useEffect with ref | — |
+| useRef - Focus Management | useRef, ref.current, Focus management, DOM access, useEffect with ref | Not passed |
 
 ## 📋 Challenge Workflow
 
