@@ -28,7 +28,6 @@ export default function TaskApp({ tasks, setTasks, dispatch, showForm, countForm
   const [localTasks, setLocalTasks] = useState<Task[]>(DEFAULT_TASKS)
   const displayTasks = tasks ?? localTasks
   const setDisplayTasks = setTasks ?? setLocalTasks
-  const countText = `${displayTasks.length} ${countFormat === 'tasks' ? 'Tasks' : 'Tasks'}`
 
   function handleAddTask(task: Record<string, unknown>) {
     const newTask = task as Task
@@ -39,14 +38,36 @@ export default function TaskApp({ tasks, setTasks, dispatch, showForm, countForm
     }
   }
 
+  function handleToggle(id: string | number) {
+    if (dispatch) {
+      dispatch({ type: 'TOGGLE_TASK', payload: id })
+    } else {
+      setDisplayTasks(prev => prev.map(t => t.id === id ? { ...t, completed: !t.completed } : t))
+    }
+  }
+
+  function handleDelete(id: string | number) {
+    if (dispatch) {
+      dispatch({ type: 'DELETE_TASK', payload: id })
+    } else {
+      setDisplayTasks(prev => prev.filter(t => t.id !== id))
+    }
+  }
+
+  const completedCount = displayTasks.filter(t => t.completed).length
+  const countText = countFormat === 'completed'
+    ? `${completedCount} of ${displayTasks.length} completed`
+    : `${displayTasks.length} Tasks`
+
   return (
     <div id="task-app">
       {showForm && <TaskForm onAddTask={handleAddTask} />}
       <TaskList
         tasks={displayTasks}
         countText={countText}
-        onDelete={onDelete}
+        onToggle={handleToggle}
+        onDelete={onDelete ?? handleDelete}
       />
     </div>
   )
-}cd "D:\Spark +\challenge-engine-react\dashboard"
+}
