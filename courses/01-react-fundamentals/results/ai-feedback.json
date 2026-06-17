@@ -101,22 +101,6 @@
     }
   },
   {
-    "challengeId": "06-task-filtering",
-    "challengeName": "Task Filtering",
-    "aiReview": {
-      "challengeId": "06-task-filtering",
-      "timestamp": "2026-06-13T07:45:57.740Z",
-      "score": 0,
-      "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
-    }
-  },
-  {
     "challengeId": "07-priority-based-sorting",
     "challengeName": "Priority-Based Sorting",
     "aiReview": {
@@ -290,6 +274,29 @@
       "maintainability": 0,
       "overall": "",
       "error": "GROQ_API_KEY environment variable not set. AI review skipped."
+    }
+  },
+  {
+    "challengeId": "06-task-filtering",
+    "challengeName": "Task Filtering",
+    "aiReview": {
+      "challengeId": "06-task-filtering",
+      "timestamp": "2026-06-17T04:03:26.068Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and follows a consistent naming convention.",
+        "The use of TypeScript and functional components is a good practice.",
+        "The code is well-commented, making it easier to understand the logic."
+      ],
+      "improvements": [
+        "In the `FilterBar` component, the `activeFilter` prop is not used anywhere. It can be removed to simplify the code.",
+        "In the `TaskApp` component, the `displayTasks` state is not necessary. The `tasks` prop can be used directly.",
+        "The `handleDelete` function in the `App` component can be simplified by using the `filter` method directly."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and maintainable, but there are some minor improvements that can be made to simplify the code and make it more efficient."
     }
   }
 ]

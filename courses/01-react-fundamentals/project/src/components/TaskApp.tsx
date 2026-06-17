@@ -3,6 +3,7 @@ import type { Dispatch, SetStateAction } from 'react'
 import type { Task } from './TaskList'
 import TaskList from './TaskList'
 import TaskForm from './TaskForm'
+import FilterBar from './FilterBar'
 
 interface TaskAppProps {
   tasks?: Task[]
@@ -24,10 +25,20 @@ const DEFAULT_TASKS: Task[] = [
   { id: 5, title: 'Fifth Task', description: 'Fifth hardcoded task', priority: 'Medium', completed: false },
 ]
 
-export default function TaskApp({ tasks, setTasks, dispatch, showForm, countFormat, onDelete }: TaskAppProps) {
+type Filter = 'all' | 'active' | 'completed'
+
+export default function TaskApp({ tasks, setTasks, dispatch, showForm, countFormat, showFilterBar, onDelete }: TaskAppProps) {
   const [localTasks, setLocalTasks] = useState<Task[]>(DEFAULT_TASKS)
+  const [filter, setFilter] = useState<Filter>('all')
+
   const displayTasks = tasks ?? localTasks
   const setDisplayTasks = setTasks ?? setLocalTasks
+
+  const filteredTasks = filter === 'active'
+    ? displayTasks.filter(t => !t.completed)
+    : filter === 'completed'
+    ? displayTasks.filter(t => t.completed)
+    : displayTasks
 
   function handleAddTask(task: Record<string, unknown>) {
     const newTask = task as Task
@@ -55,15 +66,24 @@ export default function TaskApp({ tasks, setTasks, dispatch, showForm, countForm
   }
 
   const completedCount = displayTasks.filter(t => t.completed).length
+
   const countText = countFormat === 'completed'
     ? `${completedCount} of ${displayTasks.length} completed`
+    : showFilterBar && filter !== 'all'
+    ? `Showing ${filteredTasks.length} of ${displayTasks.length} tasks`
     : `${displayTasks.length} Tasks`
 
   return (
     <div id="task-app">
       {showForm && <TaskForm onAddTask={handleAddTask} />}
+      {showFilterBar && (
+        <FilterBar filter={filter} onFilterChange={f => setFilter(f as Filter)} />
+      )}
+      {filteredTasks.length === 0 && (
+        <p id="filter-empty-message">No tasks match this filter</p>
+      )}
       <TaskList
-        tasks={displayTasks}
+        tasks={filteredTasks}
         countText={countText}
         onToggle={handleToggle}
         onDelete={onDelete ?? handleDelete}

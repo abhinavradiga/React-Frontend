@@ -1,0 +1,4 @@
+README.md merge=ours
+courses/*/results/*.json merge=ours
+learner-results/progress.json merge=ours
+courses/*/project/README.md merge=ours
