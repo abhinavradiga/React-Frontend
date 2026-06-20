@@ -101,22 +101,6 @@
     }
   },
   {
-    "challengeId": "07-priority-based-sorting",
-    "challengeName": "Priority-Based Sorting",
-    "aiReview": {
-      "challengeId": "07-priority-based-sorting",
-      "timestamp": "2026-06-13T07:46:04.846Z",
-      "score": 0,
-      "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
-    }
-  },
-  {
     "challengeId": "08-task-editing",
     "challengeName": "Task Editing",
     "aiReview": {
@@ -297,6 +281,29 @@
       "readability": 85,
       "maintainability": 90,
       "overall": "The code is well-structured and maintainable, but there are some minor improvements that can be made to simplify the code and make it more efficient."
+    }
+  },
+  {
+    "challengeId": "07-priority-based-sorting",
+    "challengeName": "Priority-Based Sorting",
+    "aiReview": {
+      "challengeId": "07-priority-based-sorting",
+      "timestamp": "2026-06-20T11:31:43.703Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and follows a consistent naming convention.",
+        "The use of TypeScript and functional components makes the code more maintainable and efficient.",
+        "The implementation of the sorting logic is clear and concise."
+      ],
+      "improvements": [
+        "Some of the variable names could be more descriptive, such as `current` in `FilterBar` and `displayTasks` in `TaskApp`.",
+        "The `PRIORITY_RANK` object could be replaced with an enum to make the code more readable and maintainable.",
+        "The sorting logic in `TaskApp` could be extracted into a separate function to make it more reusable and easier to test."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and maintainable, with a good balance of readability and efficiency. However, there are some areas for improvement to make the code even more robust and scalable."
     }
   }
 ]

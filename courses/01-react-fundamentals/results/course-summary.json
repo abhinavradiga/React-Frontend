@@ -1,10 +1,10 @@
 {
   "courseId": "01-react-fundamentals",
   "courseName": "React Fundamentals",
-  "lastUpdated": "2026-06-17T04:03:27.020Z",
+  "lastUpdated": "2026-06-20T11:31:44.870Z",
   "totalChallenges": 23,
   "completedChallenges": 12,
-  "averageScore": 84.3,
+  "averageScore": 85.1,
   "completionPercentage": 52.2,
   "badgeLevel": "bronze",
   "challengeResults": [
@@ -47,7 +47,7 @@
     {
       "challengeId": "07-priority-based-sorting",
       "challengeName": "Priority-Based Sorting",
-      "score": 85,
+      "score": 98.2,
       "passed": true
     },
     {

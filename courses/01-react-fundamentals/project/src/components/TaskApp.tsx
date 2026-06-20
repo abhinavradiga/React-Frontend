@@ -26,10 +26,14 @@ const DEFAULT_TASKS: Task[] = [
 ]
 
 type Filter = 'all' | 'active' | 'completed'
+type SortOrder = 'recent' | 'priority-high' | 'priority-low' | 'alphabetical'
+
+const PRIORITY_RANK: Record<string, number> = { High: 0, Medium: 1, Low: 2 }
 
 export default function TaskApp({ tasks, setTasks, dispatch, showForm, countFormat, showFilterBar, onDelete }: TaskAppProps) {
   const [localTasks, setLocalTasks] = useState<Task[]>(DEFAULT_TASKS)
   const [filter, setFilter] = useState<Filter>('all')
+  const [sortOrder, setSortOrder] = useState<SortOrder>('recent')
 
   const displayTasks = tasks ?? localTasks
   const setDisplayTasks = setTasks ?? setLocalTasks
@@ -39,6 +43,19 @@ export default function TaskApp({ tasks, setTasks, dispatch, showForm, countForm
     : filter === 'completed'
     ? displayTasks.filter(t => t.completed)
     : displayTasks
+
+  const sortedTasks = [...filteredTasks].sort((a, b) => {
+    if (sortOrder === 'priority-high') {
+      return (PRIORITY_RANK[a.priority] ?? 1) - (PRIORITY_RANK[b.priority] ?? 1)
+    }
+    if (sortOrder === 'priority-low') {
+      return (PRIORITY_RANK[b.priority] ?? 1) - (PRIORITY_RANK[a.priority] ?? 1)
+    }
+    if (sortOrder === 'alphabetical') {
+      return a.title.toLowerCase().localeCompare(b.title.toLowerCase())
+    }
+    return 0
+  })
 
   function handleAddTask(task: Record<string, unknown>) {
     const newTask = task as Task
@@ -70,20 +87,25 @@ export default function TaskApp({ tasks, setTasks, dispatch, showForm, countForm
   const countText = countFormat === 'completed'
     ? `${completedCount} of ${displayTasks.length} completed`
     : showFilterBar && filter !== 'all'
-    ? `Showing ${filteredTasks.length} of ${displayTasks.length} tasks`
+    ? `Showing ${sortedTasks.length} of ${displayTasks.length} tasks`
     : `${displayTasks.length} Tasks`
 
   return (
     <div id="task-app">
       {showForm && <TaskForm onAddTask={handleAddTask} />}
       {showFilterBar && (
-        <FilterBar filter={filter} onFilterChange={f => setFilter(f as Filter)} />
+        <FilterBar
+          filter={filter}
+          onFilterChange={f => setFilter(f as Filter)}
+          sortOrder={sortOrder}
+          onSortChange={s => setSortOrder(s as SortOrder)}
+        />
       )}
-      {filteredTasks.length === 0 && (
+      {sortedTasks.length === 0 && (
         <p id="filter-empty-message">No tasks match this filter</p>
       )}
       <TaskList
-        tasks={filteredTasks}
+        tasks={sortedTasks}
         countText={countText}
         onToggle={handleToggle}
         onDelete={onDelete ?? handleDelete}
