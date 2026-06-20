@@ -7,6 +7,7 @@ interface TaskCardProps {
   completed?: boolean
   category?: string
   tags?: string[]
+  dueDate?: string | number
   onToggle?: (id: string | number) => void
   onDelete?: (id: string | number) => void
   onUpdateTask?: (id: string | number, updates: { title: string; description: string; priority: string }) => void
@@ -17,8 +18,32 @@ interface TaskCardProps {
   id?: string | number
 }
 
+function getDueDateInfo(dueDate?: string | number, completed?: boolean) {
+  if (!dueDate) return null
+  const due = new Date(dueDate)
+  const now = new Date()
+  const dueDay = new Date(due.getFullYear(), due.getMonth(), due.getDate())
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate())
+  const diffDays = Math.round((dueDay.getTime() - today.getTime()) / 86400000)
+
+  const formatted = due.toLocaleDateString()
+  let label = ''
+  let overdue = false
+
+  if (!completed && diffDays < 0) {
+    label = 'Overdue'
+    overdue = true
+  } else if (diffDays === 0) {
+    label = 'Due Today'
+  } else if (diffDays > 0 && diffDays <= 3) {
+    label = 'Due Soon'
+  }
+
+  return { formatted, label, overdue }
+}
+
 export default function TaskCard({
-  title, description, priority, completed, category, tags,
+  title, description, priority, completed, category, tags, dueDate,
   onToggle, onDelete, onUpdateTask,
   isEditing, onStartEdit, onCancelEdit,
   taskId, id,
@@ -32,6 +57,8 @@ export default function TaskCard({
   const priorityLabel = priority
     ? priority.startsWith('Priority:') ? priority : `Priority: ${priority}`
     : ''
+
+  const dueDateInfo = getDueDateInfo(dueDate, completed)
 
   function handleDelete() {
     if (onDelete && window.confirm('Delete this task?')) {
@@ -103,7 +130,7 @@ export default function TaskCard({
   }
 
   return (
-    <article id="task-card" data-completed={completed ? 'true' : undefined}>
+    <article id="task-card" data-completed={completed ? 'true' : undefined} data-overdue={dueDateInfo?.overdue ? 'true' : undefined}>
       {onToggle && (
         <input
           type="checkbox"
@@ -122,6 +149,11 @@ export default function TaskCard({
             <span key={tag} data-tag>{tag}</span>
           ))}
         </div>
+      )}
+      {dueDateInfo && (
+        <p id="task-due-date">
+          {dueDateInfo.formatted}{dueDateInfo.label && ` — ${dueDateInfo.label}`}
+        </p>
       )}
       {onUpdateTask && (
         <button onClick={handleEditClick}>Edit</button>

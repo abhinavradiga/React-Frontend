@@ -101,22 +101,6 @@
     }
   },
   {
-    "challengeId": "13-due-dates-and-sorting",
-    "challengeName": "Due Dates and Sorting",
-    "aiReview": {
-      "challengeId": "13-due-dates-and-sorting",
-      "timestamp": "2026-06-13T07:46:49.186Z",
-      "score": 0,
-      "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
-    }
-  },
-  {
     "challengeId": "14-task-statistics-dashboard",
     "challengeName": "Task Statistics Dashboard",
     "aiReview": {
@@ -367,6 +351,29 @@
       "readability": 85,
       "maintainability": 80,
       "overall": "The code is well-structured and follows good practices, but there are some areas that could be improved. With some refactoring and additional testing, this code could be even more maintainable and efficient."
+    }
+  },
+  {
+    "challengeId": "13-due-dates-and-sorting",
+    "challengeName": "Due Dates and Sorting",
+    "aiReview": {
+      "challengeId": "13-due-dates-and-sorting",
+      "timestamp": "2026-06-20T11:50:21.147Z",
+      "score": 83,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and follows a consistent naming convention.",
+        "The use of TypeScript and functional components is a good practice.",
+        "The code is well-commented, making it easier to understand the functionality."
+      ],
+      "improvements": [
+        "Some of the functions are too long and complex, making them difficult to read and maintain. Consider breaking them down into smaller functions.",
+        "The use of magic numbers (e.g., 86400000) can be improved by defining constants for these values.",
+        "The code can benefit from more type checking and validation to ensure data integrity."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The code is well-structured and follows good practices, but there are areas for improvement to make it more maintainable and efficient."
     }
   }
 ]

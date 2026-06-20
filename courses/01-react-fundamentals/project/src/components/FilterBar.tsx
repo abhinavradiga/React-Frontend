@@ -57,6 +57,7 @@ export default function FilterBar({
           <option value="priority-high">Priority: High to Low</option>
           <option value="priority-low">Priority: Low to High</option>
           <option value="alphabetical">Alphabetical</option>
+          <option value="due-date">Due Date (Soonest First)</option>
         </select>
       )}
       {onCategoryChange && categories && (

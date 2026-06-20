@@ -1,10 +1,10 @@
 {
   "courseId": "01-react-fundamentals",
   "courseName": "React Fundamentals",
-  "lastUpdated": "2026-06-20T11:43:45.904Z",
+  "lastUpdated": "2026-06-20T11:50:22.643Z",
   "totalChallenges": 23,
   "completedChallenges": 15,
-  "averageScore": 88.2,
+  "averageScore": 88.8,
   "completionPercentage": 65.2,
   "badgeLevel": "bronze",
   "challengeResults": [
@@ -83,7 +83,7 @@
     {
       "challengeId": "13-due-dates-and-sorting",
       "challengeName": "Due Dates and Sorting",
-      "score": 85,
+      "score": 97.45,
       "passed": true
     },
     {

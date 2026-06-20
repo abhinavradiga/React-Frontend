@@ -11,6 +11,7 @@ export default function TaskForm({ onAddTask, categories = ['General', 'Work', '
   const [priority, setPriority] = useState('Medium')
   const [category, setCategory] = useState(categories[0] ?? 'General')
   const [tagsInput, setTagsInput] = useState('')
+  const [dueDate, setDueDate] = useState('')
   const [error, setError] = useState('')
 
   function handleSubmit() {
@@ -30,6 +31,7 @@ export default function TaskForm({ onAddTask, categories = ['General', 'Work', '
       priority,
       category,
       tags,
+      dueDate: dueDate || undefined,
       completed: false,
     })
     setTitle('')
@@ -37,6 +39,7 @@ export default function TaskForm({ onAddTask, categories = ['General', 'Work', '
     setPriority('Medium')
     setCategory(categories[0] ?? 'General')
     setTagsInput('')
+    setDueDate('')
     setError('')
   }
 
@@ -85,6 +88,13 @@ export default function TaskForm({ onAddTask, categories = ['General', 'Work', '
         placeholder="e.g. urgent, frontend"
         value={tagsInput}
         onChange={e => setTagsInput(e.target.value)}
+      />
+      <label htmlFor="task-due-date-input">Due Date</label>
+      <input
+        id="task-due-date-input"
+        type="date"
+        value={dueDate}
+        onChange={e => setDueDate(e.target.value)}
       />
       {error && <p id="task-form-error">{error}</p>}
       <button onClick={handleSubmit}>Add Task</button>

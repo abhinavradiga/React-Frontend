@@ -53,7 +53,7 @@ function loadInitialTasks(): Task[] {
 }
 
 type Filter = 'all' | 'active' | 'completed'
-type SortOrder = 'recent' | 'priority-high' | 'priority-low' | 'alphabetical'
+type SortOrder = 'recent' | 'priority-high' | 'priority-low' | 'alphabetical' | 'due-date'
 
 const PRIORITY_RANK: Record<string, number> = { High: 0, Medium: 1, Low: 2 }
 
@@ -117,6 +117,12 @@ export default function TaskApp({ tasks, setTasks, dispatch, showForm, countForm
     }
     if (sortOrder === 'alphabetical') {
       return a.title.toLowerCase().localeCompare(b.title.toLowerCase())
+    }
+    if (sortOrder === 'due-date') {
+      if (!a.dueDate && !b.dueDate) return 0
+      if (!a.dueDate) return 1
+      if (!b.dueDate) return -1
+      return new Date(a.dueDate).getTime() - new Date(b.dueDate).getTime()
     }
     return 0
   })
