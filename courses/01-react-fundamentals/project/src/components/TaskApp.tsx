@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import type { Dispatch, SetStateAction } from 'react'
 import type { Task } from './TaskList'
 import TaskList from './TaskList'
@@ -17,6 +17,8 @@ interface TaskAppProps {
   linkToTaskDetail?: boolean
 }
 
+const STORAGE_KEY = 'task-app-tasks'
+
 const DEFAULT_TASKS: Task[] = [
   { id: 1, title: 'First Task', description: 'First hardcoded task', priority: 'High', completed: false },
   { id: 2, title: 'Second Task', description: 'Second hardcoded task', priority: 'Medium', completed: false },
@@ -25,13 +27,25 @@ const DEFAULT_TASKS: Task[] = [
   { id: 5, title: 'Fifth Task', description: 'Fifth hardcoded task', priority: 'Medium', completed: false },
 ]
 
+function loadInitialTasks(): Task[] {
+  try {
+    const stored = localStorage.getItem(STORAGE_KEY)
+    if (!stored) return DEFAULT_TASKS
+    const parsed = JSON.parse(stored)
+    if (Array.isArray(parsed)) return parsed
+    return DEFAULT_TASKS
+  } catch {
+    return DEFAULT_TASKS
+  }
+}
+
 type Filter = 'all' | 'active' | 'completed'
 type SortOrder = 'recent' | 'priority-high' | 'priority-low' | 'alphabetical'
 
 const PRIORITY_RANK: Record<string, number> = { High: 0, Medium: 1, Low: 2 }
 
 export default function TaskApp({ tasks, setTasks, dispatch, showForm, countFormat, showFilterBar, onDelete }: TaskAppProps) {
-  const [localTasks, setLocalTasks] = useState<Task[]>(DEFAULT_TASKS)
+  const [localTasks, setLocalTasks] = useState<Task[]>(loadInitialTasks)
   const [filter, setFilter] = useState<Filter>('all')
   const [sortOrder, setSortOrder] = useState<SortOrder>('recent')
   const [editingId, setEditingId] = useState<string | number | null>(null)
@@ -39,6 +53,14 @@ export default function TaskApp({ tasks, setTasks, dispatch, showForm, countForm
 
   const displayTasks = tasks ?? localTasks
   const setDisplayTasks = setTasks ?? setLocalTasks
+
+  useEffect(() => {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(displayTasks))
+    } catch {
+      // ignore storage errors
+    }
+  }, [displayTasks])
 
   const statusFiltered = filter === 'active'
     ? displayTasks.filter(t => !t.completed)
