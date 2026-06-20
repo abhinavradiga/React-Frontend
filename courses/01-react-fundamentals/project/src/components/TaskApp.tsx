@@ -35,17 +35,25 @@ export default function TaskApp({ tasks, setTasks, dispatch, showForm, countForm
   const [filter, setFilter] = useState<Filter>('all')
   const [sortOrder, setSortOrder] = useState<SortOrder>('recent')
   const [editingId, setEditingId] = useState<string | number | null>(null)
+  const [search, setSearch] = useState('')
 
   const displayTasks = tasks ?? localTasks
   const setDisplayTasks = setTasks ?? setLocalTasks
 
-  const filteredTasks = filter === 'active'
+  const statusFiltered = filter === 'active'
     ? displayTasks.filter(t => !t.completed)
     : filter === 'completed'
     ? displayTasks.filter(t => t.completed)
     : displayTasks
 
-  const sortedTasks = [...filteredTasks].sort((a, b) => {
+  const searched = search.trim()
+    ? statusFiltered.filter(t =>
+        t.title.toLowerCase().includes(search.trim().toLowerCase()) ||
+        t.description.toLowerCase().includes(search.trim().toLowerCase())
+      )
+    : statusFiltered
+
+  const sortedTasks = [...searched].sort((a, b) => {
     if (sortOrder === 'priority-high') {
       return (PRIORITY_RANK[a.priority] ?? 1) - (PRIORITY_RANK[b.priority] ?? 1)
     }
@@ -96,7 +104,7 @@ export default function TaskApp({ tasks, setTasks, dispatch, showForm, countForm
 
   const countText = countFormat === 'completed'
     ? `${completedCount} of ${displayTasks.length} completed`
-    : showFilterBar && filter !== 'all'
+    : showFilterBar && (filter !== 'all' || search.trim())
     ? `Showing ${sortedTasks.length} of ${displayTasks.length} tasks`
     : `${displayTasks.length} Tasks`
 
@@ -109,10 +117,14 @@ export default function TaskApp({ tasks, setTasks, dispatch, showForm, countForm
           onFilterChange={f => setFilter(f as Filter)}
           sortOrder={sortOrder}
           onSortChange={s => setSortOrder(s as SortOrder)}
+          searchValue={search}
+          onSearchChange={setSearch}
         />
       )}
       {sortedTasks.length === 0 && (
-        <p id="filter-empty-message">No tasks match this filter</p>
+        <p id="filter-empty-message">
+          {search.trim() ? `No tasks found for "${search.trim()}"` : 'No tasks match this filter'}
+        </p>
       )}
       <TaskList
         tasks={sortedTasks}
