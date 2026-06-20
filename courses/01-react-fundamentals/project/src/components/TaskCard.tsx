@@ -5,6 +5,8 @@ interface TaskCardProps {
   description: string
   priority?: string
   completed?: boolean
+  category?: string
+  tags?: string[]
   onToggle?: (id: string | number) => void
   onDelete?: (id: string | number) => void
   onUpdateTask?: (id: string | number, updates: { title: string; description: string; priority: string }) => void
@@ -16,7 +18,7 @@ interface TaskCardProps {
 }
 
 export default function TaskCard({
-  title, description, priority, completed,
+  title, description, priority, completed, category, tags,
   onToggle, onDelete, onUpdateTask,
   isEditing, onStartEdit, onCancelEdit,
   taskId, id,
@@ -113,6 +115,14 @@ export default function TaskCard({
       <h2 style={completed ? { textDecoration: 'line-through' } : undefined}>{title}</h2>
       <p>{description}</p>
       <p>{priorityLabel}</p>
+      {category && <p id="task-category">{category}</p>}
+      {tags && tags.length > 0 && (
+        <div id="task-tags">
+          {tags.map(tag => (
+            <span key={tag} data-tag>{tag}</span>
+          ))}
+        </div>
+      )}
       {onUpdateTask && (
         <button onClick={handleEditClick}>Edit</button>
       )}

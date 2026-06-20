@@ -20,19 +20,32 @@ interface TaskAppProps {
 const STORAGE_KEY = 'task-app-tasks'
 
 const DEFAULT_TASKS: Task[] = [
-  { id: 1, title: 'First Task', description: 'First hardcoded task', priority: 'High', completed: false },
-  { id: 2, title: 'Second Task', description: 'Second hardcoded task', priority: 'Medium', completed: false },
-  { id: 3, title: 'Third Task', description: 'Third hardcoded task', priority: 'Low', completed: false },
-  { id: 4, title: 'Fourth Task', description: 'Fourth hardcoded task', priority: 'High', completed: false },
-  { id: 5, title: 'Fifth Task', description: 'Fifth hardcoded task', priority: 'Medium', completed: false },
+  { id: 1, title: 'First Task', description: 'First hardcoded task', priority: 'High', completed: false, category: 'General', tags: [] },
+  { id: 2, title: 'Second Task', description: 'Second hardcoded task', priority: 'Medium', completed: false, category: 'General', tags: [] },
+  { id: 3, title: 'Third Task', description: 'Third hardcoded task', priority: 'Low', completed: false, category: 'General', tags: [] },
+  { id: 4, title: 'Fourth Task', description: 'Fourth hardcoded task', priority: 'High', completed: false, category: 'General', tags: [] },
+  { id: 5, title: 'Fifth Task', description: 'Fifth hardcoded task', priority: 'Medium', completed: false, category: 'General', tags: [] },
 ]
+
+function normalizeTask(t: Partial<Task>): Task {
+  return {
+    id: t.id ?? Date.now(),
+    title: t.title ?? '',
+    description: t.description ?? '',
+    priority: t.priority ?? 'Medium',
+    completed: t.completed ?? false,
+    category: t.category ?? 'General',
+    tags: Array.isArray(t.tags) ? t.tags : [],
+    dueDate: t.dueDate,
+  }
+}
 
 function loadInitialTasks(): Task[] {
   try {
     const stored = localStorage.getItem(STORAGE_KEY)
     if (!stored) return DEFAULT_TASKS
     const parsed = JSON.parse(stored)
-    if (Array.isArray(parsed)) return parsed
+    if (Array.isArray(parsed)) return parsed.map(normalizeTask)
     return DEFAULT_TASKS
   } catch {
     return DEFAULT_TASKS
@@ -52,6 +65,7 @@ export default function TaskApp({ tasks, setTasks, dispatch, showForm, countForm
   const [search, setSearch] = useState('')
   const [debouncedSearch, setDebouncedSearch] = useState('')
   const [isSearching, setIsSearching] = useState(false)
+  const [categoryFilter, setCategoryFilter] = useState('all')
 
   const displayTasks = tasks ?? localTasks
   const setDisplayTasks = setTasks ?? setLocalTasks
@@ -75,18 +89,24 @@ export default function TaskApp({ tasks, setTasks, dispatch, showForm, countForm
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [search])
 
+  const categories = [...new Set(displayTasks.map(t => t.category).filter((c): c is string => Boolean(c)))]
+
   const statusFiltered = filter === 'active'
     ? displayTasks.filter(t => !t.completed)
     : filter === 'completed'
     ? displayTasks.filter(t => t.completed)
     : displayTasks
 
+  const categoryFiltered = categoryFilter !== 'all'
+    ? statusFiltered.filter(t => t.category === categoryFilter)
+    : statusFiltered
+
   const searched = debouncedSearch.trim()
-    ? statusFiltered.filter(t =>
+    ? categoryFiltered.filter(t =>
         t.title.toLowerCase().includes(debouncedSearch.trim().toLowerCase()) ||
         t.description.toLowerCase().includes(debouncedSearch.trim().toLowerCase())
       )
-    : statusFiltered
+    : categoryFiltered
 
   const sortedTasks = [...searched].sort((a, b) => {
     if (sortOrder === 'priority-high') {
@@ -102,7 +122,7 @@ export default function TaskApp({ tasks, setTasks, dispatch, showForm, countForm
   })
 
   function handleAddTask(task: Record<string, unknown>) {
-    const newTask = task as Task
+    const newTask = normalizeTask(task as Partial<Task>)
     if (dispatch) {
       dispatch({ type: 'ADD_TASK', payload: newTask })
     } else {
@@ -139,13 +159,13 @@ export default function TaskApp({ tasks, setTasks, dispatch, showForm, countForm
 
   const countText = countFormat === 'completed'
     ? `${completedCount} of ${displayTasks.length} completed`
-    : showFilterBar && (filter !== 'all' || debouncedSearch.trim())
+    : showFilterBar && (filter !== 'all' || debouncedSearch.trim() || categoryFilter !== 'all')
     ? `Showing ${sortedTasks.length} of ${displayTasks.length} tasks`
     : `${displayTasks.length} Tasks`
 
   return (
     <div id="task-app">
-      {showForm && <TaskForm onAddTask={handleAddTask} />}
+      {showForm && <TaskForm onAddTask={handleAddTask} categories={categories.length > 0 ? categories : ['General', 'Work', 'Personal']} />}
       {showFilterBar && (
         <FilterBar
           filter={filter}
@@ -154,6 +174,9 @@ export default function TaskApp({ tasks, setTasks, dispatch, showForm, countForm
           onSortChange={s => setSortOrder(s as SortOrder)}
           searchValue={search}
           onSearchChange={setSearch}
+          categories={categories}
+          categoryFilter={categoryFilter}
+          onCategoryChange={setCategoryFilter}
         />
       )}
       {isSearching && <p id="searching-indicator">Searching...</p>}

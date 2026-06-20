@@ -8,9 +8,16 @@ interface FilterBarProps {
   sortOrder?: string
   onSortChange?: (sort: string) => void
   searchValue?: string
+  categories?: string[]
+  categoryFilter?: string
+  onCategoryChange?: (category: string) => void
 }
 
-export default function FilterBar({ filter, activeFilter, onFilterChange, onSearchChange, sortOrder, onSortChange, searchValue }: FilterBarProps) {
+export default function FilterBar({
+  filter, activeFilter, onFilterChange, onSearchChange,
+  sortOrder, onSortChange, searchValue,
+  categories, categoryFilter, onCategoryChange,
+}: FilterBarProps) {
   const [internalSearch, setInternalSearch] = useState('')
   const current = filter ?? activeFilter ?? 'all'
   const search = searchValue ?? internalSearch
@@ -50,6 +57,18 @@ export default function FilterBar({ filter, activeFilter, onFilterChange, onSear
           <option value="priority-high">Priority: High to Low</option>
           <option value="priority-low">Priority: Low to High</option>
           <option value="alphabetical">Alphabetical</option>
+        </select>
+      )}
+      {onCategoryChange && categories && (
+        <select
+          id="category-filter"
+          value={categoryFilter ?? 'all'}
+          onChange={e => onCategoryChange(e.target.value)}
+        >
+          <option value="all">All categories</option>
+          {categories.map(c => (
+            <option key={c} value={c}>{c}</option>
+          ))}
         </select>
       )}
     </div>

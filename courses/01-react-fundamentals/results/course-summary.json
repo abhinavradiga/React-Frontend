@@ -1,11 +1,11 @@
 {
   "courseId": "01-react-fundamentals",
   "courseName": "React Fundamentals",
-  "lastUpdated": "2026-06-20T11:41:07.963Z",
+  "lastUpdated": "2026-06-20T11:43:45.904Z",
   "totalChallenges": 23,
-  "completedChallenges": 14,
-  "averageScore": 87.7,
-  "completionPercentage": 60.9,
+  "completedChallenges": 15,
+  "averageScore": 88.2,
+  "completionPercentage": 65.2,
   "badgeLevel": "bronze",
   "challengeResults": [
     {
@@ -75,6 +75,12 @@
       "passed": true
     },
     {
+      "challengeId": "12-categories-and-tags",
+      "challengeName": "Categories and Tags",
+      "score": 97.45,
+      "passed": true
+    },
+    {
       "challengeId": "13-due-dates-and-sorting",
       "challengeName": "Due Dates and Sorting",
       "score": 85,
@@ -129,6 +135,7 @@
     "Search Functionality",
     "useEffect - Local Storage Persistence",
     "useEffect - Debounced Search",
+    "Categories and Tags",
     "Due Dates and Sorting",
     "useReducer - Complex State Management",
     "React Router - Routing and Navigation"

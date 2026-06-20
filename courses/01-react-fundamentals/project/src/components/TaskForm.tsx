@@ -2,12 +2,15 @@ import { useState } from 'react'
 
 interface TaskFormProps {
   onAddTask?: (task: Record<string, unknown>) => void
+  categories?: string[]
 }
 
-export default function TaskForm({ onAddTask }: TaskFormProps) {
+export default function TaskForm({ onAddTask, categories = ['General', 'Work', 'Personal'] }: TaskFormProps) {
   const [title, setTitle] = useState('')
   const [description, setDescription] = useState('')
   const [priority, setPriority] = useState('Medium')
+  const [category, setCategory] = useState(categories[0] ?? 'General')
+  const [tagsInput, setTagsInput] = useState('')
   const [error, setError] = useState('')
 
   function handleSubmit() {
@@ -15,16 +18,25 @@ export default function TaskForm({ onAddTask }: TaskFormProps) {
       setError('Title is required')
       return
     }
+    const tags = tagsInput
+      .split(',')
+      .map(t => t.trim())
+      .filter(Boolean)
+
     onAddTask?.({
       id: Date.now(),
       title: title.trim(),
       description: description.trim(),
       priority,
+      category,
+      tags,
       completed: false,
     })
     setTitle('')
     setDescription('')
     setPriority('Medium')
+    setCategory(categories[0] ?? 'General')
+    setTagsInput('')
     setError('')
   }
 
@@ -56,6 +68,24 @@ export default function TaskForm({ onAddTask }: TaskFormProps) {
         <option value="Medium">Medium</option>
         <option value="High">High</option>
       </select>
+      <label htmlFor="task-category">Category</label>
+      <select
+        id="task-category"
+        value={category}
+        onChange={e => setCategory(e.target.value)}
+      >
+        {categories.map(c => (
+          <option key={c} value={c}>{c}</option>
+        ))}
+      </select>
+      <label htmlFor="task-tags-input">Tags (comma separated)</label>
+      <input
+        id="task-tags-input"
+        type="text"
+        placeholder="e.g. urgent, frontend"
+        value={tagsInput}
+        onChange={e => setTagsInput(e.target.value)}
+      />
       {error && <p id="task-form-error">{error}</p>}
       <button onClick={handleSubmit}>Add Task</button>
     </div>
