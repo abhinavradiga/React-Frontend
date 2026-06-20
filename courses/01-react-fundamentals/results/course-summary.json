@@ -1,10 +1,10 @@
 {
   "courseId": "01-react-fundamentals",
   "courseName": "React Fundamentals",
-  "lastUpdated": "2026-06-20T11:38:24.249Z",
+  "lastUpdated": "2026-06-20T11:41:07.963Z",
   "totalChallenges": 23,
   "completedChallenges": 14,
-  "averageScore": 86.7,
+  "averageScore": 87.7,
   "completionPercentage": 60.9,
   "badgeLevel": "bronze",
   "challengeResults": [
@@ -71,7 +71,7 @@
     {
       "challengeId": "11-useeffect-debounced-search",
       "challengeName": "useEffect - Debounced Search",
-      "score": 80,
+      "score": 98.2,
       "passed": true
     },
     {

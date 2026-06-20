@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-06-20T11:38:24.329Z",
+  "lastUpdated": "2026-06-20T11:41:08.042Z",
   "pathway": {
     "name": "Modern React Engineer",
     "version": "1.0.0",
-    "overallScore": 28.6,
+    "overallScore": 28.9,
     "completionPercentage": 26.4,
     "badgeLevel": "none",
     "totalChallenges": 53,
@@ -13,7 +13,7 @@
     "01-react-fundamentals": {
       "courseId": "01-react-fundamentals",
       "courseName": "React Fundamentals",
-      "averageScore": 86.7,
+      "averageScore": 87.7,
       "completionPercentage": 60.9,
       "badgeLevel": "bronze",
       "totalChallenges": 23,
@@ -173,15 +173,15 @@
           "challengeId": "11-useeffect-debounced-search",
           "challengeName": "useEffect - Debounced Search",
           "passed": true,
-          "score": 80,
-          "lastRun": "2026-06-13T07:46:36.538Z",
+          "score": 98.2,
+          "lastRun": "2026-06-20T11:40:52.528Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 100,
-            "architecture": 50,
+            "architecture": 100,
             "bestPractices": 100,
             "e2eTests": 100,
-            "aiReview": 0
+            "aiReview": 88
           }
         },
         "13-due-dates-and-sorting": {

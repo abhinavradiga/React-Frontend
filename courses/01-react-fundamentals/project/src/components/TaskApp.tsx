@@ -50,6 +50,8 @@ export default function TaskApp({ tasks, setTasks, dispatch, showForm, countForm
   const [sortOrder, setSortOrder] = useState<SortOrder>('recent')
   const [editingId, setEditingId] = useState<string | number | null>(null)
   const [search, setSearch] = useState('')
+  const [debouncedSearch, setDebouncedSearch] = useState('')
+  const [isSearching, setIsSearching] = useState(false)
 
   const displayTasks = tasks ?? localTasks
   const setDisplayTasks = setTasks ?? setLocalTasks
@@ -62,16 +64,27 @@ export default function TaskApp({ tasks, setTasks, dispatch, showForm, countForm
     }
   }, [displayTasks])
 
+  useEffect(() => {
+    setIsSearching(search !== debouncedSearch)
+    const timeoutId = setTimeout(() => {
+      setDebouncedSearch(search)
+      setIsSearching(false)
+    }, 300)
+
+    return () => clearTimeout(timeoutId)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [search])
+
   const statusFiltered = filter === 'active'
     ? displayTasks.filter(t => !t.completed)
     : filter === 'completed'
     ? displayTasks.filter(t => t.completed)
     : displayTasks
 
-  const searched = search.trim()
+  const searched = debouncedSearch.trim()
     ? statusFiltered.filter(t =>
-        t.title.toLowerCase().includes(search.trim().toLowerCase()) ||
-        t.description.toLowerCase().includes(search.trim().toLowerCase())
+        t.title.toLowerCase().includes(debouncedSearch.trim().toLowerCase()) ||
+        t.description.toLowerCase().includes(debouncedSearch.trim().toLowerCase())
       )
     : statusFiltered
 
@@ -126,7 +139,7 @@ export default function TaskApp({ tasks, setTasks, dispatch, showForm, countForm
 
   const countText = countFormat === 'completed'
     ? `${completedCount} of ${displayTasks.length} completed`
-    : showFilterBar && (filter !== 'all' || search.trim())
+    : showFilterBar && (filter !== 'all' || debouncedSearch.trim())
     ? `Showing ${sortedTasks.length} of ${displayTasks.length} tasks`
     : `${displayTasks.length} Tasks`
 
@@ -143,9 +156,10 @@ export default function TaskApp({ tasks, setTasks, dispatch, showForm, countForm
           onSearchChange={setSearch}
         />
       )}
-      {sortedTasks.length === 0 && (
+      {isSearching && <p id="searching-indicator">Searching...</p>}
+      {!isSearching && sortedTasks.length === 0 && (
         <p id="filter-empty-message">
-          {search.trim() ? `No tasks found for "${search.trim()}"` : 'No tasks match this filter'}
+          {debouncedSearch.trim() ? `No tasks found for "${debouncedSearch.trim()}"` : 'No tasks match this filter'}
         </p>
       )}
       <TaskList

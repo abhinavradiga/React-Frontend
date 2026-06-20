@@ -101,22 +101,6 @@
     }
   },
   {
-    "challengeId": "11-useeffect-debounced-search",
-    "challengeName": "useEffect - Debounced Search",
-    "aiReview": {
-      "challengeId": "11-useeffect-debounced-search",
-      "timestamp": "2026-06-13T07:46:42.675Z",
-      "score": 0,
-      "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
-    }
-  },
-  {
     "challengeId": "13-due-dates-and-sorting",
     "challengeName": "Due Dates and Sorting",
     "aiReview": {
@@ -337,6 +321,29 @@
       "readability": 85,
       "maintainability": 90,
       "overall": "The code is well-structured and maintainable, with a good separation of concerns and clear documentation. However, there are some areas for improvement, particularly in terms of component size and state management. With some additional refactoring and error handling, this code could be even more robust and scalable."
+    }
+  },
+  {
+    "challengeId": "11-useeffect-debounced-search",
+    "challengeName": "useEffect - Debounced Search",
+    "aiReview": {
+      "challengeId": "11-useeffect-debounced-search",
+      "timestamp": "2026-06-20T11:41:07.100Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and easy to follow, with clear separation of concerns between components.",
+        "The use of TypeScript and functional components helps to maintain a high level of code quality and organization.",
+        "The implementation of debouncing and filtering is well-executed and easy to understand."
+      ],
+      "improvements": [
+        "The `useEffect` hook in `TaskApp.tsx` could be improved by adding a more robust cleanup function to handle cases where the component is unmounted before the timeout is cleared.",
+        "The `debouncedSearch` state could be removed and replaced with a more straightforward implementation using the `useDebounce` hook from a library like `react-use`.",
+        "The `handleDelete` function in `App.tsx` could be improved by using a more robust way to handle confirmation prompts, such as a dedicated confirmation dialog component."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-organized and easy to follow, with a good balance of functionality and maintainability. However, there are some areas for improvement, particularly in the implementation of the `useEffect` hook and the handling of confirmation prompts."
     }
   }
 ]
