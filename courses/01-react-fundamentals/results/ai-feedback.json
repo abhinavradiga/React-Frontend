@@ -101,22 +101,6 @@
     }
   },
   {
-    "challengeId": "08-task-editing",
-    "challengeName": "Task Editing",
-    "aiReview": {
-      "challengeId": "08-task-editing",
-      "timestamp": "2026-06-13T07:46:11.581Z",
-      "score": 0,
-      "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
-    }
-  },
-  {
     "challengeId": "09-search-functionality",
     "challengeName": "Search Functionality",
     "aiReview": {
@@ -304,6 +288,25 @@
       "readability": 85,
       "maintainability": 90,
       "overall": "The code is well-structured and maintainable, with a good balance of readability and efficiency. However, there are some areas for improvement to make the code even more robust and scalable."
+    }
+  },
+  {
+    "challengeId": "08-task-editing",
+    "challengeName": "Task Editing",
+    "aiReview": {
+      "challengeId": "08-task-editing",
+      "timestamp": "2026-06-20T11:34:29.869Z",
+      "score": 50,
+      "feedback": [],
+      "strengths": [
+        "Code structure is reasonable"
+      ],
+      "improvements": [
+        "Code structure is reasonable"
+      ],
+      "readability": 50,
+      "maintainability": 50,
+      "overall": "{\n  \"readability\": 85,\n  \"maintainability\": 90,\n  \"strengths\": [\n    \"The code is well-structured and follows a consistent naming convention.\",\n    \"The use of TypeScript and functional components makes the code more maintainable and scalable.\",\n    \"The code includes clear and concise comments, which helps in understanding the functionality.\"\n  ],\n  \"improvements\": [\n    \"Some of the functions in the TaskCard component are quite long and complex. Consider breaking them down into smaller functio"
     }
   }
 ]

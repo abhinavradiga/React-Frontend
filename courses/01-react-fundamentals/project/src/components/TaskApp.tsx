@@ -34,6 +34,7 @@ export default function TaskApp({ tasks, setTasks, dispatch, showForm, countForm
   const [localTasks, setLocalTasks] = useState<Task[]>(DEFAULT_TASKS)
   const [filter, setFilter] = useState<Filter>('all')
   const [sortOrder, setSortOrder] = useState<SortOrder>('recent')
+  const [editingId, setEditingId] = useState<string | number | null>(null)
 
   const displayTasks = tasks ?? localTasks
   const setDisplayTasks = setTasks ?? setLocalTasks
@@ -82,6 +83,15 @@ export default function TaskApp({ tasks, setTasks, dispatch, showForm, countForm
     }
   }
 
+  function handleUpdateTask(id: string | number, updates: { title: string; description: string; priority: string }) {
+    if (dispatch) {
+      dispatch({ type: 'UPDATE_TASK', payload: { id, ...updates } })
+    } else {
+      setDisplayTasks(prev => prev.map(t => t.id === id ? { ...t, ...updates } : t))
+    }
+    setEditingId(null)
+  }
+
   const completedCount = displayTasks.filter(t => t.completed).length
 
   const countText = countFormat === 'completed'
@@ -109,6 +119,10 @@ export default function TaskApp({ tasks, setTasks, dispatch, showForm, countForm
         countText={countText}
         onToggle={handleToggle}
         onDelete={onDelete ?? handleDelete}
+        onUpdateTask={handleUpdateTask}
+        editingId={editingId}
+        onStartEdit={setEditingId}
+        onCancelEdit={() => setEditingId(null)}
       />
     </div>
   )
