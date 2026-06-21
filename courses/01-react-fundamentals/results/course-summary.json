@@ -1,11 +1,11 @@
 {
   "courseId": "01-react-fundamentals",
   "courseName": "React Fundamentals",
-  "lastUpdated": "2026-06-21T07:12:12.346Z",
+  "lastUpdated": "2026-06-21T07:16:12.240Z",
   "totalChallenges": 23,
-  "completedChallenges": 18,
-  "averageScore": 90.9,
-  "completionPercentage": 78.3,
+  "completedChallenges": 19,
+  "averageScore": 91.2,
+  "completionPercentage": 82.6,
   "badgeLevel": "silver",
   "challengeResults": [
     {
@@ -105,6 +105,12 @@
       "passed": true
     },
     {
+      "challengeId": "17-custom-hook-uselocalstorage",
+      "challengeName": "Custom Hook - useLocalStorage",
+      "score": 97.71,
+      "passed": true
+    },
+    {
       "challengeId": "18-usereducer-complex-state",
       "challengeName": "useReducer - Complex State Management",
       "score": 80,
@@ -152,6 +158,7 @@
     "Task Statistics Dashboard",
     "Component Organization with Props",
     "Context API - Theme Management",
+    "Custom Hook - useLocalStorage",
     "useReducer - Complex State Management",
     "React Router - Routing and Navigation"
   ],

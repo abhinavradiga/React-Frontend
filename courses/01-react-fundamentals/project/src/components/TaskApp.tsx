@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import type { Dispatch, SetStateAction } from 'react'
 import type { Task } from './TaskList'
 import TaskList from './TaskList'
@@ -6,6 +6,7 @@ import TaskForm from './TaskForm'
 import FilterBar from './FilterBar'
 import StatsPanel from './StatsPanel'
 import { ThemeProvider, useTheme } from '../contexts/ThemeContext'
+import { useLocalStorage } from '../hooks/useLocalStorage'
 
 interface TaskAppProps {
   tasks?: Task[]
@@ -18,8 +19,6 @@ interface TaskAppProps {
   onDelete?: (id: string | number) => void
   linkToTaskDetail?: boolean
 }
-
-const STORAGE_KEY = 'task-app-tasks'
 
 const DEFAULT_TASKS: Task[] = [
   { id: 1, title: 'First Task', description: 'First hardcoded task', priority: 'High', completed: false, category: 'General', tags: [] },
@@ -42,18 +41,6 @@ function normalizeTask(t: Partial<Task>): Task {
   }
 }
 
-function loadInitialTasks(): Task[] {
-  try {
-    const stored = localStorage.getItem(STORAGE_KEY)
-    if (!stored) return DEFAULT_TASKS
-    const parsed = JSON.parse(stored)
-    if (Array.isArray(parsed)) return parsed.map(normalizeTask)
-    return DEFAULT_TASKS
-  } catch {
-    return DEFAULT_TASKS
-  }
-}
-
 type Filter = 'all' | 'active' | 'completed'
 type SortOrder = 'recent' | 'priority-high' | 'priority-low' | 'alphabetical' | 'due-date'
 
@@ -69,7 +56,7 @@ function ThemeToggle() {
 }
 
 function TaskAppInner({ tasks, setTasks, dispatch, showForm, countFormat, showFilterBar, showStatsPanel, onDelete }: TaskAppProps) {
-  const [localTasks, setLocalTasks] = useState<Task[]>(loadInitialTasks)
+  const [localTasks, setLocalTasks] = useLocalStorage<Task[]>('task-app-tasks', DEFAULT_TASKS)
   const [filter, setFilter] = useState<Filter>('all')
   const [sortOrder, setSortOrder] = useState<SortOrder>('recent')
   const [editingId, setEditingId] = useState<string | number | null>(null)
@@ -78,16 +65,8 @@ function TaskAppInner({ tasks, setTasks, dispatch, showForm, countFormat, showFi
   const [isSearching, setIsSearching] = useState(false)
   const [categoryFilter, setCategoryFilter] = useState('all')
 
-  const displayTasks = tasks ?? localTasks
+  const displayTasks = (tasks ?? localTasks).map(normalizeTask)
   const setDisplayTasks = setTasks ?? setLocalTasks
-
-  useEffect(() => {
-    try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(displayTasks))
-    } catch {
-      // ignore storage errors
-    }
-  }, [displayTasks])
 
   useEffect(() => {
     setIsSearching(search !== debouncedSearch)
@@ -95,7 +74,6 @@ function TaskAppInner({ tasks, setTasks, dispatch, showForm, countFormat, showFi
       setDebouncedSearch(search)
       setIsSearching(false)
     }, 300)
-
     return () => clearTimeout(timeoutId)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [search])
