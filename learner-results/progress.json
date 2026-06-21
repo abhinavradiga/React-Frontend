@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "2026-06-21T14:51:13.792Z",
+  "lastUpdated": "2026-06-21T14:59:13.369Z",
   "pathway": {
     "name": "Modern React Engineer",
     "version": "1.0.0",
-    "overallScore": 30.6,
-    "completionPercentage": 39.6,
+    "overallScore": 31,
+    "completionPercentage": 43.4,
     "badgeLevel": "none",
     "totalChallenges": 53,
-    "completedChallenges": 21
+    "completedChallenges": 23
   },
   "courses": {
     "01-react-fundamentals": {
       "courseId": "01-react-fundamentals",
       "courseName": "React Fundamentals",
-      "averageScore": 92.8,
-      "completionPercentage": 91.3,
-      "badgeLevel": "silver",
+      "averageScore": 93.9,
+      "completionPercentage": 100,
+      "badgeLevel": "gold",
       "totalChallenges": 23,
-      "completedChallenges": 21,
+      "completedChallenges": 23,
       "challenges": {
         "01-static-task-display": {
           "challengeId": "01-static-task-display",
@@ -334,19 +334,34 @@
             "aiReview": 0
           }
         },
+        "22-data-fetching": {
+          "challengeId": "22-data-fetching",
+          "challengeName": "Data Fetching - Loading and Error State",
+          "passed": true,
+          "score": 97.71,
+          "lastRun": "2026-06-21T14:56:29.500Z",
+          "scores": {
+            "functionalTests": 98.6,
+            "codeQuality": 100,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 88
+          }
+        },
         "23-useref-focus-management": {
           "challengeId": "23-useref-focus-management",
           "challengeName": "useRef - Focus Management",
-          "passed": false,
-          "score": 71.665,
-          "lastRun": "2026-06-13T07:47:43.935Z",
+          "passed": true,
+          "score": 92.71499999999999,
+          "lastRun": "2026-06-21T14:58:47.814Z",
           "scores": {
-            "functionalTests": 100,
+            "functionalTests": 98.6,
             "codeQuality": 100,
-            "architecture": 66.7,
+            "architecture": 100,
             "bestPractices": 100,
-            "e2eTests": 33.3,
-            "aiReview": 0
+            "e2eTests": 66.7,
+            "aiReview": 88
           }
         }
       }

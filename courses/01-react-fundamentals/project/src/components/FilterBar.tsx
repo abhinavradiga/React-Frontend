@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import FormInput from './FormInput'
+import { useState, useRef, useEffect } from 'react'
 import Button from './Button'
 
 interface FilterBarProps {
@@ -23,6 +22,11 @@ export default function FilterBar({
   const [internalSearch, setInternalSearch] = useState('')
   const current = filter ?? activeFilter ?? 'all'
   const search = searchValue ?? internalSearch
+  const searchInputRef = useRef<HTMLInputElement>(null)
+
+  useEffect(() => {
+    searchInputRef.current?.focus()
+  }, [])
 
   function handleSearch(e: React.ChangeEvent<HTMLInputElement>) {
     setInternalSearch(e.target.value)
@@ -36,11 +40,13 @@ export default function FilterBar({
 
   return (
     <div id="filter-bar">
-      <FormInput
+      <input
         id="search-input"
+        ref={searchInputRef}
+        type="text"
+        placeholder="Search tasks"
         value={search}
         onChange={handleSearch}
-        placeholder="Search tasks"
       />
       {search && (
         <Button id="clear-search" onClick={handleClear} variant="secondary">Clear search</Button>

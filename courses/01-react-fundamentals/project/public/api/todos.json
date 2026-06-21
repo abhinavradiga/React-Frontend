@@ -1,7 +1,7 @@
 [
-  { "id": 1, "title": "Learn React", "completed": false },
-  { "id": 2, "title": "Build a task app", "completed": false },
-  { "id": 3, "title": "Add data fetching", "completed": false },
-  { "id": 4, "title": "Handle loading state", "completed": false },
-  { "id": 5, "title": "Handle error state", "completed": false }
+  { "id": 1, "title": "Buy groceries" },
+  { "id": 2, "title": "Walk the dog" },
+  { "id": 3, "title": "Finish React course" },
+  { "id": 4, "title": "Read a book" },
+  { "id": 5, "title": "Clean the house" }
 ]

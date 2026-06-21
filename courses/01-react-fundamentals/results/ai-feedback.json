@@ -101,22 +101,6 @@
     }
   },
   {
-    "challengeId": "23-useref-focus-management",
-    "challengeName": "useRef - Focus Management",
-    "aiReview": {
-      "challengeId": "23-useref-focus-management",
-      "timestamp": "2026-06-13T07:48:27.264Z",
-      "score": 0,
-      "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
-    }
-  },
-  {
     "challengeId": "06-task-filtering",
     "challengeName": "Task Filtering",
     "aiReview": {
@@ -464,6 +448,52 @@
       "maintainability": 0,
       "overall": "",
       "error": "Groq API error (413): Request too large for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 6442, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+    }
+  },
+  {
+    "challengeId": "22-data-fetching",
+    "challengeName": "Data Fetching - Loading and Error State",
+    "aiReview": {
+      "challengeId": "22-data-fetching",
+      "timestamp": "2026-06-21T14:56:48.080Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and follows a clear pattern for handling loading, error, and data states.",
+        "The use of TypeScript and functional components is a good practice.",
+        "The code is concise and easy to follow."
+      ],
+      "improvements": [
+        "Consider adding a loading animation to make the 'Loading...' message more engaging.",
+        "The error handling could be improved by providing more context about the error, such as the HTTP status code or the error message from the API.",
+        "The code could benefit from some additional comments to explain the purpose of the `cancelled` flag and the `AbortController` usage."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-written and effectively demonstrates the concepts of loading, error, and data states in a React application. With some minor improvements, it can be even more robust and user-friendly."
+    }
+  },
+  {
+    "challengeId": "23-useref-focus-management",
+    "challengeName": "useRef - Focus Management",
+    "aiReview": {
+      "challengeId": "23-useref-focus-management",
+      "timestamp": "2026-06-21T14:59:12.092Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and follows a consistent naming convention.",
+        "The use of TypeScript and functional components is a good practice.",
+        "The code is well-documented with clear and concise comments."
+      ],
+      "improvements": [
+        "The `useEffect` hook in `FilterBar` component is not necessary, as the `searchInputRef.current?.focus()` can be called directly in the `render` method.",
+        "The `useMemo` hook in `TaskApp` component can be simplified by removing the unnecessary dependency array.",
+        "The code can benefit from more consistent spacing and indentation."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and maintainable, but there are some minor improvements that can be made to enhance its readability and performance."
     }
   }
 ]
