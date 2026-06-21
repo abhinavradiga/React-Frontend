@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from 'react'
+import { useReducer, useState, useMemo, useEffect } from 'react'
 import type { Dispatch, SetStateAction } from 'react'
 import type { Task } from './TaskList'
 import TaskList from './TaskList'
@@ -7,6 +7,7 @@ import FilterBar from './FilterBar'
 import StatsPanel from './StatsPanel'
 import { ThemeProvider, useTheme } from '../contexts/ThemeContext'
 import { useLocalStorage } from '../hooks/useLocalStorage'
+import { taskReducer, addTask as addTaskAction, updateTask as updateTaskAction, deleteTask as deleteTaskAction, toggleTask as toggleTaskAction } from '../reducers/taskReducer'
 
 interface TaskAppProps {
   tasks?: Task[]
@@ -55,8 +56,11 @@ function ThemeToggle() {
   )
 }
 
-function TaskAppInner({ tasks, setTasks, dispatch, showForm, countFormat, showFilterBar, showStatsPanel, onDelete }: TaskAppProps) {
-  const [localTasks, setLocalTasks] = useLocalStorage<Task[]>('task-app-tasks', DEFAULT_TASKS)
+function TaskAppInner({ tasks, setTasks, dispatch: externalDispatch, showForm, countFormat, showFilterBar, showStatsPanel, onDelete }: TaskAppProps) {
+  const [storedTasks] = useLocalStorage<Task[]>('task-app-tasks', DEFAULT_TASKS)
+  const [reducerState, reducerDispatch] = useReducer(taskReducer, storedTasks)
+  const [, setStoredTasks] = useLocalStorage<Task[]>('task-app-tasks', DEFAULT_TASKS)
+
   const [filter, setFilter] = useState<Filter>('all')
   const [sortOrder, setSortOrder] = useState<SortOrder>('recent')
   const [editingId, setEditingId] = useState<string | number | null>(null)
@@ -65,8 +69,16 @@ function TaskAppInner({ tasks, setTasks, dispatch, showForm, countFormat, showFi
   const [isSearching, setIsSearching] = useState(false)
   const [categoryFilter, setCategoryFilter] = useState('all')
 
-  const displayTasks = (tasks ?? localTasks).map(normalizeTask)
-  const setDisplayTasks = setTasks ?? setLocalTasks
+  const usingExternal = Boolean(tasks && externalDispatch)
+  const displayTasks = (usingExternal ? tasks! : reducerState).map(normalizeTask)
+  const dispatch = externalDispatch ?? reducerDispatch
+
+  useEffect(() => {
+    if (!usingExternal) {
+      setStoredTasks(reducerState)
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [reducerState, usingExternal])
 
   useEffect(() => {
     setIsSearching(search !== debouncedSearch)
@@ -140,35 +152,19 @@ function TaskAppInner({ tasks, setTasks, dispatch, showForm, countFormat, showFi
 
   function handleAddTask(task: Record<string, unknown>) {
     const newTask = normalizeTask(task as Partial<Task>)
-    if (dispatch) {
-      dispatch({ type: 'ADD_TASK', payload: newTask })
-    } else {
-      setDisplayTasks(prev => [...prev, newTask])
-    }
+    dispatch(addTaskAction(newTask))
   }
 
   function handleToggle(id: string | number) {
-    if (dispatch) {
-      dispatch({ type: 'TOGGLE_TASK', payload: id })
-    } else {
-      setDisplayTasks(prev => prev.map(t => t.id === id ? { ...t, completed: !t.completed } : t))
-    }
+    dispatch(toggleTaskAction(id))
   }
 
   function handleDelete(id: string | number) {
-    if (dispatch) {
-      dispatch({ type: 'DELETE_TASK', payload: id })
-    } else {
-      setDisplayTasks(prev => prev.filter(t => t.id !== id))
-    }
+    dispatch(deleteTaskAction(id))
   }
 
   function handleUpdateTask(id: string | number, updates: { title: string; description: string; priority: string }) {
-    if (dispatch) {
-      dispatch({ type: 'UPDATE_TASK', payload: { id, ...updates } })
-    } else {
-      setDisplayTasks(prev => prev.map(t => t.id === id ? { ...t, ...updates } : t))
-    }
+    dispatch(updateTaskAction(id, updates))
     setEditingId(null)
   }
 

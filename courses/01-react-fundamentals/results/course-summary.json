@@ -1,10 +1,10 @@
 {
   "courseId": "01-react-fundamentals",
   "courseName": "React Fundamentals",
-  "lastUpdated": "2026-06-21T07:16:12.240Z",
+  "lastUpdated": "2026-06-21T07:18:39.742Z",
   "totalChallenges": 23,
   "completedChallenges": 19,
-  "averageScore": 91.2,
+  "averageScore": 92,
   "completionPercentage": 82.6,
   "badgeLevel": "silver",
   "challengeResults": [
@@ -113,7 +113,7 @@
     {
       "challengeId": "18-usereducer-complex-state",
       "challengeName": "useReducer - Complex State Management",
-      "score": 80,
+      "score": 97.71,
       "passed": true
     },
     {

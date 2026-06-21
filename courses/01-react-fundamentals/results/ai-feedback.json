@@ -101,22 +101,6 @@
     }
   },
   {
-    "challengeId": "18-usereducer-complex-state",
-    "challengeName": "useReducer - Complex State Management",
-    "aiReview": {
-      "challengeId": "18-usereducer-complex-state",
-      "timestamp": "2026-06-13T07:47:20.411Z",
-      "score": 0,
-      "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
-    }
-  },
-  {
     "challengeId": "19-performance-optimization",
     "challengeName": "Performance Optimization",
     "aiReview": {
@@ -450,6 +434,29 @@
       "readability": 85,
       "maintainability": 90,
       "overall": "The code is well-structured and follows good practices, but there are some minor improvements that can be made to make it more efficient and maintainable."
+    }
+  },
+  {
+    "challengeId": "18-usereducer-complex-state",
+    "challengeName": "useReducer - Complex State Management",
+    "aiReview": {
+      "challengeId": "18-usereducer-complex-state",
+      "timestamp": "2026-06-21T07:18:38.764Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "Effective use of TypeScript and functional programming principles",
+        "Well-structured reducer and action types",
+        "Use of memoization and debouncing for performance optimization"
+      ],
+      "improvements": [
+        "Consider adding more type guards to reduce the need for explicit type casting",
+        "Some functions, such as `normalizeTask`, could be extracted into a separate utility file for better organization",
+        "The `useEffect` hook for updating stored tasks could be simplified by removing the unnecessary `setStoredTasks` call"
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code demonstrates a good understanding of React, TypeScript, and functional programming principles. The use of `useReducer` and action types is well-implemented, and the code is generally well-structured and maintainable. However, there are some minor improvements that could be made to enhance readability and organization."
     }
   }
 ]
