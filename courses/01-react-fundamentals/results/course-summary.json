@@ -1,12 +1,12 @@
 {
   "courseId": "01-react-fundamentals",
   "courseName": "React Fundamentals",
-  "lastUpdated": "2026-06-21T07:10:05.048Z",
+  "lastUpdated": "2026-06-21T07:12:12.346Z",
   "totalChallenges": 23,
-  "completedChallenges": 17,
-  "averageScore": 90.5,
-  "completionPercentage": 73.9,
-  "badgeLevel": "bronze",
+  "completedChallenges": 18,
+  "averageScore": 90.9,
+  "completionPercentage": 78.3,
+  "badgeLevel": "silver",
   "challengeResults": [
     {
       "challengeId": "01-static-task-display",
@@ -99,6 +99,12 @@
       "passed": true
     },
     {
+      "challengeId": "16-context-api-theme",
+      "challengeName": "Context API - Theme Management",
+      "score": 97.71,
+      "passed": true
+    },
+    {
       "challengeId": "18-usereducer-complex-state",
       "challengeName": "useReducer - Complex State Management",
       "score": 80,
@@ -145,6 +151,7 @@
     "Due Dates and Sorting",
     "Task Statistics Dashboard",
     "Component Organization with Props",
+    "Context API - Theme Management",
     "useReducer - Complex State Management",
     "React Router - Routing and Navigation"
   ],

@@ -5,6 +5,7 @@ import TaskList from './TaskList'
 import TaskForm from './TaskForm'
 import FilterBar from './FilterBar'
 import StatsPanel from './StatsPanel'
+import { ThemeProvider, useTheme } from '../contexts/ThemeContext'
 
 interface TaskAppProps {
   tasks?: Task[]
@@ -58,7 +59,16 @@ type SortOrder = 'recent' | 'priority-high' | 'priority-low' | 'alphabetical' | 
 
 const PRIORITY_RANK: Record<string, number> = { High: 0, Medium: 1, Low: 2 }
 
-export default function TaskApp({ tasks, setTasks, dispatch, showForm, countFormat, showFilterBar, showStatsPanel, onDelete }: TaskAppProps) {
+function ThemeToggle() {
+  const { theme, toggleTheme } = useTheme()
+  return (
+    <button id="theme-toggle" onClick={toggleTheme}>
+      {theme === 'light' ? 'Switch to Dark' : 'Switch to Light'}
+    </button>
+  )
+}
+
+function TaskAppInner({ tasks, setTasks, dispatch, showForm, countFormat, showFilterBar, showStatsPanel, onDelete }: TaskAppProps) {
   const [localTasks, setLocalTasks] = useState<Task[]>(loadInitialTasks)
   const [filter, setFilter] = useState<Filter>('all')
   const [sortOrder, setSortOrder] = useState<SortOrder>('recent')
@@ -192,6 +202,7 @@ export default function TaskApp({ tasks, setTasks, dispatch, showForm, countForm
 
   return (
     <div id="task-app">
+      <ThemeToggle />
       {showStatsPanel && (
         <StatsPanel
           total={stats.total}
@@ -234,5 +245,13 @@ export default function TaskApp({ tasks, setTasks, dispatch, showForm, countForm
         onCancelEdit={() => setEditingId(null)}
       />
     </div>
+  )
+}
+
+export default function TaskApp(props: TaskAppProps) {
+  return (
+    <ThemeProvider>
+      <TaskAppInner {...props} />
+    </ThemeProvider>
   )
 }
