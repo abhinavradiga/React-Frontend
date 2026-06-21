@@ -101,22 +101,6 @@
     }
   },
   {
-    "challengeId": "19-performance-optimization",
-    "challengeName": "Performance Optimization",
-    "aiReview": {
-      "challengeId": "19-performance-optimization",
-      "timestamp": "2026-06-13T07:47:27.142Z",
-      "score": 0,
-      "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
-    }
-  },
-  {
     "challengeId": "20-error-boundaries",
     "challengeName": "Error Boundaries and Error Handling",
     "aiReview": {
@@ -457,6 +441,22 @@
       "readability": 85,
       "maintainability": 90,
       "overall": "The code demonstrates a good understanding of React, TypeScript, and functional programming principles. The use of `useReducer` and action types is well-implemented, and the code is generally well-structured and maintainable. However, there are some minor improvements that could be made to enhance readability and organization."
+    }
+  },
+  {
+    "challengeId": "19-performance-optimization",
+    "challengeName": "Performance Optimization",
+    "aiReview": {
+      "challengeId": "19-performance-optimization",
+      "timestamp": "2026-06-21T07:21:52.081Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (413): Request too large for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 6007, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     }
   }
 ]

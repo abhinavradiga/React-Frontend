@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, memo } from 'react'
 import Button from './Button'
 import Badge from './Badge'
 import StatusIndicator from './StatusIndicator'
@@ -43,7 +43,7 @@ function priorityVariant(priority?: string): 'priority-high' | 'priority-medium'
   return 'default'
 }
 
-export default function TaskCard({
+function TaskCard({
   title, description, priority, completed, category, tags, dueDate,
   onToggle, onDelete, onUpdateTask,
   isEditing, onStartEdit, onCancelEdit,
@@ -167,3 +167,5 @@ export default function TaskCard({
     </article>
   )
 }
+
+export default memo(TaskCard)

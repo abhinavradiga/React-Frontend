@@ -1,11 +1,11 @@
 {
   "courseId": "01-react-fundamentals",
   "courseName": "React Fundamentals",
-  "lastUpdated": "2026-06-21T07:18:39.742Z",
+  "lastUpdated": "2026-06-21T07:21:52.268Z",
   "totalChallenges": 23,
-  "completedChallenges": 19,
-  "averageScore": 92,
-  "completionPercentage": 82.6,
+  "completedChallenges": 20,
+  "averageScore": 92.2,
+  "completionPercentage": 87,
   "badgeLevel": "silver",
   "challengeResults": [
     {
@@ -119,8 +119,8 @@
     {
       "challengeId": "19-performance-optimization",
       "challengeName": "Performance Optimization",
-      "score": 77.5,
-      "passed": false
+      "score": 82.00999999999999,
+      "passed": true
     },
     {
       "challengeId": "20-error-boundaries",
@@ -160,6 +160,7 @@
     "Context API - Theme Management",
     "Custom Hook - useLocalStorage",
     "useReducer - Complex State Management",
+    "Performance Optimization",
     "React Router - Routing and Navigation"
   ],
   "improvementAreas": []

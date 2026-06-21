@@ -1,4 +1,4 @@
-import { useReducer, useState, useMemo, useEffect } from 'react'
+import { useReducer, useState, useMemo, useEffect, useCallback } from 'react'
 import type { Dispatch, SetStateAction } from 'react'
 import type { Task } from './TaskList'
 import TaskList from './TaskList'
@@ -70,7 +70,10 @@ function TaskAppInner({ tasks, setTasks, dispatch: externalDispatch, showForm, c
   const [categoryFilter, setCategoryFilter] = useState('all')
 
   const usingExternal = Boolean(tasks && externalDispatch)
-  const displayTasks = (usingExternal ? tasks! : reducerState).map(normalizeTask)
+  const displayTasks = useMemo(
+    () => (usingExternal ? tasks! : reducerState).map(normalizeTask),
+    [usingExternal, tasks, reducerState]
+  )
   const dispatch = externalDispatch ?? reducerDispatch
 
   useEffect(() => {
@@ -112,61 +115,66 @@ function TaskAppInner({ tasks, setTasks, dispatch: externalDispatch, showForm, c
     return { total, completed, active, overdue, completedPercentage, byCategory, byPriority }
   }, [displayTasks])
 
-  const categories = [...new Set(displayTasks.map(t => t.category).filter((c): c is string => Boolean(c)))]
+  const categories = useMemo(
+    () => [...new Set(displayTasks.map(t => t.category).filter((c): c is string => Boolean(c)))],
+    [displayTasks]
+  )
 
-  const statusFiltered = filter === 'active'
-    ? displayTasks.filter(t => !t.completed)
-    : filter === 'completed'
-    ? displayTasks.filter(t => t.completed)
-    : displayTasks
+  const sortedTasks = useMemo(() => {
+    const statusFiltered = filter === 'active'
+      ? displayTasks.filter(t => !t.completed)
+      : filter === 'completed'
+      ? displayTasks.filter(t => t.completed)
+      : displayTasks
 
-  const categoryFiltered = categoryFilter !== 'all'
-    ? statusFiltered.filter(t => t.category === categoryFilter)
-    : statusFiltered
+    const categoryFiltered = categoryFilter !== 'all'
+      ? statusFiltered.filter(t => t.category === categoryFilter)
+      : statusFiltered
 
-  const searched = debouncedSearch.trim()
-    ? categoryFiltered.filter(t =>
-        t.title.toLowerCase().includes(debouncedSearch.trim().toLowerCase()) ||
-        t.description.toLowerCase().includes(debouncedSearch.trim().toLowerCase())
-      )
-    : categoryFiltered
+    const searched = debouncedSearch.trim()
+      ? categoryFiltered.filter(t =>
+          t.title.toLowerCase().includes(debouncedSearch.trim().toLowerCase()) ||
+          t.description.toLowerCase().includes(debouncedSearch.trim().toLowerCase())
+        )
+      : categoryFiltered
 
-  const sortedTasks = [...searched].sort((a, b) => {
-    if (sortOrder === 'priority-high') {
-      return (PRIORITY_RANK[a.priority] ?? 1) - (PRIORITY_RANK[b.priority] ?? 1)
-    }
-    if (sortOrder === 'priority-low') {
-      return (PRIORITY_RANK[b.priority] ?? 1) - (PRIORITY_RANK[a.priority] ?? 1)
-    }
-    if (sortOrder === 'alphabetical') {
-      return a.title.toLowerCase().localeCompare(b.title.toLowerCase())
-    }
-    if (sortOrder === 'due-date') {
-      if (!a.dueDate && !b.dueDate) return 0
-      if (!a.dueDate) return 1
-      if (!b.dueDate) return -1
-      return new Date(a.dueDate).getTime() - new Date(b.dueDate).getTime()
-    }
-    return 0
-  })
+    return [...searched].sort((a, b) => {
+      if (sortOrder === 'priority-high') {
+        return (PRIORITY_RANK[a.priority] ?? 1) - (PRIORITY_RANK[b.priority] ?? 1)
+      }
+      if (sortOrder === 'priority-low') {
+        return (PRIORITY_RANK[b.priority] ?? 1) - (PRIORITY_RANK[a.priority] ?? 1)
+      }
+      if (sortOrder === 'alphabetical') {
+        return a.title.toLowerCase().localeCompare(b.title.toLowerCase())
+      }
+      if (sortOrder === 'due-date') {
+        if (!a.dueDate && !b.dueDate) return 0
+        if (!a.dueDate) return 1
+        if (!b.dueDate) return -1
+        return new Date(a.dueDate).getTime() - new Date(b.dueDate).getTime()
+      }
+      return 0
+    })
+  }, [displayTasks, filter, categoryFilter, debouncedSearch, sortOrder])
 
-  function handleAddTask(task: Record<string, unknown>) {
+  const handleAddTask = useCallback((task: Record<string, unknown>) => {
     const newTask = normalizeTask(task as Partial<Task>)
     dispatch(addTaskAction(newTask))
-  }
+  }, [dispatch])
 
-  function handleToggle(id: string | number) {
+  const handleToggle = useCallback((id: string | number) => {
     dispatch(toggleTaskAction(id))
-  }
+  }, [dispatch])
 
-  function handleDelete(id: string | number) {
+  const handleDelete = useCallback((id: string | number) => {
     dispatch(deleteTaskAction(id))
-  }
+  }, [dispatch])
 
-  function handleUpdateTask(id: string | number, updates: { title: string; description: string; priority: string }) {
+  const handleUpdateTask = useCallback((id: string | number, updates: { title: string; description: string; priority: string }) => {
     dispatch(updateTaskAction(id, updates))
     setEditingId(null)
-  }
+  }, [dispatch])
 
   const countText = countFormat === 'completed'
     ? `${stats.completed} of ${displayTasks.length} completed`
