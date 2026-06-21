@@ -1,11 +1,11 @@
 {
   "courseId": "01-react-fundamentals",
   "courseName": "React Fundamentals",
-  "lastUpdated": "2026-06-21T07:07:16.833Z",
+  "lastUpdated": "2026-06-21T07:10:05.048Z",
   "totalChallenges": 23,
-  "completedChallenges": 16,
-  "averageScore": 90.1,
-  "completionPercentage": 69.6,
+  "completedChallenges": 17,
+  "averageScore": 90.5,
+  "completionPercentage": 73.9,
   "badgeLevel": "bronze",
   "challengeResults": [
     {
@@ -93,6 +93,12 @@
       "passed": true
     },
     {
+      "challengeId": "15-component-organization",
+      "challengeName": "Component Organization with Props",
+      "score": 98.60999999999999,
+      "passed": true
+    },
+    {
       "challengeId": "18-usereducer-complex-state",
       "challengeName": "useReducer - Complex State Management",
       "score": 80,
@@ -138,6 +144,7 @@
     "Categories and Tags",
     "Due Dates and Sorting",
     "Task Statistics Dashboard",
+    "Component Organization with Props",
     "useReducer - Complex State Management",
     "React Router - Routing and Navigation"
   ],

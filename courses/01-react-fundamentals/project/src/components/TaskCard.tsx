@@ -1,4 +1,7 @@
 import { useState } from 'react'
+import Button from './Button'
+import Badge from './Badge'
+import StatusIndicator from './StatusIndicator'
 
 interface TaskCardProps {
   title: string
@@ -18,28 +21,26 @@ interface TaskCardProps {
   id?: string | number
 }
 
-function getDueDateInfo(dueDate?: string | number, completed?: boolean) {
-  if (!dueDate) return null
+function getDueDateStatus(dueDate?: string | number, completed?: boolean): 'overdue' | 'due-today' | 'due-soon' | undefined {
+  if (!dueDate || completed) return undefined
   const due = new Date(dueDate)
   const now = new Date()
   const dueDay = new Date(due.getFullYear(), due.getMonth(), due.getDate())
   const today = new Date(now.getFullYear(), now.getMonth(), now.getDate())
   const diffDays = Math.round((dueDay.getTime() - today.getTime()) / 86400000)
 
-  const formatted = due.toLocaleDateString()
-  let label = ''
-  let overdue = false
+  if (diffDays < 0) return 'overdue'
+  if (diffDays === 0) return 'due-today'
+  if (diffDays > 0 && diffDays <= 3) return 'due-soon'
+  return undefined
+}
 
-  if (!completed && diffDays < 0) {
-    label = 'Overdue'
-    overdue = true
-  } else if (diffDays === 0) {
-    label = 'Due Today'
-  } else if (diffDays > 0 && diffDays <= 3) {
-    label = 'Due Soon'
-  }
-
-  return { formatted, label, overdue }
+function priorityVariant(priority?: string): 'priority-high' | 'priority-medium' | 'priority-low' | 'default' {
+  if (!priority) return 'default'
+  if (priority.toLowerCase().includes('high')) return 'priority-high'
+  if (priority.toLowerCase().includes('medium')) return 'priority-medium'
+  if (priority.toLowerCase().includes('low')) return 'priority-low'
+  return 'default'
 }
 
 export default function TaskCard({
@@ -58,7 +59,8 @@ export default function TaskCard({
     ? priority.startsWith('Priority:') ? priority : `Priority: ${priority}`
     : ''
 
-  const dueDateInfo = getDueDateInfo(dueDate, completed)
+  const dueDateStatus = getDueDateStatus(dueDate, completed)
+  const dueDateFormatted = dueDate ? new Date(dueDate).toLocaleDateString() : null
 
   function handleDelete() {
     if (onDelete && window.confirm('Delete this task?')) {
@@ -123,14 +125,14 @@ export default function TaskCard({
           <option value="High">High</option>
         </select>
         {error && <p id="task-edit-error">{error}</p>}
-        <button onClick={handleSave}>Save</button>
-        <button onClick={handleCancel}>Cancel</button>
+        <Button onClick={handleSave} variant="primary">Save</Button>
+        <Button onClick={handleCancel} variant="secondary">Cancel</Button>
       </article>
     )
   }
 
   return (
-    <article id="task-card" data-completed={completed ? 'true' : undefined} data-overdue={dueDateInfo?.overdue ? 'true' : undefined}>
+    <article id="task-card" data-completed={completed ? 'true' : undefined} data-overdue={dueDateStatus === 'overdue' ? 'true' : undefined}>
       {onToggle && (
         <input
           type="checkbox"
@@ -142,24 +144,25 @@ export default function TaskCard({
       <h2 style={completed ? { textDecoration: 'line-through' } : undefined}>{title}</h2>
       <p>{description}</p>
       <p>{priorityLabel}</p>
-      {category && <p id="task-category">{category}</p>}
+      <Badge variant={priorityVariant(priority)}>{priority}</Badge>
+      {category && <p id="task-category"><Badge variant="category">{category}</Badge></p>}
       {tags && tags.length > 0 && (
         <div id="task-tags">
           {tags.map(tag => (
-            <span key={tag} data-tag>{tag}</span>
+            <Badge key={tag} variant="tag">{tag}</Badge>
           ))}
         </div>
       )}
-      {dueDateInfo && (
+      {dueDateFormatted && (
         <p id="task-due-date">
-          {dueDateInfo.formatted}{dueDateInfo.label && ` — ${dueDateInfo.label}`}
+          {dueDateFormatted}{dueDateStatus && <StatusIndicator status={dueDateStatus} />}
         </p>
       )}
       {onUpdateTask && (
-        <button onClick={handleEditClick}>Edit</button>
+        <Button onClick={handleEditClick} variant="secondary">Edit</Button>
       )}
       {onDelete && (
-        <button onClick={handleDelete}>Delete</button>
+        <Button onClick={handleDelete} variant="danger">Delete</Button>
       )}
     </article>
   )

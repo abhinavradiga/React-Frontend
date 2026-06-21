@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import FormInput from './FormInput'
+import Button from './Button'
 
 interface TaskFormProps {
   onAddTask?: (task: Record<string, unknown>) => void
@@ -45,21 +47,20 @@ export default function TaskForm({ onAddTask, categories = ['General', 'Work', '
 
   return (
     <div id="task-form">
-      <label htmlFor="task-title">Title</label>
-      <input
+      <FormInput
         id="task-title"
-        type="text"
-        placeholder="Task title"
+        label="Title"
         value={title}
         onChange={e => setTitle(e.target.value)}
+        placeholder="Task title"
+        error={error || undefined}
       />
-      <label htmlFor="task-description">Description</label>
-      <input
+      <FormInput
         id="task-description"
-        type="text"
-        placeholder="Task description"
+        label="Description"
         value={description}
         onChange={e => setDescription(e.target.value)}
+        placeholder="Task description"
       />
       <label htmlFor="task-priority">Priority</label>
       <select
@@ -81,13 +82,12 @@ export default function TaskForm({ onAddTask, categories = ['General', 'Work', '
           <option key={c} value={c}>{c}</option>
         ))}
       </select>
-      <label htmlFor="task-tags-input">Tags (comma separated)</label>
-      <input
+      <FormInput
         id="task-tags-input"
-        type="text"
-        placeholder="e.g. urgent, frontend"
+        label="Tags (comma separated)"
         value={tagsInput}
         onChange={e => setTagsInput(e.target.value)}
+        placeholder="e.g. urgent, frontend"
       />
       <label htmlFor="task-due-date-input">Due Date</label>
       <input
@@ -96,8 +96,7 @@ export default function TaskForm({ onAddTask, categories = ['General', 'Work', '
         value={dueDate}
         onChange={e => setDueDate(e.target.value)}
       />
-      {error && <p id="task-form-error">{error}</p>}
-      <button onClick={handleSubmit}>Add Task</button>
+      <Button onClick={handleSubmit} variant="primary" type="button">Add Task</Button>
     </div>
   )
 }

@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import FormInput from './FormInput'
+import Button from './Button'
 
 interface FilterBarProps {
   filter?: string
@@ -34,15 +36,14 @@ export default function FilterBar({
 
   return (
     <div id="filter-bar">
-      <input
+      <FormInput
         id="search-input"
-        type="text"
-        placeholder="Search tasks"
         value={search}
         onChange={handleSearch}
+        placeholder="Search tasks"
       />
       {search && (
-        <button id="clear-search" onClick={handleClear}>Clear search</button>
+        <Button id="clear-search" onClick={handleClear} variant="secondary">Clear search</Button>
       )}
       <button onClick={() => onFilterChange?.('all')} data-active={current === 'all' ? 'true' : 'false'}>All</button>
       <button onClick={() => onFilterChange?.('active')} data-active={current === 'active' ? 'true' : 'false'}>Active</button>
