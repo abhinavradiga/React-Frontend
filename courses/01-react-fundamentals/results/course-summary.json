@@ -1,7 +1,7 @@
 {
   "courseId": "01-react-fundamentals",
   "courseName": "React Fundamentals",
-  "lastUpdated": "2026-06-21T14:45:23.752Z",
+  "lastUpdated": "2026-06-21T14:51:13.734Z",
   "totalChallenges": 23,
   "completedChallenges": 21,
   "averageScore": 92.8,
@@ -131,7 +131,7 @@
     {
       "challengeId": "21-react-router",
       "challengeName": "React Router - Routing and Navigation",
-      "score": 85,
+      "score": 84.50999999999999,
       "passed": true
     },
     {

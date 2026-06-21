@@ -29,7 +29,7 @@ const hardcodedTasks: Task[] = [
   { id: 3, title: 'Task Three', description: 'Third hardcoded task', priority: 'Priority: Low', completed: false },
 ]
 
-export default function TaskList({ tasks, countText, onToggle, onDelete, onUpdateTask, editingId, onStartEdit, onCancelEdit }: TaskListProps) {
+export default function TaskList({ tasks, countText, onToggle, onDelete, onUpdateTask, editingId, onStartEdit, onCancelEdit, linkToTaskDetail }: TaskListProps) {
   const displayTasks = tasks !== undefined ? tasks : hardcodedTasks
 
   return (
@@ -52,6 +52,7 @@ export default function TaskList({ tasks, countText, onToggle, onDelete, onUpdat
           isEditing={editingId === task.id}
           onStartEdit={onStartEdit}
           onCancelEdit={onCancelEdit}
+          linkToTaskDetail={linkToTaskDetail}
         />
       ))}
     </section>

@@ -101,22 +101,6 @@
     }
   },
   {
-    "challengeId": "21-react-router",
-    "challengeName": "React Router - Routing and Navigation",
-    "aiReview": {
-      "challengeId": "21-react-router",
-      "timestamp": "2026-06-13T07:47:43.560Z",
-      "score": 0,
-      "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
-    }
-  },
-  {
     "challengeId": "23-useref-focus-management",
     "challengeName": "useRef - Focus Management",
     "aiReview": {
@@ -464,6 +448,22 @@
       "readability": 85,
       "maintainability": 90,
       "overall": "The code is well-structured and well-implemented, but there are a few areas that can be improved to make it even more robust and maintainable. With some minor adjustments, this code can be considered production-ready."
+    }
+  },
+  {
+    "challengeId": "21-react-router",
+    "challengeName": "React Router - Routing and Navigation",
+    "aiReview": {
+      "challengeId": "21-react-router",
+      "timestamp": "2026-06-21T14:51:13.563Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (413): Request too large for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 6442, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     }
   }
 ]

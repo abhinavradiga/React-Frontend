@@ -57,7 +57,7 @@ function ThemeToggle() {
   )
 }
 
-function TaskAppInner({ tasks, setTasks, dispatch: externalDispatch, showForm, countFormat, showFilterBar, showStatsPanel, onDelete }: TaskAppProps) {
+function TaskAppInner({ tasks, setTasks, dispatch: externalDispatch, showForm, countFormat, showFilterBar, showStatsPanel, onDelete, linkToTaskDetail }: TaskAppProps) {
   const [storedTasks] = useLocalStorage<Task[]>('task-app-tasks', DEFAULT_TASKS)
   const [reducerState, reducerDispatch] = useReducer(taskReducer, storedTasks)
   const [, setStoredTasks] = useLocalStorage<Task[]>('task-app-tasks', DEFAULT_TASKS)
@@ -227,6 +227,7 @@ function TaskAppInner({ tasks, setTasks, dispatch: externalDispatch, showForm, c
           editingId={editingId}
           onStartEdit={setEditingId}
           onCancelEdit={() => setEditingId(null)}
+          linkToTaskDetail={linkToTaskDetail}
         />
       </ErrorBoundary>
     </div>

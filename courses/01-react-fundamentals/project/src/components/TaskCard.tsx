@@ -1,4 +1,5 @@
 import { useState, memo } from 'react'
+import { Link } from 'react-router-dom'
 import Button from './Button'
 import Badge from './Badge'
 import StatusIndicator from './StatusIndicator'
@@ -19,6 +20,7 @@ interface TaskCardProps {
   onCancelEdit?: () => void
   taskId?: string | number
   id?: string | number
+  linkToTaskDetail?: boolean
 }
 
 function getDueDateStatus(dueDate?: string | number, completed?: boolean): 'overdue' | 'due-today' | 'due-soon' | undefined {
@@ -47,7 +49,7 @@ function TaskCard({
   title, description, priority, completed, category, tags, dueDate,
   onToggle, onDelete, onUpdateTask,
   isEditing, onStartEdit, onCancelEdit,
-  taskId, id,
+  taskId, id, linkToTaskDetail,
 }: TaskCardProps) {
   const resolvedId = taskId ?? id ?? 0
   const [editTitle, setEditTitle] = useState(title)
@@ -141,7 +143,13 @@ function TaskCard({
           aria-label={`Toggle ${title}`}
         />
       )}
-      <h2 style={completed ? { textDecoration: 'line-through' } : undefined}>{title}</h2>
+      {linkToTaskDetail ? (
+        <h2 style={completed ? { textDecoration: 'line-through' } : undefined}>
+          <Link to={`/challenge/21-react-router/task/${resolvedId}`}>{title}</Link>
+        </h2>
+      ) : (
+        <h2 style={completed ? { textDecoration: 'line-through' } : undefined}>{title}</h2>
+      )}
       <p>{description}</p>
       <p>{priorityLabel}</p>
       <Badge variant={priorityVariant(priority)}>{priority}</Badge>
