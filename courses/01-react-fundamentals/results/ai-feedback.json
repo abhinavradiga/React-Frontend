@@ -101,22 +101,6 @@
     }
   },
   {
-    "challengeId": "14-task-statistics-dashboard",
-    "challengeName": "Task Statistics Dashboard",
-    "aiReview": {
-      "challengeId": "14-task-statistics-dashboard",
-      "timestamp": "2026-06-13T07:47:13.975Z",
-      "score": 0,
-      "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
-    }
-  },
-  {
     "challengeId": "18-usereducer-complex-state",
     "challengeName": "useReducer - Complex State Management",
     "aiReview": {
@@ -374,6 +358,29 @@
       "readability": 85,
       "maintainability": 80,
       "overall": "The code is well-structured and follows good practices, but there are areas for improvement to make it more maintainable and efficient."
+    }
+  },
+  {
+    "challengeId": "14-task-statistics-dashboard",
+    "challengeName": "Task Statistics Dashboard",
+    "aiReview": {
+      "challengeId": "14-task-statistics-dashboard",
+      "timestamp": "2026-06-21T07:07:15.678Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-organized and follows a clear structure.",
+        "The use of TypeScript and functional components is a good practice.",
+        "The code includes comments and explanations for complex logic."
+      ],
+      "improvements": [
+        "Some of the variable names could be more descriptive, such as `displayTasks` and `stats`.",
+        "The `useMemo` hook could be refactored to reduce the number of computations and improve performance.",
+        "The code could benefit from more tests to ensure that the statistics are calculated correctly and that the `useMemo` hook is working as expected."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and follows good practices, but there are some areas for improvement to make it more maintainable and efficient."
     }
   }
 ]

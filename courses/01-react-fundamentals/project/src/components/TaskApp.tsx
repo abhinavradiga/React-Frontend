@@ -1,9 +1,10 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import type { Dispatch, SetStateAction } from 'react'
 import type { Task } from './TaskList'
 import TaskList from './TaskList'
 import TaskForm from './TaskForm'
 import FilterBar from './FilterBar'
+import StatsPanel from './StatsPanel'
 
 interface TaskAppProps {
   tasks?: Task[]
@@ -57,7 +58,7 @@ type SortOrder = 'recent' | 'priority-high' | 'priority-low' | 'alphabetical' | 
 
 const PRIORITY_RANK: Record<string, number> = { High: 0, Medium: 1, Low: 2 }
 
-export default function TaskApp({ tasks, setTasks, dispatch, showForm, countFormat, showFilterBar, onDelete }: TaskAppProps) {
+export default function TaskApp({ tasks, setTasks, dispatch, showForm, countFormat, showFilterBar, showStatsPanel, onDelete }: TaskAppProps) {
   const [localTasks, setLocalTasks] = useState<Task[]>(loadInitialTasks)
   const [filter, setFilter] = useState<Filter>('all')
   const [sortOrder, setSortOrder] = useState<SortOrder>('recent')
@@ -88,6 +89,28 @@ export default function TaskApp({ tasks, setTasks, dispatch, showForm, countForm
     return () => clearTimeout(timeoutId)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [search])
+
+  const stats = useMemo(() => {
+    const total = displayTasks.length
+    const completed = displayTasks.filter(t => t.completed).length
+    const active = total - completed
+    const now = new Date()
+    const overdue = displayTasks.filter(t => {
+      if (t.completed || !t.dueDate) return false
+      return new Date(t.dueDate) < now
+    }).length
+    const completedPercentage = total > 0 ? Math.round((completed / total) * 100) : 0
+
+    const byCategory: Record<string, number> = {}
+    const byPriority: Record<string, number> = {}
+    displayTasks.forEach(t => {
+      const cat = t.category ?? 'General'
+      byCategory[cat] = (byCategory[cat] ?? 0) + 1
+      byPriority[t.priority] = (byPriority[t.priority] ?? 0) + 1
+    })
+
+    return { total, completed, active, overdue, completedPercentage, byCategory, byPriority }
+  }, [displayTasks])
 
   const categories = [...new Set(displayTasks.map(t => t.category).filter((c): c is string => Boolean(c)))]
 
@@ -161,16 +184,25 @@ export default function TaskApp({ tasks, setTasks, dispatch, showForm, countForm
     setEditingId(null)
   }
 
-  const completedCount = displayTasks.filter(t => t.completed).length
-
   const countText = countFormat === 'completed'
-    ? `${completedCount} of ${displayTasks.length} completed`
+    ? `${stats.completed} of ${displayTasks.length} completed`
     : showFilterBar && (filter !== 'all' || debouncedSearch.trim() || categoryFilter !== 'all')
     ? `Showing ${sortedTasks.length} of ${displayTasks.length} tasks`
     : `${displayTasks.length} Tasks`
 
   return (
     <div id="task-app">
+      {showStatsPanel && (
+        <StatsPanel
+          total={stats.total}
+          completed={stats.completed}
+          active={stats.active}
+          overdue={stats.overdue}
+          completedPercentage={stats.completedPercentage}
+          byCategory={stats.byCategory}
+          byPriority={stats.byPriority}
+        />
+      )}
       {showForm && <TaskForm onAddTask={handleAddTask} categories={categories.length > 0 ? categories : ['General', 'Work', 'Personal']} />}
       {showFilterBar && (
         <FilterBar
