@@ -22593,26 +22593,880 @@
   {
     "challengeId": "20-error-boundaries",
     "challengeName": "Error Boundaries and Error Handling",
-    "timestamp": "2026-06-13T07:47:27.536Z",
+    "timestamp": "2026-06-21T14:44:54.820Z",
     "scores": {
-      "functionalTests": 100,
+      "functionalTests": 98.6,
       "codeQuality": 100,
       "architecture": 100,
       "bestPractices": 100,
       "e2eTests": 0,
-      "aiReview": 0
+      "aiReview": 88
     },
-    "totalScore": 70,
-    "passed": false,
+    "totalScore": 82.71,
+    "passed": true,
     "errors": [],
     "warnings": [],
     "testResults": {
-      "score": 100,
-      "passed": true,
-      "totalTests": 4,
-      "passedTests": 4,
-      "failedTests": 0,
+      "score": 98.6,
+      "passed": false,
+      "totalTests": 72,
+      "passedTests": 71,
+      "failedTests": 1,
       "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 01: Static Task Display",
+                "TaskCard"
+              ],
+              "fullName": " Challenge 01: Static Task Display TaskCard should render title, description, and priority",
+              "status": "passed",
+              "title": "should render title, description, and priority",
+              "duration": 117,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 01: Static Task Display",
+                "TaskCard"
+              ],
+              "fullName": " Challenge 01: Static Task Display TaskCard should use article with id task-card",
+              "status": "passed",
+              "title": "should use article with id task-card",
+              "duration": 12,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 01: Static Task Display",
+                "TaskCard"
+              ],
+              "fullName": " Challenge 01: Static Task Display TaskCard should use semantic HTML (h2 for title)",
+              "status": "passed",
+              "title": "should use semantic HTML (h2 for title)",
+              "duration": 12,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 01: Static Task Display",
+                "TaskList"
+              ],
+              "fullName": " Challenge 01: Static Task Display TaskList should render 3 TaskCards when no tasks prop",
+              "status": "passed",
+              "title": "should render 3 TaskCards when no tasks prop",
+              "duration": 16,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 01: Static Task Display",
+                "TaskList"
+              ],
+              "fullName": " Challenge 01: Static Task Display TaskList should have section with id task-list",
+              "status": "passed",
+              "title": "should have section with id task-list",
+              "duration": 17,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 01: Static Task Display",
+                "TaskList"
+              ],
+              "fullName": " Challenge 01: Static Task Display TaskList should display three different tasks",
+              "status": "passed",
+              "title": "should display three different tasks",
+              "duration": 32,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782053101005,
+          "endTime": 1782053101212,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-01.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 02: Dynamic Task Rendering"
+              ],
+              "fullName": " Challenge 02: Dynamic Task Rendering should render tasks from tasks prop",
+              "status": "passed",
+              "title": "should render tasks from tasks prop",
+              "duration": 171,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 02: Dynamic Task Rendering"
+              ],
+              "fullName": " Challenge 02: Dynamic Task Rendering should display task count with id task-count",
+              "status": "passed",
+              "title": "should display task count with id task-count",
+              "duration": 39,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 02: Dynamic Task Rendering"
+              ],
+              "fullName": " Challenge 02: Dynamic Task Rendering should use unique keys when mapping (no duplicate keys)",
+              "status": "passed",
+              "title": "should use unique keys when mapping (no duplicate keys)",
+              "duration": 19,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 02: Dynamic Task Rendering"
+              ],
+              "fullName": " Challenge 02: Dynamic Task Rendering should use map in TaskList",
+              "status": "passed",
+              "title": "should use map in TaskList",
+              "duration": 1,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782053101007,
+          "endTime": 1782053101238,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-02.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 03: Adding New Tasks"
+              ],
+              "fullName": " Challenge 03: Adding New Tasks should have controlled title input",
+              "status": "passed",
+              "title": "should have controlled title input",
+              "duration": 663,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 03: Adding New Tasks"
+              ],
+              "fullName": " Challenge 03: Adding New Tasks should have Add Task submit button",
+              "status": "passed",
+              "title": "should have Add Task submit button",
+              "duration": 126,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 03: Adding New Tasks"
+              ],
+              "fullName": " Challenge 03: Adding New Tasks should call onAddTask with new task when title filled and submitted",
+              "status": "passed",
+              "title": "should call onAddTask with new task when title filled and submitted",
+              "duration": 322,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 03: Adding New Tasks"
+              ],
+              "fullName": " Challenge 03: Adding New Tasks should show error when title is empty on submit",
+              "status": "failed",
+              "title": "should show error when title is empty on submit",
+              "duration": 171,
+              "failureMessages": [
+                "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).toBeInTheDocument()\u001b[22m\n\n\u001b[31mreceived\u001b[39m value must be an HTMLElement or an SVGElement.\n"
+              ],
+              "location": {
+                "line": 59,
+                "column": 56
+              }
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 03: Adding New Tasks"
+              ],
+              "fullName": " Challenge 03: Adding New Tasks should clear form after successful add",
+              "status": "passed",
+              "title": "should clear form after successful add",
+              "duration": 290,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 03: Adding New Tasks"
+              ],
+              "fullName": " Challenge 03: Adding New Tasks should use controlled inputs (value + onChange)",
+              "status": "passed",
+              "title": "should use controlled inputs (value + onChange)",
+              "duration": 1,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782053101190,
+          "endTime": 1782053102764,
+          "status": "failed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-03.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 04: Task Completion Toggle"
+              ],
+              "fullName": " Challenge 04: Task Completion Toggle TaskCard should render checkbox when onToggle provided",
+              "status": "passed",
+              "title": "TaskCard should render checkbox when onToggle provided",
+              "duration": 324,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 04: Task Completion Toggle"
+              ],
+              "fullName": " Challenge 04: Task Completion Toggle TaskCard should call onToggle when checkbox clicked",
+              "status": "passed",
+              "title": "TaskCard should call onToggle when checkbox clicked",
+              "duration": 253,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 04: Task Completion Toggle"
+              ],
+              "fullName": " Challenge 04: Task Completion Toggle TaskCard should show strike-through when completed",
+              "status": "passed",
+              "title": "TaskCard should show strike-through when completed",
+              "duration": 63,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 04: Task Completion Toggle"
+              ],
+              "fullName": " Challenge 04: Task Completion Toggle TaskCard should have data-completed or different style when completed",
+              "status": "passed",
+              "title": "TaskCard should have data-completed or different style when completed",
+              "duration": 9,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 04: Task Completion Toggle"
+              ],
+              "fullName": " Challenge 04: Task Completion Toggle TaskList should pass onToggle to TaskCard when tasks provided",
+              "status": "passed",
+              "title": "TaskList should pass onToggle to TaskCard when tasks provided",
+              "duration": 142,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 04: Task Completion Toggle"
+              ],
+              "fullName": " Challenge 04: Task Completion Toggle count text should show X of Y completed format",
+              "status": "passed",
+              "title": "count text should show X of Y completed format",
+              "duration": 9,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782053101192,
+          "endTime": 1782053101992,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-04.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 05: Task Deletion"
+              ],
+              "fullName": " Challenge 05: Task Deletion TaskCard should render Delete button when onDelete and id provided",
+              "status": "passed",
+              "title": "TaskCard should render Delete button when onDelete and id provided",
+              "duration": 327,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 05: Task Deletion"
+              ],
+              "fullName": " Challenge 05: Task Deletion TaskCard should not render Delete button when onDelete not provided",
+              "status": "passed",
+              "title": "TaskCard should not render Delete button when onDelete not provided",
+              "duration": 24,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 05: Task Deletion"
+              ],
+              "fullName": " Challenge 05: Task Deletion TaskCard should call onDelete when Delete clicked and user confirms",
+              "status": "passed",
+              "title": "TaskCard should call onDelete when Delete clicked and user confirms",
+              "duration": 289,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 05: Task Deletion"
+              ],
+              "fullName": " Challenge 05: Task Deletion TaskCard should not call onDelete when user cancels confirmation",
+              "status": "passed",
+              "title": "TaskCard should not call onDelete when user cancels confirmation",
+              "duration": 208,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 05: Task Deletion"
+              ],
+              "fullName": " Challenge 05: Task Deletion TaskList should pass onDelete to TaskCard when provided",
+              "status": "passed",
+              "title": "TaskList should pass onDelete to TaskCard when provided",
+              "duration": 113,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 05: Task Deletion"
+              ],
+              "fullName": " Challenge 05: Task Deletion TaskList should show countText in #task-count",
+              "status": "passed",
+              "title": "TaskList should show countText in #task-count",
+              "duration": 12,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782053101189,
+          "endTime": 1782053102165,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-05.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 06: Task Filtering"
+              ],
+              "fullName": " Challenge 06: Task Filtering FilterBar should render All, Active, Completed buttons",
+              "status": "passed",
+              "title": "FilterBar should render All, Active, Completed buttons",
+              "duration": 561,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 06: Task Filtering"
+              ],
+              "fullName": " Challenge 06: Task Filtering FilterBar should have id=\"filter-bar\"",
+              "status": "passed",
+              "title": "FilterBar should have id=\"filter-bar\"",
+              "duration": 22,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 06: Task Filtering"
+              ],
+              "fullName": " Challenge 06: Task Filtering FilterBar should highlight active filter",
+              "status": "passed",
+              "title": "FilterBar should highlight active filter",
+              "duration": 129,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 06: Task Filtering"
+              ],
+              "fullName": " Challenge 06: Task Filtering FilterBar should call onFilterChange when button clicked",
+              "status": "passed",
+              "title": "FilterBar should call onFilterChange when button clicked",
+              "duration": 155,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 06: Task Filtering"
+              ],
+              "fullName": " Challenge 06: Task Filtering TaskList with filtered tasks should show only matching tasks",
+              "status": "passed",
+              "title": "TaskList with filtered tasks should show only matching tasks",
+              "duration": 76,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782053101204,
+          "endTime": 1782053102149,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-06.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 07: Priority-Based Sorting"
+              ],
+              "fullName": " Challenge 07: Priority-Based Sorting FilterBar or sort control should exist",
+              "status": "passed",
+              "title": "FilterBar or sort control should exist",
+              "duration": 50,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 07: Priority-Based Sorting"
+              ],
+              "fullName": " Challenge 07: Priority-Based Sorting TaskList should render tasks in order provided",
+              "status": "passed",
+              "title": "TaskList should render tasks in order provided",
+              "duration": 288,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 07: Priority-Based Sorting"
+              ],
+              "fullName": " Challenge 07: Priority-Based Sorting When tasks sorted High to Low, High appears first",
+              "status": "passed",
+              "title": "When tasks sorted High to Low, High appears first",
+              "duration": 181,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782053101003,
+          "endTime": 1782053101522,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-07.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 08: Task Editing"
+              ],
+              "fullName": " Challenge 08: Task Editing TaskCard should render title and description",
+              "status": "passed",
+              "title": "TaskCard should render title and description",
+              "duration": 112,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 08: Task Editing"
+              ],
+              "fullName": " Challenge 08: Task Editing TaskList should pass tasks to TaskCard",
+              "status": "passed",
+              "title": "TaskList should pass tasks to TaskCard",
+              "duration": 22,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 08: Task Editing"
+              ],
+              "fullName": " Challenge 08: Task Editing TaskList should have id=\"task-list\"",
+              "status": "passed",
+              "title": "TaskList should have id=\"task-list\"",
+              "duration": 9,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782053101002,
+          "endTime": 1782053101146,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-08.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 09: Search Functionality"
+              ],
+              "fullName": " Challenge 09: Search Functionality FilterBar should exist for search integration",
+              "status": "passed",
+              "title": "FilterBar should exist for search integration",
+              "duration": 50,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 09: Search Functionality"
+              ],
+              "fullName": " Challenge 09: Search Functionality TaskList should filter by provided tasks (search applied upstream)",
+              "status": "passed",
+              "title": "TaskList should filter by provided tasks (search applied upstream)",
+              "duration": 80,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782053101001,
+          "endTime": 1782053101131,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-09.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 10: useEffect - Local Storage Persistence"
+              ],
+              "fullName": " Challenge 10: useEffect - Local Storage Persistence App should render without crashing",
+              "status": "passed",
+              "title": "App should render without crashing",
+              "duration": 242,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 10: useEffect - Local Storage Persistence"
+              ],
+              "fullName": " Challenge 10: useEffect - Local Storage Persistence App should have routes for challenge 10",
+              "status": "passed",
+              "title": "App should have routes for challenge 10",
+              "duration": 68,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782053101177,
+          "endTime": 1782053101487,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-10.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 11: useEffect - Debounced Search"
+              ],
+              "fullName": " Challenge 11: useEffect - Debounced Search FilterBar should exist for search/debounce integration",
+              "status": "passed",
+              "title": "FilterBar should exist for search/debounce integration",
+              "duration": 47,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 11: useEffect - Debounced Search"
+              ],
+              "fullName": " Challenge 11: useEffect - Debounced Search TaskList should render tasks",
+              "status": "passed",
+              "title": "TaskList should render tasks",
+              "duration": 115,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782053104961,
+          "endTime": 1782053105123,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-11.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 12: Categories and Tags"
+              ],
+              "fullName": " Challenge 12: Categories and Tags TaskCard should render title and priority",
+              "status": "passed",
+              "title": "TaskCard should render title and priority",
+              "duration": 105,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 12: Categories and Tags"
+              ],
+              "fullName": " Challenge 12: Categories and Tags TaskList should render tasks with extended shape",
+              "status": "passed",
+              "title": "TaskList should render tasks with extended shape",
+              "duration": 29,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782053104942,
+          "endTime": 1782053105076,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-12.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 13: Due Dates and Sorting"
+              ],
+              "fullName": " Challenge 13: Due Dates and Sorting TaskCard should render title",
+              "status": "passed",
+              "title": "TaskCard should render title",
+              "duration": 91,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 13: Due Dates and Sorting"
+              ],
+              "fullName": " Challenge 13: Due Dates and Sorting TaskList should render tasks",
+              "status": "passed",
+              "title": "TaskList should render tasks",
+              "duration": 36,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782053104942,
+          "endTime": 1782053105069,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-13.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 14: Task Statistics Dashboard"
+              ],
+              "fullName": " Challenge 14: Task Statistics Dashboard StatsPanel should have id=\"stats-panel\"",
+              "status": "passed",
+              "title": "StatsPanel should have id=\"stats-panel\"",
+              "duration": 83,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 14: Task Statistics Dashboard"
+              ],
+              "fullName": " Challenge 14: Task Statistics Dashboard StatsPanel should display total and completed",
+              "status": "passed",
+              "title": "StatsPanel should display total and completed",
+              "duration": 39,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 14: Task Statistics Dashboard"
+              ],
+              "fullName": " Challenge 14: Task Statistics Dashboard TaskList should render tasks",
+              "status": "passed",
+              "title": "TaskList should render tasks",
+              "duration": 28,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782053101000,
+          "endTime": 1782053101150,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-14.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 15: Component Organization with Props"
+              ],
+              "fullName": " Challenge 15: Component Organization with Props TaskCard should accept and render props",
+              "status": "passed",
+              "title": "TaskCard should accept and render props",
+              "duration": 105,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 15: Component Organization with Props"
+              ],
+              "fullName": " Challenge 15: Component Organization with Props TaskList should render TaskCards with props",
+              "status": "passed",
+              "title": "TaskList should render TaskCards with props",
+              "duration": 43,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782053104942,
+          "endTime": 1782053105090,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-15.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 16: Context API - Theme Management"
+              ],
+              "fullName": " Challenge 16: Context API - Theme Management App should render without crashing",
+              "status": "passed",
+              "title": "App should render without crashing",
+              "duration": 292,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 16: Context API - Theme Management"
+              ],
+              "fullName": " Challenge 16: Context API - Theme Management App should have main content",
+              "status": "passed",
+              "title": "App should have main content",
+              "duration": 30,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782053105053,
+          "endTime": 1782053105375,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-16.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 17: Custom Hook - useLocalStorage"
+              ],
+              "fullName": " Challenge 17: Custom Hook - useLocalStorage App should render without crashing",
+              "status": "passed",
+              "title": "App should render without crashing",
+              "duration": 221,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782053105166,
+          "endTime": 1782053105387,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-17.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 18: useReducer - Complex State Management"
+              ],
+              "fullName": " Challenge 18: useReducer - Complex State Management App should render",
+              "status": "passed",
+              "title": "App should render",
+              "duration": 289,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 18: useReducer - Complex State Management"
+              ],
+              "fullName": " Challenge 18: useReducer - Complex State Management TaskList should render tasks",
+              "status": "passed",
+              "title": "TaskList should render tasks",
+              "duration": 44,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782053105053,
+          "endTime": 1782053105386,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-18.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 19: Performance Optimization"
+              ],
+              "fullName": " Challenge 19: Performance Optimization TaskCard should render",
+              "status": "passed",
+              "title": "TaskCard should render",
+              "duration": 153,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 19: Performance Optimization"
+              ],
+              "fullName": " Challenge 19: Performance Optimization TaskList should render TaskCards",
+              "status": "passed",
+              "title": "TaskList should render TaskCards",
+              "duration": 25,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782053105012,
+          "endTime": 1782053105191,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-19.test.tsx"
+        },
         {
           "assertionResults": [
             {
@@ -22623,7 +23477,7 @@
               "fullName": " Challenge 20: Error Boundaries and Error Handling ErrorBoundary should render children when no error",
               "status": "passed",
               "title": "ErrorBoundary should render children when no error",
-              "duration": 21,
+              "duration": 73,
               "failureMessages": []
             },
             {
@@ -22634,7 +23488,7 @@
               "fullName": " Challenge 20: Error Boundaries and Error Handling ErrorBoundary should have fallback with id=\"error-boundary-fallback\" when error caught",
               "status": "passed",
               "title": "ErrorBoundary should have fallback with id=\"error-boundary-fallback\" when error caught",
-              "duration": 21,
+              "duration": 74,
               "failureMessages": []
             },
             {
@@ -22645,7 +23499,7 @@
               "fullName": " Challenge 20: Error Boundaries and Error Handling ErrorBoundary should have Retry button with id=\"error-retry\"",
               "status": "passed",
               "title": "ErrorBoundary should have Retry button with id=\"error-retry\"",
-              "duration": 6,
+              "duration": 15,
               "failureMessages": []
             },
             {
@@ -22656,66 +23510,128 @@
               "fullName": " Challenge 20: Error Boundaries and Error Handling Retry button should be clickable",
               "status": "passed",
               "title": "Retry button should be clickable",
-              "duration": 117,
+              "duration": 506,
               "failureMessages": []
             }
           ],
-          "startTime": 1781336848883,
-          "endTime": 1781336849048,
+          "startTime": 1782053101164,
+          "endTime": 1782053101832,
           "status": "passed",
           "message": "",
-          "name": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/challenge-20.test.tsx"
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-20.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 21: React Router - Routing and Navigation"
+              ],
+              "fullName": " Challenge 21: React Router - Routing and Navigation TaskDetailPage should use useParams and render task detail or not found",
+              "status": "passed",
+              "title": "TaskDetailPage should use useParams and render task detail or not found",
+              "duration": 37,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 21: React Router - Routing and Navigation"
+              ],
+              "fullName": " Challenge 21: React Router - Routing and Navigation TaskDetailPage should have back button with id task-detail-back",
+              "status": "passed",
+              "title": "TaskDetailPage should have back button with id task-detail-back",
+              "duration": 6,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782053100968,
+          "endTime": 1782053101012,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-21.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 22: Data Fetching - Loading and Error State"
+              ],
+              "fullName": " Challenge 22: Data Fetching - Loading and Error State FetchDemoView should show loading state initially or fetch from API",
+              "status": "passed",
+              "title": "FetchDemoView should show loading state initially or fetch from API",
+              "duration": 66,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 22: Data Fetching - Loading and Error State"
+              ],
+              "fullName": " Challenge 22: Data Fetching - Loading and Error State FetchDemoView should have fetch-list when data is loaded",
+              "status": "passed",
+              "title": "FetchDemoView should have fetch-list when data is loaded",
+              "duration": 15,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 22: Data Fetching - Loading and Error State"
+              ],
+              "fullName": " Challenge 22: Data Fetching - Loading and Error State FetchDemoView should show fetch-error when fetch fails",
+              "status": "passed",
+              "title": "FetchDemoView should show fetch-error when fetch fails",
+              "duration": 16,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782053100968,
+          "endTime": 1782053101065,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-22.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 23: useRef - Focus Management"
+              ],
+              "fullName": " Challenge 23: useRef - Focus Management FilterBar should render search input with id search-input",
+              "status": "passed",
+              "title": "FilterBar should render search input with id search-input",
+              "duration": 41,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 23: useRef - Focus Management"
+              ],
+              "fullName": " Challenge 23: useRef - Focus Management FilterBar should be focusable for search input",
+              "status": "passed",
+              "title": "FilterBar should be focusable for search input",
+              "duration": 17,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782053100990,
+          "endTime": 1782053101048,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-23.test.tsx"
         }
-      ]
+      ],
+      "error": "Command failed: npm test -- D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\challenge-20.test.tsx --run --reporter=json"
     },
     "lintResults": {
       "score": 100,
-      "passed": true,
-      "totalIssues": 0,
-      "errors": 0,
-      "warnings": 0,
-      "details": [
-        {
-          "filePath": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/src/components/ErrorBoundary.tsx",
-          "messages": [],
-          "suppressedMessages": [],
-          "errorCount": 0,
-          "fatalErrorCount": 0,
-          "warningCount": 0,
-          "fixableErrorCount": 0,
-          "fixableWarningCount": 0,
-          "usedDeprecatedRules": [
-            {
-              "ruleId": "no-extra-semi",
-              "replacedBy": []
-            },
-            {
-              "ruleId": "no-mixed-spaces-and-tabs",
-              "replacedBy": []
-            }
-          ]
-        },
-        {
-          "filePath": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/src/components/TaskApp.tsx",
-          "messages": [],
-          "suppressedMessages": [],
-          "errorCount": 0,
-          "fatalErrorCount": 0,
-          "warningCount": 0,
-          "fixableErrorCount": 0,
-          "fixableWarningCount": 0,
-          "usedDeprecatedRules": [
-            {
-              "ruleId": "no-extra-semi",
-              "replacedBy": []
-            },
-            {
-              "ruleId": "no-mixed-spaces-and-tabs",
-              "replacedBy": []
-            }
-          ]
-        }
-      ]
+      "passed": false,
+      "error": "Could not parse linting results",
+      "details": []
     },
     "architectureResults": {
       "score": 100,
@@ -22741,7 +23657,6 @@
         },
         {
           "file": "src/hooks/useLocalStorage.ts",
-          "error": "File does not exist",
           "patternsFound": [],
           "patternsMissing": [
             "functionalComponent"
@@ -22791,12 +23706,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 252,
+                          "duration": 2385,
                           "error": {
-                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#task-list').or(locator('main'))\nExpected: visible\nError: strict mode violation: locator('#task-list').or(locator('main')) resolved to 2 elements:\n    1) <main>…</main> aka getByRole('main')\n    2) <section id=\"task-list\">…</section> aka getByText('5 TasksFirst TaskDescription')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#task-list').or(locator('main'))\u001b[22m\n",
-                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#task-list').or(locator('main'))\nExpected: visible\nError: strict mode violation: locator('#task-list').or(locator('main')) resolved to 2 elements:\n    1) <main>…</main> aka getByRole('main')\n    2) <section id=\"task-list\">…</section> aka getByText('5 TasksFirst TaskDescription')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#task-list').or(locator('main'))\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-20.spec.ts:11:37",
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#task-list').or(locator('main'))\nExpected: visible\nError: strict mode violation: locator('#task-list').or(locator('main')) resolved to 2 elements:\n    1) <main>…</main> aka getByRole('main')\n    2) <section id=\"task-list\">…</section> aka getByText('5 TasksFirst TaskFirst')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#task-list').or(locator('main'))\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#task-list').or(locator('main'))\nExpected: visible\nError: strict mode violation: locator('#task-list').or(locator('main')) resolved to 2 elements:\n    1) <main>…</main> aka getByRole('main')\n    2) <section id=\"task-list\">…</section> aka getByText('5 TasksFirst TaskFirst')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#task-list').or(locator('main'))\u001b[22m\n\n    at D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-20.spec.ts:11:37",
                             "location": {
-                              "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-20.spec.ts",
+                              "file": "D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-20.spec.ts",
                               "column": 37,
                               "line": 11
                             },
@@ -22805,32 +23720,32 @@
                           "errors": [
                             {
                               "location": {
-                                "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-20.spec.ts",
+                                "file": "D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-20.spec.ts",
                                 "column": 37,
                                 "line": 11
                               },
-                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#task-list').or(locator('main'))\nExpected: visible\nError: strict mode violation: locator('#task-list').or(locator('main')) resolved to 2 elements:\n    1) <main>…</main> aka getByRole('main')\n    2) <section id=\"task-list\">…</section> aka getByText('5 TasksFirst TaskDescription')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#task-list').or(locator('main'))\u001b[22m\n\n\n   9 |     const taskList = page.locator('#task-list');\n  10 |     const main = page.locator('main');\n> 11 |     await expect(taskList.or(main)).toBeVisible();\n     |                                     ^\n  12 |   });\n  13 | });\n  14 |\n    at /home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-20.spec.ts:11:37"
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#task-list').or(locator('main'))\nExpected: visible\nError: strict mode violation: locator('#task-list').or(locator('main')) resolved to 2 elements:\n    1) <main>…</main> aka getByRole('main')\n    2) <section id=\"task-list\">…</section> aka getByText('5 TasksFirst TaskFirst')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#task-list').or(locator('main'))\u001b[22m\n\n\n   9 |     const taskList = page.locator('#task-list');\n  10 |     const main = page.locator('main');\n> 11 |     await expect(taskList.or(main)).toBeVisible();\n     |                                     ^\n  12 |   });\n  13 | });\n  14 |\n    at D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-20.spec.ts:11:37"
                             }
                           ],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-06-13T07:47:33.427Z",
+                          "startTime": "2026-06-21T14:45:12.735Z",
                           "annotations": [],
                           "attachments": [
                             {
                               "name": "screenshot",
                               "contentType": "image/png",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/test-results/challenge-20-Challenge-20--06b6f-y-task-list-or-main-content-chromium/test-failed-1.png"
+                              "path": "D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-20-Challenge-20--06b6f-y-task-list-or-main-content-chromium\\test-failed-1.png"
                             },
                             {
                               "name": "error-context",
                               "contentType": "text/markdown",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/test-results/challenge-20-Challenge-20--06b6f-y-task-list-or-main-content-chromium/error-context.md"
+                              "path": "D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-20-Challenge-20--06b6f-y-task-list-or-main-content-chromium\\error-context.md"
                             }
                           ],
                           "errorLocation": {
-                            "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-20.spec.ts",
+                            "file": "D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-20.spec.ts",
                             "column": 37,
                             "line": 11
                           }
@@ -22839,12 +23754,12 @@
                           "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 337,
+                          "duration": 992,
                           "error": {
-                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#task-list').or(locator('main'))\nExpected: visible\nError: strict mode violation: locator('#task-list').or(locator('main')) resolved to 2 elements:\n    1) <main>…</main> aka getByRole('main')\n    2) <section id=\"task-list\">…</section> aka getByText('5 TasksFirst TaskDescription')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#task-list').or(locator('main'))\u001b[22m\n",
-                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#task-list').or(locator('main'))\nExpected: visible\nError: strict mode violation: locator('#task-list').or(locator('main')) resolved to 2 elements:\n    1) <main>…</main> aka getByRole('main')\n    2) <section id=\"task-list\">…</section> aka getByText('5 TasksFirst TaskDescription')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#task-list').or(locator('main'))\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-20.spec.ts:11:37",
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#task-list').or(locator('main'))\nExpected: visible\nError: strict mode violation: locator('#task-list').or(locator('main')) resolved to 2 elements:\n    1) <main>…</main> aka getByRole('main')\n    2) <section id=\"task-list\">…</section> aka getByText('5 TasksFirst TaskFirst')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#task-list').or(locator('main'))\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#task-list').or(locator('main'))\nExpected: visible\nError: strict mode violation: locator('#task-list').or(locator('main')) resolved to 2 elements:\n    1) <main>…</main> aka getByRole('main')\n    2) <section id=\"task-list\">…</section> aka getByText('5 TasksFirst TaskFirst')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#task-list').or(locator('main'))\u001b[22m\n\n    at D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-20.spec.ts:11:37",
                             "location": {
-                              "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-20.spec.ts",
+                              "file": "D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-20.spec.ts",
                               "column": 37,
                               "line": 11
                             },
@@ -22853,37 +23768,37 @@
                           "errors": [
                             {
                               "location": {
-                                "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-20.spec.ts",
+                                "file": "D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-20.spec.ts",
                                 "column": 37,
                                 "line": 11
                               },
-                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#task-list').or(locator('main'))\nExpected: visible\nError: strict mode violation: locator('#task-list').or(locator('main')) resolved to 2 elements:\n    1) <main>…</main> aka getByRole('main')\n    2) <section id=\"task-list\">…</section> aka getByText('5 TasksFirst TaskDescription')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#task-list').or(locator('main'))\u001b[22m\n\n\n   9 |     const taskList = page.locator('#task-list');\n  10 |     const main = page.locator('main');\n> 11 |     await expect(taskList.or(main)).toBeVisible();\n     |                                     ^\n  12 |   });\n  13 | });\n  14 |\n    at /home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-20.spec.ts:11:37"
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#task-list').or(locator('main'))\nExpected: visible\nError: strict mode violation: locator('#task-list').or(locator('main')) resolved to 2 elements:\n    1) <main>…</main> aka getByRole('main')\n    2) <section id=\"task-list\">…</section> aka getByText('5 TasksFirst TaskFirst')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#task-list').or(locator('main'))\u001b[22m\n\n\n   9 |     const taskList = page.locator('#task-list');\n  10 |     const main = page.locator('main');\n> 11 |     await expect(taskList.or(main)).toBeVisible();\n     |                                     ^\n  12 |   });\n  13 | });\n  14 |\n    at D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-20.spec.ts:11:37"
                             }
                           ],
                           "stdout": [],
                           "stderr": [],
                           "retry": 1,
-                          "startTime": "2026-06-13T07:47:34.714Z",
+                          "startTime": "2026-06-21T14:45:17.980Z",
                           "annotations": [],
                           "attachments": [
                             {
                               "name": "screenshot",
                               "contentType": "image/png",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/test-results/challenge-20-Challenge-20--06b6f-y-task-list-or-main-content-chromium-retry1/test-failed-1.png"
+                              "path": "D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-20-Challenge-20--06b6f-y-task-list-or-main-content-chromium-retry1\\test-failed-1.png"
                             },
                             {
                               "name": "error-context",
                               "contentType": "text/markdown",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/test-results/challenge-20-Challenge-20--06b6f-y-task-list-or-main-content-chromium-retry1/error-context.md"
+                              "path": "D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-20-Challenge-20--06b6f-y-task-list-or-main-content-chromium-retry1\\error-context.md"
                             },
                             {
                               "name": "trace",
                               "contentType": "application/zip",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/test-results/challenge-20-Challenge-20--06b6f-y-task-list-or-main-content-chromium-retry1/trace.zip"
+                              "path": "D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-20-Challenge-20--06b6f-y-task-list-or-main-content-chromium-retry1\\trace.zip"
                             }
                           ],
                           "errorLocation": {
-                            "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-20.spec.ts",
+                            "file": "D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-20.spec.ts",
                             "column": 37,
                             "line": 11
                           }
@@ -22892,12 +23807,12 @@
                           "workerIndex": 2,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 247,
+                          "duration": 976,
                           "error": {
-                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#task-list').or(locator('main'))\nExpected: visible\nError: strict mode violation: locator('#task-list').or(locator('main')) resolved to 2 elements:\n    1) <main>…</main> aka getByRole('main')\n    2) <section id=\"task-list\">…</section> aka getByText('5 TasksFirst TaskDescription')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#task-list').or(locator('main'))\u001b[22m\n",
-                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#task-list').or(locator('main'))\nExpected: visible\nError: strict mode violation: locator('#task-list').or(locator('main')) resolved to 2 elements:\n    1) <main>…</main> aka getByRole('main')\n    2) <section id=\"task-list\">…</section> aka getByText('5 TasksFirst TaskDescription')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#task-list').or(locator('main'))\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-20.spec.ts:11:37",
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#task-list').or(locator('main'))\nExpected: visible\nError: strict mode violation: locator('#task-list').or(locator('main')) resolved to 2 elements:\n    1) <main>…</main> aka getByRole('main')\n    2) <section id=\"task-list\">…</section> aka getByText('5 TasksFirst TaskFirst')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#task-list').or(locator('main'))\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#task-list').or(locator('main'))\nExpected: visible\nError: strict mode violation: locator('#task-list').or(locator('main')) resolved to 2 elements:\n    1) <main>…</main> aka getByRole('main')\n    2) <section id=\"task-list\">…</section> aka getByText('5 TasksFirst TaskFirst')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#task-list').or(locator('main'))\u001b[22m\n\n    at D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-20.spec.ts:11:37",
                             "location": {
-                              "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-20.spec.ts",
+                              "file": "D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-20.spec.ts",
                               "column": 37,
                               "line": 11
                             },
@@ -22906,32 +23821,32 @@
                           "errors": [
                             {
                               "location": {
-                                "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-20.spec.ts",
+                                "file": "D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-20.spec.ts",
                                 "column": 37,
                                 "line": 11
                               },
-                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#task-list').or(locator('main'))\nExpected: visible\nError: strict mode violation: locator('#task-list').or(locator('main')) resolved to 2 elements:\n    1) <main>…</main> aka getByRole('main')\n    2) <section id=\"task-list\">…</section> aka getByText('5 TasksFirst TaskDescription')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#task-list').or(locator('main'))\u001b[22m\n\n\n   9 |     const taskList = page.locator('#task-list');\n  10 |     const main = page.locator('main');\n> 11 |     await expect(taskList.or(main)).toBeVisible();\n     |                                     ^\n  12 |   });\n  13 | });\n  14 |\n    at /home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-20.spec.ts:11:37"
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#task-list').or(locator('main'))\nExpected: visible\nError: strict mode violation: locator('#task-list').or(locator('main')) resolved to 2 elements:\n    1) <main>…</main> aka getByRole('main')\n    2) <section id=\"task-list\">…</section> aka getByText('5 TasksFirst TaskFirst')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#task-list').or(locator('main'))\u001b[22m\n\n\n   9 |     const taskList = page.locator('#task-list');\n  10 |     const main = page.locator('main');\n> 11 |     await expect(taskList.or(main)).toBeVisible();\n     |                                     ^\n  12 |   });\n  13 | });\n  14 |\n    at D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-20.spec.ts:11:37"
                             }
                           ],
                           "stdout": [],
                           "stderr": [],
                           "retry": 2,
-                          "startTime": "2026-06-13T07:47:36.129Z",
+                          "startTime": "2026-06-21T14:45:20.468Z",
                           "annotations": [],
                           "attachments": [
                             {
                               "name": "screenshot",
                               "contentType": "image/png",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/test-results/challenge-20-Challenge-20--06b6f-y-task-list-or-main-content-chromium-retry2/test-failed-1.png"
+                              "path": "D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-20-Challenge-20--06b6f-y-task-list-or-main-content-chromium-retry2\\test-failed-1.png"
                             },
                             {
                               "name": "error-context",
                               "contentType": "text/markdown",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/test-results/challenge-20-Challenge-20--06b6f-y-task-list-or-main-content-chromium-retry2/error-context.md"
+                              "path": "D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-20-Challenge-20--06b6f-y-task-list-or-main-content-chromium-retry2\\error-context.md"
                             }
                           ],
                           "errorLocation": {
-                            "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-20.spec.ts",
+                            "file": "D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-20.spec.ts",
                             "column": 37,
                             "line": 11
                           }
@@ -22950,32 +23865,46 @@
           ]
         }
       ],
-      "error": "Exit 1",
+      "error": "Command failed: npx playwright test \"tests/e2e/challenge-20.spec.ts\" --reporter=json",
       "passed": false
     },
     "aiReviewResults": {
       "challengeId": "20-error-boundaries",
-      "timestamp": "2026-06-13T07:47:36.546Z",
-      "score": 0,
+      "timestamp": "2026-06-21T14:45:22.080Z",
+      "score": 88,
       "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
+      "strengths": [
+        "The code is well-structured and follows a consistent naming convention.",
+        "The use of TypeScript and React hooks is well-implemented.",
+        "The code is relatively free of errors and warnings."
+      ],
+      "improvements": [
+        "In the `ErrorBoundary` component, consider adding a `componentDidCatch` method to handle errors in a more robust way. Currently, it only sets the `hasError` state to `true` when an error occurs, but it doesn't provide any additional information about the error.",
+        "In the `useLocalStorage` hook, consider adding a check to ensure that the `key` parameter is a string. This can help prevent potential errors when storing and retrieving data from local storage.",
+        "In the `TaskApp` component, consider breaking down the `useEffect` hook into smaller, more manageable pieces. This can help improve the readability and maintainability of the code."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and well-implemented, but there are a few areas that can be improved to make it even more robust and maintainable. With some minor adjustments, this code can be considered production-ready."
     },
     "aiResults": {
       "challengeId": "20-error-boundaries",
-      "timestamp": "2026-06-13T07:47:36.546Z",
-      "score": 0,
+      "timestamp": "2026-06-21T14:45:22.080Z",
+      "score": 88,
       "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
+      "strengths": [
+        "The code is well-structured and follows a consistent naming convention.",
+        "The use of TypeScript and React hooks is well-implemented.",
+        "The code is relatively free of errors and warnings."
+      ],
+      "improvements": [
+        "In the `ErrorBoundary` component, consider adding a `componentDidCatch` method to handle errors in a more robust way. Currently, it only sets the `hasError` state to `true` when an error occurs, but it doesn't provide any additional information about the error.",
+        "In the `useLocalStorage` hook, consider adding a check to ensure that the `key` parameter is a string. This can help prevent potential errors when storing and retrieving data from local storage.",
+        "In the `TaskApp` component, consider breaking down the `useEffect` hook into smaller, more manageable pieces. This can help improve the readability and maintainability of the code."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and well-implemented, but there are a few areas that can be improved to make it even more robust and maintainable. With some minor adjustments, this code can be considered production-ready."
     }
   },
   {

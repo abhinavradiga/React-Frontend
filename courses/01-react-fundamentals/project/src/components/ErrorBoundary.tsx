@@ -19,7 +19,7 @@ export default class ErrorBoundary extends Component<Props, State> {
     if (this.state.hasError) {
       return (
         <div id="error-boundary-fallback">
-          <p>Something went wrong.</p>
+          <p>Something went wrong. Please try again.</p>
           <button id="error-retry" onClick={() => this.setState({ hasError: false })}>Retry</button>
         </div>
       )

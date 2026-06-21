@@ -5,6 +5,7 @@ import TaskList from './TaskList'
 import TaskForm from './TaskForm'
 import FilterBar from './FilterBar'
 import StatsPanel from './StatsPanel'
+import ErrorBoundary from './ErrorBoundary'
 import { ThemeProvider, useTheme } from '../contexts/ThemeContext'
 import { useLocalStorage } from '../hooks/useLocalStorage'
 import { taskReducer, addTask as addTaskAction, updateTask as updateTaskAction, deleteTask as deleteTaskAction, toggleTask as toggleTaskAction } from '../reducers/taskReducer'
@@ -216,16 +217,18 @@ function TaskAppInner({ tasks, setTasks, dispatch: externalDispatch, showForm, c
           {debouncedSearch.trim() ? `No tasks found for "${debouncedSearch.trim()}"` : 'No tasks match this filter'}
         </p>
       )}
-      <TaskList
-        tasks={sortedTasks}
-        countText={countText}
-        onToggle={handleToggle}
-        onDelete={onDelete ?? handleDelete}
-        onUpdateTask={handleUpdateTask}
-        editingId={editingId}
-        onStartEdit={setEditingId}
-        onCancelEdit={() => setEditingId(null)}
-      />
+      <ErrorBoundary>
+        <TaskList
+          tasks={sortedTasks}
+          countText={countText}
+          onToggle={handleToggle}
+          onDelete={onDelete ?? handleDelete}
+          onUpdateTask={handleUpdateTask}
+          editingId={editingId}
+          onStartEdit={setEditingId}
+          onCancelEdit={() => setEditingId(null)}
+        />
+      </ErrorBoundary>
     </div>
   )
 }
