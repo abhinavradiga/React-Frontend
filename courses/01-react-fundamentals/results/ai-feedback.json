@@ -101,52 +101,6 @@
     }
   },
   {
-    "challengeId": "06-task-filtering",
-    "challengeName": "Task Filtering",
-    "aiReview": {
-      "challengeId": "06-task-filtering",
-      "timestamp": "2026-06-17T04:03:26.068Z",
-      "score": 88,
-      "feedback": [],
-      "strengths": [
-        "The code is well-structured and follows a consistent naming convention.",
-        "The use of TypeScript and functional components is a good practice.",
-        "The code is well-commented, making it easier to understand the logic."
-      ],
-      "improvements": [
-        "In the `FilterBar` component, the `activeFilter` prop is not used anywhere. It can be removed to simplify the code.",
-        "In the `TaskApp` component, the `displayTasks` state is not necessary. The `tasks` prop can be used directly.",
-        "The `handleDelete` function in the `App` component can be simplified by using the `filter` method directly."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-structured and maintainable, but there are some minor improvements that can be made to simplify the code and make it more efficient."
-    }
-  },
-  {
-    "challengeId": "07-priority-based-sorting",
-    "challengeName": "Priority-Based Sorting",
-    "aiReview": {
-      "challengeId": "07-priority-based-sorting",
-      "timestamp": "2026-06-20T11:31:43.703Z",
-      "score": 88,
-      "feedback": [],
-      "strengths": [
-        "The code is well-structured and follows a consistent naming convention.",
-        "The use of TypeScript and functional components makes the code more maintainable and efficient.",
-        "The implementation of the sorting logic is clear and concise."
-      ],
-      "improvements": [
-        "Some of the variable names could be more descriptive, such as `current` in `FilterBar` and `displayTasks` in `TaskApp`.",
-        "The `PRIORITY_RANK` object could be replaced with an enum to make the code more readable and maintainable.",
-        "The sorting logic in `TaskApp` could be extracted into a separate function to make it more reusable and easier to test."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-structured and maintainable, with a good balance of readability and efficiency. However, there are some areas for improvement to make the code even more robust and scalable."
-    }
-  },
-  {
     "challengeId": "08-task-editing",
     "challengeName": "Task Editing",
     "aiReview": {
@@ -163,29 +117,6 @@
       "readability": 50,
       "maintainability": 50,
       "overall": "{\n  \"readability\": 85,\n  \"maintainability\": 90,\n  \"strengths\": [\n    \"The code is well-structured and follows a consistent naming convention.\",\n    \"The use of TypeScript and functional components makes the code more maintainable and scalable.\",\n    \"The code includes clear and concise comments, which helps in understanding the functionality.\"\n  ],\n  \"improvements\": [\n    \"Some of the functions in the TaskCard component are quite long and complex. Consider breaking them down into smaller functio"
-    }
-  },
-  {
-    "challengeId": "09-search-functionality",
-    "challengeName": "Search Functionality",
-    "aiReview": {
-      "challengeId": "09-search-functionality",
-      "timestamp": "2026-06-20T11:36:39.461Z",
-      "score": 88,
-      "feedback": [],
-      "strengths": [
-        "The code is well-structured and follows a consistent naming convention.",
-        "The use of TypeScript and functional components is a good practice.",
-        "The code is well-commented and easy to understand."
-      ],
-      "improvements": [
-        "The `FilterBar` component has a lot of props, which makes it harder to read and understand. Consider breaking it down into smaller components or using a more modular approach.",
-        "The `TaskApp` component has a lot of state and props, which can make it harder to manage. Consider using a more centralized state management approach or breaking it down into smaller components.",
-        "The code could benefit from more unit tests to ensure that it works as expected in different scenarios."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-structured and follows good practices, but it could benefit from some improvements to make it more maintainable and scalable. With some refactoring and additional testing, it has the potential to be a high-quality and reliable codebase."
     }
   },
   {
@@ -209,52 +140,6 @@
       "readability": 85,
       "maintainability": 90,
       "overall": "The code is well-structured and maintainable, with a good separation of concerns and clear documentation. However, there are some areas for improvement, particularly in terms of component size and state management. With some additional refactoring and error handling, this code could be even more robust and scalable."
-    }
-  },
-  {
-    "challengeId": "11-useeffect-debounced-search",
-    "challengeName": "useEffect - Debounced Search",
-    "aiReview": {
-      "challengeId": "11-useeffect-debounced-search",
-      "timestamp": "2026-06-20T11:41:07.100Z",
-      "score": 88,
-      "feedback": [],
-      "strengths": [
-        "The code is well-structured and easy to follow, with clear separation of concerns between components.",
-        "The use of TypeScript and functional components helps to maintain a high level of code quality and organization.",
-        "The implementation of debouncing and filtering is well-executed and easy to understand."
-      ],
-      "improvements": [
-        "The `useEffect` hook in `TaskApp.tsx` could be improved by adding a more robust cleanup function to handle cases where the component is unmounted before the timeout is cleared.",
-        "The `debouncedSearch` state could be removed and replaced with a more straightforward implementation using the `useDebounce` hook from a library like `react-use`.",
-        "The `handleDelete` function in `App.tsx` could be improved by using a more robust way to handle confirmation prompts, such as a dedicated confirmation dialog component."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-organized and easy to follow, with a good balance of functionality and maintainability. However, there are some areas for improvement, particularly in the implementation of the `useEffect` hook and the handling of confirmation prompts."
-    }
-  },
-  {
-    "challengeId": "12-categories-and-tags",
-    "challengeName": "Categories and Tags",
-    "aiReview": {
-      "challengeId": "12-categories-and-tags",
-      "timestamp": "2026-06-20T11:43:44.667Z",
-      "score": 83,
-      "feedback": [],
-      "strengths": [
-        "The code is well-structured and follows a consistent naming convention.",
-        "The use of TypeScript and functional components is a good practice.",
-        "The code is well-documented with clear and concise comments."
-      ],
-      "improvements": [
-        "Some of the functions in the TaskCard component are quite long and complex. Consider breaking them down into smaller, more manageable functions.",
-        "The FilterBar component has a lot of props. Consider using a more robust state management solution to reduce the number of props.",
-        "The code could benefit from more unit tests to ensure that it works as expected in different scenarios."
-      ],
-      "readability": 85,
-      "maintainability": 80,
-      "overall": "The code is well-structured and follows good practices, but there are some areas that could be improved. With some refactoring and additional testing, this code could be even more maintainable and efficient."
     }
   },
   {
@@ -455,22 +340,95 @@
     "challengeName": "Data Fetching - Loading and Error State",
     "aiReview": {
       "challengeId": "22-data-fetching",
-      "timestamp": "2026-06-21T14:56:48.080Z",
-      "score": 88,
+      "timestamp": "2026-06-29T11:38:52.228Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-structured and follows a clear pattern for handling loading, error, and data states.",
-        "The use of TypeScript and functional components is a good practice.",
-        "The code is concise and easy to follow."
-      ],
-      "improvements": [
-        "Consider adding a loading animation to make the 'Loading...' message more engaging.",
-        "The error handling could be improved by providing more context about the error, such as the HTTP status code or the error message from the API.",
-        "The code could benefit from some additional comments to explain the purpose of the `cancelled` flag and the `AbortController` usage."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-written and effectively demonstrates the concepts of loading, error, and data states in a React application. With some minor improvements, it can be even more robust and user-friendly."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
+    }
+  },
+  {
+    "challengeId": "06-task-filtering",
+    "challengeName": "Task Filtering",
+    "aiReview": {
+      "challengeId": "06-task-filtering",
+      "timestamp": "2026-06-29T11:38:59.627Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
+    }
+  },
+  {
+    "challengeId": "07-priority-based-sorting",
+    "challengeName": "Priority-Based Sorting",
+    "aiReview": {
+      "challengeId": "07-priority-based-sorting",
+      "timestamp": "2026-06-29T11:39:06.439Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
+    }
+  },
+  {
+    "challengeId": "09-search-functionality",
+    "challengeName": "Search Functionality",
+    "aiReview": {
+      "challengeId": "09-search-functionality",
+      "timestamp": "2026-06-29T11:39:15.773Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
+    }
+  },
+  {
+    "challengeId": "11-useeffect-debounced-search",
+    "challengeName": "useEffect - Debounced Search",
+    "aiReview": {
+      "challengeId": "11-useeffect-debounced-search",
+      "timestamp": "2026-06-29T11:39:22.192Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
+    }
+  },
+  {
+    "challengeId": "12-categories-and-tags",
+    "challengeName": "Categories and Tags",
+    "aiReview": {
+      "challengeId": "12-categories-and-tags",
+      "timestamp": "2026-06-29T11:39:28.782Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
     }
   },
   {
@@ -478,22 +436,15 @@
     "challengeName": "useRef - Focus Management",
     "aiReview": {
       "challengeId": "23-useref-focus-management",
-      "timestamp": "2026-06-21T14:59:12.092Z",
-      "score": 88,
+      "timestamp": "2026-06-29T11:39:39.291Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-structured and follows a consistent naming convention.",
-        "The use of TypeScript and functional components is a good practice.",
-        "The code is well-documented with clear and concise comments."
-      ],
-      "improvements": [
-        "The `useEffect` hook in `FilterBar` component is not necessary, as the `searchInputRef.current?.focus()` can be called directly in the `render` method.",
-        "The `useMemo` hook in `TaskApp` component can be simplified by removing the unnecessary dependency array.",
-        "The code can benefit from more consistent spacing and indentation."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-structured and maintainable, but there are some minor improvements that can be made to enhance its readability and performance."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
     }
   }
 ]

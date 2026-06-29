@@ -68,12 +68,12 @@ npm run review -- --challenge=01-static-task-display
 
 ## 📊 Progress Evidence
 
-*Auto-updated when you run review. Last run: 21/6/2026, 8:29:13 pm*
+*Auto-updated when you run review. Last run: 6/29/2026, 11:39:39 AM*
 
 | Metric | Value |
 |--------|-------|
-| Challenges completed | 23 / 23 (100%) |
-| Average score | 93.9% |
+| Challenges completed | 21 / 23 (91.3%) |
+| Average score | 89.6% |
 
 | Challenge | Skills covered | Status |
 |-----------|----------------|--------|
@@ -85,7 +85,7 @@ npm run review -- --challenge=01-static-task-display
 | Task Filtering | Derived state, Conditional rendering, Filter logic composition | Passed |
 | Priority-Based Sorting | Array sort, Sort stability, Multiple sort criteria, Select dropdowns | Passed |
 | Task Editing | Inline editing, Conditional rendering, Edit mode state, Controlled inputs, Form handling, State synchronization | Passed |
-| Search Functionality | Text search, Combining filters, String methods, Search UI patterns | Passed |
+| Search Functionality | Text search, Combining filters, String methods, Search UI patterns | Not passed |
 | useEffect - Local Storage Persistence | useEffect, Side effects, localStorage, JSON serialization, Effect dependencies | Passed |
 | useEffect - Debounced Search | useEffect cleanup, setTimeout, Debouncing, Memory leak prevention | Passed |
 | Categories and Tags | Complex state, Array fields, Multi-select/tags input, Nested data, Filtering by array membership | Passed |
@@ -99,7 +99,7 @@ npm run review -- --challenge=01-static-task-display
 | Error Boundaries and Error Handling | Error boundaries, Class component, Error handling, Fallback UI, try-catch | Passed |
 | React Router - Routing and Navigation | React Router, Route, Link, useNavigate, useParams, URL-driven UI, Dynamic segments | Passed |
 | Data Fetching - Loading and Error State | fetch, useEffect, Loading state, Error state, Async data, Conditional rendering | Passed |
-| useRef - Focus Management | useRef, ref.current, Focus management, DOM access, useEffect with ref | Passed |
+| useRef - Focus Management | useRef, ref.current, Focus management, DOM access, useEffect with ref | Not passed |
 
 ## 📋 Challenge Workflow
 

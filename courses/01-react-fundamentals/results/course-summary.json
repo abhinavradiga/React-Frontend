@@ -1,12 +1,12 @@
 {
   "courseId": "01-react-fundamentals",
   "courseName": "React Fundamentals",
-  "lastUpdated": "2026-06-21T14:59:13.309Z",
+  "lastUpdated": "2026-06-29T11:39:39.291Z",
   "totalChallenges": 23,
-  "completedChallenges": 23,
-  "averageScore": 93.9,
-  "completionPercentage": 100,
-  "badgeLevel": "gold",
+  "completedChallenges": 21,
+  "averageScore": 89.6,
+  "completionPercentage": 91.3,
+  "badgeLevel": "silver",
   "challengeResults": [
     {
       "challengeId": "01-static-task-display",
@@ -41,13 +41,13 @@
     {
       "challengeId": "06-task-filtering",
       "challengeName": "Task Filtering",
-      "score": 98.2,
+      "score": 83.5,
       "passed": true
     },
     {
       "challengeId": "07-priority-based-sorting",
       "challengeName": "Priority-Based Sorting",
-      "score": 98.2,
+      "score": 83.5,
       "passed": true
     },
     {
@@ -59,8 +59,8 @@
     {
       "challengeId": "09-search-functionality",
       "challengeName": "Search Functionality",
-      "score": 90.7,
-      "passed": true
+      "score": 76,
+      "passed": false
     },
     {
       "challengeId": "10-useeffect-local-storage",
@@ -71,13 +71,13 @@
     {
       "challengeId": "11-useeffect-debounced-search",
       "challengeName": "useEffect - Debounced Search",
-      "score": 98.2,
+      "score": 83.5,
       "passed": true
     },
     {
       "challengeId": "12-categories-and-tags",
       "challengeName": "Categories and Tags",
-      "score": 97.45,
+      "score": 85,
       "passed": true
     },
     {
@@ -137,14 +137,14 @@
     {
       "challengeId": "22-data-fetching",
       "challengeName": "Data Fetching - Loading and Error State",
-      "score": 97.71,
+      "score": 85,
       "passed": true
     },
     {
       "challengeId": "23-useref-focus-management",
       "challengeName": "useRef - Focus Management",
-      "score": 92.71499999999999,
-      "passed": true
+      "score": 78.505,
+      "passed": false
     }
   ],
   "skillStrengths": [
@@ -156,7 +156,6 @@
     "Task Filtering",
     "Priority-Based Sorting",
     "Task Editing",
-    "Search Functionality",
     "useEffect - Local Storage Persistence",
     "useEffect - Debounced Search",
     "Categories and Tags",
@@ -169,8 +168,7 @@
     "Performance Optimization",
     "Error Boundaries and Error Handling",
     "React Router - Routing and Navigation",
-    "Data Fetching - Loading and Error State",
-    "useRef - Focus Management"
+    "Data Fetching - Loading and Error State"
   ],
   "improvementAreas": []
 }

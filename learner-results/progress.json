@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "2026-06-21T14:59:13.369Z",
+  "lastUpdated": "2026-06-29T11:39:39.598Z",
   "pathway": {
     "name": "Modern React Engineer",
     "version": "1.0.0",
-    "overallScore": 31,
-    "completionPercentage": 43.4,
+    "overallScore": 29.6,
+    "completionPercentage": 39.6,
     "badgeLevel": "none",
     "totalChallenges": 53,
-    "completedChallenges": 23
+    "completedChallenges": 21
   },
   "courses": {
     "01-react-fundamentals": {
       "courseId": "01-react-fundamentals",
       "courseName": "React Fundamentals",
-      "averageScore": 93.9,
-      "completionPercentage": 100,
-      "badgeLevel": "gold",
+      "averageScore": 89.6,
+      "completionPercentage": 91.3,
+      "badgeLevel": "silver",
       "totalChallenges": 23,
-      "completedChallenges": 23,
+      "completedChallenges": 21,
       "challenges": {
         "01-static-task-display": {
           "challengeId": "01-static-task-display",
@@ -98,30 +98,30 @@
           "challengeId": "06-task-filtering",
           "challengeName": "Task Filtering",
           "passed": true,
-          "score": 98.2,
-          "lastRun": "2026-06-17T04:02:59.770Z",
+          "score": 83.5,
+          "lastRun": "2026-06-29T11:38:52.597Z",
           "scores": {
             "functionalTests": 100,
-            "codeQuality": 100,
+            "codeQuality": 90,
             "architecture": 100,
             "bestPractices": 100,
             "e2eTests": 100,
-            "aiReview": 88
+            "aiReview": 0
           }
         },
         "07-priority-based-sorting": {
           "challengeId": "07-priority-based-sorting",
           "challengeName": "Priority-Based Sorting",
           "passed": true,
-          "score": 98.2,
-          "lastRun": "2026-06-20T11:31:24.724Z",
+          "score": 83.5,
+          "lastRun": "2026-06-29T11:38:59.982Z",
           "scores": {
             "functionalTests": 100,
-            "codeQuality": 100,
+            "codeQuality": 90,
             "architecture": 100,
             "bestPractices": 100,
             "e2eTests": 100,
-            "aiReview": 88
+            "aiReview": 0
           }
         },
         "08-task-editing": {
@@ -142,16 +142,16 @@
         "09-search-functionality": {
           "challengeId": "09-search-functionality",
           "challengeName": "Search Functionality",
-          "passed": true,
-          "score": 90.7,
-          "lastRun": "2026-06-20T11:36:21.710Z",
+          "passed": false,
+          "score": 76,
+          "lastRun": "2026-06-29T11:39:06.788Z",
           "scores": {
             "functionalTests": 100,
-            "codeQuality": 100,
+            "codeQuality": 90,
             "architecture": 100,
             "bestPractices": 100,
             "e2eTests": 50,
-            "aiReview": 88
+            "aiReview": 0
           }
         },
         "10-useeffect-local-storage": {
@@ -173,30 +173,30 @@
           "challengeId": "11-useeffect-debounced-search",
           "challengeName": "useEffect - Debounced Search",
           "passed": true,
-          "score": 98.2,
-          "lastRun": "2026-06-20T11:40:52.528Z",
+          "score": 83.5,
+          "lastRun": "2026-06-29T11:39:16.129Z",
           "scores": {
             "functionalTests": 100,
-            "codeQuality": 100,
+            "codeQuality": 90,
             "architecture": 100,
             "bestPractices": 100,
             "e2eTests": 100,
-            "aiReview": 88
+            "aiReview": 0
           }
         },
         "12-categories-and-tags": {
           "challengeId": "12-categories-and-tags",
           "challengeName": "Categories and Tags",
           "passed": true,
-          "score": 97.45,
-          "lastRun": "2026-06-20T11:43:30.555Z",
+          "score": 85,
+          "lastRun": "2026-06-29T11:39:22.548Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 100,
             "architecture": 100,
             "bestPractices": 100,
             "e2eTests": 100,
-            "aiReview": 83
+            "aiReview": 0
           }
         },
         "13-due-dates-and-sorting": {
@@ -338,30 +338,30 @@
           "challengeId": "22-data-fetching",
           "challengeName": "Data Fetching - Loading and Error State",
           "passed": true,
-          "score": 97.71,
-          "lastRun": "2026-06-21T14:56:29.500Z",
+          "score": 85,
+          "lastRun": "2026-06-29T11:38:43.815Z",
           "scores": {
-            "functionalTests": 98.6,
+            "functionalTests": 100,
             "codeQuality": 100,
             "architecture": 100,
             "bestPractices": 100,
             "e2eTests": 100,
-            "aiReview": 88
+            "aiReview": 0
           }
         },
         "23-useref-focus-management": {
           "challengeId": "23-useref-focus-management",
           "challengeName": "useRef - Focus Management",
-          "passed": true,
-          "score": 92.71499999999999,
-          "lastRun": "2026-06-21T14:58:47.814Z",
+          "passed": false,
+          "score": 78.505,
+          "lastRun": "2026-06-29T11:39:29.144Z",
           "scores": {
-            "functionalTests": 98.6,
-            "codeQuality": 100,
+            "functionalTests": 100,
+            "codeQuality": 90,
             "architecture": 100,
             "bestPractices": 100,
             "e2eTests": 66.7,
-            "aiReview": 88
+            "aiReview": 0
           }
         }
       }
