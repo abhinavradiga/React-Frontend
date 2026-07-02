@@ -2452,25 +2452,25 @@
   {
     "challengeId": "06-task-filtering",
     "challengeName": "Task Filtering",
-    "timestamp": "2026-07-02T05:23:39.191Z",
+    "timestamp": "2026-07-02T05:43:24.626Z",
     "scores": {
-      "functionalTests": 100,
+      "functionalTests": 80,
       "codeQuality": 90,
       "architecture": 100,
       "bestPractices": 100,
-      "e2eTests": 100,
+      "e2eTests": 75,
       "aiReview": 0
     },
-    "totalScore": 83.5,
-    "passed": true,
+    "totalScore": 72.75,
+    "passed": false,
     "errors": [],
     "warnings": [],
     "testResults": {
-      "score": 100,
-      "passed": true,
+      "score": 80,
+      "passed": false,
       "totalTests": 5,
-      "passedTests": 5,
-      "failedTests": 0,
+      "passedTests": 4,
+      "failedTests": 1,
       "details": [
         {
           "assertionResults": [
@@ -2482,7 +2482,7 @@
               "fullName": " Challenge 06: Task Filtering FilterBar should render All, Active, Completed buttons",
               "status": "passed",
               "title": "FilterBar should render All, Active, Completed buttons",
-              "duration": 167,
+              "duration": 165,
               "failureMessages": []
             },
             {
@@ -2491,10 +2491,16 @@
                 "Challenge 06: Task Filtering"
               ],
               "fullName": " Challenge 06: Task Filtering FilterBar should have id=\"filter-bar\"",
-              "status": "passed",
+              "status": "failed",
               "title": "FilterBar should have id=\"filter-bar\"",
-              "duration": 4,
-              "failureMessages": []
+              "duration": 6,
+              "failureMessages": [
+                "expect(received).toBeInTheDocument()\n\nreceived value must be an HTMLElement or an SVGElement.\n"
+              ],
+              "location": {
+                "line": 23,
+                "column": 52
+              }
             },
             {
               "ancestorTitles": [
@@ -2504,7 +2510,7 @@
               "fullName": " Challenge 06: Task Filtering FilterBar should highlight active filter",
               "status": "passed",
               "title": "FilterBar should highlight active filter",
-              "duration": 45,
+              "duration": 42,
               "failureMessages": []
             },
             {
@@ -2515,7 +2521,7 @@
               "fullName": " Challenge 06: Task Filtering FilterBar should call onFilterChange when button clicked",
               "status": "passed",
               "title": "FilterBar should call onFilterChange when button clicked",
-              "duration": 58,
+              "duration": 62,
               "failureMessages": []
             },
             {
@@ -2530,13 +2536,14 @@
               "failureMessages": []
             }
           ],
-          "startTime": 1782969820662,
-          "endTime": 1782969820951,
-          "status": "passed",
+          "startTime": 1782971006178,
+          "endTime": 1782971006468,
+          "status": "failed",
           "message": "",
           "name": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/challenge-06.test.tsx"
         }
-      ]
+      ],
+      "error": "Command failed: npm test -- /home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/challenge-06.test.tsx --run --reporter=json"
     },
     "lintResults": {
       "score": 90,
@@ -2721,11 +2728,10 @@
       "note": "No best practices requirements specified in challenge"
     },
     "e2eResults": {
-      "score": 100,
-      "passed": true,
+      "score": 75,
       "totalTests": 4,
-      "passedTests": 4,
-      "failedTests": 0,
+      "passedTests": 3,
+      "failedTests": 1,
       "details": [
         {
           "title": "challenge-06.spec.ts",
@@ -2742,7 +2748,7 @@
               "specs": [
                 {
                   "title": "should display filter bar",
-                  "ok": true,
+                  "ok": false,
                   "tags": [],
                   "tests": [
                     {
@@ -2755,18 +2761,154 @@
                         {
                           "workerIndex": 0,
                           "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 275,
-                          "errors": [],
+                          "status": "failed",
+                          "duration": 5267,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar')\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-06.spec.ts:9:47",
+                            "location": {
+                              "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-06.spec.ts",
+                              "column": 47,
+                              "line": 9
+                            },
+                            "snippet": "\u001b[0m \u001b[90m  7 |\u001b[39m\n \u001b[90m  8 |\u001b[39m   test(\u001b[32m'should display filter bar'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#filter-bar'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m\n \u001b[90m 12 |\u001b[39m   test(\u001b[32m'should have All, Active, Completed buttons'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-06.spec.ts",
+                                "column": 47,
+                                "line": 9
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar')\u001b[22m\n\n\n   7 |\n   8 |   test('should display filter bar', async ({ page }) => {\n>  9 |     await expect(page.locator('#filter-bar')).toBeVisible();\n     |                                               ^\n  10 |   });\n  11 |\n  12 |   test('should have All, Active, Completed buttons', async ({ page }) => {\n    at /home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-06.spec.ts:9:47"
+                            }
+                          ],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:23:45.676Z",
+                          "startTime": "2026-07-02T05:43:31.433Z",
                           "annotations": [],
-                          "attachments": []
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/test-results/challenge-06-Challenge-06--fdf89-E-should-display-filter-bar-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/test-results/challenge-06-Challenge-06--fdf89-E-should-display-filter-bar-chromium/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-06.spec.ts",
+                            "column": 47,
+                            "line": 9
+                          }
+                        },
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 5400,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar')\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-06.spec.ts:9:47",
+                            "location": {
+                              "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-06.spec.ts",
+                              "column": 47,
+                              "line": 9
+                            },
+                            "snippet": "\u001b[0m \u001b[90m  7 |\u001b[39m\n \u001b[90m  8 |\u001b[39m   test(\u001b[32m'should display filter bar'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#filter-bar'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m\n \u001b[90m 12 |\u001b[39m   test(\u001b[32m'should have All, Active, Completed buttons'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-06.spec.ts",
+                                "column": 47,
+                                "line": 9
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar')\u001b[22m\n\n\n   7 |\n   8 |   test('should display filter bar', async ({ page }) => {\n>  9 |     await expect(page.locator('#filter-bar')).toBeVisible();\n     |                                               ^\n  10 |   });\n  11 |\n  12 |   test('should have All, Active, Completed buttons', async ({ page }) => {\n    at /home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-06.spec.ts:9:47"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 1,
+                          "startTime": "2026-07-02T05:43:38.007Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/test-results/challenge-06-Challenge-06--fdf89-E-should-display-filter-bar-chromium-retry1/test-failed-1.png"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/test-results/challenge-06-Challenge-06--fdf89-E-should-display-filter-bar-chromium-retry1/error-context.md"
+                            },
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/test-results/challenge-06-Challenge-06--fdf89-E-should-display-filter-bar-chromium-retry1/trace.zip"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-06.spec.ts",
+                            "column": 47,
+                            "line": 9
+                          }
+                        },
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 5253,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar')\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-06.spec.ts:9:47",
+                            "location": {
+                              "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-06.spec.ts",
+                              "column": 47,
+                              "line": 9
+                            },
+                            "snippet": "\u001b[0m \u001b[90m  7 |\u001b[39m\n \u001b[90m  8 |\u001b[39m   test(\u001b[32m'should display filter bar'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#filter-bar'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m\n \u001b[90m 12 |\u001b[39m   test(\u001b[32m'should have All, Active, Completed buttons'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-06.spec.ts",
+                                "column": 47,
+                                "line": 9
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar')\u001b[22m\n\n\n   7 |\n   8 |   test('should display filter bar', async ({ page }) => {\n>  9 |     await expect(page.locator('#filter-bar')).toBeVisible();\n     |                                               ^\n  10 |   });\n  11 |\n  12 |   test('should have All, Active, Completed buttons', async ({ page }) => {\n    at /home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-06.spec.ts:9:47"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 2,
+                          "startTime": "2026-07-02T05:43:44.562Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/test-results/challenge-06-Challenge-06--fdf89-E-should-display-filter-bar-chromium-retry2/test-failed-1.png"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/test-results/challenge-06-Challenge-06--fdf89-E-should-display-filter-bar-chromium-retry2/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-06.spec.ts",
+                            "column": 47,
+                            "line": 9
+                          }
                         }
                       ],
-                      "status": "expected"
+                      "status": "unexpected"
                     }
                   ],
                   "id": "fdfd0a4bbce1fa4a4eed-fa0bd3544f252931e9b9",
@@ -2787,15 +2929,15 @@
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 3,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 229,
+                          "duration": 274,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:23:46.049Z",
+                          "startTime": "2026-07-02T05:43:50.976Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2821,15 +2963,15 @@
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 3,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 223,
+                          "duration": 272,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:23:46.295Z",
+                          "startTime": "2026-07-02T05:43:51.345Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2855,15 +2997,15 @@
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 3,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 267,
+                          "duration": 278,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:23:46.538Z",
+                          "startTime": "2026-07-02T05:43:51.640Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2881,11 +3023,12 @@
           ]
         }
       ],
-      "screenshots": []
+      "error": "Exit 1",
+      "passed": false
     },
     "aiReviewResults": {
       "challengeId": "06-task-filtering",
-      "timestamp": "2026-07-02T05:23:46.908Z",
+      "timestamp": "2026-07-02T05:43:52.018Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -2893,11 +3036,11 @@
       "readability": 0,
       "maintainability": 0,
       "overall": "",
-      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 4466, Requested 4948. Please try again in 34.14s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 1216, Requested 4944. Please try again in 1.6s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     },
     "aiResults": {
       "challengeId": "06-task-filtering",
-      "timestamp": "2026-07-02T05:23:46.908Z",
+      "timestamp": "2026-07-02T05:43:52.018Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -2905,31 +3048,31 @@
       "readability": 0,
       "maintainability": 0,
       "overall": "",
-      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 4466, Requested 4948. Please try again in 34.14s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 1216, Requested 4944. Please try again in 1.6s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     }
   },
   {
     "challengeId": "07-priority-based-sorting",
     "challengeName": "Priority-Based Sorting",
-    "timestamp": "2026-07-02T05:23:46.955Z",
+    "timestamp": "2026-07-02T05:43:52.540Z",
     "scores": {
-      "functionalTests": 100,
+      "functionalTests": 66.7,
       "codeQuality": 90,
       "architecture": 100,
       "bestPractices": 100,
       "e2eTests": 100,
       "aiReview": 0
     },
-    "totalScore": 83.5,
-    "passed": true,
+    "totalScore": 71.845,
+    "passed": false,
     "errors": [],
     "warnings": [],
     "testResults": {
-      "score": 100,
-      "passed": true,
+      "score": 66.7,
+      "passed": false,
       "totalTests": 3,
-      "passedTests": 3,
-      "failedTests": 0,
+      "passedTests": 2,
+      "failedTests": 1,
       "details": [
         {
           "assertionResults": [
@@ -2939,10 +3082,16 @@
                 "Challenge 07: Priority-Based Sorting"
               ],
               "fullName": " Challenge 07: Priority-Based Sorting FilterBar or sort control should exist",
-              "status": "passed",
+              "status": "failed",
               "title": "FilterBar or sort control should exist",
-              "duration": 22,
-              "failureMessages": []
+              "duration": 26,
+              "failureMessages": [
+                "expect(received).toBeInTheDocument()\n\nreceived value must be an HTMLElement or an SVGElement.\n"
+              ],
+              "location": {
+                "line": 15,
+                "column": 52
+              }
             },
             {
               "ancestorTitles": [
@@ -2952,7 +3101,7 @@
               "fullName": " Challenge 07: Priority-Based Sorting TaskList should render tasks in order provided",
               "status": "passed",
               "title": "TaskList should render tasks in order provided",
-              "duration": 144,
+              "duration": 138,
               "failureMessages": []
             },
             {
@@ -2963,17 +3112,18 @@
               "fullName": " Challenge 07: Priority-Based Sorting When tasks sorted High to Low, High appears first",
               "status": "passed",
               "title": "When tasks sorted High to Low, High appears first",
-              "duration": 50,
+              "duration": 53,
               "failureMessages": []
             }
           ],
-          "startTime": 1782969828362,
-          "endTime": 1782969828578,
-          "status": "passed",
+          "startTime": 1782971034008,
+          "endTime": 1782971034225,
+          "status": "failed",
           "message": "",
           "name": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/challenge-07.test.tsx"
         }
-      ]
+      ],
+      "error": "Command failed: npm test -- /home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/challenge-07.test.tsx --run --reporter=json"
     },
     "lintResults": {
       "score": 90,
@@ -3193,12 +3343,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 266,
+                          "duration": 295,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:23:53.252Z",
+                          "startTime": "2026-07-02T05:43:59.034Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -3227,12 +3377,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 223,
+                          "duration": 239,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:23:53.609Z",
+                          "startTime": "2026-07-02T05:43:59.420Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -3254,7 +3404,7 @@
     },
     "aiReviewResults": {
       "challengeId": "07-priority-based-sorting",
-      "timestamp": "2026-07-02T05:23:53.950Z",
+      "timestamp": "2026-07-02T05:43:59.782Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -3262,11 +3412,11 @@
       "readability": 0,
       "maintainability": 0,
       "overall": "",
-      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 3764, Requested 4386. Please try again in 21.5s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 3550, Requested 4819. Please try again in 23.689999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     },
     "aiResults": {
       "challengeId": "07-priority-based-sorting",
-      "timestamp": "2026-07-02T05:23:53.950Z",
+      "timestamp": "2026-07-02T05:43:59.782Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -3274,7 +3424,7 @@
       "readability": 0,
       "maintainability": 0,
       "overall": "",
-      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 3764, Requested 4386. Please try again in 21.5s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 3550, Requested 4819. Please try again in 23.689999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     }
   },
   {
@@ -3677,25 +3827,25 @@
   {
     "challengeId": "09-search-functionality",
     "challengeName": "Search Functionality",
-    "timestamp": "2026-07-02T05:24:00.943Z",
+    "timestamp": "2026-07-02T05:44:00.360Z",
     "scores": {
-      "functionalTests": 100,
+      "functionalTests": 50,
       "codeQuality": 90,
       "architecture": 100,
       "bestPractices": 100,
-      "e2eTests": 50,
+      "e2eTests": 100,
       "aiReview": 0
     },
-    "totalScore": 76,
+    "totalScore": 66,
     "passed": false,
     "errors": [],
     "warnings": [],
     "testResults": {
-      "score": 100,
-      "passed": true,
+      "score": 50,
+      "passed": false,
       "totalTests": 2,
-      "passedTests": 2,
-      "failedTests": 0,
+      "passedTests": 1,
+      "failedTests": 1,
       "details": [
         {
           "assertionResults": [
@@ -3705,10 +3855,16 @@
                 "Challenge 09: Search Functionality"
               ],
               "fullName": " Challenge 09: Search Functionality FilterBar should exist for search integration",
-              "status": "passed",
+              "status": "failed",
               "title": "FilterBar should exist for search integration",
-              "duration": 23,
-              "failureMessages": []
+              "duration": 26,
+              "failureMessages": [
+                "expect(received).toBeInTheDocument()\n\nreceived value must be an HTMLElement or an SVGElement.\n"
+              ],
+              "location": {
+                "line": 14,
+                "column": 52
+              }
             },
             {
               "ancestorTitles": [
@@ -3722,13 +3878,14 @@
               "failureMessages": []
             }
           ],
-          "startTime": 1782969842367,
-          "endTime": 1782969842423,
-          "status": "passed",
+          "startTime": 1782971041797,
+          "endTime": 1782971041856,
+          "status": "failed",
           "message": "",
           "name": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/challenge-09.test.tsx"
         }
-      ]
+      ],
+      "error": "Command failed: npm test -- /home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/challenge-09.test.tsx --run --reporter=json"
     },
     "lintResults": {
       "score": 90,
@@ -3913,10 +4070,11 @@
       "note": "No best practices requirements specified in challenge"
     },
     "e2eResults": {
-      "score": 50,
+      "score": 100,
+      "passed": true,
       "totalTests": 2,
-      "passedTests": 1,
-      "failedTests": 1,
+      "passedTests": 2,
+      "failedTests": 0,
       "details": [
         {
           "title": "challenge-09.spec.ts",
@@ -3947,12 +4105,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 287,
+                          "duration": 290,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:24:07.157Z",
+                          "startTime": "2026-07-02T05:44:06.760Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -3967,7 +4125,7 @@
                 },
                 {
                   "title": "should display filter bar or search area",
-                  "ok": false,
+                  "ok": true,
                   "tags": [],
                   "tests": [
                     {
@@ -3980,154 +4138,18 @@
                         {
                           "workerIndex": 0,
                           "parallelIndex": 0,
-                          "status": "failed",
-                          "duration": 261,
-                          "error": {
-                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar').or(locator('#search-input'))\nExpected: visible\nError: strict mode violation: locator('#filter-bar').or(locator('#search-input')) resolved to 2 elements:\n    1) <div id=\"filter-bar\">…</div> aka getByText('AllActiveCompletedRecently')\n    2) <input value=\"\" type=\"text\" id=\"search-input\" placeholder=\"Search tasks\"/> aka getByRole('textbox', { name: 'Search tasks' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar').or(locator('#search-input'))\u001b[22m\n",
-                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar').or(locator('#search-input'))\nExpected: visible\nError: strict mode violation: locator('#filter-bar').or(locator('#search-input')) resolved to 2 elements:\n    1) <div id=\"filter-bar\">…</div> aka getByText('AllActiveCompletedRecently')\n    2) <input value=\"\" type=\"text\" id=\"search-input\" placeholder=\"Search tasks\"/> aka getByRole('textbox', { name: 'Search tasks' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar').or(locator('#search-input'))\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-09.spec.ts:13:81",
-                            "location": {
-                              "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-09.spec.ts",
-                              "column": 81,
-                              "line": 13
-                            },
-                            "snippet": "\u001b[0m \u001b[90m 11 |\u001b[39m\n \u001b[90m 12 |\u001b[39m   test(\u001b[32m'should display filter bar or search area'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#filter-bar'\u001b[39m)\u001b[33m.\u001b[39mor(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#search-input'\u001b[39m)))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m\u001b[0m"
-                          },
-                          "errors": [
-                            {
-                              "location": {
-                                "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-09.spec.ts",
-                                "column": 81,
-                                "line": 13
-                              },
-                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar').or(locator('#search-input'))\nExpected: visible\nError: strict mode violation: locator('#filter-bar').or(locator('#search-input')) resolved to 2 elements:\n    1) <div id=\"filter-bar\">…</div> aka getByText('AllActiveCompletedRecently')\n    2) <input value=\"\" type=\"text\" id=\"search-input\" placeholder=\"Search tasks\"/> aka getByRole('textbox', { name: 'Search tasks' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar').or(locator('#search-input'))\u001b[22m\n\n\n  11 |\n  12 |   test('should display filter bar or search area', async ({ page }) => {\n> 13 |     await expect(page.locator('#filter-bar').or(page.locator('#search-input'))).toBeVisible();\n     |                                                                                 ^\n  14 |   });\n  15 | });\n  16 |\n    at /home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-09.spec.ts:13:81"
-                            }
-                          ],
+                          "status": "passed",
+                          "duration": 251,
+                          "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:24:07.536Z",
+                          "startTime": "2026-07-02T05:44:07.148Z",
                           "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "screenshot",
-                              "contentType": "image/png",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/test-results/challenge-09-Challenge-09--46cbd-y-filter-bar-or-search-area-chromium/test-failed-1.png"
-                            },
-                            {
-                              "name": "error-context",
-                              "contentType": "text/markdown",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/test-results/challenge-09-Challenge-09--46cbd-y-filter-bar-or-search-area-chromium/error-context.md"
-                            }
-                          ],
-                          "errorLocation": {
-                            "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-09.spec.ts",
-                            "column": 81,
-                            "line": 13
-                          }
-                        },
-                        {
-                          "workerIndex": 1,
-                          "parallelIndex": 0,
-                          "status": "failed",
-                          "duration": 424,
-                          "error": {
-                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar').or(locator('#search-input'))\nExpected: visible\nError: strict mode violation: locator('#filter-bar').or(locator('#search-input')) resolved to 2 elements:\n    1) <div id=\"filter-bar\">…</div> aka getByText('AllActiveCompletedRecently')\n    2) <input value=\"\" type=\"text\" id=\"search-input\" placeholder=\"Search tasks\"/> aka getByRole('textbox', { name: 'Search tasks' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar').or(locator('#search-input'))\u001b[22m\n",
-                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar').or(locator('#search-input'))\nExpected: visible\nError: strict mode violation: locator('#filter-bar').or(locator('#search-input')) resolved to 2 elements:\n    1) <div id=\"filter-bar\">…</div> aka getByText('AllActiveCompletedRecently')\n    2) <input value=\"\" type=\"text\" id=\"search-input\" placeholder=\"Search tasks\"/> aka getByRole('textbox', { name: 'Search tasks' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar').or(locator('#search-input'))\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-09.spec.ts:13:81",
-                            "location": {
-                              "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-09.spec.ts",
-                              "column": 81,
-                              "line": 13
-                            },
-                            "snippet": "\u001b[0m \u001b[90m 11 |\u001b[39m\n \u001b[90m 12 |\u001b[39m   test(\u001b[32m'should display filter bar or search area'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#filter-bar'\u001b[39m)\u001b[33m.\u001b[39mor(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#search-input'\u001b[39m)))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m\u001b[0m"
-                          },
-                          "errors": [
-                            {
-                              "location": {
-                                "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-09.spec.ts",
-                                "column": 81,
-                                "line": 13
-                              },
-                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar').or(locator('#search-input'))\nExpected: visible\nError: strict mode violation: locator('#filter-bar').or(locator('#search-input')) resolved to 2 elements:\n    1) <div id=\"filter-bar\">…</div> aka getByText('AllActiveCompletedRecently')\n    2) <input value=\"\" type=\"text\" id=\"search-input\" placeholder=\"Search tasks\"/> aka getByRole('textbox', { name: 'Search tasks' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar').or(locator('#search-input'))\u001b[22m\n\n\n  11 |\n  12 |   test('should display filter bar or search area', async ({ page }) => {\n> 13 |     await expect(page.locator('#filter-bar').or(page.locator('#search-input'))).toBeVisible();\n     |                                                                                 ^\n  14 |   });\n  15 | });\n  16 |\n    at /home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-09.spec.ts:13:81"
-                            }
-                          ],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 1,
-                          "startTime": "2026-07-02T05:24:08.860Z",
-                          "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "screenshot",
-                              "contentType": "image/png",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/test-results/challenge-09-Challenge-09--46cbd-y-filter-bar-or-search-area-chromium-retry1/test-failed-1.png"
-                            },
-                            {
-                              "name": "error-context",
-                              "contentType": "text/markdown",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/test-results/challenge-09-Challenge-09--46cbd-y-filter-bar-or-search-area-chromium-retry1/error-context.md"
-                            },
-                            {
-                              "name": "trace",
-                              "contentType": "application/zip",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/test-results/challenge-09-Challenge-09--46cbd-y-filter-bar-or-search-area-chromium-retry1/trace.zip"
-                            }
-                          ],
-                          "errorLocation": {
-                            "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-09.spec.ts",
-                            "column": 81,
-                            "line": 13
-                          }
-                        },
-                        {
-                          "workerIndex": 2,
-                          "parallelIndex": 0,
-                          "status": "failed",
-                          "duration": 290,
-                          "error": {
-                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar').or(locator('#search-input'))\nExpected: visible\nError: strict mode violation: locator('#filter-bar').or(locator('#search-input')) resolved to 2 elements:\n    1) <div id=\"filter-bar\">…</div> aka getByText('AllActiveCompletedRecently')\n    2) <input value=\"\" type=\"text\" id=\"search-input\" placeholder=\"Search tasks\"/> aka getByRole('textbox', { name: 'Search tasks' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar').or(locator('#search-input'))\u001b[22m\n",
-                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar').or(locator('#search-input'))\nExpected: visible\nError: strict mode violation: locator('#filter-bar').or(locator('#search-input')) resolved to 2 elements:\n    1) <div id=\"filter-bar\">…</div> aka getByText('AllActiveCompletedRecently')\n    2) <input value=\"\" type=\"text\" id=\"search-input\" placeholder=\"Search tasks\"/> aka getByRole('textbox', { name: 'Search tasks' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar').or(locator('#search-input'))\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-09.spec.ts:13:81",
-                            "location": {
-                              "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-09.spec.ts",
-                              "column": 81,
-                              "line": 13
-                            },
-                            "snippet": "\u001b[0m \u001b[90m 11 |\u001b[39m\n \u001b[90m 12 |\u001b[39m   test(\u001b[32m'should display filter bar or search area'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#filter-bar'\u001b[39m)\u001b[33m.\u001b[39mor(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#search-input'\u001b[39m)))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m\u001b[0m"
-                          },
-                          "errors": [
-                            {
-                              "location": {
-                                "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-09.spec.ts",
-                                "column": 81,
-                                "line": 13
-                              },
-                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar').or(locator('#search-input'))\nExpected: visible\nError: strict mode violation: locator('#filter-bar').or(locator('#search-input')) resolved to 2 elements:\n    1) <div id=\"filter-bar\">…</div> aka getByText('AllActiveCompletedRecently')\n    2) <input value=\"\" type=\"text\" id=\"search-input\" placeholder=\"Search tasks\"/> aka getByRole('textbox', { name: 'Search tasks' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar').or(locator('#search-input'))\u001b[22m\n\n\n  11 |\n  12 |   test('should display filter bar or search area', async ({ page }) => {\n> 13 |     await expect(page.locator('#filter-bar').or(page.locator('#search-input'))).toBeVisible();\n     |                                                                                 ^\n  14 |   });\n  15 | });\n  16 |\n    at /home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-09.spec.ts:13:81"
-                            }
-                          ],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 2,
-                          "startTime": "2026-07-02T05:24:10.438Z",
-                          "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "screenshot",
-                              "contentType": "image/png",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/test-results/challenge-09-Challenge-09--46cbd-y-filter-bar-or-search-area-chromium-retry2/test-failed-1.png"
-                            },
-                            {
-                              "name": "error-context",
-                              "contentType": "text/markdown",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/test-results/challenge-09-Challenge-09--46cbd-y-filter-bar-or-search-area-chromium-retry2/error-context.md"
-                            }
-                          ],
-                          "errorLocation": {
-                            "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-09.spec.ts",
-                            "column": 81,
-                            "line": 13
-                          }
+                          "attachments": []
                         }
                       ],
-                      "status": "unexpected"
+                      "status": "expected"
                     }
                   ],
                   "id": "a1b04685a79f6082459c-f7f96fde2c0088dc54d3",
@@ -4140,12 +4162,11 @@
           ]
         }
       ],
-      "error": "Exit 1",
-      "passed": false
+      "screenshots": []
     },
     "aiReviewResults": {
       "challengeId": "09-search-functionality",
-      "timestamp": "2026-07-02T05:24:10.922Z",
+      "timestamp": "2026-07-02T05:44:07.509Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -4153,11 +4174,11 @@
       "readability": 0,
       "maintainability": 0,
       "overall": "",
-      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 2066, Requested 4529. Please try again in 5.95s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 2781, Requested 4877. Please try again in 16.579999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     },
     "aiResults": {
       "challengeId": "09-search-functionality",
-      "timestamp": "2026-07-02T05:24:10.922Z",
+      "timestamp": "2026-07-02T05:44:07.509Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -4165,7 +4186,7 @@
       "readability": 0,
       "maintainability": 0,
       "overall": "",
-      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 2066, Requested 4529. Please try again in 5.95s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 2781, Requested 4877. Please try again in 16.579999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     }
   },
   {
@@ -4416,25 +4437,25 @@
   {
     "challengeId": "11-useeffect-debounced-search",
     "challengeName": "useEffect - Debounced Search",
-    "timestamp": "2026-07-02T05:24:18.925Z",
+    "timestamp": "2026-07-02T05:44:08.054Z",
     "scores": {
-      "functionalTests": 100,
+      "functionalTests": 50,
       "codeQuality": 90,
       "architecture": 100,
       "bestPractices": 100,
       "e2eTests": 100,
       "aiReview": 0
     },
-    "totalScore": 83.5,
-    "passed": true,
+    "totalScore": 66,
+    "passed": false,
     "errors": [],
     "warnings": [],
     "testResults": {
-      "score": 100,
-      "passed": true,
+      "score": 50,
+      "passed": false,
       "totalTests": 2,
-      "passedTests": 2,
-      "failedTests": 0,
+      "passedTests": 1,
+      "failedTests": 1,
       "details": [
         {
           "assertionResults": [
@@ -4444,10 +4465,16 @@
                 "Challenge 11: useEffect - Debounced Search"
               ],
               "fullName": " Challenge 11: useEffect - Debounced Search FilterBar should exist for search/debounce integration",
-              "status": "passed",
+              "status": "failed",
               "title": "FilterBar should exist for search/debounce integration",
-              "duration": 23,
-              "failureMessages": []
+              "duration": 26,
+              "failureMessages": [
+                "expect(received).toBeInTheDocument()\n\nreceived value must be an HTMLElement or an SVGElement.\n"
+              ],
+              "location": {
+                "line": 9,
+                "column": 52
+              }
             },
             {
               "ancestorTitles": [
@@ -4457,17 +4484,18 @@
               "fullName": " Challenge 11: useEffect - Debounced Search TaskList should render tasks",
               "status": "passed",
               "title": "TaskList should render tasks",
-              "duration": 30,
+              "duration": 31,
               "failureMessages": []
             }
           ],
-          "startTime": 1782969860374,
-          "endTime": 1782969860427,
-          "status": "passed",
+          "startTime": 1782971049520,
+          "endTime": 1782971049577,
+          "status": "failed",
           "message": "",
           "name": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/challenge-11.test.tsx"
         }
-      ]
+      ],
+      "error": "Command failed: npm test -- /home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/challenge-11.test.tsx --run --reporter=json"
     },
     "lintResults": {
       "score": 90,
@@ -4688,12 +4716,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 286,
+                          "duration": 288,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:24:25.174Z",
+                          "startTime": "2026-07-02T05:44:14.407Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -4715,7 +4743,7 @@
     },
     "aiReviewResults": {
       "challengeId": "11-useeffect-debounced-search",
-      "timestamp": "2026-07-02T05:24:25.657Z",
+      "timestamp": "2026-07-02T05:44:14.883Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -4723,11 +4751,11 @@
       "readability": 0,
       "maintainability": 0,
       "overall": "",
-      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 4085, Requested 4486. Please try again in 25.71s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 5780, Requested 4960. Please try again in 47.4s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     },
     "aiResults": {
       "challengeId": "11-useeffect-debounced-search",
-      "timestamp": "2026-07-02T05:24:25.657Z",
+      "timestamp": "2026-07-02T05:44:14.883Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -4735,13 +4763,13 @@
       "readability": 0,
       "maintainability": 0,
       "overall": "",
-      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 4085, Requested 4486. Please try again in 25.71s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 5780, Requested 4960. Please try again in 47.4s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     }
   },
   {
     "challengeId": "12-categories-and-tags",
     "challengeName": "Categories and Tags",
-    "timestamp": "2026-07-02T05:24:25.688Z",
+    "timestamp": "2026-07-02T05:44:15.423Z",
     "scores": {
       "functionalTests": 100,
       "codeQuality": 100,
@@ -4782,12 +4810,12 @@
               "fullName": " Challenge 12: Categories and Tags TaskList should render tasks with extended shape",
               "status": "passed",
               "title": "TaskList should render tasks with extended shape",
-              "duration": 8,
+              "duration": 7,
               "failureMessages": []
             }
           ],
-          "startTime": 1782969867088,
-          "endTime": 1782969867143,
+          "startTime": 1782971056857,
+          "endTime": 1782971056911,
           "status": "passed",
           "message": "",
           "name": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/challenge-12.test.tsx"
@@ -4969,12 +4997,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 269,
+                          "duration": 280,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:24:31.813Z",
+                          "startTime": "2026-07-02T05:44:21.663Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -5003,12 +5031,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 221,
+                          "duration": 226,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:24:32.178Z",
+                          "startTime": "2026-07-02T05:44:22.042Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -5030,7 +5058,7 @@
     },
     "aiReviewResults": {
       "challengeId": "12-categories-and-tags",
-      "timestamp": "2026-07-02T05:24:32.518Z",
+      "timestamp": "2026-07-02T05:44:22.376Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -5038,11 +5066,11 @@
       "readability": 0,
       "maintainability": 0,
       "overall": "",
-      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 3398, Requested 4436. Please try again in 18.34s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 5032, Requested 4869. Please try again in 39.01s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     },
     "aiResults": {
       "challengeId": "12-categories-and-tags",
-      "timestamp": "2026-07-02T05:24:32.518Z",
+      "timestamp": "2026-07-02T05:44:22.376Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -5050,7 +5078,7 @@
       "readability": 0,
       "maintainability": 0,
       "overall": "",
-      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 3398, Requested 4436. Please try again in 18.34s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 5032, Requested 4869. Please try again in 39.01s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     }
   },
   {
@@ -8482,17 +8510,17 @@
   {
     "challengeId": "23-useref-focus-management",
     "challengeName": "useRef - Focus Management",
-    "timestamp": "2026-07-02T05:25:47.930Z",
+    "timestamp": "2026-07-02T05:44:22.909Z",
     "scores": {
       "functionalTests": 100,
       "codeQuality": 90,
       "architecture": 100,
       "bestPractices": 100,
-      "e2eTests": 66.7,
+      "e2eTests": 100,
       "aiReview": 0
     },
-    "totalScore": 78.505,
-    "passed": false,
+    "totalScore": 83.5,
+    "passed": true,
     "errors": [],
     "warnings": [],
     "testResults": {
@@ -8527,8 +8555,8 @@
               "failureMessages": []
             }
           ],
-          "startTime": 1782969949359,
-          "endTime": 1782969949385,
+          "startTime": 1782971064299,
+          "endTime": 1782971064325,
           "status": "passed",
           "message": "",
           "name": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/challenge-23.test.tsx"
@@ -8723,10 +8751,11 @@
       "note": "No best practices requirements specified in challenge"
     },
     "e2eResults": {
-      "score": 66.7,
+      "score": 100,
+      "passed": true,
       "totalTests": 3,
-      "passedTests": 2,
-      "failedTests": 1,
+      "passedTests": 3,
+      "failedTests": 0,
       "details": [
         {
           "title": "challenge-23.spec.ts",
@@ -8757,12 +8786,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 277,
+                          "duration": 291,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:25:54.138Z",
+                          "startTime": "2026-07-02T05:44:29.122Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -8777,7 +8806,7 @@
                 },
                 {
                   "title": "should display filter bar with search input",
-                  "ok": false,
+                  "ok": true,
                   "tags": [],
                   "tests": [
                     {
@@ -8790,154 +8819,18 @@
                         {
                           "workerIndex": 0,
                           "parallelIndex": 0,
-                          "status": "failed",
-                          "duration": 245,
-                          "error": {
-                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar').or(locator('#search-input'))\nExpected: visible\nError: strict mode violation: locator('#filter-bar').or(locator('#search-input')) resolved to 2 elements:\n    1) <div id=\"filter-bar\">…</div> aka getByText('AllActiveCompletedRecently')\n    2) <input value=\"\" type=\"text\" id=\"search-input\" placeholder=\"Search tasks\"/> aka getByRole('textbox', { name: 'Search tasks' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar').or(locator('#search-input'))\u001b[22m\n",
-                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar').or(locator('#search-input'))\nExpected: visible\nError: strict mode violation: locator('#filter-bar').or(locator('#search-input')) resolved to 2 elements:\n    1) <div id=\"filter-bar\">…</div> aka getByText('AllActiveCompletedRecently')\n    2) <input value=\"\" type=\"text\" id=\"search-input\" placeholder=\"Search tasks\"/> aka getByRole('textbox', { name: 'Search tasks' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar').or(locator('#search-input'))\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-23.spec.ts:13:81",
-                            "location": {
-                              "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-23.spec.ts",
-                              "column": 81,
-                              "line": 13
-                            },
-                            "snippet": "\u001b[0m \u001b[90m 11 |\u001b[39m\n \u001b[90m 12 |\u001b[39m   test(\u001b[32m'should display filter bar with search input'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#filter-bar'\u001b[39m)\u001b[33m.\u001b[39mor(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#search-input'\u001b[39m)))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m   test(\u001b[32m'search input should exist and be visible'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
-                          },
-                          "errors": [
-                            {
-                              "location": {
-                                "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-23.spec.ts",
-                                "column": 81,
-                                "line": 13
-                              },
-                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar').or(locator('#search-input'))\nExpected: visible\nError: strict mode violation: locator('#filter-bar').or(locator('#search-input')) resolved to 2 elements:\n    1) <div id=\"filter-bar\">…</div> aka getByText('AllActiveCompletedRecently')\n    2) <input value=\"\" type=\"text\" id=\"search-input\" placeholder=\"Search tasks\"/> aka getByRole('textbox', { name: 'Search tasks' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar').or(locator('#search-input'))\u001b[22m\n\n\n  11 |\n  12 |   test('should display filter bar with search input', async ({ page }) => {\n> 13 |     await expect(page.locator('#filter-bar').or(page.locator('#search-input'))).toBeVisible();\n     |                                                                                 ^\n  14 |   });\n  15 |\n  16 |   test('search input should exist and be visible', async ({ page }) => {\n    at /home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-23.spec.ts:13:81"
-                            }
-                          ],
+                          "status": "passed",
+                          "duration": 236,
+                          "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:25:54.506Z",
+                          "startTime": "2026-07-02T05:44:29.509Z",
                           "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "screenshot",
-                              "contentType": "image/png",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/test-results/challenge-23-Challenge-23--c0b29-ilter-bar-with-search-input-chromium/test-failed-1.png"
-                            },
-                            {
-                              "name": "error-context",
-                              "contentType": "text/markdown",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/test-results/challenge-23-Challenge-23--c0b29-ilter-bar-with-search-input-chromium/error-context.md"
-                            }
-                          ],
-                          "errorLocation": {
-                            "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-23.spec.ts",
-                            "column": 81,
-                            "line": 13
-                          }
-                        },
-                        {
-                          "workerIndex": 1,
-                          "parallelIndex": 0,
-                          "status": "failed",
-                          "duration": 437,
-                          "error": {
-                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar').or(locator('#search-input'))\nExpected: visible\nError: strict mode violation: locator('#filter-bar').or(locator('#search-input')) resolved to 2 elements:\n    1) <div id=\"filter-bar\">…</div> aka getByText('AllActiveCompletedRecently')\n    2) <input value=\"\" type=\"text\" id=\"search-input\" placeholder=\"Search tasks\"/> aka getByRole('textbox', { name: 'Search tasks' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar').or(locator('#search-input'))\u001b[22m\n",
-                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar').or(locator('#search-input'))\nExpected: visible\nError: strict mode violation: locator('#filter-bar').or(locator('#search-input')) resolved to 2 elements:\n    1) <div id=\"filter-bar\">…</div> aka getByText('AllActiveCompletedRecently')\n    2) <input value=\"\" type=\"text\" id=\"search-input\" placeholder=\"Search tasks\"/> aka getByRole('textbox', { name: 'Search tasks' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar').or(locator('#search-input'))\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-23.spec.ts:13:81",
-                            "location": {
-                              "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-23.spec.ts",
-                              "column": 81,
-                              "line": 13
-                            },
-                            "snippet": "\u001b[0m \u001b[90m 11 |\u001b[39m\n \u001b[90m 12 |\u001b[39m   test(\u001b[32m'should display filter bar with search input'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#filter-bar'\u001b[39m)\u001b[33m.\u001b[39mor(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#search-input'\u001b[39m)))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m   test(\u001b[32m'search input should exist and be visible'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
-                          },
-                          "errors": [
-                            {
-                              "location": {
-                                "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-23.spec.ts",
-                                "column": 81,
-                                "line": 13
-                              },
-                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar').or(locator('#search-input'))\nExpected: visible\nError: strict mode violation: locator('#filter-bar').or(locator('#search-input')) resolved to 2 elements:\n    1) <div id=\"filter-bar\">…</div> aka getByText('AllActiveCompletedRecently')\n    2) <input value=\"\" type=\"text\" id=\"search-input\" placeholder=\"Search tasks\"/> aka getByRole('textbox', { name: 'Search tasks' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar').or(locator('#search-input'))\u001b[22m\n\n\n  11 |\n  12 |   test('should display filter bar with search input', async ({ page }) => {\n> 13 |     await expect(page.locator('#filter-bar').or(page.locator('#search-input'))).toBeVisible();\n     |                                                                                 ^\n  14 |   });\n  15 |\n  16 |   test('search input should exist and be visible', async ({ page }) => {\n    at /home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-23.spec.ts:13:81"
-                            }
-                          ],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 1,
-                          "startTime": "2026-07-02T05:25:55.827Z",
-                          "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "screenshot",
-                              "contentType": "image/png",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/test-results/challenge-23-Challenge-23--c0b29-ilter-bar-with-search-input-chromium-retry1/test-failed-1.png"
-                            },
-                            {
-                              "name": "error-context",
-                              "contentType": "text/markdown",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/test-results/challenge-23-Challenge-23--c0b29-ilter-bar-with-search-input-chromium-retry1/error-context.md"
-                            },
-                            {
-                              "name": "trace",
-                              "contentType": "application/zip",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/test-results/challenge-23-Challenge-23--c0b29-ilter-bar-with-search-input-chromium-retry1/trace.zip"
-                            }
-                          ],
-                          "errorLocation": {
-                            "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-23.spec.ts",
-                            "column": 81,
-                            "line": 13
-                          }
-                        },
-                        {
-                          "workerIndex": 2,
-                          "parallelIndex": 0,
-                          "status": "failed",
-                          "duration": 291,
-                          "error": {
-                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar').or(locator('#search-input'))\nExpected: visible\nError: strict mode violation: locator('#filter-bar').or(locator('#search-input')) resolved to 2 elements:\n    1) <div id=\"filter-bar\">…</div> aka getByText('AllActiveCompletedRecently')\n    2) <input value=\"\" type=\"text\" id=\"search-input\" placeholder=\"Search tasks\"/> aka getByRole('textbox', { name: 'Search tasks' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar').or(locator('#search-input'))\u001b[22m\n",
-                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar').or(locator('#search-input'))\nExpected: visible\nError: strict mode violation: locator('#filter-bar').or(locator('#search-input')) resolved to 2 elements:\n    1) <div id=\"filter-bar\">…</div> aka getByText('AllActiveCompletedRecently')\n    2) <input value=\"\" type=\"text\" id=\"search-input\" placeholder=\"Search tasks\"/> aka getByRole('textbox', { name: 'Search tasks' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar').or(locator('#search-input'))\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-23.spec.ts:13:81",
-                            "location": {
-                              "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-23.spec.ts",
-                              "column": 81,
-                              "line": 13
-                            },
-                            "snippet": "\u001b[0m \u001b[90m 11 |\u001b[39m\n \u001b[90m 12 |\u001b[39m   test(\u001b[32m'should display filter bar with search input'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#filter-bar'\u001b[39m)\u001b[33m.\u001b[39mor(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#search-input'\u001b[39m)))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m   test(\u001b[32m'search input should exist and be visible'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
-                          },
-                          "errors": [
-                            {
-                              "location": {
-                                "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-23.spec.ts",
-                                "column": 81,
-                                "line": 13
-                              },
-                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar').or(locator('#search-input'))\nExpected: visible\nError: strict mode violation: locator('#filter-bar').or(locator('#search-input')) resolved to 2 elements:\n    1) <div id=\"filter-bar\">…</div> aka getByText('AllActiveCompletedRecently')\n    2) <input value=\"\" type=\"text\" id=\"search-input\" placeholder=\"Search tasks\"/> aka getByRole('textbox', { name: 'Search tasks' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar').or(locator('#search-input'))\u001b[22m\n\n\n  11 |\n  12 |   test('should display filter bar with search input', async ({ page }) => {\n> 13 |     await expect(page.locator('#filter-bar').or(page.locator('#search-input'))).toBeVisible();\n     |                                                                                 ^\n  14 |   });\n  15 |\n  16 |   test('search input should exist and be visible', async ({ page }) => {\n    at /home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-23.spec.ts:13:81"
-                            }
-                          ],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 2,
-                          "startTime": "2026-07-02T05:25:57.429Z",
-                          "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "screenshot",
-                              "contentType": "image/png",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/test-results/challenge-23-Challenge-23--c0b29-ilter-bar-with-search-input-chromium-retry2/test-failed-1.png"
-                            },
-                            {
-                              "name": "error-context",
-                              "contentType": "text/markdown",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/test-results/challenge-23-Challenge-23--c0b29-ilter-bar-with-search-input-chromium-retry2/error-context.md"
-                            }
-                          ],
-                          "errorLocation": {
-                            "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-23.spec.ts",
-                            "column": 81,
-                            "line": 13
-                          }
+                          "attachments": []
                         }
                       ],
-                      "status": "unexpected"
+                      "status": "expected"
                     }
                   ],
                   "id": "a7b5313722e1686b4d4f-f646e519e463d837ae26",
@@ -8958,15 +8851,15 @@
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 3,
+                          "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 274,
+                          "duration": 226,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:25:58.853Z",
+                          "startTime": "2026-07-02T05:44:29.763Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -8984,12 +8877,11 @@
           ]
         }
       ],
-      "error": "Exit 1",
-      "passed": false
+      "screenshots": []
     },
     "aiReviewResults": {
       "challengeId": "23-useref-focus-management",
-      "timestamp": "2026-07-02T05:25:59.317Z",
+      "timestamp": "2026-07-02T05:44:30.098Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -8997,11 +8889,11 @@
       "readability": 0,
       "maintainability": 0,
       "overall": "",
-      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 3951, Requested 4504. Please try again in 24.55s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 4262, Requested 4897. Please try again in 31.589999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     },
     "aiResults": {
       "challengeId": "23-useref-focus-management",
-      "timestamp": "2026-07-02T05:25:59.317Z",
+      "timestamp": "2026-07-02T05:44:30.098Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -9009,7 +8901,7 @@
       "readability": 0,
       "maintainability": 0,
       "overall": "",
-      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 3951, Requested 4504. Please try again in 24.55s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 4262, Requested 4897. Please try again in 31.589999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     }
   }
 ]
