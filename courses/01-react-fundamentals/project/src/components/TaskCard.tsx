@@ -1,4 +1,4 @@
-import { useState, memo } from 'react'
+import { useState, memo, useRef, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Button from './Button'
 import Badge from './Badge'
@@ -30,7 +30,6 @@ function getDueDateStatus(dueDate?: string | number, completed?: boolean): 'over
   const dueDay = new Date(due.getFullYear(), due.getMonth(), due.getDate())
   const today = new Date(now.getFullYear(), now.getMonth(), now.getDate())
   const diffDays = Math.round((dueDay.getTime() - today.getTime()) / 86400000)
-
   if (diffDays < 0) return 'overdue'
   if (diffDays === 0) return 'due-today'
   if (diffDays > 0 && diffDays <= 3) return 'due-soon'
@@ -56,6 +55,14 @@ function TaskCard({
   const [editDescription, setEditDescription] = useState(description)
   const [editPriority, setEditPriority] = useState(priority ?? 'Medium')
   const [error, setError] = useState('')
+
+  const editTitleRef = useRef<HTMLInputElement>(null)
+
+  useEffect(() => {
+    if (isEditing) {
+      editTitleRef.current?.focus()
+    }
+  }, [isEditing])
 
   const priorityLabel = priority
     ? priority.startsWith('Priority:') ? priority : `Priority: ${priority}`
@@ -105,6 +112,7 @@ function TaskCard({
         <label htmlFor={`edit-title-${resolvedId}`}>Title</label>
         <input
           id={`edit-title-${resolvedId}`}
+          ref={editTitleRef}
           type="text"
           value={editTitle}
           onChange={e => setEditTitle(e.target.value)}

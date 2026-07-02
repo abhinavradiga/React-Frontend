@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef } from 'react'
 import Button from './Button'
 
 interface FilterBarProps {
@@ -23,10 +23,6 @@ export default function FilterBar({
   const current = filter ?? activeFilter ?? 'all'
   const search = searchValue ?? internalSearch
   const searchInputRef = useRef<HTMLInputElement>(null)
-
-  useEffect(() => {
-    searchInputRef.current?.focus()
-  }, [])
 
   function handleSearch(e: React.ChangeEvent<HTMLInputElement>) {
     setInternalSearch(e.target.value)
