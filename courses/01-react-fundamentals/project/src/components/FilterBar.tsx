@@ -35,7 +35,7 @@ export default function FilterBar({
   }
 
   return (
-    <div>
+    <div id="filter-bar">
       <input
         id="search-input"
         ref={searchInputRef}
