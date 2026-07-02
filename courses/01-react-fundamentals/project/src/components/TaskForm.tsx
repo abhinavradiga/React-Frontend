@@ -25,7 +25,6 @@ export default function TaskForm({ onAddTask, categories = ['General', 'Work', '
       .split(',')
       .map(t => t.trim())
       .filter(Boolean)
-
     onAddTask?.({
       id: Date.now(),
       title: title.trim(),
@@ -53,8 +52,8 @@ export default function TaskForm({ onAddTask, categories = ['General', 'Work', '
         value={title}
         onChange={e => setTitle(e.target.value)}
         placeholder="Task title"
-        error={error || undefined}
       />
+      {error && <p id="task-form-error">{error}</p>}
       <FormInput
         id="task-description"
         label="Description"
