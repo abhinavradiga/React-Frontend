@@ -7,7 +7,7 @@
     "completionPercentage": 45.3,
     "badgeLevel": "none",
     "totalChallenges": 53,
-    "completedChallenges": 24
+    "completedChallenges": 23
   },
   "courses": {
     "01-react-fundamentals": {
@@ -579,7 +579,7 @@
       "completionPercentage": 5.9,
       "badgeLevel": "none",
       "totalChallenges": 17,
-      "completedChallenges": 1,
+      "completedChallenges": 0,
       "challenges": {
         "01-app-router-pages-layout": {
           "challengeId": "01-app-router-pages-layout",
@@ -749,7 +749,7 @@
         "12-metadata-and-seo": {
           "challengeId": "12-metadata-and-seo",
           "challengeName": "Metadata and SEO",
-          "passed": true,
+          "passed": false,
           "score": 91.45,
           "lastRun": "2026-07-02T06:10:15.109Z",
           "scores": {
