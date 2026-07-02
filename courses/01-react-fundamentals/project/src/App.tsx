@@ -29,7 +29,7 @@ function AppContent() {
   return (
     <BrowserRouter>
       <div className="App">
-        <div id="app-main">
+        <main id="app-main">
           <Routes>
             <Route path="/" element={<ChallengeList />} />
             <Route path="/challenge/01-static-task-display" element={<TaskList />} />
@@ -57,7 +57,7 @@ function AppContent() {
             <Route path="/challenge/22-data-fetching" element={<FetchDemoView />} />
             <Route path="/challenge/23-useref-focus-management" element={<TaskApp tasks={tasks} setTasks={setTasks} showForm countFormat="tasks" showFilterBar />} />
           </Routes>
-        </div>
+        </main>
       </div>
     </BrowserRouter>
   )
