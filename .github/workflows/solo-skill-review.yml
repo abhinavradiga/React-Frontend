@@ -73,12 +73,12 @@ jobs:
         if: steps.changed-challenges.outputs.run-all == 'false'
         run: node scripts/run-review-changed.js --ref HEAD~1
         env:
-          GROQ_API_KEY: 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
+          GROQ_API_KEY: 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
       - name: Run All Reviews (if no changes detected)
         if: steps.changed-challenges.outputs.run-all == 'true'
         run: node global-review/run-all-reviews.js
         env:
-          GROQ_API_KEY: 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
+          GROQ_API_KEY: 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
       - name: Update progress and README evidence
         run: node scripts/update-progress.js
       - name: Commit results
