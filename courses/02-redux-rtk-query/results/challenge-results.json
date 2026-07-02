@@ -2,7 +2,7 @@
   {
     "challengeId": "01-store-setup",
     "challengeName": "Store Setup with configureStore",
-    "timestamp": "2026-07-02T05:25:59.716Z",
+    "timestamp": "2026-07-02T06:03:30.390Z",
     "scores": {
       "functionalTests": 66.7,
       "codeQuality": 100,
@@ -32,7 +32,7 @@
               "fullName": " Challenge 01: Store Setup with configureStore store uses configureStore",
               "status": "passed",
               "title": "store uses configureStore",
-              "duration": 2,
+              "duration": 1,
               "failureMessages": []
             },
             {
@@ -43,7 +43,7 @@
               "fullName": " Challenge 01: Store Setup with configureStore store exports RootState and AppDispatch",
               "status": "passed",
               "title": "store exports RootState and AppDispatch",
-              "duration": 0,
+              "duration": 1,
               "failureMessages": []
             },
             {
@@ -64,8 +64,8 @@
               }
             }
           ],
-          "startTime": 1782969960951,
-          "endTime": 1782969960958,
+          "startTime": 1782972211641,
+          "endTime": 1782972211648,
           "status": "failed",
           "message": "",
           "name": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/challenge-01.test.tsx"
@@ -199,7 +199,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:26:05.636Z",
+                          "startTime": "2026-07-02T06:03:36.338Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -228,12 +228,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 215,
+                          "duration": 206,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:26:06.003Z",
+                          "startTime": "2026-07-02T06:03:36.709Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -262,7 +262,7 @@
   {
     "challengeId": "02-first-slice",
     "challengeName": "First Slice with createSlice",
-    "timestamp": "2026-07-02T05:26:06.324Z",
+    "timestamp": "2026-07-02T06:03:37.026Z",
     "scores": {
       "functionalTests": 33.3,
       "codeQuality": 100,
@@ -330,8 +330,8 @@
               }
             }
           ],
-          "startTime": 1782969967561,
-          "endTime": 1782969967569,
+          "startTime": 1782972218261,
+          "endTime": 1782972218269,
           "status": "failed",
           "message": "",
           "name": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/challenge-02.test.tsx"
@@ -441,12 +441,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 260,
+                          "duration": 257,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:26:12.082Z",
+                          "startTime": "2026-07-02T06:03:42.860Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -475,12 +475,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 211,
+                          "duration": 213,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:26:12.436Z",
+                          "startTime": "2026-07-02T06:03:43.216Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -509,7 +509,7 @@
   {
     "challengeId": "03-reading-dispatching",
     "challengeName": "Reading and Dispatching in Components",
-    "timestamp": "2026-07-02T05:26:12.758Z",
+    "timestamp": "2026-07-02T06:03:43.553Z",
     "scores": {
       "functionalTests": 33.3,
       "codeQuality": 100,
@@ -539,7 +539,7 @@
               "fullName": " Challenge 03: Reading and Dispatching hooks.ts exports useAppSelector and useAppDispatch",
               "status": "passed",
               "title": "hooks.ts exports useAppSelector and useAppDispatch",
-              "duration": 1,
+              "duration": 2,
               "failureMessages": []
             },
             {
@@ -577,8 +577,8 @@
               }
             }
           ],
-          "startTime": 1782969973961,
-          "endTime": 1782969973969,
+          "startTime": 1782972224783,
+          "endTime": 1782972224792,
           "status": "failed",
           "message": "",
           "name": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/challenge-03.test.tsx"
@@ -702,7 +702,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 263,
+                          "duration": 276,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 03')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 03') resolved to 2 elements:\n    1) <h2>Challenge 03: Reading and Dispatching</h2> aka getByRole('heading', { name: 'Challenge 03: Reading and' })\n    2) <div id=\"counter-view\">Complete Challenge 03 per README.</div> aka getByText('Complete Challenge 03 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 03')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 03')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 03') resolved to 2 elements:\n    1) <h2>Challenge 03: Reading and Dispatching</h2> aka getByRole('heading', { name: 'Challenge 03: Reading and' })\n    2) <div id=\"counter-view\">Complete Challenge 03 per README.</div> aka getByText('Complete Challenge 03 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 03')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-03.spec.ts:9:53",
@@ -726,7 +726,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:26:18.506Z",
+                          "startTime": "2026-07-02T06:03:49.393Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -750,7 +750,7 @@
                           "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 384,
+                          "duration": 383,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 03')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 03') resolved to 2 elements:\n    1) <h2>Challenge 03: Reading and Dispatching</h2> aka getByRole('heading', { name: 'Challenge 03: Reading and' })\n    2) <div id=\"counter-view\">Complete Challenge 03 per README.</div> aka getByText('Complete Challenge 03 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 03')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 03')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 03') resolved to 2 elements:\n    1) <h2>Challenge 03: Reading and Dispatching</h2> aka getByRole('heading', { name: 'Challenge 03: Reading and' })\n    2) <div id=\"counter-view\">Complete Challenge 03 per README.</div> aka getByText('Complete Challenge 03 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 03')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-03.spec.ts:9:53",
@@ -774,7 +774,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 1,
-                          "startTime": "2026-07-02T05:26:19.904Z",
+                          "startTime": "2026-07-02T06:03:50.817Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -803,7 +803,7 @@
                           "workerIndex": 2,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 255,
+                          "duration": 249,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 03')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 03') resolved to 2 elements:\n    1) <h2>Challenge 03: Reading and Dispatching</h2> aka getByRole('heading', { name: 'Challenge 03: Reading and' })\n    2) <div id=\"counter-view\">Complete Challenge 03 per README.</div> aka getByText('Complete Challenge 03 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 03')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 03')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 03') resolved to 2 elements:\n    1) <h2>Challenge 03: Reading and Dispatching</h2> aka getByRole('heading', { name: 'Challenge 03: Reading and' })\n    2) <div id=\"counter-view\">Complete Challenge 03 per README.</div> aka getByText('Complete Challenge 03 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 03')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-03.spec.ts:9:53",
@@ -827,7 +827,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 2,
-                          "startTime": "2026-07-02T05:26:21.451Z",
+                          "startTime": "2026-07-02T06:03:52.361Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -872,7 +872,7 @@
                           "workerIndex": 3,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 5207,
+                          "duration": 5208,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('increment-btn')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('increment-btn')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('increment-btn')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('increment-btn')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-03.spec.ts:14:53",
@@ -896,7 +896,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:26:22.829Z",
+                          "startTime": "2026-07-02T06:03:53.781Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -920,7 +920,7 @@
                           "workerIndex": 4,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 5349,
+                          "duration": 5361,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('increment-btn')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('increment-btn')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('increment-btn')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('increment-btn')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-03.spec.ts:14:53",
@@ -944,7 +944,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 1,
-                          "startTime": "2026-07-02T05:26:29.190Z",
+                          "startTime": "2026-07-02T06:04:00.127Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -973,7 +973,7 @@
                           "workerIndex": 5,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 5216,
+                          "duration": 5235,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('increment-btn')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('increment-btn')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('increment-btn')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('increment-btn')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-03.spec.ts:14:53",
@@ -997,7 +997,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 2,
-                          "startTime": "2026-07-02T05:26:35.694Z",
+                          "startTime": "2026-07-02T06:04:06.648Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -1042,7 +1042,7 @@
                           "workerIndex": 6,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 5205,
+                          "duration": 5214,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('counter-value')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('counter-value')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('counter-value')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('counter-value')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-03.spec.ts:19:53",
@@ -1066,7 +1066,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:26:42.046Z",
+                          "startTime": "2026-07-02T06:04:13.016Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -1090,7 +1090,7 @@
                           "workerIndex": 7,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 5356,
+                          "duration": 5365,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('counter-value')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('counter-value')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('counter-value')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('counter-value')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-03.spec.ts:19:53",
@@ -1114,7 +1114,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 1,
-                          "startTime": "2026-07-02T05:26:48.381Z",
+                          "startTime": "2026-07-02T06:04:19.370Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -1143,7 +1143,7 @@
                           "workerIndex": 8,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 5209,
+                          "duration": 5216,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('counter-value')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('counter-value')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('counter-value')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('counter-value')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-03.spec.ts:19:53",
@@ -1167,7 +1167,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 2,
-                          "startTime": "2026-07-02T05:26:54.889Z",
+                          "startTime": "2026-07-02T06:04:25.901Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -1212,7 +1212,7 @@
   {
     "challengeId": "04-multiple-slices",
     "challengeName": "Multiple Slices in the Store",
-    "timestamp": "2026-07-02T05:27:00.280Z",
+    "timestamp": "2026-07-02T06:04:31.313Z",
     "scores": {
       "functionalTests": 0,
       "codeQuality": 100,
@@ -1242,7 +1242,7 @@
               "fullName": " Challenge 04: Multiple Slices uiSlice exists and uses createSlice",
               "status": "failed",
               "title": "uiSlice exists and uses createSlice",
-              "duration": 6,
+              "duration": 7,
               "failureMessages": [
                 "expected false to be true // Object.is equality"
               ],
@@ -1269,8 +1269,8 @@
               }
             }
           ],
-          "startTime": 1782970021496,
-          "endTime": 1782970021504,
+          "startTime": 1782972272553,
+          "endTime": 1782972272561,
           "status": "failed",
           "message": "",
           "name": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/challenge-04.test.tsx"
@@ -1389,12 +1389,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 262,
+                          "duration": 264,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:27:06.080Z",
+                          "startTime": "2026-07-02T06:04:37.132Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1423,12 +1423,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 207,
+                          "duration": 206,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:27:06.436Z",
+                          "startTime": "2026-07-02T06:04:37.490Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1457,7 +1457,7 @@
   {
     "challengeId": "05-async-thunks",
     "challengeName": "Async Logic with createAsyncThunk",
-    "timestamp": "2026-07-02T05:27:06.751Z",
+    "timestamp": "2026-07-02T06:04:37.801Z",
     "scores": {
       "functionalTests": 0,
       "codeQuality": 100,
@@ -1504,7 +1504,7 @@
               "fullName": " Challenge 05: Async Logic with createAsyncThunk usersSlice uses extraReducers",
               "status": "failed",
               "title": "usersSlice uses extraReducers",
-              "duration": 1,
+              "duration": 0,
               "failureMessages": [
                 "expected false to be true // Object.is equality"
               ],
@@ -1531,8 +1531,8 @@
               }
             }
           ],
-          "startTime": 1782970027967,
-          "endTime": 1782970027976,
+          "startTime": 1782972279038,
+          "endTime": 1782972279046,
           "status": "failed",
           "message": "",
           "name": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/challenge-05.test.tsx"
@@ -1642,12 +1642,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 262,
+                          "duration": 277,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:27:12.541Z",
+                          "startTime": "2026-07-02T06:04:43.650Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1676,12 +1676,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 212,
+                          "duration": 220,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:27:12.900Z",
+                          "startTime": "2026-07-02T06:04:44.027Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1710,7 +1710,7 @@
   {
     "challengeId": "06-rtk-query-setup",
     "challengeName": "RTK Query Setup and API Slice",
-    "timestamp": "2026-07-02T05:27:13.223Z",
+    "timestamp": "2026-07-02T06:04:44.348Z",
     "scores": {
       "functionalTests": 0,
       "codeQuality": 100,
@@ -1757,7 +1757,7 @@
               "fullName": " Challenge 06: RTK Query Setup apiSlice has baseQuery or fetchBaseQuery",
               "status": "failed",
               "title": "apiSlice has baseQuery or fetchBaseQuery",
-              "duration": 0,
+              "duration": 1,
               "failureMessages": [
                 "expected false to be true // Object.is equality"
               ],
@@ -1784,8 +1784,8 @@
               }
             }
           ],
-          "startTime": 1782970034454,
-          "endTime": 1782970034462,
+          "startTime": 1782972285585,
+          "endTime": 1782972285594,
           "status": "failed",
           "message": "",
           "name": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/challenge-06.test.tsx"
@@ -1892,12 +1892,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 264,
+                          "duration": 270,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:27:19.059Z",
+                          "startTime": "2026-07-02T06:04:50.221Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1926,12 +1926,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 205,
+                          "duration": 217,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:27:19.420Z",
+                          "startTime": "2026-07-02T06:04:50.596Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1960,7 +1960,7 @@
   {
     "challengeId": "07-queries",
     "challengeName": "Query Endpoints and useQuery Hooks",
-    "timestamp": "2026-07-02T05:27:19.734Z",
+    "timestamp": "2026-07-02T06:04:50.920Z",
     "scores": {
       "functionalTests": 33.3,
       "codeQuality": 100,
@@ -1990,7 +1990,7 @@
               "fullName": " Challenge 07: Query Endpoints and useQuery Hooks API slice has getUsers query endpoint",
               "status": "failed",
               "title": "API slice has getUsers query endpoint",
-              "duration": 7,
+              "duration": 6,
               "failureMessages": [
                 "expected false to be true // Object.is equality"
               ],
@@ -2007,7 +2007,7 @@
               "fullName": " Challenge 07: Query Endpoints and useQuery Hooks UsersList uses useGetUsersQuery or generated query hook",
               "status": "failed",
               "title": "UsersList uses useGetUsersQuery or generated query hook",
-              "duration": 1,
+              "duration": 2,
               "failureMessages": [
                 "expected '/** Stub: Complete Challenge 07 (Quer…' to match /useGetUsersQuery|useQuery/"
               ],
@@ -2024,12 +2024,12 @@
               "fullName": " Challenge 07: Query Endpoints and useQuery Hooks UsersList has users-list data-testid",
               "status": "passed",
               "title": "UsersList has users-list data-testid",
-              "duration": 1,
+              "duration": 0,
               "failureMessages": []
             }
           ],
-          "startTime": 1782970040963,
-          "endTime": 1782970040972,
+          "startTime": 1782972292211,
+          "endTime": 1782972292219,
           "status": "failed",
           "message": "",
           "name": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/challenge-07.test.tsx"
@@ -2132,7 +2132,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 273,
+                          "duration": 293,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 07')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 07') resolved to 2 elements:\n    1) <h2>Challenge 07: Queries</h2> aka getByRole('heading', { name: 'Challenge 07: Queries' })\n    2) <div id=\"users-list\">Complete Challenge 07 per README.</div> aka getByText('Complete Challenge 07 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 07')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 07')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 07') resolved to 2 elements:\n    1) <h2>Challenge 07: Queries</h2> aka getByRole('heading', { name: 'Challenge 07: Queries' })\n    2) <div id=\"users-list\">Complete Challenge 07 per README.</div> aka getByText('Complete Challenge 07 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 07')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-07.spec.ts:9:53",
@@ -2156,7 +2156,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:27:25.533Z",
+                          "startTime": "2026-07-02T06:04:56.940Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -2204,7 +2204,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 1,
-                          "startTime": "2026-07-02T05:27:26.948Z",
+                          "startTime": "2026-07-02T06:04:58.398Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -2233,7 +2233,7 @@
                           "workerIndex": 2,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 249,
+                          "duration": 261,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 07')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 07') resolved to 2 elements:\n    1) <h2>Challenge 07: Queries</h2> aka getByRole('heading', { name: 'Challenge 07: Queries' })\n    2) <div id=\"users-list\">Complete Challenge 07 per README.</div> aka getByText('Complete Challenge 07 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 07')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 07')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 07') resolved to 2 elements:\n    1) <h2>Challenge 07: Queries</h2> aka getByRole('heading', { name: 'Challenge 07: Queries' })\n    2) <div id=\"users-list\">Complete Challenge 07 per README.</div> aka getByText('Complete Challenge 07 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 07')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-07.spec.ts:9:53",
@@ -2257,7 +2257,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 2,
-                          "startTime": "2026-07-02T05:27:28.513Z",
+                          "startTime": "2026-07-02T06:04:59.982Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -2302,7 +2302,7 @@
                           "workerIndex": 3,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 3242,
+                          "duration": 3256,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/users|loading|error|John|Jane|Bob|Implement/i\u001b[39m\nReceived string:  \u001b[31m\"\u001b[39m\n\u001b[31m    Redux & RTK QueryComplete the challenges in sequence.HomeCh1Ch2Ch3Ch4Ch5Ch6Ch7Ch8Ch9Ch10Ch11Ch12Ch13Challenge 07: QueriesComplete Challenge 07 per README.·········\u001b[39m\n\u001b[31m\"\u001b[39m",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/users|loading|error|John|Jane|Bob|Implement/i\u001b[39m\nReceived string:  \u001b[31m\"\u001b[39m\n\u001b[31m    Redux & RTK QueryComplete the challenges in sequence.HomeCh1Ch2Ch3Ch4Ch5Ch6Ch7Ch8Ch9Ch10Ch11Ch12Ch13Challenge 07: QueriesComplete Challenge 07 per README.·········\u001b[39m\n\u001b[31m\"\u001b[39m\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-07.spec.ts:16:18",
@@ -2326,7 +2326,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:27:29.908Z",
+                          "startTime": "2026-07-02T06:05:01.414Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -2350,7 +2350,7 @@
                           "workerIndex": 4,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 3414,
+                          "duration": 3419,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/users|loading|error|John|Jane|Bob|Implement/i\u001b[39m\nReceived string:  \u001b[31m\"\u001b[39m\n\u001b[31m    Redux & RTK QueryComplete the challenges in sequence.HomeCh1Ch2Ch3Ch4Ch5Ch6Ch7Ch8Ch9Ch10Ch11Ch12Ch13Challenge 07: QueriesComplete Challenge 07 per README.·········\u001b[39m\n\u001b[31m\"\u001b[39m",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/users|loading|error|John|Jane|Bob|Implement/i\u001b[39m\nReceived string:  \u001b[31m\"\u001b[39m\n\u001b[31m    Redux & RTK QueryComplete the challenges in sequence.HomeCh1Ch2Ch3Ch4Ch5Ch6Ch7Ch8Ch9Ch10Ch11Ch12Ch13Challenge 07: QueriesComplete Challenge 07 per README.·········\u001b[39m\n\u001b[31m\"\u001b[39m\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-07.spec.ts:16:18",
@@ -2374,7 +2374,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 1,
-                          "startTime": "2026-07-02T05:27:34.313Z",
+                          "startTime": "2026-07-02T06:05:05.829Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -2403,7 +2403,7 @@
                           "workerIndex": 5,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 3228,
+                          "duration": 3246,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/users|loading|error|John|Jane|Bob|Implement/i\u001b[39m\nReceived string:  \u001b[31m\"\u001b[39m\n\u001b[31m    Redux & RTK QueryComplete the challenges in sequence.HomeCh1Ch2Ch3Ch4Ch5Ch6Ch7Ch8Ch9Ch10Ch11Ch12Ch13Challenge 07: QueriesComplete Challenge 07 per README.·········\u001b[39m\n\u001b[31m\"\u001b[39m",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/users|loading|error|John|Jane|Bob|Implement/i\u001b[39m\nReceived string:  \u001b[31m\"\u001b[39m\n\u001b[31m    Redux & RTK QueryComplete the challenges in sequence.HomeCh1Ch2Ch3Ch4Ch5Ch6Ch7Ch8Ch9Ch10Ch11Ch12Ch13Challenge 07: QueriesComplete Challenge 07 per README.·········\u001b[39m\n\u001b[31m\"\u001b[39m\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-07.spec.ts:16:18",
@@ -2427,7 +2427,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 2,
-                          "startTime": "2026-07-02T05:27:38.882Z",
+                          "startTime": "2026-07-02T06:05:10.435Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -2472,7 +2472,7 @@
   {
     "challengeId": "08-caching-refetch",
     "challengeName": "Caching and Cache Tags",
-    "timestamp": "2026-07-02T05:27:42.291Z",
+    "timestamp": "2026-07-02T06:05:13.862Z",
     "scores": {
       "functionalTests": 0,
       "codeQuality": 0,
@@ -2502,7 +2502,7 @@
               "fullName": " Challenge 08: Caching and Cache Tags API slice has providesTags on query endpoint",
               "status": "failed",
               "title": "API slice has providesTags on query endpoint",
-              "duration": 6,
+              "duration": 7,
               "failureMessages": [
                 "expected false to be true // Object.is equality"
               ],
@@ -2529,8 +2529,8 @@
               }
             }
           ],
-          "startTime": 1782970063508,
-          "endTime": 1782970063515,
+          "startTime": 1782972315124,
+          "endTime": 1782972315132,
           "status": "failed",
           "message": "",
           "name": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/challenge-08.test.tsx"
@@ -2601,7 +2601,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 265,
+                          "duration": 270,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 08')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 08') resolved to 2 elements:\n    1) <h2>Challenge 08: Caching and Cache Tags</h2> aka getByRole('heading', { name: 'Challenge 08: Caching and' })\n    2) <div id=\"posts-list\">Complete Challenge 08 per README.</div> aka getByText('Complete Challenge 08 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 08')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 08')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 08') resolved to 2 elements:\n    1) <h2>Challenge 08: Caching and Cache Tags</h2> aka getByRole('heading', { name: 'Challenge 08: Caching and' })\n    2) <div id=\"posts-list\">Complete Challenge 08 per README.</div> aka getByText('Complete Challenge 08 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 08')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-08.spec.ts:9:53",
@@ -2625,7 +2625,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:27:46.874Z",
+                          "startTime": "2026-07-02T06:05:18.534Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -2649,7 +2649,7 @@
                           "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 386,
+                          "duration": 385,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 08')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 08') resolved to 2 elements:\n    1) <h2>Challenge 08: Caching and Cache Tags</h2> aka getByRole('heading', { name: 'Challenge 08: Caching and' })\n    2) <div id=\"posts-list\">Complete Challenge 08 per README.</div> aka getByText('Complete Challenge 08 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 08')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 08')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 08') resolved to 2 elements:\n    1) <h2>Challenge 08: Caching and Cache Tags</h2> aka getByRole('heading', { name: 'Challenge 08: Caching and' })\n    2) <div id=\"posts-list\">Complete Challenge 08 per README.</div> aka getByText('Complete Challenge 08 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 08')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-08.spec.ts:9:53",
@@ -2673,7 +2673,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 1,
-                          "startTime": "2026-07-02T05:27:48.262Z",
+                          "startTime": "2026-07-02T06:05:19.928Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -2702,7 +2702,7 @@
                           "workerIndex": 2,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 243,
+                          "duration": 266,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 08')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 08') resolved to 2 elements:\n    1) <h2>Challenge 08: Caching and Cache Tags</h2> aka getByRole('heading', { name: 'Challenge 08: Caching and' })\n    2) <div id=\"posts-list\">Complete Challenge 08 per README.</div> aka getByText('Complete Challenge 08 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 08')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 08')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 08') resolved to 2 elements:\n    1) <h2>Challenge 08: Caching and Cache Tags</h2> aka getByRole('heading', { name: 'Challenge 08: Caching and' })\n    2) <div id=\"posts-list\">Complete Challenge 08 per README.</div> aka getByText('Complete Challenge 08 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 08')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-08.spec.ts:9:53",
@@ -2726,7 +2726,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 2,
-                          "startTime": "2026-07-02T05:27:49.782Z",
+                          "startTime": "2026-07-02T06:05:21.478Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -2771,7 +2771,7 @@
                           "workerIndex": 3,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 5203,
+                          "duration": 5209,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('posts-list')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('posts-list')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('posts-list')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('posts-list')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-08.spec.ts:14:50",
@@ -2795,7 +2795,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:27:51.163Z",
+                          "startTime": "2026-07-02T06:05:22.889Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -2819,7 +2819,7 @@
                           "workerIndex": 4,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 5366,
+                          "duration": 5372,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('posts-list')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('posts-list')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('posts-list')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('posts-list')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-08.spec.ts:14:50",
@@ -2843,7 +2843,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 1,
-                          "startTime": "2026-07-02T05:27:57.484Z",
+                          "startTime": "2026-07-02T06:05:29.235Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -2872,7 +2872,7 @@
                           "workerIndex": 5,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 5205,
+                          "duration": 5235,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('posts-list')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('posts-list')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('posts-list')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('posts-list')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-08.spec.ts:14:50",
@@ -2896,7 +2896,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 2,
-                          "startTime": "2026-07-02T05:28:04.011Z",
+                          "startTime": "2026-07-02T06:05:35.797Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -2941,7 +2941,7 @@
   {
     "challengeId": "09-mutations",
     "challengeName": "Mutations with useMutation",
-    "timestamp": "2026-07-02T05:28:09.403Z",
+    "timestamp": "2026-07-02T06:05:41.224Z",
     "scores": {
       "functionalTests": 0,
       "codeQuality": 100,
@@ -2971,7 +2971,7 @@
               "fullName": " Challenge 09: Mutations with useMutation API slice has builder.mutation endpoint",
               "status": "failed",
               "title": "API slice has builder.mutation endpoint",
-              "duration": 6,
+              "duration": 7,
               "failureMessages": [
                 "expected false to be true // Object.is equality"
               ],
@@ -2988,7 +2988,7 @@
               "fullName": " Challenge 09: Mutations with useMutation AddPostForm uses useMutation hook",
               "status": "failed",
               "title": "AddPostForm uses useMutation hook",
-              "duration": 2,
+              "duration": 1,
               "failureMessages": [
                 "expected '/** Stub: Complete Challenge 09 (Muta…' to match /useMutation|useAddPostMutation|useCre…/"
               ],
@@ -3005,7 +3005,7 @@
               "fullName": " Challenge 09: Mutations with useMutation AddPostForm has add-post-form and add-post-submit data-testids",
               "status": "failed",
               "title": "AddPostForm has add-post-form and add-post-submit data-testids",
-              "duration": 0,
+              "duration": 1,
               "failureMessages": [
                 "expected '/** Stub: Complete Challenge 09 (Muta…' to contain 'add-post-submit'"
               ],
@@ -3015,8 +3015,8 @@
               }
             }
           ],
-          "startTime": 1782970090644,
-          "endTime": 1782970090652,
+          "startTime": 1782972342482,
+          "endTime": 1782972342491,
           "status": "failed",
           "message": "",
           "name": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/challenge-09.test.tsx"
@@ -3115,7 +3115,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 280,
+                          "duration": 286,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 09')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 09') resolved to 2 elements:\n    1) <h2>Challenge 09: Mutations</h2> aka getByRole('heading', { name: 'Challenge 09: Mutations' })\n    2) <div id=\"add-post-form\">Complete Challenge 09 per README.</div> aka getByText('Complete Challenge 09 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 09')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 09')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 09') resolved to 2 elements:\n    1) <h2>Challenge 09: Mutations</h2> aka getByRole('heading', { name: 'Challenge 09: Mutations' })\n    2) <div id=\"add-post-form\">Complete Challenge 09 per README.</div> aka getByText('Complete Challenge 09 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 09')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-09.spec.ts:9:53",
@@ -3139,7 +3139,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:28:15.168Z",
+                          "startTime": "2026-07-02T06:05:47.119Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -3163,7 +3163,7 @@
                           "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 386,
+                          "duration": 413,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 09')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 09') resolved to 2 elements:\n    1) <h2>Challenge 09: Mutations</h2> aka getByRole('heading', { name: 'Challenge 09: Mutations' })\n    2) <div id=\"add-post-form\">Complete Challenge 09 per README.</div> aka getByText('Complete Challenge 09 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 09')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 09')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 09') resolved to 2 elements:\n    1) <h2>Challenge 09: Mutations</h2> aka getByRole('heading', { name: 'Challenge 09: Mutations' })\n    2) <div id=\"add-post-form\">Complete Challenge 09 per README.</div> aka getByText('Complete Challenge 09 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 09')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-09.spec.ts:9:53",
@@ -3187,7 +3187,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 1,
-                          "startTime": "2026-07-02T05:28:16.562Z",
+                          "startTime": "2026-07-02T06:05:48.581Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -3216,7 +3216,7 @@
                           "workerIndex": 2,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 246,
+                          "duration": 257,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 09')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 09') resolved to 2 elements:\n    1) <h2>Challenge 09: Mutations</h2> aka getByRole('heading', { name: 'Challenge 09: Mutations' })\n    2) <div id=\"add-post-form\">Complete Challenge 09 per README.</div> aka getByText('Complete Challenge 09 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 09')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 09')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 09') resolved to 2 elements:\n    1) <h2>Challenge 09: Mutations</h2> aka getByRole('heading', { name: 'Challenge 09: Mutations' })\n    2) <div id=\"add-post-form\">Complete Challenge 09 per README.</div> aka getByText('Complete Challenge 09 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 09')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-09.spec.ts:9:53",
@@ -3240,7 +3240,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 2,
-                          "startTime": "2026-07-02T05:28:18.085Z",
+                          "startTime": "2026-07-02T06:05:50.163Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -3285,7 +3285,7 @@
                           "workerIndex": 3,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 5206,
+                          "duration": 5211,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('add-post-submit')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('add-post-submit')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('add-post-submit')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('add-post-submit')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-09.spec.ts:14:55",
@@ -3309,7 +3309,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:28:19.454Z",
+                          "startTime": "2026-07-02T06:05:51.576Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -3333,7 +3333,7 @@
                           "workerIndex": 4,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 5377,
+                          "duration": 5380,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('add-post-submit')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('add-post-submit')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('add-post-submit')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('add-post-submit')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-09.spec.ts:14:55",
@@ -3357,7 +3357,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 1,
-                          "startTime": "2026-07-02T05:28:25.789Z",
+                          "startTime": "2026-07-02T06:05:57.939Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -3386,7 +3386,7 @@
                           "workerIndex": 5,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 5209,
+                          "duration": 5217,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('add-post-submit')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('add-post-submit')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('add-post-submit')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('add-post-submit')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-09.spec.ts:14:55",
@@ -3410,7 +3410,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 2,
-                          "startTime": "2026-07-02T05:28:32.309Z",
+                          "startTime": "2026-07-02T06:06:04.509Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -3455,7 +3455,7 @@
   {
     "challengeId": "10-optimistic-updates",
     "challengeName": "Optimistic Updates",
-    "timestamp": "2026-07-02T05:28:37.696Z",
+    "timestamp": "2026-07-02T06:06:09.910Z",
     "scores": {
       "functionalTests": 0,
       "codeQuality": 0,
@@ -3519,7 +3519,7 @@
               "fullName": " Challenge 10: Optimistic Updates has rollback or undo on error",
               "status": "failed",
               "title": "has rollback or undo on error",
-              "duration": 1,
+              "duration": 0,
               "failureMessages": [
                 "ENOENT: no such file or directory, open '/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/src/api/apiSlice.ts'"
               ],
@@ -3529,8 +3529,8 @@
               }
             }
           ],
-          "startTime": 1782970118889,
-          "endTime": 1782970118897,
+          "startTime": 1782972371152,
+          "endTime": 1782972371159,
           "status": "failed",
           "message": "",
           "name": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/challenge-10.test.tsx"
@@ -3601,12 +3601,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 265,
+                          "duration": 277,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:28:42.249Z",
+                          "startTime": "2026-07-02T06:06:14.573Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -3635,7 +3635,7 @@
   {
     "challengeId": "11-api-local-state",
     "challengeName": "API and Local State Together",
-    "timestamp": "2026-07-02T05:28:42.699Z",
+    "timestamp": "2026-07-02T06:06:15.049Z",
     "scores": {
       "functionalTests": 0,
       "codeQuality": 100,
@@ -3709,8 +3709,8 @@
               }
             }
           ],
-          "startTime": 1782970123895,
-          "endTime": 1782970123904,
+          "startTime": 1782972376285,
+          "endTime": 1782972376294,
           "status": "failed",
           "message": "",
           "name": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/challenge-11.test.tsx"
@@ -3845,7 +3845,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 265,
+                          "duration": 273,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 11')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 11') resolved to 2 elements:\n    1) <h2>Challenge 11: API and Local State</h2> aka getByRole('heading', { name: 'Challenge 11: API and Local' })\n    2) <div id=\"posts-with-filters\">Complete Challenge 11 per README.</div> aka getByText('Complete Challenge 11 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 11')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 11')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 11') resolved to 2 elements:\n    1) <h2>Challenge 11: API and Local State</h2> aka getByRole('heading', { name: 'Challenge 11: API and Local' })\n    2) <div id=\"posts-with-filters\">Complete Challenge 11 per README.</div> aka getByText('Complete Challenge 11 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 11')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-11.spec.ts:9:53",
@@ -3869,7 +3869,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:28:48.510Z",
+                          "startTime": "2026-07-02T06:06:20.896Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -3893,7 +3893,7 @@
                           "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 395,
+                          "duration": 394,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 11')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 11') resolved to 2 elements:\n    1) <h2>Challenge 11: API and Local State</h2> aka getByRole('heading', { name: 'Challenge 11: API and Local' })\n    2) <div id=\"posts-with-filters\">Complete Challenge 11 per README.</div> aka getByText('Complete Challenge 11 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 11')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 11')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 11') resolved to 2 elements:\n    1) <h2>Challenge 11: API and Local State</h2> aka getByRole('heading', { name: 'Challenge 11: API and Local' })\n    2) <div id=\"posts-with-filters\">Complete Challenge 11 per README.</div> aka getByText('Complete Challenge 11 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 11')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-11.spec.ts:9:53",
@@ -3917,7 +3917,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 1,
-                          "startTime": "2026-07-02T05:28:49.918Z",
+                          "startTime": "2026-07-02T06:06:22.320Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -3946,7 +3946,7 @@
                           "workerIndex": 2,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 252,
+                          "duration": 250,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 11')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 11') resolved to 2 elements:\n    1) <h2>Challenge 11: API and Local State</h2> aka getByRole('heading', { name: 'Challenge 11: API and Local' })\n    2) <div id=\"posts-with-filters\">Complete Challenge 11 per README.</div> aka getByText('Complete Challenge 11 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 11')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 11')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 11') resolved to 2 elements:\n    1) <h2>Challenge 11: API and Local State</h2> aka getByRole('heading', { name: 'Challenge 11: API and Local' })\n    2) <div id=\"posts-with-filters\">Complete Challenge 11 per README.</div> aka getByText('Complete Challenge 11 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 11')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-11.spec.ts:9:53",
@@ -3970,7 +3970,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 2,
-                          "startTime": "2026-07-02T05:28:51.460Z",
+                          "startTime": "2026-07-02T06:06:23.857Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -4015,7 +4015,7 @@
                           "workerIndex": 3,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 5211,
+                          "duration": 5217,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('filter-controls')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('filter-controls')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('filter-controls')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('filter-controls')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-11.spec.ts:14:55",
@@ -4039,7 +4039,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:28:52.832Z",
+                          "startTime": "2026-07-02T06:06:25.252Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -4063,7 +4063,7 @@
                           "workerIndex": 4,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 5373,
+                          "duration": 5371,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('filter-controls')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('filter-controls')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('filter-controls')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('filter-controls')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-11.spec.ts:14:55",
@@ -4087,7 +4087,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 1,
-                          "startTime": "2026-07-02T05:28:59.194Z",
+                          "startTime": "2026-07-02T06:06:31.603Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -4116,7 +4116,7 @@
                           "workerIndex": 5,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 5208,
+                          "duration": 5215,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('filter-controls')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('filter-controls')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('filter-controls')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('filter-controls')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-11.spec.ts:14:55",
@@ -4140,7 +4140,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 2,
-                          "startTime": "2026-07-02T05:29:05.733Z",
+                          "startTime": "2026-07-02T06:06:38.128Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -4185,7 +4185,7 @@
   {
     "challengeId": "12-error-loading-ux",
     "challengeName": "Error and Loading UX",
-    "timestamp": "2026-07-02T05:29:11.128Z",
+    "timestamp": "2026-07-02T06:06:43.525Z",
     "scores": {
       "functionalTests": 0,
       "codeQuality": 100,
@@ -4232,7 +4232,7 @@
               "fullName": " Challenge 12: Error and Loading UX UsersList or main list uses refetch",
               "status": "failed",
               "title": "UsersList or main list uses refetch",
-              "duration": 1,
+              "duration": 2,
               "failureMessages": [
                 "expected '/** Stub: Complete Challenge 07 (Quer…' to match /refetch|isLoading|isError/"
               ],
@@ -4249,7 +4249,7 @@
               "fullName": " Challenge 12: Error and Loading UX loading or error state has visible indicator",
               "status": "failed",
               "title": "loading or error state has visible indicator",
-              "duration": 1,
+              "duration": 0,
               "failureMessages": [
                 "expected '/** Stub: Complete Challenge 07 (Quer…' to match /users-loading|Loading|isLoading|isErr…/"
               ],
@@ -4259,8 +4259,8 @@
               }
             }
           ],
-          "startTime": 1782970152369,
-          "endTime": 1782970152377,
+          "startTime": 1782972404779,
+          "endTime": 1782972404787,
           "status": "failed",
           "message": "",
           "name": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/challenge-12.test.tsx"
@@ -4382,12 +4382,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 276,
+                          "duration": 253,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:29:16.959Z",
+                          "startTime": "2026-07-02T06:06:49.326Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -4416,7 +4416,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 10187,
+                          "duration": 10177,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('users-list')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('users-list')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('users-list')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('users-list')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-12.spec.ts:14:50",
@@ -4440,7 +4440,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:29:17.332Z",
+                          "startTime": "2026-07-02T06:06:49.673Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -4464,7 +4464,7 @@
                           "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 10367,
+                          "duration": 10353,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('users-list')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('users-list')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('users-list')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('users-list')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-12.spec.ts:14:50",
@@ -4488,7 +4488,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 1,
-                          "startTime": "2026-07-02T05:29:28.597Z",
+                          "startTime": "2026-07-02T06:07:00.894Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -4517,7 +4517,7 @@
                           "workerIndex": 2,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 10223,
+                          "duration": 10229,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('users-list')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('users-list')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('users-list')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('users-list')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-12.spec.ts:14:50",
@@ -4541,7 +4541,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 2,
-                          "startTime": "2026-07-02T05:29:40.138Z",
+                          "startTime": "2026-07-02T06:07:12.405Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -4586,7 +4586,7 @@
   {
     "challengeId": "13-query-parameters",
     "challengeName": "Query with Parameters and Detail View",
-    "timestamp": "2026-07-02T05:29:50.546Z",
+    "timestamp": "2026-07-02T06:07:22.806Z",
     "scores": {
       "functionalTests": 33.3,
       "codeQuality": 100,
@@ -4616,7 +4616,7 @@
               "fullName": " Challenge 13: Query with Parameters and Detail View API slice has getPostById query endpoint",
               "status": "failed",
               "title": "API slice has getPostById query endpoint",
-              "duration": 6,
+              "duration": 7,
               "failureMessages": [
                 "expected false to be true // Object.is equality"
               ],
@@ -4633,7 +4633,7 @@
               "fullName": " Challenge 13: Query with Parameters and Detail View PostDetail uses useGetPostByIdQuery or generated query hook",
               "status": "failed",
               "title": "PostDetail uses useGetPostByIdQuery or generated query hook",
-              "duration": 2,
+              "duration": 1,
               "failureMessages": [
                 "expected '/** Stub: Complete Challenge 13 (Quer…' to match /useGetPostByIdQuery|useQuery/"
               ],
@@ -4654,8 +4654,8 @@
               "failureMessages": []
             }
           ],
-          "startTime": 1782970191753,
-          "endTime": 1782970191761,
+          "startTime": 1782972444057,
+          "endTime": 1782972444065,
           "status": "failed",
           "message": "",
           "name": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/challenge-13.test.tsx"
@@ -4754,7 +4754,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 287,
+                          "duration": 277,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 13')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 13') resolved to 2 elements:\n    1) <h2>Challenge 13: Query with Parameters</h2> aka getByRole('heading', { name: 'Challenge 13: Query with' })\n    2) <div id=\"post-detail\">Complete Challenge 13 per README.</div> aka getByText('Complete Challenge 13 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 13')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 13')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 13') resolved to 2 elements:\n    1) <h2>Challenge 13: Query with Parameters</h2> aka getByRole('heading', { name: 'Challenge 13: Query with' })\n    2) <div id=\"post-detail\">Complete Challenge 13 per README.</div> aka getByText('Complete Challenge 13 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 13')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-13.spec.ts:10:53",
@@ -4778,7 +4778,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:29:56.341Z",
+                          "startTime": "2026-07-02T06:07:28.639Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -4802,7 +4802,7 @@
                           "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 390,
+                          "duration": 402,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 13')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 13') resolved to 2 elements:\n    1) <h2>Challenge 13: Query with Parameters</h2> aka getByRole('heading', { name: 'Challenge 13: Query with' })\n    2) <div id=\"post-detail\">Complete Challenge 13 per README.</div> aka getByText('Complete Challenge 13 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 13')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 13')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 13') resolved to 2 elements:\n    1) <h2>Challenge 13: Query with Parameters</h2> aka getByRole('heading', { name: 'Challenge 13: Query with' })\n    2) <div id=\"post-detail\">Complete Challenge 13 per README.</div> aka getByText('Complete Challenge 13 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 13')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-13.spec.ts:10:53",
@@ -4826,7 +4826,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 1,
-                          "startTime": "2026-07-02T05:29:57.772Z",
+                          "startTime": "2026-07-02T06:07:30.060Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -4855,7 +4855,7 @@
                           "workerIndex": 2,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 250,
+                          "duration": 257,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 13')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 13') resolved to 2 elements:\n    1) <h2>Challenge 13: Query with Parameters</h2> aka getByRole('heading', { name: 'Challenge 13: Query with' })\n    2) <div id=\"post-detail\">Complete Challenge 13 per README.</div> aka getByText('Complete Challenge 13 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 13')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 13')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 13') resolved to 2 elements:\n    1) <h2>Challenge 13: Query with Parameters</h2> aka getByRole('heading', { name: 'Challenge 13: Query with' })\n    2) <div id=\"post-detail\">Complete Challenge 13 per README.</div> aka getByText('Complete Challenge 13 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 13')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-13.spec.ts:10:53",
@@ -4879,7 +4879,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 2,
-                          "startTime": "2026-07-02T05:29:59.297Z",
+                          "startTime": "2026-07-02T06:07:31.616Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -4924,7 +4924,7 @@
                           "workerIndex": 3,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 10214,
+                          "duration": 10216,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('post-detail')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('post-detail')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('post-detail')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('post-detail')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-13.spec.ts:14:51",
@@ -4948,7 +4948,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T05:30:00.685Z",
+                          "startTime": "2026-07-02T06:07:33.020Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -4972,7 +4972,7 @@
                           "workerIndex": 4,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 10374,
+                          "duration": 10366,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('post-detail')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('post-detail')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('post-detail')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('post-detail')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-13.spec.ts:14:51",
@@ -4996,7 +4996,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 1,
-                          "startTime": "2026-07-02T05:30:12.082Z",
+                          "startTime": "2026-07-02T06:07:44.421Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -5025,7 +5025,7 @@
                           "workerIndex": 5,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 10209,
+                          "duration": 10218,
                           "error": {
                             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('post-detail')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('post-detail')\u001b[22m\n",
                             "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('post-detail')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('post-detail')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-13.spec.ts:14:51",
@@ -5049,7 +5049,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 2,
-                          "startTime": "2026-07-02T05:30:23.604Z",
+                          "startTime": "2026-07-02T06:07:55.964Z",
                           "annotations": [],
                           "attachments": [
                             {

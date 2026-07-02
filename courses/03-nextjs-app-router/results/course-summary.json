@@ -1,23 +1,23 @@
 {
   "courseId": "03-nextjs-app-router",
   "courseName": "Next.js App Router",
-  "lastUpdated": "2026-07-02T05:33:26.800Z",
+  "lastUpdated": "2026-07-02T06:11:16.140Z",
   "totalChallenges": 17,
   "completedChallenges": 1,
-  "averageScore": 36.9,
+  "averageScore": 37.3,
   "completionPercentage": 5.9,
   "badgeLevel": "none",
   "challengeResults": [
     {
       "challengeId": "01-app-router-pages-layout",
       "challengeName": "App Router, Pages, and Layout",
-      "score": 69.205,
+      "score": 69.955,
       "passed": false
     },
     {
       "challengeId": "02-server-and-client-components",
       "challengeName": "Server and Client Components",
-      "score": 76.545,
+      "score": 77.295,
       "passed": false
     },
     {
@@ -47,7 +47,7 @@
     {
       "challengeId": "07-static-and-dynamic-rendering",
       "challengeName": "Static and Dynamic Rendering",
-      "score": 47.5,
+      "score": 52.75,
       "passed": false
     },
     {

@@ -1,30 +1,30 @@
 {
-  "lastUpdated": "2026-07-02T05:44:30.559Z",
+  "lastUpdated": "2026-07-02T06:11:16.428Z",
   "pathway": {
     "name": "Modern React Engineer",
     "version": "1.0.0",
-    "overallScore": 53.6,
-    "completionPercentage": 35.8,
+    "overallScore": 54.3,
+    "completionPercentage": 37.7,
     "badgeLevel": "none",
     "totalChallenges": 53,
-    "completedChallenges": 19
+    "completedChallenges": 20
   },
   "courses": {
     "01-react-fundamentals": {
       "courseId": "01-react-fundamentals",
       "courseName": "React Fundamentals",
-      "averageScore": 83.5,
-      "completionPercentage": 78.3,
+      "averageScore": 85.4,
+      "completionPercentage": 82.6,
       "badgeLevel": "silver",
       "totalChallenges": 23,
-      "completedChallenges": 18,
+      "completedChallenges": 19,
       "challenges": {
         "01-static-task-display": {
           "challengeId": "01-static-task-display",
           "challengeName": "Static Task Display",
           "passed": true,
           "score": 94.45,
-          "lastRun": "2026-07-02T05:22:32.251Z",
+          "lastRun": "2026-07-02T05:59:59.906Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 100,
@@ -39,7 +39,7 @@
           "challengeName": "Dynamic Task Rendering",
           "passed": true,
           "score": 85,
-          "lastRun": "2026-07-02T05:22:47.504Z",
+          "lastRun": "2026-07-02T06:00:14.709Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 100,
@@ -54,7 +54,7 @@
           "challengeName": "Adding New Tasks",
           "passed": false,
           "score": 75.405,
-          "lastRun": "2026-07-02T05:22:55.217Z",
+          "lastRun": "2026-07-02T06:00:22.501Z",
           "scores": {
             "functionalTests": 83.3,
             "codeQuality": 100,
@@ -69,7 +69,7 @@
           "challengeName": "Task Completion Toggle",
           "passed": true,
           "score": 98.2,
-          "lastRun": "2026-07-02T05:23:22.783Z",
+          "lastRun": "2026-07-02T06:00:50.022Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 100,
@@ -84,7 +84,7 @@
           "challengeName": "Task Deletion",
           "passed": true,
           "score": 83.5,
-          "lastRun": "2026-07-02T05:23:31.617Z",
+          "lastRun": "2026-07-02T06:00:59.018Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 90,
@@ -97,26 +97,26 @@
         "06-task-filtering": {
           "challengeId": "06-task-filtering",
           "challengeName": "Task Filtering",
-          "passed": false,
-          "score": 72.75,
-          "lastRun": "2026-07-02T05:43:24.626Z",
+          "passed": true,
+          "score": 83.5,
+          "lastRun": "2026-07-02T06:01:06.676Z",
           "scores": {
-            "functionalTests": 80,
+            "functionalTests": 100,
             "codeQuality": 90,
             "architecture": 100,
             "bestPractices": 100,
-            "e2eTests": 75,
+            "e2eTests": 100,
             "aiReview": 0
           }
         },
         "07-priority-based-sorting": {
           "challengeId": "07-priority-based-sorting",
           "challengeName": "Priority-Based Sorting",
-          "passed": false,
-          "score": 71.845,
-          "lastRun": "2026-07-02T05:43:52.540Z",
+          "passed": true,
+          "score": 83.5,
+          "lastRun": "2026-07-02T06:01:14.650Z",
           "scores": {
-            "functionalTests": 66.7,
+            "functionalTests": 100,
             "codeQuality": 90,
             "architecture": 100,
             "bestPractices": 100,
@@ -129,7 +129,7 @@
           "challengeName": "Task Editing",
           "passed": true,
           "score": 83.5,
-          "lastRun": "2026-07-02T05:23:53.982Z",
+          "lastRun": "2026-07-02T06:01:22.034Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 90,
@@ -143,14 +143,14 @@
           "challengeId": "09-search-functionality",
           "challengeName": "Search Functionality",
           "passed": false,
-          "score": 66,
-          "lastRun": "2026-07-02T05:44:00.360Z",
+          "score": 76,
+          "lastRun": "2026-07-02T06:01:29.249Z",
           "scores": {
-            "functionalTests": 50,
+            "functionalTests": 100,
             "codeQuality": 90,
             "architecture": 100,
             "bestPractices": 100,
-            "e2eTests": 100,
+            "e2eTests": 50,
             "aiReview": 0
           }
         },
@@ -159,7 +159,7 @@
           "challengeName": "useEffect - Local Storage Persistence",
           "passed": true,
           "score": 93.2,
-          "lastRun": "2026-07-02T05:24:10.955Z",
+          "lastRun": "2026-07-02T06:01:39.432Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 100,
@@ -172,11 +172,11 @@
         "11-useeffect-debounced-search": {
           "challengeId": "11-useeffect-debounced-search",
           "challengeName": "useEffect - Debounced Search",
-          "passed": false,
-          "score": 66,
-          "lastRun": "2026-07-02T05:44:08.054Z",
+          "passed": true,
+          "score": 83.5,
+          "lastRun": "2026-07-02T06:01:47.706Z",
           "scores": {
-            "functionalTests": 50,
+            "functionalTests": 100,
             "codeQuality": 90,
             "architecture": 100,
             "bestPractices": 100,
@@ -189,7 +189,7 @@
           "challengeName": "Categories and Tags",
           "passed": true,
           "score": 85,
-          "lastRun": "2026-07-02T05:44:15.423Z",
+          "lastRun": "2026-07-02T06:01:54.450Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 100,
@@ -204,7 +204,7 @@
           "challengeName": "Due Dates and Sorting",
           "passed": true,
           "score": 83.5,
-          "lastRun": "2026-07-02T05:24:32.562Z",
+          "lastRun": "2026-07-02T06:02:01.481Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 90,
@@ -219,7 +219,7 @@
           "challengeName": "Task Statistics Dashboard",
           "passed": true,
           "score": 96.7,
-          "lastRun": "2026-07-02T05:24:39.258Z",
+          "lastRun": "2026-07-02T06:02:08.249Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 90,
@@ -234,7 +234,7 @@
           "challengeName": "Component Organization with Props",
           "passed": true,
           "score": 85,
-          "lastRun": "2026-07-02T05:24:47.025Z",
+          "lastRun": "2026-07-02T06:02:16.342Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 100,
@@ -249,7 +249,7 @@
           "challengeName": "Context API - Theme Management",
           "passed": true,
           "score": 84.4,
-          "lastRun": "2026-07-02T05:24:53.563Z",
+          "lastRun": "2026-07-02T06:02:23.015Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 96,
@@ -263,15 +263,15 @@
           "challengeId": "17-custom-hook-uselocalstorage",
           "challengeName": "Custom Hook - useLocalStorage",
           "passed": true,
-          "score": 84.4,
-          "lastRun": "2026-07-02T05:25:00.304Z",
+          "score": 97.60000000000001,
+          "lastRun": "2026-07-02T06:02:29.946Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 96,
             "architecture": 100,
             "bestPractices": 100,
             "e2eTests": 100,
-            "aiReview": 0
+            "aiReview": 88
           }
         },
         "18-usereducer-complex-state": {
@@ -279,7 +279,7 @@
           "challengeName": "useReducer - Complex State Management",
           "passed": true,
           "score": 83.5,
-          "lastRun": "2026-07-02T05:25:07.043Z",
+          "lastRun": "2026-07-02T06:02:37.970Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 90,
@@ -294,7 +294,7 @@
           "challengeName": "Performance Optimization",
           "passed": true,
           "score": 81,
-          "lastRun": "2026-07-02T05:25:13.941Z",
+          "lastRun": "2026-07-02T06:02:44.924Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 90,
@@ -307,16 +307,16 @@
         "20-error-boundaries": {
           "challengeId": "20-error-boundaries",
           "challengeName": "Error Boundaries and Error Handling",
-          "passed": true,
-          "score": 81.7,
-          "lastRun": "2026-07-02T05:25:20.648Z",
+          "passed": false,
+          "score": 68.5,
+          "lastRun": "2026-07-02T06:02:51.707Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 90,
             "architecture": 100,
             "bestPractices": 100,
             "e2eTests": 0,
-            "aiReview": 88
+            "aiReview": 0
           }
         },
         "21-react-router": {
@@ -324,7 +324,7 @@
           "challengeName": "React Router - Routing and Navigation",
           "passed": true,
           "score": 83.5,
-          "lastRun": "2026-07-02T05:25:31.441Z",
+          "lastRun": "2026-07-02T06:03:01.626Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 90,
@@ -339,7 +339,7 @@
           "challengeName": "Data Fetching - Loading and Error State",
           "passed": true,
           "score": 98.2,
-          "lastRun": "2026-07-02T05:25:38.626Z",
+          "lastRun": "2026-07-02T06:03:08.979Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 100,
@@ -352,15 +352,15 @@
         "23-useref-focus-management": {
           "challengeId": "23-useref-focus-management",
           "challengeName": "useRef - Focus Management",
-          "passed": true,
-          "score": 83.5,
-          "lastRun": "2026-07-02T05:44:22.909Z",
+          "passed": false,
+          "score": 78.505,
+          "lastRun": "2026-07-02T06:03:18.600Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 90,
             "architecture": 100,
             "bestPractices": 100,
-            "e2eTests": 100,
+            "e2eTests": 66.7,
             "aiReview": 0
           }
         }
@@ -380,7 +380,7 @@
           "challengeName": "Store Setup with configureStore",
           "passed": false,
           "score": 66.675,
-          "lastRun": "2026-07-02T05:25:59.716Z",
+          "lastRun": "2026-07-02T06:03:30.390Z",
           "scores": {
             "functionalTests": 66.7,
             "codeQuality": 100,
@@ -395,7 +395,7 @@
           "challengeName": "First Slice with createSlice",
           "passed": false,
           "score": 56.655,
-          "lastRun": "2026-07-02T05:26:06.324Z",
+          "lastRun": "2026-07-02T06:03:37.026Z",
           "scores": {
             "functionalTests": 33.3,
             "codeQuality": 100,
@@ -410,7 +410,7 @@
           "challengeName": "Reading and Dispatching in Components",
           "passed": false,
           "score": 36.655,
-          "lastRun": "2026-07-02T05:26:12.758Z",
+          "lastRun": "2026-07-02T06:03:43.553Z",
           "scores": {
             "functionalTests": 33.3,
             "codeQuality": 100,
@@ -425,7 +425,7 @@
           "challengeName": "Multiple Slices in the Store",
           "passed": false,
           "score": 45,
-          "lastRun": "2026-07-02T05:27:00.280Z",
+          "lastRun": "2026-07-02T06:04:31.313Z",
           "scores": {
             "functionalTests": 0,
             "codeQuality": 100,
@@ -440,7 +440,7 @@
           "challengeName": "Async Logic with createAsyncThunk",
           "passed": false,
           "score": 45,
-          "lastRun": "2026-07-02T05:27:06.751Z",
+          "lastRun": "2026-07-02T06:04:37.801Z",
           "scores": {
             "functionalTests": 0,
             "codeQuality": 100,
@@ -455,7 +455,7 @@
           "challengeName": "RTK Query Setup and API Slice",
           "passed": false,
           "score": 45,
-          "lastRun": "2026-07-02T05:27:13.223Z",
+          "lastRun": "2026-07-02T06:04:44.348Z",
           "scores": {
             "functionalTests": 0,
             "codeQuality": 100,
@@ -470,7 +470,7 @@
           "challengeName": "Query Endpoints and useQuery Hooks",
           "passed": false,
           "score": 36.655,
-          "lastRun": "2026-07-02T05:27:19.734Z",
+          "lastRun": "2026-07-02T06:04:50.920Z",
           "scores": {
             "functionalTests": 33.3,
             "codeQuality": 100,
@@ -485,7 +485,7 @@
           "challengeName": "Caching and Cache Tags",
           "passed": false,
           "score": 20,
-          "lastRun": "2026-07-02T05:27:42.291Z",
+          "lastRun": "2026-07-02T06:05:13.862Z",
           "scores": {
             "functionalTests": 0,
             "codeQuality": 0,
@@ -500,7 +500,7 @@
           "challengeName": "Mutations with useMutation",
           "passed": false,
           "score": 35,
-          "lastRun": "2026-07-02T05:28:09.403Z",
+          "lastRun": "2026-07-02T06:05:41.224Z",
           "scores": {
             "functionalTests": 0,
             "codeQuality": 100,
@@ -515,7 +515,7 @@
           "challengeName": "Optimistic Updates",
           "passed": false,
           "score": 35,
-          "lastRun": "2026-07-02T05:28:37.696Z",
+          "lastRun": "2026-07-02T06:06:09.910Z",
           "scores": {
             "functionalTests": 0,
             "codeQuality": 0,
@@ -530,7 +530,7 @@
           "challengeName": "API and Local State Together",
           "passed": false,
           "score": 30,
-          "lastRun": "2026-07-02T05:28:42.699Z",
+          "lastRun": "2026-07-02T06:06:15.049Z",
           "scores": {
             "functionalTests": 0,
             "codeQuality": 100,
@@ -545,7 +545,7 @@
           "challengeName": "Error and Loading UX",
           "passed": false,
           "score": 32.5,
-          "lastRun": "2026-07-02T05:29:11.128Z",
+          "lastRun": "2026-07-02T06:06:43.525Z",
           "scores": {
             "functionalTests": 0,
             "codeQuality": 100,
@@ -560,7 +560,7 @@
           "challengeName": "Query with Parameters and Detail View",
           "passed": false,
           "score": 46.655,
-          "lastRun": "2026-07-02T05:29:50.546Z",
+          "lastRun": "2026-07-02T06:07:22.806Z",
           "scores": {
             "functionalTests": 33.3,
             "codeQuality": 100,
@@ -575,7 +575,7 @@
     "03-nextjs-app-router": {
       "courseId": "03-nextjs-app-router",
       "courseName": "Next.js App Router",
-      "averageScore": 36.9,
+      "averageScore": 37.3,
       "completionPercentage": 5.9,
       "badgeLevel": "none",
       "totalChallenges": 17,
@@ -585,30 +585,30 @@
           "challengeId": "01-app-router-pages-layout",
           "challengeName": "App Router, Pages, and Layout",
           "passed": false,
-          "score": 69.205,
-          "lastRun": "2026-07-02T05:30:34.381Z",
+          "score": 69.955,
+          "lastRun": "2026-07-02T06:08:06.746Z",
           "scores": {
             "functionalTests": 60,
             "codeQuality": 100,
             "architecture": 0,
             "bestPractices": 100,
             "e2eTests": 66.7,
-            "aiReview": 88
+            "aiReview": 93
           }
         },
         "02-server-and-client-components": {
           "challengeId": "02-server-and-client-components",
           "challengeName": "Server and Client Components",
           "passed": false,
-          "score": 76.545,
-          "lastRun": "2026-07-02T05:31:05.373Z",
+          "score": 77.295,
+          "lastRun": "2026-07-02T06:08:38.420Z",
           "scores": {
             "functionalTests": 66.7,
             "codeQuality": 100,
             "architecture": 0,
             "bestPractices": 100,
             "e2eTests": 100,
-            "aiReview": 88
+            "aiReview": 93
           }
         },
         "03-data-fetching-server": {
@@ -616,7 +616,7 @@
           "challengeName": "Data Fetching in Server Components",
           "passed": false,
           "score": 25,
-          "lastRun": "2026-07-02T05:31:17.796Z",
+          "lastRun": "2026-07-02T06:08:51.319Z",
           "scores": {
             "functionalTests": 0,
             "codeQuality": 0,
@@ -631,7 +631,7 @@
           "challengeName": "API Route Handlers",
           "passed": false,
           "score": 10,
-          "lastRun": "2026-07-02T05:31:29.799Z",
+          "lastRun": "2026-07-02T06:08:59.532Z",
           "scores": {
             "functionalTests": 0,
             "codeQuality": 0,
@@ -646,7 +646,7 @@
           "challengeName": "Loading and Streaming",
           "passed": false,
           "score": 25,
-          "lastRun": "2026-07-02T05:31:39.005Z",
+          "lastRun": "2026-07-02T06:09:08.224Z",
           "scores": {
             "functionalTests": 0,
             "codeQuality": 0,
@@ -661,7 +661,7 @@
           "challengeName": "Dynamic Routes",
           "passed": false,
           "score": 25,
-          "lastRun": "2026-07-02T05:31:47.360Z",
+          "lastRun": "2026-07-02T06:09:16.101Z",
           "scores": {
             "functionalTests": 0,
             "codeQuality": 0,
@@ -675,15 +675,15 @@
           "challengeId": "07-static-and-dynamic-rendering",
           "challengeName": "Static and Dynamic Rendering",
           "passed": false,
-          "score": 47.5,
-          "lastRun": "2026-07-02T05:31:55.698Z",
+          "score": 52.75,
+          "lastRun": "2026-07-02T06:09:24.049Z",
           "scores": {
             "functionalTests": 0,
             "codeQuality": 100,
             "architecture": 0,
             "bestPractices": 100,
             "e2eTests": 100,
-            "aiReview": 50
+            "aiReview": 85
           }
         },
         "08-ssr-dynamic-rendering": {
@@ -691,7 +691,7 @@
           "challengeName": "SSR (Server-Side Rendering)",
           "passed": false,
           "score": 25,
-          "lastRun": "2026-07-02T05:32:08.497Z",
+          "lastRun": "2026-07-02T06:09:36.314Z",
           "scores": {
             "functionalTests": 0,
             "codeQuality": 0,
@@ -706,7 +706,7 @@
           "challengeName": "Server Actions and Revalidation",
           "passed": false,
           "score": 10,
-          "lastRun": "2026-07-02T05:32:14.963Z",
+          "lastRun": "2026-07-02T06:09:44.566Z",
           "scores": {
             "functionalTests": 0,
             "codeQuality": 0,
@@ -721,7 +721,7 @@
           "challengeName": "Caching and Revalidating",
           "passed": false,
           "score": 25,
-          "lastRun": "2026-07-02T05:32:24.351Z",
+          "lastRun": "2026-07-02T06:09:56.336Z",
           "scores": {
             "functionalTests": 0,
             "codeQuality": 0,
@@ -736,7 +736,7 @@
           "challengeName": "Error Handling",
           "passed": false,
           "score": 25,
-          "lastRun": "2026-07-02T05:32:30.846Z",
+          "lastRun": "2026-07-02T06:10:04.632Z",
           "scores": {
             "functionalTests": 0,
             "codeQuality": 0,
@@ -751,7 +751,7 @@
           "challengeName": "Metadata and SEO",
           "passed": true,
           "score": 91.45,
-          "lastRun": "2026-07-02T05:32:37.911Z",
+          "lastRun": "2026-07-02T06:10:15.109Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 100,
@@ -766,7 +766,7 @@
           "challengeName": "Images and Fonts",
           "passed": false,
           "score": 52.45,
-          "lastRun": "2026-07-02T05:32:46.365Z",
+          "lastRun": "2026-07-02T06:10:25.800Z",
           "scores": {
             "functionalTests": 0,
             "codeQuality": 100,
@@ -781,7 +781,7 @@
           "challengeName": "Search and Pagination",
           "passed": false,
           "score": 25,
-          "lastRun": "2026-07-02T05:32:54.727Z",
+          "lastRun": "2026-07-02T06:10:36.367Z",
           "scores": {
             "functionalTests": 0,
             "codeQuality": 0,
@@ -796,7 +796,7 @@
           "challengeName": "Redux Toolkit with Next.js",
           "passed": false,
           "score": 53.2,
-          "lastRun": "2026-07-02T05:33:01.305Z",
+          "lastRun": "2026-07-02T06:10:44.761Z",
           "scores": {
             "functionalTests": 0,
             "codeQuality": 100,
@@ -811,7 +811,7 @@
           "challengeName": "RTK Query with Next.js",
           "passed": false,
           "score": 25,
-          "lastRun": "2026-07-02T05:33:09.807Z",
+          "lastRun": "2026-07-02T06:10:55.410Z",
           "scores": {
             "functionalTests": 0,
             "codeQuality": 0,
@@ -826,7 +826,7 @@
           "challengeName": "Fullstack Capstone",
           "passed": false,
           "score": 17.5,
-          "lastRun": "2026-07-02T05:33:16.922Z",
+          "lastRun": "2026-07-02T06:11:06.049Z",
           "scores": {
             "functionalTests": 0,
             "codeQuality": 0,
