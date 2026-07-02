@@ -1,16 +1,180 @@
 {
   "pathwayName": "Modern React Engineer",
   "version": "1.0.0",
-  "lastUpdated": "",
-  "overallScore": 0,
-  "completionPercentage": 0,
+  "lastUpdated": "2026-07-02T05:33:26.973Z",
+  "overallScore": 54.2,
+  "completionPercentage": 39.6,
   "badgeLevel": "none",
-  "courses": [],
-  "skillStrengths": [],
-  "improvementAreas": [],
-  "totalChallenges": 10,
-  "completedChallenges": 0,
-  "averageScore": 0,
-  "repositoryUrl": "",
-  "commitSha": ""
+  "courses": [
+    {
+      "courseId": "01-react-fundamentals",
+      "courseName": "React Fundamentals",
+      "score": 85.4,
+      "completion": 87,
+      "badgeLevel": "silver",
+      "skillStrengths": [
+        "Static Task Display",
+        "Dynamic Task Rendering",
+        "Task Completion Toggle",
+        "Task Deletion",
+        "Task Filtering",
+        "Priority-Based Sorting",
+        "Task Editing",
+        "useEffect - Local Storage Persistence",
+        "useEffect - Debounced Search",
+        "Categories and Tags",
+        "Due Dates and Sorting",
+        "Task Statistics Dashboard",
+        "Component Organization with Props",
+        "Context API - Theme Management",
+        "Custom Hook - useLocalStorage",
+        "useReducer - Complex State Management",
+        "Performance Optimization",
+        "Error Boundaries and Error Handling",
+        "React Router - Routing and Navigation",
+        "Data Fetching - Loading and Error State"
+      ],
+      "improvementAreas": []
+    },
+    {
+      "courseId": "02-redux-rtk-query",
+      "courseName": "Redux & RTK Query",
+      "score": 40.8,
+      "completion": 0,
+      "badgeLevel": "none",
+      "skillStrengths": [],
+      "improvementAreas": [
+        "Store Setup with configureStore",
+        "First Slice with createSlice",
+        "Reading and Dispatching in Components",
+        "Multiple Slices in the Store",
+        "Async Logic with createAsyncThunk",
+        "RTK Query Setup and API Slice",
+        "Query Endpoints and useQuery Hooks",
+        "Caching and Cache Tags",
+        "Mutations with useMutation",
+        "Optimistic Updates",
+        "API and Local State Together",
+        "Error and Loading UX",
+        "Query with Parameters and Detail View"
+      ]
+    },
+    {
+      "courseId": "03-nextjs-app-router",
+      "courseName": "Next.js App Router",
+      "score": 36.9,
+      "completion": 5.9,
+      "badgeLevel": "none",
+      "skillStrengths": [
+        "Metadata and SEO"
+      ],
+      "improvementAreas": [
+        "App Router, Pages, and Layout",
+        "Data Fetching in Server Components",
+        "API Route Handlers",
+        "Loading and Streaming",
+        "Dynamic Routes",
+        "Static and Dynamic Rendering",
+        "SSR (Server-Side Rendering)",
+        "Server Actions and Revalidation",
+        "Caching and Revalidating",
+        "Error Handling",
+        "Images and Fonts",
+        "Search and Pagination",
+        "Redux Toolkit with Next.js",
+        "RTK Query with Next.js",
+        "Fullstack Capstone"
+      ]
+    }
+  ],
+  "totalChallenges": 53,
+  "completedChallenges": 21,
+  "averageScore": 54.192,
+  "skillStrengths": [
+    "Static Task Display",
+    "Dynamic Task Rendering",
+    "Task Completion Toggle",
+    "Task Deletion",
+    "Task Filtering",
+    "Priority-Based Sorting",
+    "Task Editing",
+    "useEffect - Local Storage Persistence",
+    "useEffect - Debounced Search",
+    "Categories and Tags",
+    "Due Dates and Sorting",
+    "Task Statistics Dashboard",
+    "Component Organization with Props",
+    "Context API - Theme Management",
+    "Custom Hook - useLocalStorage",
+    "useReducer - Complex State Management",
+    "Performance Optimization",
+    "Error Boundaries and Error Handling",
+    "React Router - Routing and Navigation",
+    "Data Fetching - Loading and Error State",
+    "Metadata and SEO"
+  ],
+  "improvementAreas": [
+    "Store Setup with configureStore",
+    "First Slice with createSlice",
+    "Reading and Dispatching in Components",
+    "Multiple Slices in the Store",
+    "Async Logic with createAsyncThunk",
+    "RTK Query Setup and API Slice",
+    "Query Endpoints and useQuery Hooks",
+    "Caching and Cache Tags",
+    "Mutations with useMutation",
+    "Optimistic Updates",
+    "API and Local State Together",
+    "Error and Loading UX",
+    "Query with Parameters and Detail View",
+    "App Router, Pages, and Layout",
+    "Data Fetching in Server Components",
+    "API Route Handlers",
+    "Loading and Streaming",
+    "Dynamic Routes",
+    "Static and Dynamic Rendering",
+    "SSR (Server-Side Rendering)",
+    "Server Actions and Revalidation",
+    "Caching and Revalidating",
+    "Error Handling",
+    "Images and Fonts",
+    "Search and Pagination",
+    "Redux Toolkit with Next.js",
+    "RTK Query with Next.js",
+    "Fullstack Capstone"
+  ],
+  "aiInsights": {
+    "overallReadability": 83,
+    "overallMaintainability": 85,
+    "commonStrengths": [
+      "The code is well-structured and follows a consistent naming convention.",
+      "The use of TypeScript interfaces and types is excellent for ensuring type safety and maintainability.",
+      "The code is well-commented, making it easier to understand the functionality and intent behind each component.",
+      "The code is well-structured and organized into separate components, making it easy to understand and maintain.",
+      "The use of TypeScript and functional components is a good practice, ensuring type safety and easier debugging."
+    ],
+    "commonImprovements": [
+      "Some of the functions within the TaskCard component are quite long and complex. Consider breaking them down into smaller, more manageable functions to improve readability and maintainability.",
+      "The use of `window.confirm` in the TaskCard component is not ideal. Consider using a more robust way to handle confirmation, such as a custom confirmation dialog component.",
+      "The hardcoded tasks in the TaskList component could be replaced with a more dynamic data source, such as a mock API or a database. This would make the code more realistic and easier to test.",
+      "Some of the functions in the TaskCard component are quite long and complex. Consider breaking them down into smaller, more manageable functions.",
+      "The use of `window.confirm` in the handleDelete function is not ideal. Consider using a more robust way to handle deletion confirmation, such as a separate confirmation component."
+    ],
+    "courseBreakdown": [
+      {
+        "courseId": "01-react-fundamentals",
+        "feedbackCount": 23
+      },
+      {
+        "courseId": "02-redux-rtk-query",
+        "feedbackCount": 13
+      },
+      {
+        "courseId": "03-nextjs-app-router",
+        "feedbackCount": 17
+      }
+    ]
+  },
+  "repositoryUrl": "https://github.com/abhinavradiga/React-Frontend",
+  "commitSha": "f72273980ab6889b2d68d361d46cb8ffc98ca320"
 }

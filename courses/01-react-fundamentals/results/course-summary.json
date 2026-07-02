@@ -1,17 +1,17 @@
 {
   "courseId": "01-react-fundamentals",
   "courseName": "React Fundamentals",
-  "lastUpdated": "2026-07-02T05:13:44.831Z",
+  "lastUpdated": "2026-07-02T05:25:59.347Z",
   "totalChallenges": 23,
-  "completedChallenges": 21,
-  "averageScore": 87.2,
-  "completionPercentage": 91.3,
+  "completedChallenges": 20,
+  "averageScore": 85.4,
+  "completionPercentage": 87,
   "badgeLevel": "silver",
   "challengeResults": [
     {
       "challengeId": "01-static-task-display",
       "challengeName": "Static Task Display",
-      "score": 82,
+      "score": 94.45,
       "passed": true
     },
     {
@@ -23,13 +23,13 @@
     {
       "challengeId": "03-adding-new-tasks",
       "challengeName": "Adding New Tasks",
-      "score": 98.2,
-      "passed": true
+      "score": 75.405,
+      "passed": false
     },
     {
       "challengeId": "04-task-completion-toggle",
       "challengeName": "Task Completion Toggle",
-      "score": 85,
+      "score": 98.2,
       "passed": true
     },
     {
@@ -89,31 +89,31 @@
     {
       "challengeId": "14-task-statistics-dashboard",
       "challengeName": "Task Statistics Dashboard",
-      "score": 98.2,
+      "score": 96.7,
       "passed": true
     },
     {
       "challengeId": "15-component-organization",
       "challengeName": "Component Organization with Props",
-      "score": 98.60999999999999,
+      "score": 85,
       "passed": true
     },
     {
       "challengeId": "16-context-api-theme",
       "challengeName": "Context API - Theme Management",
-      "score": 97.71,
+      "score": 84.4,
       "passed": true
     },
     {
       "challengeId": "17-custom-hook-uselocalstorage",
       "challengeName": "Custom Hook - useLocalStorage",
-      "score": 97.71,
+      "score": 84.4,
       "passed": true
     },
     {
       "challengeId": "18-usereducer-complex-state",
       "challengeName": "useReducer - Complex State Management",
-      "score": 97.71,
+      "score": 83.5,
       "passed": true
     },
     {
@@ -125,7 +125,7 @@
     {
       "challengeId": "20-error-boundaries",
       "challengeName": "Error Boundaries and Error Handling",
-      "score": 82.71,
+      "score": 81.7,
       "passed": true
     },
     {
@@ -137,7 +137,7 @@
     {
       "challengeId": "22-data-fetching",
       "challengeName": "Data Fetching - Loading and Error State",
-      "score": 85,
+      "score": 98.2,
       "passed": true
     },
     {
@@ -150,7 +150,6 @@
   "skillStrengths": [
     "Static Task Display",
     "Dynamic Task Rendering",
-    "Adding New Tasks",
     "Task Completion Toggle",
     "Task Deletion",
     "Task Filtering",
