@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "2026-07-02T05:33:27.079Z",
+  "lastUpdated": "2026-07-02T05:44:30.559Z",
   "pathway": {
     "name": "Modern React Engineer",
     "version": "1.0.0",
-    "overallScore": 54.2,
-    "completionPercentage": 39.6,
+    "overallScore": 53.6,
+    "completionPercentage": 35.8,
     "badgeLevel": "none",
     "totalChallenges": 53,
-    "completedChallenges": 21
+    "completedChallenges": 19
   },
   "courses": {
     "01-react-fundamentals": {
       "courseId": "01-react-fundamentals",
       "courseName": "React Fundamentals",
-      "averageScore": 85.4,
-      "completionPercentage": 87,
+      "averageScore": 83.5,
+      "completionPercentage": 78.3,
       "badgeLevel": "silver",
       "totalChallenges": 23,
-      "completedChallenges": 20,
+      "completedChallenges": 18,
       "challenges": {
         "01-static-task-display": {
           "challengeId": "01-static-task-display",
@@ -97,26 +97,26 @@
         "06-task-filtering": {
           "challengeId": "06-task-filtering",
           "challengeName": "Task Filtering",
-          "passed": true,
-          "score": 83.5,
-          "lastRun": "2026-07-02T05:23:39.191Z",
+          "passed": false,
+          "score": 72.75,
+          "lastRun": "2026-07-02T05:43:24.626Z",
           "scores": {
-            "functionalTests": 100,
+            "functionalTests": 80,
             "codeQuality": 90,
             "architecture": 100,
             "bestPractices": 100,
-            "e2eTests": 100,
+            "e2eTests": 75,
             "aiReview": 0
           }
         },
         "07-priority-based-sorting": {
           "challengeId": "07-priority-based-sorting",
           "challengeName": "Priority-Based Sorting",
-          "passed": true,
-          "score": 83.5,
-          "lastRun": "2026-07-02T05:23:46.955Z",
+          "passed": false,
+          "score": 71.845,
+          "lastRun": "2026-07-02T05:43:52.540Z",
           "scores": {
-            "functionalTests": 100,
+            "functionalTests": 66.7,
             "codeQuality": 90,
             "architecture": 100,
             "bestPractices": 100,
@@ -143,14 +143,14 @@
           "challengeId": "09-search-functionality",
           "challengeName": "Search Functionality",
           "passed": false,
-          "score": 76,
-          "lastRun": "2026-07-02T05:24:00.943Z",
+          "score": 66,
+          "lastRun": "2026-07-02T05:44:00.360Z",
           "scores": {
-            "functionalTests": 100,
+            "functionalTests": 50,
             "codeQuality": 90,
             "architecture": 100,
             "bestPractices": 100,
-            "e2eTests": 50,
+            "e2eTests": 100,
             "aiReview": 0
           }
         },
@@ -172,11 +172,11 @@
         "11-useeffect-debounced-search": {
           "challengeId": "11-useeffect-debounced-search",
           "challengeName": "useEffect - Debounced Search",
-          "passed": true,
-          "score": 83.5,
-          "lastRun": "2026-07-02T05:24:18.925Z",
+          "passed": false,
+          "score": 66,
+          "lastRun": "2026-07-02T05:44:08.054Z",
           "scores": {
-            "functionalTests": 100,
+            "functionalTests": 50,
             "codeQuality": 90,
             "architecture": 100,
             "bestPractices": 100,
@@ -189,7 +189,7 @@
           "challengeName": "Categories and Tags",
           "passed": true,
           "score": 85,
-          "lastRun": "2026-07-02T05:24:25.688Z",
+          "lastRun": "2026-07-02T05:44:15.423Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 100,
@@ -352,15 +352,15 @@
         "23-useref-focus-management": {
           "challengeId": "23-useref-focus-management",
           "challengeName": "useRef - Focus Management",
-          "passed": false,
-          "score": 78.505,
-          "lastRun": "2026-07-02T05:25:47.930Z",
+          "passed": true,
+          "score": 83.5,
+          "lastRun": "2026-07-02T05:44:22.909Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 90,
             "architecture": 100,
             "bestPractices": 100,
-            "e2eTests": 66.7,
+            "e2eTests": 100,
             "aiReview": 0
           }
         }

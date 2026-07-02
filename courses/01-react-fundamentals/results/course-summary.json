@@ -1,11 +1,11 @@
 {
   "courseId": "01-react-fundamentals",
   "courseName": "React Fundamentals",
-  "lastUpdated": "2026-07-02T05:25:59.347Z",
+  "lastUpdated": "2026-07-02T05:44:30.227Z",
   "totalChallenges": 23,
-  "completedChallenges": 20,
-  "averageScore": 85.4,
-  "completionPercentage": 87,
+  "completedChallenges": 18,
+  "averageScore": 83.5,
+  "completionPercentage": 78.3,
   "badgeLevel": "silver",
   "challengeResults": [
     {
@@ -41,14 +41,14 @@
     {
       "challengeId": "06-task-filtering",
       "challengeName": "Task Filtering",
-      "score": 83.5,
-      "passed": true
+      "score": 72.75,
+      "passed": false
     },
     {
       "challengeId": "07-priority-based-sorting",
       "challengeName": "Priority-Based Sorting",
-      "score": 83.5,
-      "passed": true
+      "score": 71.845,
+      "passed": false
     },
     {
       "challengeId": "08-task-editing",
@@ -59,7 +59,7 @@
     {
       "challengeId": "09-search-functionality",
       "challengeName": "Search Functionality",
-      "score": 76,
+      "score": 66,
       "passed": false
     },
     {
@@ -71,8 +71,8 @@
     {
       "challengeId": "11-useeffect-debounced-search",
       "challengeName": "useEffect - Debounced Search",
-      "score": 83.5,
-      "passed": true
+      "score": 66,
+      "passed": false
     },
     {
       "challengeId": "12-categories-and-tags",
@@ -143,8 +143,8 @@
     {
       "challengeId": "23-useref-focus-management",
       "challengeName": "useRef - Focus Management",
-      "score": 78.505,
-      "passed": false
+      "score": 83.5,
+      "passed": true
     }
   ],
   "skillStrengths": [
@@ -152,11 +152,8 @@
     "Dynamic Task Rendering",
     "Task Completion Toggle",
     "Task Deletion",
-    "Task Filtering",
-    "Priority-Based Sorting",
     "Task Editing",
     "useEffect - Local Storage Persistence",
-    "useEffect - Debounced Search",
     "Categories and Tags",
     "Due Dates and Sorting",
     "Task Statistics Dashboard",
@@ -167,7 +164,11 @@
     "Performance Optimization",
     "Error Boundaries and Error Handling",
     "React Router - Routing and Navigation",
-    "Data Fetching - Loading and Error State"
+    "Data Fetching - Loading and Error State",
+    "useRef - Focus Management"
   ],
-  "improvementAreas": []
+  "improvementAreas": [
+    "Search Functionality",
+    "useEffect - Debounced Search"
+  ]
 }
