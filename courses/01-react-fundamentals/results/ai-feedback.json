@@ -1,44 +1,5 @@
 [
   {
-    "challengeId": "01-static-task-display",
-    "challengeName": "Static Task Display",
-    "aiReview": {
-      "challengeId": "01-static-task-display",
-      "timestamp": "2026-06-10T04:31:09.265Z",
-      "score": 0,
-      "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
-    }
-  },
-  {
-    "challengeId": "02-dynamic-task-rendering",
-    "challengeName": "Dynamic Task Rendering",
-    "aiReview": {
-      "challengeId": "02-dynamic-task-rendering",
-      "timestamp": "2026-06-11T04:52:28.721Z",
-      "score": 88,
-      "feedback": [],
-      "strengths": [
-        "The code is well-structured and follows a consistent naming convention.",
-        "The use of TypeScript and functional components is a good practice.",
-        "The code is relatively free of errors and warnings."
-      ],
-      "improvements": [
-        "Consider adding more comments to explain the purpose of each component and function.",
-        "The `TaskList` component has a lot of props, consider breaking it down into smaller components.",
-        "The `TaskCard` component has a lot of conditional rendering, consider using a more declarative approach."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-structured and follows good practices, but could benefit from more comments and a more modular approach to component design."
-    }
-  },
-  {
     "challengeId": "03-adding-new-tasks",
     "challengeName": "Adding New Tasks",
     "aiReview": {
@@ -62,64 +23,6 @@
     }
   },
   {
-    "challengeId": "04-task-completion-toggle",
-    "challengeName": "Task Completion Toggle",
-    "aiReview": {
-      "challengeId": "04-task-completion-toggle",
-      "timestamp": "2026-06-13T07:36:30.802Z",
-      "score": 83,
-      "feedback": [],
-      "strengths": [
-        "The code is well-structured and easy to follow, with clear and concise function names and variable names.",
-        "The use of TypeScript is well-implemented, with type annotations and interfaces used consistently throughout the code.",
-        "The code is well-organized, with each component and function having a clear and specific responsibility."
-      ],
-      "improvements": [
-        "Some of the functions, such as `handleDelete` in `TaskCard` and `handleToggle` in `TaskList`, are quite long and complex. Consider breaking them down into smaller, more manageable functions.",
-        "The use of `window.confirm` in `handleDelete` is not ideal, as it can be blocked by some browser extensions. Consider using a more robust way to handle deletion, such as a confirmation modal.",
-        "The code could benefit from more comments and documentation, especially in areas where the logic is complex or non-obvious."
-      ],
-      "readability": 85,
-      "maintainability": 80,
-      "overall": "The code is well-structured and well-organized, but could benefit from some improvements in terms of maintainability and readability. With some refactoring and additional comments, this code could be even more robust and easy to understand."
-    }
-  },
-  {
-    "challengeId": "05-task-deletion",
-    "challengeName": "Task Deletion",
-    "aiReview": {
-      "challengeId": "05-task-deletion",
-      "timestamp": "2026-06-13T07:43:40.328Z",
-      "score": 0,
-      "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
-    }
-  },
-  {
-    "challengeId": "08-task-editing",
-    "challengeName": "Task Editing",
-    "aiReview": {
-      "challengeId": "08-task-editing",
-      "timestamp": "2026-06-20T11:34:29.869Z",
-      "score": 50,
-      "feedback": [],
-      "strengths": [
-        "Code structure is reasonable"
-      ],
-      "improvements": [
-        "Code structure is reasonable"
-      ],
-      "readability": 50,
-      "maintainability": 50,
-      "overall": "{\n  \"readability\": 85,\n  \"maintainability\": 90,\n  \"strengths\": [\n    \"The code is well-structured and follows a consistent naming convention.\",\n    \"The use of TypeScript and functional components makes the code more maintainable and scalable.\",\n    \"The code includes clear and concise comments, which helps in understanding the functionality.\"\n  ],\n  \"improvements\": [\n    \"Some of the functions in the TaskCard component are quite long and complex. Consider breaking them down into smaller functio"
-    }
-  },
-  {
     "challengeId": "10-useeffect-local-storage",
     "challengeName": "useEffect - Local Storage Persistence",
     "aiReview": {
@@ -140,29 +43,6 @@
       "readability": 85,
       "maintainability": 90,
       "overall": "The code is well-structured and maintainable, with a good separation of concerns and clear documentation. However, there are some areas for improvement, particularly in terms of component size and state management. With some additional refactoring and error handling, this code could be even more robust and scalable."
-    }
-  },
-  {
-    "challengeId": "13-due-dates-and-sorting",
-    "challengeName": "Due Dates and Sorting",
-    "aiReview": {
-      "challengeId": "13-due-dates-and-sorting",
-      "timestamp": "2026-06-20T11:50:21.147Z",
-      "score": 83,
-      "feedback": [],
-      "strengths": [
-        "The code is well-structured and follows a consistent naming convention.",
-        "The use of TypeScript and functional components is a good practice.",
-        "The code is well-commented, making it easier to understand the functionality."
-      ],
-      "improvements": [
-        "Some of the functions are too long and complex, making them difficult to read and maintain. Consider breaking them down into smaller functions.",
-        "The use of magic numbers (e.g., 86400000) can be improved by defining constants for these values.",
-        "The code can benefit from more type checking and validation to ensure data integrity."
-      ],
-      "readability": 85,
-      "maintainability": 80,
-      "overall": "The code is well-structured and follows good practices, but there are areas for improvement to make it more maintainable and efficient."
     }
   },
   {
@@ -281,22 +161,6 @@
     }
   },
   {
-    "challengeId": "19-performance-optimization",
-    "challengeName": "Performance Optimization",
-    "aiReview": {
-      "challengeId": "19-performance-optimization",
-      "timestamp": "2026-06-21T07:21:52.081Z",
-      "score": 0,
-      "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "Groq API error (413): Request too large for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 6007, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
-    }
-  },
-  {
     "challengeId": "20-error-boundaries",
     "challengeName": "Error Boundaries and Error Handling",
     "aiReview": {
@@ -320,22 +184,6 @@
     }
   },
   {
-    "challengeId": "21-react-router",
-    "challengeName": "React Router - Routing and Navigation",
-    "aiReview": {
-      "challengeId": "21-react-router",
-      "timestamp": "2026-06-21T14:51:13.563Z",
-      "score": 0,
-      "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "Groq API error (413): Request too large for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 6442, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
-    }
-  },
-  {
     "challengeId": "22-data-fetching",
     "challengeName": "Data Fetching - Loading and Error State",
     "aiReview": {
@@ -356,7 +204,7 @@
     "challengeName": "Task Filtering",
     "aiReview": {
       "challengeId": "06-task-filtering",
-      "timestamp": "2026-06-29T11:38:59.627Z",
+      "timestamp": "2026-07-02T05:11:51.855Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -372,7 +220,7 @@
     "challengeName": "Priority-Based Sorting",
     "aiReview": {
       "challengeId": "07-priority-based-sorting",
-      "timestamp": "2026-06-29T11:39:06.439Z",
+      "timestamp": "2026-07-02T05:11:59.579Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -388,7 +236,7 @@
     "challengeName": "Search Functionality",
     "aiReview": {
       "challengeId": "09-search-functionality",
-      "timestamp": "2026-06-29T11:39:15.773Z",
+      "timestamp": "2026-07-02T05:12:10.398Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -404,7 +252,7 @@
     "challengeName": "useEffect - Debounced Search",
     "aiReview": {
       "challengeId": "11-useeffect-debounced-search",
-      "timestamp": "2026-06-29T11:39:22.192Z",
+      "timestamp": "2026-07-02T05:12:17.667Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -420,7 +268,7 @@
     "challengeName": "Categories and Tags",
     "aiReview": {
       "challengeId": "12-categories-and-tags",
-      "timestamp": "2026-06-29T11:39:28.782Z",
+      "timestamp": "2026-07-02T05:12:25.158Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -436,7 +284,135 @@
     "challengeName": "useRef - Focus Management",
     "aiReview": {
       "challengeId": "23-useref-focus-management",
-      "timestamp": "2026-06-29T11:39:39.291Z",
+      "timestamp": "2026-07-02T05:12:37.325Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
+    }
+  },
+  {
+    "challengeId": "01-static-task-display",
+    "challengeName": "Static Task Display",
+    "aiReview": {
+      "challengeId": "01-static-task-display",
+      "timestamp": "2026-07-02T05:12:49.919Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
+    }
+  },
+  {
+    "challengeId": "02-dynamic-task-rendering",
+    "challengeName": "Dynamic Task Rendering",
+    "aiReview": {
+      "challengeId": "02-dynamic-task-rendering",
+      "timestamp": "2026-07-02T05:12:58.227Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
+    }
+  },
+  {
+    "challengeId": "04-task-completion-toggle",
+    "challengeName": "Task Completion Toggle",
+    "aiReview": {
+      "challengeId": "04-task-completion-toggle",
+      "timestamp": "2026-07-02T05:13:06.506Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
+    }
+  },
+  {
+    "challengeId": "05-task-deletion",
+    "challengeName": "Task Deletion",
+    "aiReview": {
+      "challengeId": "05-task-deletion",
+      "timestamp": "2026-07-02T05:13:14.625Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
+    }
+  },
+  {
+    "challengeId": "08-task-editing",
+    "challengeName": "Task Editing",
+    "aiReview": {
+      "challengeId": "08-task-editing",
+      "timestamp": "2026-07-02T05:13:22.259Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
+    }
+  },
+  {
+    "challengeId": "13-due-dates-and-sorting",
+    "challengeName": "Due Dates and Sorting",
+    "aiReview": {
+      "challengeId": "13-due-dates-and-sorting",
+      "timestamp": "2026-07-02T05:13:29.596Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
+    }
+  },
+  {
+    "challengeId": "19-performance-optimization",
+    "challengeName": "Performance Optimization",
+    "aiReview": {
+      "challengeId": "19-performance-optimization",
+      "timestamp": "2026-07-02T05:13:36.992Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "GROQ_API_KEY environment variable not set. AI review skipped."
+    }
+  },
+  {
+    "challengeId": "21-react-router",
+    "challengeName": "React Router - Routing and Navigation",
+    "aiReview": {
+      "challengeId": "21-react-router",
+      "timestamp": "2026-07-02T05:13:44.830Z",
       "score": 0,
       "feedback": [],
       "strengths": [],

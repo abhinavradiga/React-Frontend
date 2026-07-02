@@ -1,23 +1,23 @@
 {
   "courseId": "01-react-fundamentals",
   "courseName": "React Fundamentals",
-  "lastUpdated": "2026-06-29T11:39:39.291Z",
+  "lastUpdated": "2026-07-02T05:13:44.831Z",
   "totalChallenges": 23,
   "completedChallenges": 21,
-  "averageScore": 89.6,
+  "averageScore": 87.2,
   "completionPercentage": 91.3,
   "badgeLevel": "silver",
   "challengeResults": [
     {
       "challengeId": "01-static-task-display",
       "challengeName": "Static Task Display",
-      "score": 85,
+      "score": 82,
       "passed": true
     },
     {
       "challengeId": "02-dynamic-task-rendering",
       "challengeName": "Dynamic Task Rendering",
-      "score": 98.2,
+      "score": 85,
       "passed": true
     },
     {
@@ -29,13 +29,13 @@
     {
       "challengeId": "04-task-completion-toggle",
       "challengeName": "Task Completion Toggle",
-      "score": 97.45,
+      "score": 85,
       "passed": true
     },
     {
       "challengeId": "05-task-deletion",
       "challengeName": "Task Deletion",
-      "score": 85,
+      "score": 83.5,
       "passed": true
     },
     {
@@ -53,7 +53,7 @@
     {
       "challengeId": "08-task-editing",
       "challengeName": "Task Editing",
-      "score": 92.5,
+      "score": 83.5,
       "passed": true
     },
     {
@@ -83,7 +83,7 @@
     {
       "challengeId": "13-due-dates-and-sorting",
       "challengeName": "Due Dates and Sorting",
-      "score": 97.45,
+      "score": 83.5,
       "passed": true
     },
     {
@@ -119,7 +119,7 @@
     {
       "challengeId": "19-performance-optimization",
       "challengeName": "Performance Optimization",
-      "score": 82.00999999999999,
+      "score": 81,
       "passed": true
     },
     {
@@ -131,7 +131,7 @@
     {
       "challengeId": "21-react-router",
       "challengeName": "React Router - Routing and Navigation",
-      "score": 84.50999999999999,
+      "score": 83.5,
       "passed": true
     },
     {
