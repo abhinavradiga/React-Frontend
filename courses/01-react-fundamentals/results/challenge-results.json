@@ -8484,26 +8484,1006 @@
   {
     "challengeId": "23-useref-focus-management",
     "challengeName": "useRef - Focus Management",
-    "timestamp": "2026-07-02T06:03:18.600Z",
+    "timestamp": "2026-07-02T06:51:02.708Z",
     "scores": {
-      "functionalTests": 100,
-      "codeQuality": 90,
+      "functionalTests": 95.8,
+      "codeQuality": 100,
       "architecture": 100,
       "bestPractices": 100,
       "e2eTests": 66.7,
-      "aiReview": 0
+      "aiReview": 50
     },
-    "totalScore": 78.505,
-    "passed": false,
+    "totalScore": 86.035,
+    "passed": true,
     "errors": [],
     "warnings": [],
     "testResults": {
-      "score": 100,
-      "passed": true,
-      "totalTests": 2,
-      "passedTests": 2,
-      "failedTests": 0,
+      "score": 95.8,
+      "passed": false,
+      "totalTests": 72,
+      "passedTests": 69,
+      "failedTests": 3,
       "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 01: Static Task Display",
+                "TaskCard"
+              ],
+              "fullName": " Challenge 01: Static Task Display TaskCard should render title, description, and priority",
+              "status": "passed",
+              "title": "should render title, description, and priority",
+              "duration": 102,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 01: Static Task Display",
+                "TaskCard"
+              ],
+              "fullName": " Challenge 01: Static Task Display TaskCard should use article with id task-card",
+              "status": "passed",
+              "title": "should use article with id task-card",
+              "duration": 18,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 01: Static Task Display",
+                "TaskCard"
+              ],
+              "fullName": " Challenge 01: Static Task Display TaskCard should use semantic HTML (h2 for title)",
+              "status": "passed",
+              "title": "should use semantic HTML (h2 for title)",
+              "duration": 10,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 01: Static Task Display",
+                "TaskList"
+              ],
+              "fullName": " Challenge 01: Static Task Display TaskList should render 3 TaskCards when no tasks prop",
+              "status": "passed",
+              "title": "should render 3 TaskCards when no tasks prop",
+              "duration": 12,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 01: Static Task Display",
+                "TaskList"
+              ],
+              "fullName": " Challenge 01: Static Task Display TaskList should have section with id task-list",
+              "status": "passed",
+              "title": "should have section with id task-list",
+              "duration": 18,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 01: Static Task Display",
+                "TaskList"
+              ],
+              "fullName": " Challenge 01: Static Task Display TaskList should display three different tasks",
+              "status": "passed",
+              "title": "should display three different tasks",
+              "duration": 31,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782975073718,
+          "endTime": 1782975073913,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-01.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 02: Dynamic Task Rendering"
+              ],
+              "fullName": " Challenge 02: Dynamic Task Rendering should render tasks from tasks prop",
+              "status": "passed",
+              "title": "should render tasks from tasks prop",
+              "duration": 167,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 02: Dynamic Task Rendering"
+              ],
+              "fullName": " Challenge 02: Dynamic Task Rendering should display task count with id task-count",
+              "status": "passed",
+              "title": "should display task count with id task-count",
+              "duration": 28,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 02: Dynamic Task Rendering"
+              ],
+              "fullName": " Challenge 02: Dynamic Task Rendering should use unique keys when mapping (no duplicate keys)",
+              "status": "passed",
+              "title": "should use unique keys when mapping (no duplicate keys)",
+              "duration": 16,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 02: Dynamic Task Rendering"
+              ],
+              "fullName": " Challenge 02: Dynamic Task Rendering should use map in TaskList",
+              "status": "passed",
+              "title": "should use map in TaskList",
+              "duration": 1,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782975073721,
+          "endTime": 1782975073933,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-02.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 03: Adding New Tasks"
+              ],
+              "fullName": " Challenge 03: Adding New Tasks should have controlled title input",
+              "status": "passed",
+              "title": "should have controlled title input",
+              "duration": 415,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 03: Adding New Tasks"
+              ],
+              "fullName": " Challenge 03: Adding New Tasks should have Add Task submit button",
+              "status": "passed",
+              "title": "should have Add Task submit button",
+              "duration": 84,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 03: Adding New Tasks"
+              ],
+              "fullName": " Challenge 03: Adding New Tasks should call onAddTask with new task when title filled and submitted",
+              "status": "passed",
+              "title": "should call onAddTask with new task when title filled and submitted",
+              "duration": 283,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 03: Adding New Tasks"
+              ],
+              "fullName": " Challenge 03: Adding New Tasks should show error when title is empty on submit",
+              "status": "passed",
+              "title": "should show error when title is empty on submit",
+              "duration": 102,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 03: Adding New Tasks"
+              ],
+              "fullName": " Challenge 03: Adding New Tasks should clear form after successful add",
+              "status": "passed",
+              "title": "should clear form after successful add",
+              "duration": 181,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 03: Adding New Tasks"
+              ],
+              "fullName": " Challenge 03: Adding New Tasks should use controlled inputs (value + onChange)",
+              "status": "passed",
+              "title": "should use controlled inputs (value + onChange)",
+              "duration": 1,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782975074078,
+          "endTime": 1782975075144,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-03.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 04: Task Completion Toggle"
+              ],
+              "fullName": " Challenge 04: Task Completion Toggle TaskCard should render checkbox when onToggle provided",
+              "status": "passed",
+              "title": "TaskCard should render checkbox when onToggle provided",
+              "duration": 218,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 04: Task Completion Toggle"
+              ],
+              "fullName": " Challenge 04: Task Completion Toggle TaskCard should call onToggle when checkbox clicked",
+              "status": "passed",
+              "title": "TaskCard should call onToggle when checkbox clicked",
+              "duration": 107,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 04: Task Completion Toggle"
+              ],
+              "fullName": " Challenge 04: Task Completion Toggle TaskCard should show strike-through when completed",
+              "status": "passed",
+              "title": "TaskCard should show strike-through when completed",
+              "duration": 48,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 04: Task Completion Toggle"
+              ],
+              "fullName": " Challenge 04: Task Completion Toggle TaskCard should have data-completed or different style when completed",
+              "status": "passed",
+              "title": "TaskCard should have data-completed or different style when completed",
+              "duration": 7,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 04: Task Completion Toggle"
+              ],
+              "fullName": " Challenge 04: Task Completion Toggle TaskList should pass onToggle to TaskCard when tasks provided",
+              "status": "passed",
+              "title": "TaskList should pass onToggle to TaskCard when tasks provided",
+              "duration": 100,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 04: Task Completion Toggle"
+              ],
+              "fullName": " Challenge 04: Task Completion Toggle count text should show X of Y completed format",
+              "status": "passed",
+              "title": "count text should show X of Y completed format",
+              "duration": 8,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782975074120,
+          "endTime": 1782975074608,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-04.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 05: Task Deletion"
+              ],
+              "fullName": " Challenge 05: Task Deletion TaskCard should render Delete button when onDelete and id provided",
+              "status": "passed",
+              "title": "TaskCard should render Delete button when onDelete and id provided",
+              "duration": 221,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 05: Task Deletion"
+              ],
+              "fullName": " Challenge 05: Task Deletion TaskCard should not render Delete button when onDelete not provided",
+              "status": "passed",
+              "title": "TaskCard should not render Delete button when onDelete not provided",
+              "duration": 8,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 05: Task Deletion"
+              ],
+              "fullName": " Challenge 05: Task Deletion TaskCard should call onDelete when Delete clicked and user confirms",
+              "status": "passed",
+              "title": "TaskCard should call onDelete when Delete clicked and user confirms",
+              "duration": 104,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 05: Task Deletion"
+              ],
+              "fullName": " Challenge 05: Task Deletion TaskCard should not call onDelete when user cancels confirmation",
+              "status": "passed",
+              "title": "TaskCard should not call onDelete when user cancels confirmation",
+              "duration": 85,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 05: Task Deletion"
+              ],
+              "fullName": " Challenge 05: Task Deletion TaskList should pass onDelete to TaskCard when provided",
+              "status": "passed",
+              "title": "TaskList should pass onDelete to TaskCard when provided",
+              "duration": 92,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 05: Task Deletion"
+              ],
+              "fullName": " Challenge 05: Task Deletion TaskList should show countText in #task-count",
+              "status": "passed",
+              "title": "TaskList should show countText in #task-count",
+              "duration": 10,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782975074114,
+          "endTime": 1782975074634,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-05.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 06: Task Filtering"
+              ],
+              "fullName": " Challenge 06: Task Filtering FilterBar should render All, Active, Completed buttons",
+              "status": "passed",
+              "title": "FilterBar should render All, Active, Completed buttons",
+              "duration": 286,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 06: Task Filtering"
+              ],
+              "fullName": " Challenge 06: Task Filtering FilterBar should have id=\"filter-bar\"",
+              "status": "passed",
+              "title": "FilterBar should have id=\"filter-bar\"",
+              "duration": 13,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 06: Task Filtering"
+              ],
+              "fullName": " Challenge 06: Task Filtering FilterBar should highlight active filter",
+              "status": "passed",
+              "title": "FilterBar should highlight active filter",
+              "duration": 76,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 06: Task Filtering"
+              ],
+              "fullName": " Challenge 06: Task Filtering FilterBar should call onFilterChange when button clicked",
+              "status": "passed",
+              "title": "FilterBar should call onFilterChange when button clicked",
+              "duration": 151,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 06: Task Filtering"
+              ],
+              "fullName": " Challenge 06: Task Filtering TaskList with filtered tasks should show only matching tasks",
+              "status": "passed",
+              "title": "TaskList with filtered tasks should show only matching tasks",
+              "duration": 51,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782975074228,
+          "endTime": 1782975074806,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-06.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 07: Priority-Based Sorting"
+              ],
+              "fullName": " Challenge 07: Priority-Based Sorting FilterBar or sort control should exist",
+              "status": "passed",
+              "title": "FilterBar or sort control should exist",
+              "duration": 47,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 07: Priority-Based Sorting"
+              ],
+              "fullName": " Challenge 07: Priority-Based Sorting TaskList should render tasks in order provided",
+              "status": "passed",
+              "title": "TaskList should render tasks in order provided",
+              "duration": 248,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 07: Priority-Based Sorting"
+              ],
+              "fullName": " Challenge 07: Priority-Based Sorting When tasks sorted High to Low, High appears first",
+              "status": "passed",
+              "title": "When tasks sorted High to Low, High appears first",
+              "duration": 92,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782975073716,
+          "endTime": 1782975074104,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-07.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 08: Task Editing"
+              ],
+              "fullName": " Challenge 08: Task Editing TaskCard should render title and description",
+              "status": "passed",
+              "title": "TaskCard should render title and description",
+              "duration": 94,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 08: Task Editing"
+              ],
+              "fullName": " Challenge 08: Task Editing TaskList should pass tasks to TaskCard",
+              "status": "passed",
+              "title": "TaskList should pass tasks to TaskCard",
+              "duration": 26,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 08: Task Editing"
+              ],
+              "fullName": " Challenge 08: Task Editing TaskList should have id=\"task-list\"",
+              "status": "passed",
+              "title": "TaskList should have id=\"task-list\"",
+              "duration": 12,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782975073717,
+          "endTime": 1782975073850,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-08.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 09: Search Functionality"
+              ],
+              "fullName": " Challenge 09: Search Functionality FilterBar should exist for search integration",
+              "status": "passed",
+              "title": "FilterBar should exist for search integration",
+              "duration": 46,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 09: Search Functionality"
+              ],
+              "fullName": " Challenge 09: Search Functionality TaskList should filter by provided tasks (search applied upstream)",
+              "status": "passed",
+              "title": "TaskList should filter by provided tasks (search applied upstream)",
+              "duration": 67,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782975073716,
+          "endTime": 1782975073830,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-09.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 10: useEffect - Local Storage Persistence"
+              ],
+              "fullName": " Challenge 10: useEffect - Local Storage Persistence App should render without crashing",
+              "status": "passed",
+              "title": "App should render without crashing",
+              "duration": 199,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 10: useEffect - Local Storage Persistence"
+              ],
+              "fullName": " Challenge 10: useEffect - Local Storage Persistence App should have routes for challenge 10",
+              "status": "passed",
+              "title": "App should have routes for challenge 10",
+              "duration": 27,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782975073868,
+          "endTime": 1782975074094,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-10.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 11: useEffect - Debounced Search"
+              ],
+              "fullName": " Challenge 11: useEffect - Debounced Search FilterBar should exist for search/debounce integration",
+              "status": "passed",
+              "title": "FilterBar should exist for search/debounce integration",
+              "duration": 34,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 11: useEffect - Debounced Search"
+              ],
+              "fullName": " Challenge 11: useEffect - Debounced Search TaskList should render tasks",
+              "status": "passed",
+              "title": "TaskList should render tasks",
+              "duration": 45,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782975076422,
+          "endTime": 1782975076501,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-11.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 12: Categories and Tags"
+              ],
+              "fullName": " Challenge 12: Categories and Tags TaskCard should render title and priority",
+              "status": "passed",
+              "title": "TaskCard should render title and priority",
+              "duration": 67,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 12: Categories and Tags"
+              ],
+              "fullName": " Challenge 12: Categories and Tags TaskList should render tasks with extended shape",
+              "status": "passed",
+              "title": "TaskList should render tasks with extended shape",
+              "duration": 11,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782975076412,
+          "endTime": 1782975076490,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-12.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 13: Due Dates and Sorting"
+              ],
+              "fullName": " Challenge 13: Due Dates and Sorting TaskCard should render title",
+              "status": "passed",
+              "title": "TaskCard should render title",
+              "duration": 67,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 13: Due Dates and Sorting"
+              ],
+              "fullName": " Challenge 13: Due Dates and Sorting TaskList should render tasks",
+              "status": "passed",
+              "title": "TaskList should render tasks",
+              "duration": 15,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782975076422,
+          "endTime": 1782975076504,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-13.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 14: Task Statistics Dashboard"
+              ],
+              "fullName": " Challenge 14: Task Statistics Dashboard StatsPanel should have id=\"stats-panel\"",
+              "status": "passed",
+              "title": "StatsPanel should have id=\"stats-panel\"",
+              "duration": 81,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 14: Task Statistics Dashboard"
+              ],
+              "fullName": " Challenge 14: Task Statistics Dashboard StatsPanel should display total and completed",
+              "status": "passed",
+              "title": "StatsPanel should display total and completed",
+              "duration": 33,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 14: Task Statistics Dashboard"
+              ],
+              "fullName": " Challenge 14: Task Statistics Dashboard TaskList should render tasks",
+              "status": "passed",
+              "title": "TaskList should render tasks",
+              "duration": 29,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782975073713,
+          "endTime": 1782975073856,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-14.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 15: Component Organization with Props"
+              ],
+              "fullName": " Challenge 15: Component Organization with Props TaskCard should accept and render props",
+              "status": "passed",
+              "title": "TaskCard should accept and render props",
+              "duration": 69,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 15: Component Organization with Props"
+              ],
+              "fullName": " Challenge 15: Component Organization with Props TaskList should render TaskCards with props",
+              "status": "passed",
+              "title": "TaskList should render TaskCards with props",
+              "duration": 11,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782975076417,
+          "endTime": 1782975076497,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-15.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 16: Context API - Theme Management"
+              ],
+              "fullName": " Challenge 16: Context API - Theme Management App should render without crashing",
+              "status": "passed",
+              "title": "App should render without crashing",
+              "duration": 125,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 16: Context API - Theme Management"
+              ],
+              "fullName": " Challenge 16: Context API - Theme Management App should have main content",
+              "status": "failed",
+              "title": "App should have main content",
+              "duration": 25,
+              "failureMessages": [
+                "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).toBeInTheDocument()\u001b[22m\n\n\u001b[31mreceived\u001b[39m value must be an HTMLElement or an SVGElement.\n"
+              ],
+              "location": {
+                "line": 13,
+                "column": 45
+              }
+            }
+          ],
+          "startTime": 1782975076545,
+          "endTime": 1782975076695,
+          "status": "failed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-16.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 17: Custom Hook - useLocalStorage"
+              ],
+              "fullName": " Challenge 17: Custom Hook - useLocalStorage App should render without crashing",
+              "status": "passed",
+              "title": "App should render without crashing",
+              "duration": 140,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782975076555,
+          "endTime": 1782975076695,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-17.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 18: useReducer - Complex State Management"
+              ],
+              "fullName": " Challenge 18: useReducer - Complex State Management App should render",
+              "status": "passed",
+              "title": "App should render",
+              "duration": 137,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 18: useReducer - Complex State Management"
+              ],
+              "fullName": " Challenge 18: useReducer - Complex State Management TaskList should render tasks",
+              "status": "passed",
+              "title": "TaskList should render tasks",
+              "duration": 33,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782975076547,
+          "endTime": 1782975076718,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-18.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 19: Performance Optimization"
+              ],
+              "fullName": " Challenge 19: Performance Optimization TaskCard should render",
+              "status": "passed",
+              "title": "TaskCard should render",
+              "duration": 73,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 19: Performance Optimization"
+              ],
+              "fullName": " Challenge 19: Performance Optimization TaskList should render TaskCards",
+              "status": "passed",
+              "title": "TaskList should render TaskCards",
+              "duration": 13,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782975076503,
+          "endTime": 1782975076589,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-19.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 20: Error Boundaries and Error Handling"
+              ],
+              "fullName": " Challenge 20: Error Boundaries and Error Handling ErrorBoundary should render children when no error",
+              "status": "passed",
+              "title": "ErrorBoundary should render children when no error",
+              "duration": 58,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 20: Error Boundaries and Error Handling"
+              ],
+              "fullName": " Challenge 20: Error Boundaries and Error Handling ErrorBoundary should have fallback with id=\"error-boundary-fallback\" when error caught",
+              "status": "passed",
+              "title": "ErrorBoundary should have fallback with id=\"error-boundary-fallback\" when error caught",
+              "duration": 58,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 20: Error Boundaries and Error Handling"
+              ],
+              "fullName": " Challenge 20: Error Boundaries and Error Handling ErrorBoundary should have Retry button with id=\"error-retry\"",
+              "status": "passed",
+              "title": "ErrorBoundary should have Retry button with id=\"error-retry\"",
+              "duration": 16,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 20: Error Boundaries and Error Handling"
+              ],
+              "fullName": " Challenge 20: Error Boundaries and Error Handling Retry button should be clickable",
+              "status": "passed",
+              "title": "Retry button should be clickable",
+              "duration": 208,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782975074154,
+          "endTime": 1782975074495,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-20.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 21: React Router - Routing and Navigation"
+              ],
+              "fullName": " Challenge 21: React Router - Routing and Navigation TaskDetailPage should use useParams and render task detail or not found",
+              "status": "passed",
+              "title": "TaskDetailPage should use useParams and render task detail or not found",
+              "duration": 45,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 21: React Router - Routing and Navigation"
+              ],
+              "fullName": " Challenge 21: React Router - Routing and Navigation TaskDetailPage should have back button with id task-detail-back",
+              "status": "passed",
+              "title": "TaskDetailPage should have back button with id task-detail-back",
+              "duration": 7,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782975073687,
+          "endTime": 1782975073739,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-21.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 22: Data Fetching - Loading and Error State"
+              ],
+              "fullName": " Challenge 22: Data Fetching - Loading and Error State FetchDemoView should show loading state initially or fetch from API",
+              "status": "passed",
+              "title": "FetchDemoView should show loading state initially or fetch from API",
+              "duration": 76,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 22: Data Fetching - Loading and Error State"
+              ],
+              "fullName": " Challenge 22: Data Fetching - Loading and Error State FetchDemoView should have fetch-list when data is loaded",
+              "status": "passed",
+              "title": "FetchDemoView should have fetch-list when data is loaded",
+              "duration": 21,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 22: Data Fetching - Loading and Error State"
+              ],
+              "fullName": " Challenge 22: Data Fetching - Loading and Error State FetchDemoView should show fetch-error when fetch fails",
+              "status": "passed",
+              "title": "FetchDemoView should show fetch-error when fetch fails",
+              "duration": 22,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1782975073671,
+          "endTime": 1782975073790,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-22.test.tsx"
+        },
         {
           "assertionResults": [
             {
@@ -8512,10 +9492,16 @@
                 "Challenge 23: useRef - Focus Management"
               ],
               "fullName": " Challenge 23: useRef - Focus Management FilterBar should render search input with id search-input",
-              "status": "passed",
+              "status": "failed",
               "title": "FilterBar should render search input with id search-input",
-              "duration": 19,
-              "failureMessages": []
+              "duration": 49,
+              "failureMessages": [
+                "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).toBeInTheDocument()\u001b[22m\n\n\u001b[31mreceived\u001b[39m value must be an HTMLElement or an SVGElement.\n"
+              ],
+              "location": {
+                "line": 14,
+                "column": 25
+              }
             },
             {
               "ancestorTitles": [
@@ -8523,158 +9509,32 @@
                 "Challenge 23: useRef - Focus Management"
               ],
               "fullName": " Challenge 23: useRef - Focus Management FilterBar should be focusable for search input",
-              "status": "passed",
+              "status": "failed",
               "title": "FilterBar should be focusable for search input",
-              "duration": 6,
-              "failureMessages": []
+              "duration": 8,
+              "failureMessages": [
+                "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).toBeInTheDocument()\u001b[22m\n\n\u001b[31mreceived\u001b[39m value must be an HTMLElement or an SVGElement.\n"
+              ],
+              "location": {
+                "line": 26,
+                "column": 25
+              }
             }
           ],
-          "startTime": 1782972199971,
-          "endTime": 1782972199996,
-          "status": "passed",
+          "startTime": 1782975073678,
+          "endTime": 1782975073736,
+          "status": "failed",
           "message": "",
-          "name": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/challenge-23.test.tsx"
+          "name": "D:/Spark +/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-23.test.tsx"
         }
-      ]
+      ],
+      "error": "Command failed: npm test -- D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\challenge-23.test.tsx --run --reporter=json"
     },
     "lintResults": {
-      "score": 90,
+      "score": 100,
       "passed": false,
-      "totalIssues": 1,
-      "errors": 1,
-      "warnings": 0,
-      "details": [
-        {
-          "filePath": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/src/App.tsx",
-          "messages": [],
-          "suppressedMessages": [],
-          "errorCount": 0,
-          "fatalErrorCount": 0,
-          "warningCount": 0,
-          "fixableErrorCount": 0,
-          "fixableWarningCount": 0,
-          "usedDeprecatedRules": [
-            {
-              "ruleId": "no-extra-semi",
-              "replacedBy": []
-            },
-            {
-              "ruleId": "no-mixed-spaces-and-tabs",
-              "replacedBy": []
-            }
-          ]
-        },
-        {
-          "filePath": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/src/components/FilterBar.tsx",
-          "messages": [],
-          "suppressedMessages": [],
-          "errorCount": 0,
-          "fatalErrorCount": 0,
-          "warningCount": 0,
-          "fixableErrorCount": 0,
-          "fixableWarningCount": 0,
-          "usedDeprecatedRules": [
-            {
-              "ruleId": "no-extra-semi",
-              "replacedBy": []
-            },
-            {
-              "ruleId": "no-mixed-spaces-and-tabs",
-              "replacedBy": []
-            }
-          ]
-        },
-        {
-          "filePath": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/src/components/TaskApp.tsx",
-          "messages": [
-            {
-              "ruleId": "@typescript-eslint/no-unused-vars",
-              "severity": 2,
-              "message": "'setTasks' is defined but never used.",
-              "line": 60,
-              "column": 32,
-              "nodeType": "Identifier",
-              "messageId": "unusedVar",
-              "endLine": 60,
-              "endColumn": 40
-            }
-          ],
-          "suppressedMessages": [
-            {
-              "ruleId": "react-hooks/exhaustive-deps",
-              "severity": 1,
-              "message": "React Hook useEffect has a missing dependency: 'setStoredTasks'. Either include it or remove the dependency array.",
-              "line": 85,
-              "column": 6,
-              "nodeType": "ArrayExpression",
-              "endLine": 85,
-              "endColumn": 35,
-              "suggestions": [
-                {
-                  "desc": "Update the dependencies array to be: [reducerState, setStoredTasks, usingExternal]",
-                  "fix": {
-                    "range": [
-                      3745,
-                      3774
-                    ],
-                    "text": "[reducerState, setStoredTasks, usingExternal]"
-                  }
-                }
-              ],
-              "suppressions": [
-                {
-                  "kind": "directive",
-                  "justification": ""
-                }
-              ]
-            },
-            {
-              "ruleId": "react-hooks/exhaustive-deps",
-              "severity": 1,
-              "message": "React Hook useEffect has a missing dependency: 'debouncedSearch'. Either include it or remove the dependency array. You can also replace multiple useState variables with useReducer if 'setIsSearching' needs the current value of 'debouncedSearch'.",
-              "line": 95,
-              "column": 6,
-              "nodeType": "ArrayExpression",
-              "endLine": 95,
-              "endColumn": 14,
-              "suggestions": [
-                {
-                  "desc": "Update the dependencies array to be: [debouncedSearch, search]",
-                  "fix": {
-                    "range": [
-                      4064,
-                      4072
-                    ],
-                    "text": "[debouncedSearch, search]"
-                  }
-                }
-              ],
-              "suppressions": [
-                {
-                  "kind": "directive",
-                  "justification": ""
-                }
-              ]
-            }
-          ],
-          "errorCount": 1,
-          "fatalErrorCount": 0,
-          "warningCount": 0,
-          "fixableErrorCount": 0,
-          "fixableWarningCount": 0,
-          "source": "import { useReducer, useState, useMemo, useEffect, useCallback } from 'react'\nimport type { Dispatch, SetStateAction } from 'react'\nimport type { Task } from './TaskList'\nimport TaskList from './TaskList'\nimport TaskForm from './TaskForm'\nimport FilterBar from './FilterBar'\nimport StatsPanel from './StatsPanel'\nimport ErrorBoundary from './ErrorBoundary'\nimport { ThemeProvider, useTheme } from '../contexts/ThemeContext'\nimport { useLocalStorage } from '../hooks/useLocalStorage'\nimport { taskReducer, addTask as addTaskAction, updateTask as updateTaskAction, deleteTask as deleteTaskAction, toggleTask as toggleTaskAction } from '../reducers/taskReducer'\n\ninterface TaskAppProps {\n  tasks?: Task[]\n  setTasks?: Dispatch<SetStateAction<Task[]>>\n  dispatch?: (action: { type: string; payload?: unknown }) => void\n  showForm?: boolean\n  countFormat?: string\n  showFilterBar?: boolean\n  showStatsPanel?: boolean\n  onDelete?: (id: string | number) => void\n  linkToTaskDetail?: boolean\n}\n\nconst DEFAULT_TASKS: Task[] = [\n  { id: 1, title: 'First Task', description: 'First hardcoded task', priority: 'High', completed: false, category: 'General', tags: [] },\n  { id: 2, title: 'Second Task', description: 'Second hardcoded task', priority: 'Medium', completed: false, category: 'General', tags: [] },\n  { id: 3, title: 'Third Task', description: 'Third hardcoded task', priority: 'Low', completed: false, category: 'General', tags: [] },\n  { id: 4, title: 'Fourth Task', description: 'Fourth hardcoded task', priority: 'High', completed: false, category: 'General', tags: [] },\n  { id: 5, title: 'Fifth Task', description: 'Fifth hardcoded task', priority: 'Medium', completed: false, category: 'General', tags: [] },\n]\n\nfunction normalizeTask(t: Partial<Task>): Task {\n  return {\n    id: t.id ?? Date.now(),\n    title: t.title ?? '',\n    description: t.description ?? '',\n    priority: t.priority ?? 'Medium',\n    completed: t.completed ?? false,\n    category: t.category ?? 'General',\n    tags: Array.isArray(t.tags) ? t.tags : [],\n    dueDate: t.dueDate,\n  }\n}\n\ntype Filter = 'all' | 'active' | 'completed'\ntype SortOrder = 'recent' | 'priority-high' | 'priority-low' | 'alphabetical' | 'due-date'\n\nconst PRIORITY_RANK: Record<string, number> = { High: 0, Medium: 1, Low: 2 }\n\nfunction ThemeToggle() {\n  const { theme, toggleTheme } = useTheme()\n  return (\n    <button id=\"theme-toggle\" onClick={toggleTheme}>\n      {theme === 'light' ? 'Switch to Dark' : 'Switch to Light'}\n    </button>\n  )\n}\n\nfunction TaskAppInner({ tasks, setTasks, dispatch: externalDispatch, showForm, countFormat, showFilterBar, showStatsPanel, onDelete, linkToTaskDetail }: TaskAppProps) {\n  const [storedTasks] = useLocalStorage<Task[]>('task-app-tasks', DEFAULT_TASKS)\n  const [reducerState, reducerDispatch] = useReducer(taskReducer, storedTasks)\n  const [, setStoredTasks] = useLocalStorage<Task[]>('task-app-tasks', DEFAULT_TASKS)\n\n  const [filter, setFilter] = useState<Filter>('all')\n  const [sortOrder, setSortOrder] = useState<SortOrder>('recent')\n  const [editingId, setEditingId] = useState<string | number | null>(null)\n  const [search, setSearch] = useState('')\n  const [debouncedSearch, setDebouncedSearch] = useState('')\n  const [isSearching, setIsSearching] = useState(false)\n  const [categoryFilter, setCategoryFilter] = useState('all')\n\n  const usingExternal = Boolean(tasks && externalDispatch)\n  const displayTasks = useMemo(\n    () => (usingExternal ? tasks! : reducerState).map(normalizeTask),\n    [usingExternal, tasks, reducerState]\n  )\n  const dispatch = externalDispatch ?? reducerDispatch\n\n  useEffect(() => {\n    if (!usingExternal) {\n      setStoredTasks(reducerState)\n    }\n    // eslint-disable-next-line react-hooks/exhaustive-deps\n  }, [reducerState, usingExternal])\n\n  useEffect(() => {\n    setIsSearching(search !== debouncedSearch)\n    const timeoutId = setTimeout(() => {\n      setDebouncedSearch(search)\n      setIsSearching(false)\n    }, 300)\n    return () => clearTimeout(timeoutId)\n    // eslint-disable-next-line react-hooks/exhaustive-deps\n  }, [search])\n\n  const stats = useMemo(() => {\n    const total = displayTasks.length\n    const completed = displayTasks.filter(t => t.completed).length\n    const active = total - completed\n    const now = new Date()\n    const overdue = displayTasks.filter(t => {\n      if (t.completed || !t.dueDate) return false\n      return new Date(t.dueDate) < now\n    }).length\n    const completedPercentage = total > 0 ? Math.round((completed / total) * 100) : 0\n\n    const byCategory: Record<string, number> = {}\n    const byPriority: Record<string, number> = {}\n    displayTasks.forEach(t => {\n      const cat = t.category ?? 'General'\n      byCategory[cat] = (byCategory[cat] ?? 0) + 1\n      byPriority[t.priority] = (byPriority[t.priority] ?? 0) + 1\n    })\n\n    return { total, completed, active, overdue, completedPercentage, byCategory, byPriority }\n  }, [displayTasks])\n\n  const categories = useMemo(\n    () => [...new Set(displayTasks.map(t => t.category).filter((c): c is string => Boolean(c)))],\n    [displayTasks]\n  )\n\n  const sortedTasks = useMemo(() => {\n    const statusFiltered = filter === 'active'\n      ? displayTasks.filter(t => !t.completed)\n      : filter === 'completed'\n      ? displayTasks.filter(t => t.completed)\n      : displayTasks\n\n    const categoryFiltered = categoryFilter !== 'all'\n      ? statusFiltered.filter(t => t.category === categoryFilter)\n      : statusFiltered\n\n    const searched = debouncedSearch.trim()\n      ? categoryFiltered.filter(t =>\n          t.title.toLowerCase().includes(debouncedSearch.trim().toLowerCase()) ||\n          t.description.toLowerCase().includes(debouncedSearch.trim().toLowerCase())\n        )\n      : categoryFiltered\n\n    return [...searched].sort((a, b) => {\n      if (sortOrder === 'priority-high') {\n        return (PRIORITY_RANK[a.priority] ?? 1) - (PRIORITY_RANK[b.priority] ?? 1)\n      }\n      if (sortOrder === 'priority-low') {\n        return (PRIORITY_RANK[b.priority] ?? 1) - (PRIORITY_RANK[a.priority] ?? 1)\n      }\n      if (sortOrder === 'alphabetical') {\n        return a.title.toLowerCase().localeCompare(b.title.toLowerCase())\n      }\n      if (sortOrder === 'due-date') {\n        if (!a.dueDate && !b.dueDate) return 0\n        if (!a.dueDate) return 1\n        if (!b.dueDate) return -1\n        return new Date(a.dueDate).getTime() - new Date(b.dueDate).getTime()\n      }\n      return 0\n    })\n  }, [displayTasks, filter, categoryFilter, debouncedSearch, sortOrder])\n\n  const handleAddTask = useCallback((task: Record<string, unknown>) => {\n    const newTask = normalizeTask(task as Partial<Task>)\n    dispatch(addTaskAction(newTask))\n  }, [dispatch])\n\n  const handleToggle = useCallback((id: string | number) => {\n    dispatch(toggleTaskAction(id))\n  }, [dispatch])\n\n  const handleDelete = useCallback((id: string | number) => {\n    dispatch(deleteTaskAction(id))\n  }, [dispatch])\n\n  const handleUpdateTask = useCallback((id: string | number, updates: { title: string; description: string; priority: string }) => {\n    dispatch(updateTaskAction(id, updates))\n    setEditingId(null)\n  }, [dispatch])\n\n  const countText = countFormat === 'completed'\n    ? `${stats.completed} of ${displayTasks.length} completed`\n    : showFilterBar && (filter !== 'all' || debouncedSearch.trim() || categoryFilter !== 'all')\n    ? `Showing ${sortedTasks.length} of ${displayTasks.length} tasks`\n    : `${displayTasks.length} Tasks`\n\n  return (\n    <div id=\"task-app\">\n      <ThemeToggle />\n      {showStatsPanel && (\n        <StatsPanel\n          total={stats.total}\n          completed={stats.completed}\n          active={stats.active}\n          overdue={stats.overdue}\n          completedPercentage={stats.completedPercentage}\n          byCategory={stats.byCategory}\n          byPriority={stats.byPriority}\n        />\n      )}\n      {showForm && <TaskForm onAddTask={handleAddTask} categories={categories.length > 0 ? categories : ['General', 'Work', 'Personal']} />}\n      {showFilterBar && (\n        <FilterBar\n          filter={filter}\n          onFilterChange={f => setFilter(f as Filter)}\n          sortOrder={sortOrder}\n          onSortChange={s => setSortOrder(s as SortOrder)}\n          searchValue={search}\n          onSearchChange={setSearch}\n          categories={categories}\n          categoryFilter={categoryFilter}\n          onCategoryChange={setCategoryFilter}\n        />\n      )}\n      {isSearching && <p id=\"searching-indicator\">Searching...</p>}\n      {!isSearching && sortedTasks.length === 0 && (\n        <p id=\"filter-empty-message\">\n          {debouncedSearch.trim() ? `No tasks found for \"${debouncedSearch.trim()}\"` : 'No tasks match this filter'}\n        </p>\n      )}\n      <ErrorBoundary>\n        <TaskList\n          tasks={sortedTasks}\n          countText={countText}\n          onToggle={handleToggle}\n          onDelete={onDelete ?? handleDelete}\n          onUpdateTask={handleUpdateTask}\n          editingId={editingId}\n          onStartEdit={setEditingId}\n          onCancelEdit={() => setEditingId(null)}\n          linkToTaskDetail={linkToTaskDetail}\n        />\n      </ErrorBoundary>\n    </div>\n  )\n}\n\nexport default function TaskApp(props: TaskAppProps) {\n  return (\n    <ThemeProvider>\n      <TaskAppInner {...props} />\n    </ThemeProvider>\n  )\n}",
-          "usedDeprecatedRules": [
-            {
-              "ruleId": "no-extra-semi",
-              "replacedBy": []
-            },
-            {
-              "ruleId": "no-mixed-spaces-and-tabs",
-              "replacedBy": []
-            }
-          ]
-        }
-      ]
+      "error": "Could not parse linting results",
+      "details": []
     },
     "architectureResults": {
       "score": 100,
@@ -8759,12 +9619,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 287,
+                          "duration": 1215,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T06:03:24.759Z",
+                          "startTime": "2026-07-02T06:51:25.459Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -8779,6 +9639,40 @@
                 },
                 {
                   "title": "should display filter bar with search input",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 193,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-07-02T06:51:28.846Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a7b5313722e1686b4d4f-f646e519e463d837ae26",
+                  "file": "challenge-23.spec.ts",
+                  "line": 12,
+                  "column": 3
+                },
+                {
+                  "title": "search input should exist and be visible",
                   "ok": false,
                   "tags": [],
                   "tests": [
@@ -8793,187 +9687,153 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 244,
+                          "duration": 5182,
                           "error": {
-                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar').or(locator('#search-input'))\nExpected: visible\nError: strict mode violation: locator('#filter-bar').or(locator('#search-input')) resolved to 2 elements:\n    1) <div id=\"filter-bar\">…</div> aka getByText('AllActiveCompletedRecently')\n    2) <input value=\"\" type=\"text\" id=\"search-input\" placeholder=\"Search tasks\"/> aka getByRole('textbox', { name: 'Search tasks' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar').or(locator('#search-input'))\u001b[22m\n",
-                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar').or(locator('#search-input'))\nExpected: visible\nError: strict mode violation: locator('#filter-bar').or(locator('#search-input')) resolved to 2 elements:\n    1) <div id=\"filter-bar\">…</div> aka getByText('AllActiveCompletedRecently')\n    2) <input value=\"\" type=\"text\" id=\"search-input\" placeholder=\"Search tasks\"/> aka getByRole('textbox', { name: 'Search tasks' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar').or(locator('#search-input'))\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-23.spec.ts:13:81",
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#search-input')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#search-input')\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#search-input')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#search-input')\u001b[22m\n\n    at D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-23.spec.ts:18:31",
                             "location": {
-                              "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-23.spec.ts",
-                              "column": 81,
-                              "line": 13
+                              "file": "D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-23.spec.ts",
+                              "column": 31,
+                              "line": 18
                             },
-                            "snippet": "\u001b[0m \u001b[90m 11 |\u001b[39m\n \u001b[90m 12 |\u001b[39m   test(\u001b[32m'should display filter bar with search input'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#filter-bar'\u001b[39m)\u001b[33m.\u001b[39mor(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#search-input'\u001b[39m)))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m   test(\u001b[32m'search input should exist and be visible'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                            "snippet": "\u001b[0m \u001b[90m 16 |\u001b[39m   test(\u001b[32m'search input should exist and be visible'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 17 |\u001b[39m     \u001b[36mconst\u001b[39m searchInput \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#search-input'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m expect(searchInput)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m expect(searchInput)\u001b[33m.\u001b[39mtoHaveAttribute(\u001b[32m'type'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'text'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 20 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 21 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
                           },
                           "errors": [
                             {
                               "location": {
-                                "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-23.spec.ts",
-                                "column": 81,
-                                "line": 13
+                                "file": "D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-23.spec.ts",
+                                "column": 31,
+                                "line": 18
                               },
-                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar').or(locator('#search-input'))\nExpected: visible\nError: strict mode violation: locator('#filter-bar').or(locator('#search-input')) resolved to 2 elements:\n    1) <div id=\"filter-bar\">…</div> aka getByText('AllActiveCompletedRecently')\n    2) <input value=\"\" type=\"text\" id=\"search-input\" placeholder=\"Search tasks\"/> aka getByRole('textbox', { name: 'Search tasks' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar').or(locator('#search-input'))\u001b[22m\n\n\n  11 |\n  12 |   test('should display filter bar with search input', async ({ page }) => {\n> 13 |     await expect(page.locator('#filter-bar').or(page.locator('#search-input'))).toBeVisible();\n     |                                                                                 ^\n  14 |   });\n  15 |\n  16 |   test('search input should exist and be visible', async ({ page }) => {\n    at /home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-23.spec.ts:13:81"
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#search-input')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#search-input')\u001b[22m\n\n\n  16 |   test('search input should exist and be visible', async ({ page }) => {\n  17 |     const searchInput = page.locator('#search-input');\n> 18 |     await expect(searchInput).toBeVisible();\n     |                               ^\n  19 |     await expect(searchInput).toHaveAttribute('type', 'text');\n  20 |   });\n  21 | });\n    at D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-23.spec.ts:18:31"
                             }
                           ],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T06:03:25.135Z",
+                          "startTime": "2026-07-02T06:51:29.053Z",
                           "annotations": [],
                           "attachments": [
                             {
                               "name": "screenshot",
                               "contentType": "image/png",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/test-results/challenge-23-Challenge-23--c0b29-ilter-bar-with-search-input-chromium/test-failed-1.png"
+                              "path": "D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-23-Challenge-23--a3c5d-should-exist-and-be-visible-chromium\\test-failed-1.png"
                             },
                             {
                               "name": "error-context",
                               "contentType": "text/markdown",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/test-results/challenge-23-Challenge-23--c0b29-ilter-bar-with-search-input-chromium/error-context.md"
+                              "path": "D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-23-Challenge-23--a3c5d-should-exist-and-be-visible-chromium\\error-context.md"
                             }
                           ],
                           "errorLocation": {
-                            "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-23.spec.ts",
-                            "column": 81,
-                            "line": 13
+                            "file": "D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-23.spec.ts",
+                            "column": 31,
+                            "line": 18
                           }
                         },
                         {
                           "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 447,
+                          "duration": 5276,
                           "error": {
-                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar').or(locator('#search-input'))\nExpected: visible\nError: strict mode violation: locator('#filter-bar').or(locator('#search-input')) resolved to 2 elements:\n    1) <div id=\"filter-bar\">…</div> aka getByText('AllActiveCompletedRecently')\n    2) <input value=\"\" type=\"text\" id=\"search-input\" placeholder=\"Search tasks\"/> aka getByRole('textbox', { name: 'Search tasks' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar').or(locator('#search-input'))\u001b[22m\n",
-                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar').or(locator('#search-input'))\nExpected: visible\nError: strict mode violation: locator('#filter-bar').or(locator('#search-input')) resolved to 2 elements:\n    1) <div id=\"filter-bar\">…</div> aka getByText('AllActiveCompletedRecently')\n    2) <input value=\"\" type=\"text\" id=\"search-input\" placeholder=\"Search tasks\"/> aka getByRole('textbox', { name: 'Search tasks' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar').or(locator('#search-input'))\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-23.spec.ts:13:81",
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#search-input')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#search-input')\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#search-input')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#search-input')\u001b[22m\n\n    at D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-23.spec.ts:18:31",
                             "location": {
-                              "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-23.spec.ts",
-                              "column": 81,
-                              "line": 13
+                              "file": "D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-23.spec.ts",
+                              "column": 31,
+                              "line": 18
                             },
-                            "snippet": "\u001b[0m \u001b[90m 11 |\u001b[39m\n \u001b[90m 12 |\u001b[39m   test(\u001b[32m'should display filter bar with search input'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#filter-bar'\u001b[39m)\u001b[33m.\u001b[39mor(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#search-input'\u001b[39m)))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m   test(\u001b[32m'search input should exist and be visible'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                            "snippet": "\u001b[0m \u001b[90m 16 |\u001b[39m   test(\u001b[32m'search input should exist and be visible'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 17 |\u001b[39m     \u001b[36mconst\u001b[39m searchInput \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#search-input'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m expect(searchInput)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m expect(searchInput)\u001b[33m.\u001b[39mtoHaveAttribute(\u001b[32m'type'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'text'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 20 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 21 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
                           },
                           "errors": [
                             {
                               "location": {
-                                "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-23.spec.ts",
-                                "column": 81,
-                                "line": 13
+                                "file": "D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-23.spec.ts",
+                                "column": 31,
+                                "line": 18
                               },
-                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar').or(locator('#search-input'))\nExpected: visible\nError: strict mode violation: locator('#filter-bar').or(locator('#search-input')) resolved to 2 elements:\n    1) <div id=\"filter-bar\">…</div> aka getByText('AllActiveCompletedRecently')\n    2) <input value=\"\" type=\"text\" id=\"search-input\" placeholder=\"Search tasks\"/> aka getByRole('textbox', { name: 'Search tasks' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar').or(locator('#search-input'))\u001b[22m\n\n\n  11 |\n  12 |   test('should display filter bar with search input', async ({ page }) => {\n> 13 |     await expect(page.locator('#filter-bar').or(page.locator('#search-input'))).toBeVisible();\n     |                                                                                 ^\n  14 |   });\n  15 |\n  16 |   test('search input should exist and be visible', async ({ page }) => {\n    at /home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-23.spec.ts:13:81"
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#search-input')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#search-input')\u001b[22m\n\n\n  16 |   test('search input should exist and be visible', async ({ page }) => {\n  17 |     const searchInput = page.locator('#search-input');\n> 18 |     await expect(searchInput).toBeVisible();\n     |                               ^\n  19 |     await expect(searchInput).toHaveAttribute('type', 'text');\n  20 |   });\n  21 | });\n    at D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-23.spec.ts:18:31"
                             }
                           ],
                           "stdout": [],
                           "stderr": [],
                           "retry": 1,
-                          "startTime": "2026-07-02T06:03:26.452Z",
+                          "startTime": "2026-07-02T06:51:36.086Z",
                           "annotations": [],
                           "attachments": [
                             {
                               "name": "screenshot",
                               "contentType": "image/png",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/test-results/challenge-23-Challenge-23--c0b29-ilter-bar-with-search-input-chromium-retry1/test-failed-1.png"
+                              "path": "D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-23-Challenge-23--a3c5d-should-exist-and-be-visible-chromium-retry1\\test-failed-1.png"
                             },
                             {
                               "name": "error-context",
                               "contentType": "text/markdown",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/test-results/challenge-23-Challenge-23--c0b29-ilter-bar-with-search-input-chromium-retry1/error-context.md"
+                              "path": "D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-23-Challenge-23--a3c5d-should-exist-and-be-visible-chromium-retry1\\error-context.md"
                             },
                             {
                               "name": "trace",
                               "contentType": "application/zip",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/test-results/challenge-23-Challenge-23--c0b29-ilter-bar-with-search-input-chromium-retry1/trace.zip"
+                              "path": "D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-23-Challenge-23--a3c5d-should-exist-and-be-visible-chromium-retry1\\trace.zip"
                             }
                           ],
                           "errorLocation": {
-                            "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-23.spec.ts",
-                            "column": 81,
-                            "line": 13
+                            "file": "D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-23.spec.ts",
+                            "column": 31,
+                            "line": 18
                           }
                         },
                         {
                           "workerIndex": 2,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 276,
+                          "duration": 5230,
                           "error": {
-                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar').or(locator('#search-input'))\nExpected: visible\nError: strict mode violation: locator('#filter-bar').or(locator('#search-input')) resolved to 2 elements:\n    1) <div id=\"filter-bar\">…</div> aka getByText('AllActiveCompletedRecently')\n    2) <input value=\"\" type=\"text\" id=\"search-input\" placeholder=\"Search tasks\"/> aka getByRole('textbox', { name: 'Search tasks' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar').or(locator('#search-input'))\u001b[22m\n",
-                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar').or(locator('#search-input'))\nExpected: visible\nError: strict mode violation: locator('#filter-bar').or(locator('#search-input')) resolved to 2 elements:\n    1) <div id=\"filter-bar\">…</div> aka getByText('AllActiveCompletedRecently')\n    2) <input value=\"\" type=\"text\" id=\"search-input\" placeholder=\"Search tasks\"/> aka getByRole('textbox', { name: 'Search tasks' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar').or(locator('#search-input'))\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-23.spec.ts:13:81",
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#search-input')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#search-input')\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#search-input')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#search-input')\u001b[22m\n\n    at D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-23.spec.ts:18:31",
                             "location": {
-                              "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-23.spec.ts",
-                              "column": 81,
-                              "line": 13
+                              "file": "D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-23.spec.ts",
+                              "column": 31,
+                              "line": 18
                             },
-                            "snippet": "\u001b[0m \u001b[90m 11 |\u001b[39m\n \u001b[90m 12 |\u001b[39m   test(\u001b[32m'should display filter bar with search input'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#filter-bar'\u001b[39m)\u001b[33m.\u001b[39mor(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#search-input'\u001b[39m)))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m   test(\u001b[32m'search input should exist and be visible'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                            "snippet": "\u001b[0m \u001b[90m 16 |\u001b[39m   test(\u001b[32m'search input should exist and be visible'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 17 |\u001b[39m     \u001b[36mconst\u001b[39m searchInput \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#search-input'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m expect(searchInput)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m expect(searchInput)\u001b[33m.\u001b[39mtoHaveAttribute(\u001b[32m'type'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'text'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 20 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 21 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
                           },
                           "errors": [
                             {
                               "location": {
-                                "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-23.spec.ts",
-                                "column": 81,
-                                "line": 13
+                                "file": "D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-23.spec.ts",
+                                "column": 31,
+                                "line": 18
                               },
-                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar').or(locator('#search-input'))\nExpected: visible\nError: strict mode violation: locator('#filter-bar').or(locator('#search-input')) resolved to 2 elements:\n    1) <div id=\"filter-bar\">…</div> aka getByText('AllActiveCompletedRecently')\n    2) <input value=\"\" type=\"text\" id=\"search-input\" placeholder=\"Search tasks\"/> aka getByRole('textbox', { name: 'Search tasks' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar').or(locator('#search-input'))\u001b[22m\n\n\n  11 |\n  12 |   test('should display filter bar with search input', async ({ page }) => {\n> 13 |     await expect(page.locator('#filter-bar').or(page.locator('#search-input'))).toBeVisible();\n     |                                                                                 ^\n  14 |   });\n  15 |\n  16 |   test('search input should exist and be visible', async ({ page }) => {\n    at /home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-23.spec.ts:13:81"
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#search-input')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#search-input')\u001b[22m\n\n\n  16 |   test('search input should exist and be visible', async ({ page }) => {\n  17 |     const searchInput = page.locator('#search-input');\n> 18 |     await expect(searchInput).toBeVisible();\n     |                               ^\n  19 |     await expect(searchInput).toHaveAttribute('type', 'text');\n  20 |   });\n  21 | });\n    at D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-23.spec.ts:18:31"
                             }
                           ],
                           "stdout": [],
                           "stderr": [],
                           "retry": 2,
-                          "startTime": "2026-07-02T06:03:28.040Z",
+                          "startTime": "2026-07-02T06:51:43.438Z",
                           "annotations": [],
                           "attachments": [
                             {
                               "name": "screenshot",
                               "contentType": "image/png",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/test-results/challenge-23-Challenge-23--c0b29-ilter-bar-with-search-input-chromium-retry2/test-failed-1.png"
+                              "path": "D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-23-Challenge-23--a3c5d-should-exist-and-be-visible-chromium-retry2\\test-failed-1.png"
                             },
                             {
                               "name": "error-context",
                               "contentType": "text/markdown",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/test-results/challenge-23-Challenge-23--c0b29-ilter-bar-with-search-input-chromium-retry2/error-context.md"
+                              "path": "D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-23-Challenge-23--a3c5d-should-exist-and-be-visible-chromium-retry2\\error-context.md"
                             }
                           ],
                           "errorLocation": {
-                            "file": "/home/runner/work/React-Frontend/React-Frontend/courses/01-react-fundamentals/project/tests/e2e/challenge-23.spec.ts",
-                            "column": 81,
-                            "line": 13
+                            "file": "D:\\Spark +\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-23.spec.ts",
+                            "column": 31,
+                            "line": 18
                           }
                         }
                       ],
                       "status": "unexpected"
-                    }
-                  ],
-                  "id": "a7b5313722e1686b4d4f-f646e519e463d837ae26",
-                  "file": "challenge-23.spec.ts",
-                  "line": 12,
-                  "column": 3
-                },
-                {
-                  "title": "search input should exist and be visible",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 3,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 291,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-07-02T06:03:29.455Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
                     }
                   ],
                   "id": "a7b5313722e1686b4d4f-c9ca256cafd0528cd2b6",
@@ -8986,32 +9846,38 @@
           ]
         }
       ],
-      "error": "Exit 1",
+      "error": "Command failed: npx playwright test \"tests/e2e/challenge-23.spec.ts\" --reporter=json",
       "passed": false
     },
     "aiReviewResults": {
       "challengeId": "23-useref-focus-management",
-      "timestamp": "2026-07-02T06:03:29.953Z",
-      "score": 0,
+      "timestamp": "2026-07-02T06:51:49.881Z",
+      "score": 50,
       "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 4613, Requested 4901. Please try again in 35.14s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+      "strengths": [
+        "Code structure is reasonable"
+      ],
+      "improvements": [
+        "Code structure is reasonable"
+      ],
+      "readability": 50,
+      "maintainability": 50,
+      "overall": "{\n  \"readability\": 85,\n  \"maintainability\": 90,\n  \"strengths\": [\n    \"The code is well-structured and follows a consistent naming convention.\",\n    \"The use of TypeScript and functional components is a good practice.\",\n    \"The code is well-commented, making it easier to understand the functionality.\"\n  ],\n  \"improvements\": [\n    \"Some of the function names could be more descriptive. For example, `handleSearch` could be renamed to `handleInputChange` to better reflect its purpose.\",\n    \"The `us"
     },
     "aiResults": {
       "challengeId": "23-useref-focus-management",
-      "timestamp": "2026-07-02T06:03:29.953Z",
-      "score": 0,
+      "timestamp": "2026-07-02T06:51:49.881Z",
+      "score": 50,
       "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 4613, Requested 4901. Please try again in 35.14s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+      "strengths": [
+        "Code structure is reasonable"
+      ],
+      "improvements": [
+        "Code structure is reasonable"
+      ],
+      "readability": 50,
+      "maintainability": 50,
+      "overall": "{\n  \"readability\": 85,\n  \"maintainability\": 90,\n  \"strengths\": [\n    \"The code is well-structured and follows a consistent naming convention.\",\n    \"The use of TypeScript and functional components is a good practice.\",\n    \"The code is well-commented, making it easier to understand the functionality.\"\n  ],\n  \"improvements\": [\n    \"Some of the function names could be more descriptive. For example, `handleSearch` could be renamed to `handleInputChange` to better reflect its purpose.\",\n    \"The `us"
     }
   }
 ]
