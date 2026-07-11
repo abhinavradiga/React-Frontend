@@ -1,4 +1,28 @@
-/** Stub: Complete Challenge 13 (Query with Parameters) per README. */
+import { useState } from 'react'
+import { useGetPostByIdQuery } from '../api/apiSlice'
+
 export default function PostDetail() {
-  return <div id="post-detail">Complete Challenge 13 per README.</div>
+  const [postId, setPostId] = useState(1)
+  const { data: post, isLoading, isError } = useGetPostByIdQuery(postId)
+
+  return (
+    <div data-testid="post-detail">
+      <div>
+        <label>Post ID: </label>
+        <select value={postId} onChange={e => setPostId(Number(e.target.value))}>
+          {[1, 2, 3].map(id => (
+            <option key={id} value={id}>Post {id}</option>
+          ))}
+        </select>
+      </div>
+      {isLoading && <p>Loading post...</p>}
+      {isError && <p>Error loading post.</p>}
+      {post && (
+        <div>
+          <h3>{post.title}</h3>
+          <p>{post.body}</p>
+        </div>
+      )}
+    </div>
+  )
 }

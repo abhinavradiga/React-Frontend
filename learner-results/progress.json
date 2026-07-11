@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-07-10T15:24:21.579Z",
+  "lastUpdated": "2026-07-11T06:04:52.613Z",
   "pathway": {
     "name": "Modern React Engineer",
     "version": "1.0.0",
-    "overallScore": 42.6,
-    "completionPercentage": 43.4,
+    "overallScore": 43.4,
+    "completionPercentage": 45.3,
     "badgeLevel": "none",
     "totalChallenges": 53,
-    "completedChallenges": 23
+    "completedChallenges": 24
   },
   "courses": {
     "01-react-fundamentals": {
@@ -369,25 +369,25 @@
     "02-redux-rtk-query": {
       "courseId": "02-redux-rtk-query",
       "courseName": "Redux & RTK Query",
-      "averageScore": 40.8,
-      "completionPercentage": 0,
+      "averageScore": 43.2,
+      "completionPercentage": 7.7,
       "badgeLevel": "none",
       "totalChallenges": 13,
-      "completedChallenges": 0,
+      "completedChallenges": 1,
       "challenges": {
         "01-store-setup": {
           "challengeId": "01-store-setup",
           "challengeName": "Store Setup with configureStore",
-          "passed": false,
-          "score": 66.675,
-          "lastRun": "2026-07-02T06:03:30.390Z",
+          "passed": true,
+          "score": 97.9,
+          "lastRun": "2026-07-11T06:04:37.811Z",
           "scores": {
-            "functionalTests": 66.7,
+            "functionalTests": 100,
             "codeQuality": 100,
-            "architecture": 33.3,
+            "architecture": 100,
             "bestPractices": 100,
             "e2eTests": 100,
-            "aiReview": 0
+            "aiReview": 86
           }
         },
         "02-first-slice": {
