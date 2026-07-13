@@ -7235,26 +7235,424 @@
   {
     "challengeId": "11-api-local-state",
     "challengeName": "API and Local State Together",
-    "timestamp": "2026-07-02T06:06:15.049Z",
+    "timestamp": "2026-07-13T04:25:01.292Z",
     "scores": {
-      "functionalTests": 0,
+      "functionalTests": 100,
       "codeQuality": 100,
-      "architecture": 50,
+      "architecture": 75,
       "bestPractices": 100,
-      "e2eTests": 0,
-      "aiReview": 0
+      "e2eTests": 100,
+      "aiReview": 86
     },
-    "totalScore": 30,
-    "passed": false,
+    "totalScore": 95.4,
+    "passed": true,
     "errors": [],
     "warnings": [],
     "testResults": {
-      "score": 0,
-      "passed": false,
-      "totalTests": 3,
-      "passedTests": 0,
-      "failedTests": 3,
+      "score": 100,
+      "passed": true,
+      "totalTests": 37,
+      "passedTests": 37,
+      "failedTests": 0,
       "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 01: Store Setup with configureStore"
+              ],
+              "fullName": " Challenge 01: Store Setup with configureStore store uses configureStore",
+              "status": "passed",
+              "title": "store uses configureStore",
+              "duration": 3,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 01: Store Setup with configureStore"
+              ],
+              "fullName": " Challenge 01: Store Setup with configureStore store exports RootState and AppDispatch",
+              "status": "passed",
+              "title": "store exports RootState and AppDispatch",
+              "duration": 0,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 01: Store Setup with configureStore"
+              ],
+              "fullName": " Challenge 01: Store Setup with configureStore main.tsx wraps App with Provider and passes store",
+              "status": "passed",
+              "title": "main.tsx wraps App with Provider and passes store",
+              "duration": 1,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1783916705356,
+          "endTime": 1783916705360,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-01.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 02: First Slice with createSlice"
+              ],
+              "fullName": " Challenge 02: First Slice with createSlice counterSlice exists and uses createSlice",
+              "status": "passed",
+              "title": "counterSlice exists and uses createSlice",
+              "duration": 3,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 02: First Slice with createSlice"
+              ],
+              "fullName": " Challenge 02: First Slice with createSlice counterSlice has increment and decrement reducers",
+              "status": "passed",
+              "title": "counterSlice has increment and decrement reducers",
+              "duration": 1,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 02: First Slice with createSlice"
+              ],
+              "fullName": " Challenge 02: First Slice with createSlice store includes counter reducer",
+              "status": "passed",
+              "title": "store includes counter reducer",
+              "duration": 1,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1783916705358,
+          "endTime": 1783916705363,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-02.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 03: Reading and Dispatching"
+              ],
+              "fullName": " Challenge 03: Reading and Dispatching hooks.ts exports useAppSelector and useAppDispatch",
+              "status": "passed",
+              "title": "hooks.ts exports useAppSelector and useAppDispatch",
+              "duration": 3,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 03: Reading and Dispatching"
+              ],
+              "fullName": " Challenge 03: Reading and Dispatching CounterView uses useSelector or useAppSelector",
+              "status": "passed",
+              "title": "CounterView uses useSelector or useAppSelector",
+              "duration": 2,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 03: Reading and Dispatching"
+              ],
+              "fullName": " Challenge 03: Reading and Dispatching CounterView has required data-testids",
+              "status": "passed",
+              "title": "CounterView has required data-testids",
+              "duration": 2,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1783916705088,
+          "endTime": 1783916705095,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-03.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 04: Multiple Slices"
+              ],
+              "fullName": " Challenge 04: Multiple Slices uiSlice exists and uses createSlice",
+              "status": "passed",
+              "title": "uiSlice exists and uses createSlice",
+              "duration": 3,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 04: Multiple Slices"
+              ],
+              "fullName": " Challenge 04: Multiple Slices store includes both counter and ui reducers",
+              "status": "passed",
+              "title": "store includes both counter and ui reducers",
+              "duration": 1,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1783916705126,
+          "endTime": 1783916705130,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-04.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 05: Async Logic with createAsyncThunk"
+              ],
+              "fullName": " Challenge 05: Async Logic with createAsyncThunk usersSlice uses createAsyncThunk",
+              "status": "passed",
+              "title": "usersSlice uses createAsyncThunk",
+              "duration": 3,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 05: Async Logic with createAsyncThunk"
+              ],
+              "fullName": " Challenge 05: Async Logic with createAsyncThunk usersSlice uses extraReducers",
+              "status": "passed",
+              "title": "usersSlice uses extraReducers",
+              "duration": 1,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 05: Async Logic with createAsyncThunk"
+              ],
+              "fullName": " Challenge 05: Async Logic with createAsyncThunk store includes users reducer",
+              "status": "passed",
+              "title": "store includes users reducer",
+              "duration": 0,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1783916705218,
+          "endTime": 1783916705222,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-05.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 06: RTK Query Setup"
+              ],
+              "fullName": " Challenge 06: RTK Query Setup apiSlice uses createApi",
+              "status": "passed",
+              "title": "apiSlice uses createApi",
+              "duration": 2,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 06: RTK Query Setup"
+              ],
+              "fullName": " Challenge 06: RTK Query Setup apiSlice has baseQuery or fetchBaseQuery",
+              "status": "passed",
+              "title": "apiSlice has baseQuery or fetchBaseQuery",
+              "duration": 1,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 06: RTK Query Setup"
+              ],
+              "fullName": " Challenge 06: RTK Query Setup store includes API reducer and middleware",
+              "status": "passed",
+              "title": "store includes API reducer and middleware",
+              "duration": 1,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1783916705284,
+          "endTime": 1783916705288,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-06.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 07: Query Endpoints and useQuery Hooks"
+              ],
+              "fullName": " Challenge 07: Query Endpoints and useQuery Hooks API slice has getUsers query endpoint",
+              "status": "passed",
+              "title": "API slice has getUsers query endpoint",
+              "duration": 3,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 07: Query Endpoints and useQuery Hooks"
+              ],
+              "fullName": " Challenge 07: Query Endpoints and useQuery Hooks UsersList uses useGetUsersQuery or generated query hook",
+              "status": "passed",
+              "title": "UsersList uses useGetUsersQuery or generated query hook",
+              "duration": 3,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 07: Query Endpoints and useQuery Hooks"
+              ],
+              "fullName": " Challenge 07: Query Endpoints and useQuery Hooks UsersList has users-list data-testid",
+              "status": "passed",
+              "title": "UsersList has users-list data-testid",
+              "duration": 3,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1783916705375,
+          "endTime": 1783916705384,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-07.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 08: Caching and Cache Tags"
+              ],
+              "fullName": " Challenge 08: Caching and Cache Tags API slice has providesTags on query endpoint",
+              "status": "passed",
+              "title": "API slice has providesTags on query endpoint",
+              "duration": 3,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 08: Caching and Cache Tags"
+              ],
+              "fullName": " Challenge 08: Caching and Cache Tags API slice has invalidatesTags on mutation or tagTypes",
+              "status": "passed",
+              "title": "API slice has invalidatesTags on mutation or tagTypes",
+              "duration": 1,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1783916705152,
+          "endTime": 1783916705157,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-08.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 09: Mutations with useMutation"
+              ],
+              "fullName": " Challenge 09: Mutations with useMutation API slice has builder.mutation endpoint",
+              "status": "passed",
+              "title": "API slice has builder.mutation endpoint",
+              "duration": 4,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 09: Mutations with useMutation"
+              ],
+              "fullName": " Challenge 09: Mutations with useMutation AddPostForm uses useMutation hook",
+              "status": "passed",
+              "title": "AddPostForm uses useMutation hook",
+              "duration": 2,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 09: Mutations with useMutation"
+              ],
+              "fullName": " Challenge 09: Mutations with useMutation AddPostForm has add-post-form and add-post-submit data-testids",
+              "status": "passed",
+              "title": "AddPostForm has add-post-form and add-post-submit data-testids",
+              "duration": 1,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1783916705376,
+          "endTime": 1783916705383,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-09.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 10: Optimistic Updates"
+              ],
+              "fullName": " Challenge 10: Optimistic Updates API slice mutation has onQueryStarted",
+              "status": "passed",
+              "title": "API slice mutation has onQueryStarted",
+              "duration": 3,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 10: Optimistic Updates"
+              ],
+              "fullName": " Challenge 10: Optimistic Updates optimistic update uses queryFulfilled or updateQueryData",
+              "status": "passed",
+              "title": "optimistic update uses queryFulfilled or updateQueryData",
+              "duration": 2,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 10: Optimistic Updates"
+              ],
+              "fullName": " Challenge 10: Optimistic Updates has rollback or undo on error",
+              "status": "passed",
+              "title": "has rollback or undo on error",
+              "duration": 0,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1783916705149,
+          "endTime": 1783916705154,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-10.test.tsx"
+        },
         {
           "assertionResults": [
             {
@@ -7263,16 +7661,10 @@
                 "Challenge 11: API and Local State Together"
               ],
               "fullName": " Challenge 11: API and Local State Together filtersSlice exists and is in store",
-              "status": "failed",
+              "status": "passed",
               "title": "filtersSlice exists and is in store",
-              "duration": 7,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 14,
-                "column": 35
-              }
+              "duration": 3,
+              "failureMessages": []
             },
             {
               "ancestorTitles": [
@@ -7280,16 +7672,10 @@
                 "Challenge 11: API and Local State Together"
               ],
               "fullName": " Challenge 11: API and Local State Together PostsWithFilters uses useSelector and useGetPostsQuery or query hook",
-              "status": "failed",
+              "status": "passed",
               "title": "PostsWithFilters uses useSelector and useGetPostsQuery or query hook",
               "duration": 1,
-              "failureMessages": [
-                "expected '/** Stub: Complete Challenge 11 (API …' to match /useAppSelector|useSelector/"
-              ],
-              "location": {
-                "line": 24,
-                "column": 21
-              }
+              "failureMessages": []
             },
             {
               "ancestorTitles": [
@@ -7297,80 +7683,116 @@
                 "Challenge 11: API and Local State Together"
               ],
               "fullName": " Challenge 11: API and Local State Together PostsWithFilters has posts-with-filters and filter-controls data-testids",
-              "status": "failed",
+              "status": "passed",
               "title": "PostsWithFilters has posts-with-filters and filter-controls data-testids",
               "duration": 1,
-              "failureMessages": [
-                "expected '/** Stub: Complete Challenge 11 (API …' to contain 'filter-controls'"
-              ],
-              "location": {
-                "line": 32,
-                "column": 21
-              }
+              "failureMessages": []
             }
           ],
-          "startTime": 1782972376285,
-          "endTime": 1782972376294,
-          "status": "failed",
+          "startTime": 1783916705080,
+          "endTime": 1783916705086,
+          "status": "passed",
           "message": "",
-          "name": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/challenge-11.test.tsx"
-        }
-      ],
-      "error": "Command failed: npm test -- /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/challenge-11.test.tsx --run --reporter=json"
-    },
-    "lintResults": {
-      "score": 100,
-      "passed": true,
-      "totalIssues": 0,
-      "errors": 0,
-      "warnings": 0,
-      "details": [
-        {
-          "filePath": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/src/components/PostsWithFilters.tsx",
-          "messages": [],
-          "suppressedMessages": [],
-          "errorCount": 0,
-          "fatalErrorCount": 0,
-          "warningCount": 0,
-          "fixableErrorCount": 0,
-          "fixableWarningCount": 0,
-          "usedDeprecatedRules": [
-            {
-              "ruleId": "no-extra-semi",
-              "replacedBy": []
-            },
-            {
-              "ruleId": "no-mixed-spaces-and-tabs",
-              "replacedBy": []
-            }
-          ]
+          "name": "D:/Spark +/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-11.test.tsx"
         },
         {
-          "filePath": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/src/store/store.ts",
-          "messages": [],
-          "suppressedMessages": [],
-          "errorCount": 0,
-          "fatalErrorCount": 0,
-          "warningCount": 0,
-          "fixableErrorCount": 0,
-          "fixableWarningCount": 0,
-          "usedDeprecatedRules": [
+          "assertionResults": [
             {
-              "ruleId": "no-extra-semi",
-              "replacedBy": []
+              "ancestorTitles": [
+                "",
+                "Challenge 12: Error and Loading UX"
+              ],
+              "fullName": " Challenge 12: Error and Loading UX ErrorDisplay exists with error-display and retry-btn data-testids",
+              "status": "passed",
+              "title": "ErrorDisplay exists with error-display and retry-btn data-testids",
+              "duration": 4,
+              "failureMessages": []
             },
             {
-              "ruleId": "no-mixed-spaces-and-tabs",
-              "replacedBy": []
+              "ancestorTitles": [
+                "",
+                "Challenge 12: Error and Loading UX"
+              ],
+              "fullName": " Challenge 12: Error and Loading UX UsersList or main list uses refetch",
+              "status": "passed",
+              "title": "UsersList or main list uses refetch",
+              "duration": 2,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 12: Error and Loading UX"
+              ],
+              "fullName": " Challenge 12: Error and Loading UX loading or error state has visible indicator",
+              "status": "passed",
+              "title": "loading or error state has visible indicator",
+              "duration": 1,
+              "failureMessages": []
             }
-          ]
+          ],
+          "startTime": 1783916705089,
+          "endTime": 1783916705096,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-12.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 13: Query with Parameters and Detail View"
+              ],
+              "fullName": " Challenge 13: Query with Parameters and Detail View API slice has getPostById query endpoint",
+              "status": "passed",
+              "title": "API slice has getPostById query endpoint",
+              "duration": 3,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 13: Query with Parameters and Detail View"
+              ],
+              "fullName": " Challenge 13: Query with Parameters and Detail View PostDetail uses useGetPostByIdQuery or generated query hook",
+              "status": "passed",
+              "title": "PostDetail uses useGetPostByIdQuery or generated query hook",
+              "duration": 2,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 13: Query with Parameters and Detail View"
+              ],
+              "fullName": " Challenge 13: Query with Parameters and Detail View PostDetail has post-detail data-testid",
+              "status": "passed",
+              "title": "PostDetail has post-detail data-testid",
+              "duration": 1,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1783916705388,
+          "endTime": 1783916705395,
+          "status": "passed",
+          "message": "",
+          "name": "D:/Spark +/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-13.test.tsx"
         }
       ]
     },
+    "lintResults": {
+      "score": 100,
+      "passed": false,
+      "error": "Could not parse linting results",
+      "details": []
+    },
     "architectureResults": {
-      "score": 50,
+      "score": 75,
       "passed": false,
       "patternsFound": [
+        "reducer",
+        "middleware",
         "reducer"
       ],
       "patternsMissing": [
@@ -7380,18 +7802,17 @@
         {
           "file": "src/store/store.ts",
           "patternsFound": [
-            "reducer"
-          ],
-          "patternsMissing": [
+            "reducer",
             "middleware"
-          ]
+          ],
+          "patternsMissing": []
         },
         {
           "file": "src/store/slices/filtersSlice.ts",
-          "error": "File does not exist",
-          "patternsFound": [],
+          "patternsFound": [
+            "reducer"
+          ],
           "patternsMissing": [
-            "reducer",
             "middleware"
           ]
         },
@@ -7410,11 +7831,11 @@
       "note": "No best practices requirements specified in challenge"
     },
     "e2eResults": {
-      "score": 0,
-      "passed": false,
+      "score": 100,
+      "passed": true,
       "totalTests": 2,
-      "passedTests": 0,
-      "failedTests": 2,
+      "passedTests": 2,
+      "failedTests": 0,
       "details": [
         {
           "title": "challenge-11.spec.ts",
@@ -7431,7 +7852,7 @@
               "specs": [
                 {
                   "title": "should load challenge 11 page with PostsWithFilters",
-                  "ok": false,
+                  "ok": true,
                   "tags": [],
                   "tests": [
                     {
@@ -7444,154 +7865,18 @@
                         {
                           "workerIndex": 0,
                           "parallelIndex": 0,
-                          "status": "failed",
-                          "duration": 273,
-                          "error": {
-                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 11')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 11') resolved to 2 elements:\n    1) <h2>Challenge 11: API and Local State</h2> aka getByRole('heading', { name: 'Challenge 11: API and Local' })\n    2) <div id=\"posts-with-filters\">Complete Challenge 11 per README.</div> aka getByText('Complete Challenge 11 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 11')\u001b[22m\n",
-                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 11')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 11') resolved to 2 elements:\n    1) <h2>Challenge 11: API and Local State</h2> aka getByRole('heading', { name: 'Challenge 11: API and Local' })\n    2) <div id=\"posts-with-filters\">Complete Challenge 11 per README.</div> aka getByText('Complete Challenge 11 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 11')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-11.spec.ts:9:53",
-                            "location": {
-                              "file": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-11.spec.ts",
-                              "column": 53,
-                              "line": 9
-                            },
-                            "snippet": "\u001b[0m \u001b[90m  7 |\u001b[39m\n \u001b[90m  8 |\u001b[39m   test(\u001b[32m'should load challenge 11 page with PostsWithFilters'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Challenge 11'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m    |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'posts-with-filters'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m 11 |\u001b[39m   })\n \u001b[90m 12 |\u001b[39m\u001b[0m"
-                          },
-                          "errors": [
-                            {
-                              "location": {
-                                "file": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-11.spec.ts",
-                                "column": 53,
-                                "line": 9
-                              },
-                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 11')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 11') resolved to 2 elements:\n    1) <h2>Challenge 11: API and Local State</h2> aka getByRole('heading', { name: 'Challenge 11: API and Local' })\n    2) <div id=\"posts-with-filters\">Complete Challenge 11 per README.</div> aka getByText('Complete Challenge 11 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 11')\u001b[22m\n\n\n   7 |\n   8 |   test('should load challenge 11 page with PostsWithFilters', async ({ page }) => {\n>  9 |     await expect(page.locator('text=Challenge 11')).toBeVisible()\n     |                                                     ^\n  10 |     await expect(page.getByTestId('posts-with-filters')).toBeVisible()\n  11 |   })\n  12 |\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-11.spec.ts:9:53"
-                            }
-                          ],
+                          "status": "passed",
+                          "duration": 2172,
+                          "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T06:06:20.896Z",
+                          "startTime": "2026-07-13T04:25:12.452Z",
                           "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "screenshot",
-                              "contentType": "image/png",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/test-results/challenge-11-Challenge-11--dfff7--page-with-PostsWithFilters-chromium/test-failed-1.png"
-                            },
-                            {
-                              "name": "error-context",
-                              "contentType": "text/markdown",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/test-results/challenge-11-Challenge-11--dfff7--page-with-PostsWithFilters-chromium/error-context.md"
-                            }
-                          ],
-                          "errorLocation": {
-                            "file": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-11.spec.ts",
-                            "column": 53,
-                            "line": 9
-                          }
-                        },
-                        {
-                          "workerIndex": 1,
-                          "parallelIndex": 0,
-                          "status": "failed",
-                          "duration": 394,
-                          "error": {
-                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 11')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 11') resolved to 2 elements:\n    1) <h2>Challenge 11: API and Local State</h2> aka getByRole('heading', { name: 'Challenge 11: API and Local' })\n    2) <div id=\"posts-with-filters\">Complete Challenge 11 per README.</div> aka getByText('Complete Challenge 11 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 11')\u001b[22m\n",
-                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 11')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 11') resolved to 2 elements:\n    1) <h2>Challenge 11: API and Local State</h2> aka getByRole('heading', { name: 'Challenge 11: API and Local' })\n    2) <div id=\"posts-with-filters\">Complete Challenge 11 per README.</div> aka getByText('Complete Challenge 11 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 11')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-11.spec.ts:9:53",
-                            "location": {
-                              "file": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-11.spec.ts",
-                              "column": 53,
-                              "line": 9
-                            },
-                            "snippet": "\u001b[0m \u001b[90m  7 |\u001b[39m\n \u001b[90m  8 |\u001b[39m   test(\u001b[32m'should load challenge 11 page with PostsWithFilters'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Challenge 11'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m    |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'posts-with-filters'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m 11 |\u001b[39m   })\n \u001b[90m 12 |\u001b[39m\u001b[0m"
-                          },
-                          "errors": [
-                            {
-                              "location": {
-                                "file": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-11.spec.ts",
-                                "column": 53,
-                                "line": 9
-                              },
-                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 11')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 11') resolved to 2 elements:\n    1) <h2>Challenge 11: API and Local State</h2> aka getByRole('heading', { name: 'Challenge 11: API and Local' })\n    2) <div id=\"posts-with-filters\">Complete Challenge 11 per README.</div> aka getByText('Complete Challenge 11 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 11')\u001b[22m\n\n\n   7 |\n   8 |   test('should load challenge 11 page with PostsWithFilters', async ({ page }) => {\n>  9 |     await expect(page.locator('text=Challenge 11')).toBeVisible()\n     |                                                     ^\n  10 |     await expect(page.getByTestId('posts-with-filters')).toBeVisible()\n  11 |   })\n  12 |\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-11.spec.ts:9:53"
-                            }
-                          ],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 1,
-                          "startTime": "2026-07-02T06:06:22.320Z",
-                          "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "screenshot",
-                              "contentType": "image/png",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/test-results/challenge-11-Challenge-11--dfff7--page-with-PostsWithFilters-chromium-retry1/test-failed-1.png"
-                            },
-                            {
-                              "name": "error-context",
-                              "contentType": "text/markdown",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/test-results/challenge-11-Challenge-11--dfff7--page-with-PostsWithFilters-chromium-retry1/error-context.md"
-                            },
-                            {
-                              "name": "trace",
-                              "contentType": "application/zip",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/test-results/challenge-11-Challenge-11--dfff7--page-with-PostsWithFilters-chromium-retry1/trace.zip"
-                            }
-                          ],
-                          "errorLocation": {
-                            "file": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-11.spec.ts",
-                            "column": 53,
-                            "line": 9
-                          }
-                        },
-                        {
-                          "workerIndex": 2,
-                          "parallelIndex": 0,
-                          "status": "failed",
-                          "duration": 250,
-                          "error": {
-                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 11')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 11') resolved to 2 elements:\n    1) <h2>Challenge 11: API and Local State</h2> aka getByRole('heading', { name: 'Challenge 11: API and Local' })\n    2) <div id=\"posts-with-filters\">Complete Challenge 11 per README.</div> aka getByText('Complete Challenge 11 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 11')\u001b[22m\n",
-                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 11')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 11') resolved to 2 elements:\n    1) <h2>Challenge 11: API and Local State</h2> aka getByRole('heading', { name: 'Challenge 11: API and Local' })\n    2) <div id=\"posts-with-filters\">Complete Challenge 11 per README.</div> aka getByText('Complete Challenge 11 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 11')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-11.spec.ts:9:53",
-                            "location": {
-                              "file": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-11.spec.ts",
-                              "column": 53,
-                              "line": 9
-                            },
-                            "snippet": "\u001b[0m \u001b[90m  7 |\u001b[39m\n \u001b[90m  8 |\u001b[39m   test(\u001b[32m'should load challenge 11 page with PostsWithFilters'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Challenge 11'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m    |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'posts-with-filters'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m 11 |\u001b[39m   })\n \u001b[90m 12 |\u001b[39m\u001b[0m"
-                          },
-                          "errors": [
-                            {
-                              "location": {
-                                "file": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-11.spec.ts",
-                                "column": 53,
-                                "line": 9
-                              },
-                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Challenge 11')\nExpected: visible\nError: strict mode violation: locator('text=Challenge 11') resolved to 2 elements:\n    1) <h2>Challenge 11: API and Local State</h2> aka getByRole('heading', { name: 'Challenge 11: API and Local' })\n    2) <div id=\"posts-with-filters\">Complete Challenge 11 per README.</div> aka getByText('Complete Challenge 11 per')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Challenge 11')\u001b[22m\n\n\n   7 |\n   8 |   test('should load challenge 11 page with PostsWithFilters', async ({ page }) => {\n>  9 |     await expect(page.locator('text=Challenge 11')).toBeVisible()\n     |                                                     ^\n  10 |     await expect(page.getByTestId('posts-with-filters')).toBeVisible()\n  11 |   })\n  12 |\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-11.spec.ts:9:53"
-                            }
-                          ],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 2,
-                          "startTime": "2026-07-02T06:06:23.857Z",
-                          "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "screenshot",
-                              "contentType": "image/png",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/test-results/challenge-11-Challenge-11--dfff7--page-with-PostsWithFilters-chromium-retry2/test-failed-1.png"
-                            },
-                            {
-                              "name": "error-context",
-                              "contentType": "text/markdown",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/test-results/challenge-11-Challenge-11--dfff7--page-with-PostsWithFilters-chromium-retry2/error-context.md"
-                            }
-                          ],
-                          "errorLocation": {
-                            "file": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-11.spec.ts",
-                            "column": 53,
-                            "line": 9
-                          }
+                          "attachments": []
                         }
                       ],
-                      "status": "unexpected"
+                      "status": "expected"
                     }
                   ],
                   "id": "1017095ef2170c8a8deb-fae6402d7bdc74a17551",
@@ -7601,7 +7886,7 @@
                 },
                 {
                   "title": "should have filter controls",
-                  "ok": false,
+                  "ok": true,
                   "tags": [],
                   "tests": [
                     {
@@ -7612,156 +7897,20 @@
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 3,
+                          "workerIndex": 0,
                           "parallelIndex": 0,
-                          "status": "failed",
-                          "duration": 5217,
-                          "error": {
-                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('filter-controls')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('filter-controls')\u001b[22m\n",
-                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('filter-controls')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('filter-controls')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-11.spec.ts:14:55",
-                            "location": {
-                              "file": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-11.spec.ts",
-                              "column": 55,
-                              "line": 14
-                            },
-                            "snippet": "\u001b[0m \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m   test(\u001b[32m'should have filter controls'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'filter-controls'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m    |\u001b[39m                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m   })\n \u001b[90m 16 |\u001b[39m })\n \u001b[90m 17 |\u001b[39m\u001b[0m"
-                          },
-                          "errors": [
-                            {
-                              "location": {
-                                "file": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-11.spec.ts",
-                                "column": 55,
-                                "line": 14
-                              },
-                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('filter-controls')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('filter-controls')\u001b[22m\n\n\n  12 |\n  13 |   test('should have filter controls', async ({ page }) => {\n> 14 |     await expect(page.getByTestId('filter-controls')).toBeVisible()\n     |                                                       ^\n  15 |   })\n  16 | })\n  17 |\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-11.spec.ts:14:55"
-                            }
-                          ],
+                          "status": "passed",
+                          "duration": 228,
+                          "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-02T06:06:25.252Z",
+                          "startTime": "2026-07-13T04:25:14.774Z",
                           "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "screenshot",
-                              "contentType": "image/png",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/test-results/challenge-11-Challenge-11--138c3-should-have-filter-controls-chromium/test-failed-1.png"
-                            },
-                            {
-                              "name": "error-context",
-                              "contentType": "text/markdown",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/test-results/challenge-11-Challenge-11--138c3-should-have-filter-controls-chromium/error-context.md"
-                            }
-                          ],
-                          "errorLocation": {
-                            "file": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-11.spec.ts",
-                            "column": 55,
-                            "line": 14
-                          }
-                        },
-                        {
-                          "workerIndex": 4,
-                          "parallelIndex": 0,
-                          "status": "failed",
-                          "duration": 5371,
-                          "error": {
-                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('filter-controls')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('filter-controls')\u001b[22m\n",
-                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('filter-controls')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('filter-controls')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-11.spec.ts:14:55",
-                            "location": {
-                              "file": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-11.spec.ts",
-                              "column": 55,
-                              "line": 14
-                            },
-                            "snippet": "\u001b[0m \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m   test(\u001b[32m'should have filter controls'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'filter-controls'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m    |\u001b[39m                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m   })\n \u001b[90m 16 |\u001b[39m })\n \u001b[90m 17 |\u001b[39m\u001b[0m"
-                          },
-                          "errors": [
-                            {
-                              "location": {
-                                "file": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-11.spec.ts",
-                                "column": 55,
-                                "line": 14
-                              },
-                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('filter-controls')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('filter-controls')\u001b[22m\n\n\n  12 |\n  13 |   test('should have filter controls', async ({ page }) => {\n> 14 |     await expect(page.getByTestId('filter-controls')).toBeVisible()\n     |                                                       ^\n  15 |   })\n  16 | })\n  17 |\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-11.spec.ts:14:55"
-                            }
-                          ],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 1,
-                          "startTime": "2026-07-02T06:06:31.603Z",
-                          "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "screenshot",
-                              "contentType": "image/png",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/test-results/challenge-11-Challenge-11--138c3-should-have-filter-controls-chromium-retry1/test-failed-1.png"
-                            },
-                            {
-                              "name": "error-context",
-                              "contentType": "text/markdown",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/test-results/challenge-11-Challenge-11--138c3-should-have-filter-controls-chromium-retry1/error-context.md"
-                            },
-                            {
-                              "name": "trace",
-                              "contentType": "application/zip",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/test-results/challenge-11-Challenge-11--138c3-should-have-filter-controls-chromium-retry1/trace.zip"
-                            }
-                          ],
-                          "errorLocation": {
-                            "file": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-11.spec.ts",
-                            "column": 55,
-                            "line": 14
-                          }
-                        },
-                        {
-                          "workerIndex": 5,
-                          "parallelIndex": 0,
-                          "status": "failed",
-                          "duration": 5215,
-                          "error": {
-                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('filter-controls')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('filter-controls')\u001b[22m\n",
-                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('filter-controls')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('filter-controls')\u001b[22m\n\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-11.spec.ts:14:55",
-                            "location": {
-                              "file": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-11.spec.ts",
-                              "column": 55,
-                              "line": 14
-                            },
-                            "snippet": "\u001b[0m \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m   test(\u001b[32m'should have filter controls'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'filter-controls'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m    |\u001b[39m                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m   })\n \u001b[90m 16 |\u001b[39m })\n \u001b[90m 17 |\u001b[39m\u001b[0m"
-                          },
-                          "errors": [
-                            {
-                              "location": {
-                                "file": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-11.spec.ts",
-                                "column": 55,
-                                "line": 14
-                              },
-                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('filter-controls')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('filter-controls')\u001b[22m\n\n\n  12 |\n  13 |   test('should have filter controls', async ({ page }) => {\n> 14 |     await expect(page.getByTestId('filter-controls')).toBeVisible()\n     |                                                       ^\n  15 |   })\n  16 | })\n  17 |\n    at /home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-11.spec.ts:14:55"
-                            }
-                          ],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 2,
-                          "startTime": "2026-07-02T06:06:38.128Z",
-                          "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "screenshot",
-                              "contentType": "image/png",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/test-results/challenge-11-Challenge-11--138c3-should-have-filter-controls-chromium-retry2/test-failed-1.png"
-                            },
-                            {
-                              "name": "error-context",
-                              "contentType": "text/markdown",
-                              "path": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/test-results/challenge-11-Challenge-11--138c3-should-have-filter-controls-chromium-retry2/error-context.md"
-                            }
-                          ],
-                          "errorLocation": {
-                            "file": "/home/runner/work/React-Frontend/React-Frontend/courses/02-redux-rtk-query/project/tests/e2e/challenge-11.spec.ts",
-                            "column": 55,
-                            "line": 14
-                          }
+                          "attachments": []
                         }
                       ],
-                      "status": "unexpected"
+                      "status": "expected"
                     }
                   ],
                   "id": "1017095ef2170c8a8deb-8d519fcb89ba7307e5f5",
@@ -7774,12 +7923,47 @@
           ]
         }
       ],
-      "error": "Exit 1"
+      "screenshots": []
     },
     "aiReviewResults": {
-      "error": "Functional tests must pass first (0/3 passed)",
-      "score": 0,
-      "skipped": true
+      "challengeId": "11-api-local-state",
+      "timestamp": "2026-07-13T04:25:16.234Z",
+      "score": 86,
+      "feedback": [],
+      "strengths": [
+        "Proper use of RTK Query hooks (useGetPostsQuery, useGetPostByIdQuery)",
+        "Correct integration of filtersSlice with the store",
+        "Well-structured component code (PostsWithFilters)"
+      ],
+      "improvements": [
+        "In filtersSlice.ts, consider using a more robust reducer structure with separate action creators for each property (searchTerm, sortBy, sortOrder). (src/store/slices/filtersSlice.ts)",
+        "In PostsWithFilters.tsx, consider adding a more robust filtering/sorting logic to handle edge cases (e.g., empty search term, invalid sort order). (src/components/PostsWithFilters.tsx)",
+        "In store.ts, consider adding a more robust middleware configuration to handle potential errors or edge cases. (src/store/store.ts)"
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The code meets most requirements and demonstrates a good understanding of RTK Query and Redux Toolkit. However, there are some areas for improvement, particularly in terms of code organization and robustness.",
+      "requirementCompliance": 90
+    },
+    "aiResults": {
+      "challengeId": "11-api-local-state",
+      "timestamp": "2026-07-13T04:25:16.234Z",
+      "score": 86,
+      "feedback": [],
+      "strengths": [
+        "Proper use of RTK Query hooks (useGetPostsQuery, useGetPostByIdQuery)",
+        "Correct integration of filtersSlice with the store",
+        "Well-structured component code (PostsWithFilters)"
+      ],
+      "improvements": [
+        "In filtersSlice.ts, consider using a more robust reducer structure with separate action creators for each property (searchTerm, sortBy, sortOrder). (src/store/slices/filtersSlice.ts)",
+        "In PostsWithFilters.tsx, consider adding a more robust filtering/sorting logic to handle edge cases (e.g., empty search term, invalid sort order). (src/components/PostsWithFilters.tsx)",
+        "In store.ts, consider adding a more robust middleware configuration to handle potential errors or edge cases. (src/store/store.ts)"
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The code meets most requirements and demonstrates a good understanding of RTK Query and Redux Toolkit. However, there are some areas for improvement, particularly in terms of code organization and robustness.",
+      "requirementCompliance": 90
     }
   },
   {
