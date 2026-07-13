@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-07-13T03:33:42.330Z",
+  "lastUpdated": "2026-07-13T03:35:24.642Z",
   "pathway": {
     "name": "Modern React Engineer",
     "version": "1.0.0",
-    "overallScore": 46.8,
-    "completionPercentage": 50.9,
+    "overallScore": 48.1,
+    "completionPercentage": 52.8,
     "badgeLevel": "none",
     "totalChallenges": 53,
-    "completedChallenges": 27
+    "completedChallenges": 28
   },
   "courses": {
     "01-react-fundamentals": {
@@ -369,11 +369,11 @@
     "02-redux-rtk-query": {
       "courseId": "02-redux-rtk-query",
       "courseName": "Redux & RTK Query",
-      "averageScore": 53.7,
-      "completionPercentage": 30.8,
+      "averageScore": 57.6,
+      "completionPercentage": 38.5,
       "badgeLevel": "none",
       "totalChallenges": 13,
-      "completedChallenges": 4,
+      "completedChallenges": 5,
       "challenges": {
         "01-store-setup": {
           "challengeId": "01-store-setup",
@@ -438,16 +438,16 @@
         "05-async-thunks": {
           "challengeId": "05-async-thunks",
           "challengeName": "Async Logic with createAsyncThunk",
-          "passed": false,
-          "score": 45,
-          "lastRun": "2026-07-02T06:04:37.801Z",
+          "passed": true,
+          "score": 95.4,
+          "lastRun": "2026-07-13T03:35:09.410Z",
           "scores": {
-            "functionalTests": 0,
+            "functionalTests": 100,
             "codeQuality": 100,
-            "architecture": 50,
+            "architecture": 75,
             "bestPractices": 100,
             "e2eTests": 100,
-            "aiReview": 0
+            "aiReview": 86
           }
         },
         "06-rtk-query-setup": {
