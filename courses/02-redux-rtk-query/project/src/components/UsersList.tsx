@@ -1,3 +1,4 @@
+// useQueryHook: useGetUsersQuery from RTK Query
 import { useGetUsersQuery } from '../api/apiSlice'
 import ErrorDisplay from './ErrorDisplay'
 

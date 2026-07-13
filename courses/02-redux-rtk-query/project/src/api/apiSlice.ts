@@ -1,12 +1,10 @@
-import { createApi } from '@reduxjs/toolkit/query'
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 import { mockApi } from './mockServer'
 import type { User, Post } from './mockServer'
 
-const mockBaseQuery = () => ({ data: undefined })
-
 export const apiSlice = createApi({
   reducerPath: 'api',
-  baseQuery: mockBaseQuery as ReturnType<typeof mockBaseQuery>,
+  baseQuery: fetchBaseQuery({ baseUrl: '/' }),
   tagTypes: ['User', 'Post'],
   endpoints: (builder) => ({
     getUsers: builder.query<User[], void>({
