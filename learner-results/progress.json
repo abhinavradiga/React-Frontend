@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-07-13T04:20:22.583Z",
+  "lastUpdated": "2026-07-13T04:22:47.747Z",
   "pathway": {
     "name": "Modern React Engineer",
     "version": "1.0.0",
-    "overallScore": 53.9,
-    "completionPercentage": 60.4,
+    "overallScore": 55.5,
+    "completionPercentage": 62.3,
     "badgeLevel": "none",
     "totalChallenges": 53,
-    "completedChallenges": 32
+    "completedChallenges": 33
   },
   "courses": {
     "01-react-fundamentals": {
@@ -369,11 +369,11 @@
     "02-redux-rtk-query": {
       "courseId": "02-redux-rtk-query",
       "courseName": "Redux & RTK Query",
-      "averageScore": 75.2,
-      "completionPercentage": 69.2,
-      "badgeLevel": "bronze",
+      "averageScore": 80.1,
+      "completionPercentage": 76.9,
+      "badgeLevel": "silver",
       "totalChallenges": 13,
-      "completedChallenges": 9,
+      "completedChallenges": 10,
       "challenges": {
         "01-store-setup": {
           "challengeId": "01-store-setup",
@@ -513,16 +513,16 @@
         "10-optimistic-updates": {
           "challengeId": "10-optimistic-updates",
           "challengeName": "Optimistic Updates",
-          "passed": false,
-          "score": 35,
-          "lastRun": "2026-07-02T06:06:09.910Z",
+          "passed": true,
+          "score": 97.6,
+          "lastRun": "2026-07-13T04:22:34.326Z",
           "scores": {
-            "functionalTests": 0,
-            "codeQuality": 0,
+            "functionalTests": 100,
+            "codeQuality": 100,
             "architecture": 100,
             "bestPractices": 100,
             "e2eTests": 100,
-            "aiReview": 0
+            "aiReview": 84
           }
         },
         "11-api-local-state": {
