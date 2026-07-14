@@ -8695,7 +8695,7 @@
   {
     "challengeId": "13-query-parameters",
     "challengeName": "Query with Parameters and Detail View",
-    "timestamp": "2026-07-14T04:15:56.015Z",
+    "timestamp": "2026-07-14T04:18:59.590Z",
     "scores": {
       "functionalTests": 100,
       "codeQuality": 100,
@@ -8725,7 +8725,7 @@
               "fullName": " Challenge 01: Store Setup with configureStore store uses configureStore",
               "status": "passed",
               "title": "store uses configureStore",
-              "duration": 3,
+              "duration": 2,
               "failureMessages": []
             },
             {
@@ -8747,12 +8747,12 @@
               "fullName": " Challenge 01: Store Setup with configureStore main.tsx wraps App with Provider and passes store",
               "status": "passed",
               "title": "main.tsx wraps App with Provider and passes store",
-              "duration": 1,
+              "duration": 0,
               "failureMessages": []
             }
           ],
-          "startTime": 1784002559046,
-          "endTime": 1784002559051,
+          "startTime": 1784002742806,
+          "endTime": 1784002742809,
           "status": "passed",
           "message": "",
           "name": "D:/Spark +/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-01.test.tsx"
@@ -8793,8 +8793,8 @@
               "failureMessages": []
             }
           ],
-          "startTime": 1784002558964,
-          "endTime": 1784002558967,
+          "startTime": 1784002742805,
+          "endTime": 1784002742808,
           "status": "passed",
           "message": "",
           "name": "D:/Spark +/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-02.test.tsx"
@@ -8835,8 +8835,8 @@
               "failureMessages": []
             }
           ],
-          "startTime": 1784002558962,
-          "endTime": 1784002558965,
+          "startTime": 1784002742804,
+          "endTime": 1784002742807,
           "status": "passed",
           "message": "",
           "name": "D:/Spark +/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-03.test.tsx"
@@ -8851,7 +8851,7 @@
               "fullName": " Challenge 04: Multiple Slices uiSlice exists and uses createSlice",
               "status": "passed",
               "title": "uiSlice exists and uses createSlice",
-              "duration": 1,
+              "duration": 3,
               "failureMessages": []
             },
             {
@@ -8866,8 +8866,8 @@
               "failureMessages": []
             }
           ],
-          "startTime": 1784002558964,
-          "endTime": 1784002558966,
+          "startTime": 1784002742803,
+          "endTime": 1784002742807,
           "status": "passed",
           "message": "",
           "name": "D:/Spark +/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-04.test.tsx"
@@ -8908,8 +8908,8 @@
               "failureMessages": []
             }
           ],
-          "startTime": 1784002558962,
-          "endTime": 1784002558965,
+          "startTime": 1784002742803,
+          "endTime": 1784002742806,
           "status": "passed",
           "message": "",
           "name": "D:/Spark +/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-05.test.tsx"
@@ -8946,12 +8946,12 @@
               "fullName": " Challenge 06: RTK Query Setup store includes API reducer and middleware",
               "status": "passed",
               "title": "store includes API reducer and middleware",
-              "duration": 1,
+              "duration": 0,
               "failureMessages": []
             }
           ],
-          "startTime": 1784002558962,
-          "endTime": 1784002558966,
+          "startTime": 1784002742809,
+          "endTime": 1784002742812,
           "status": "passed",
           "message": "",
           "name": "D:/Spark +/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-06.test.tsx"
@@ -8966,7 +8966,7 @@
               "fullName": " Challenge 07: Query Endpoints and useQuery Hooks API slice has getUsers query endpoint",
               "status": "passed",
               "title": "API slice has getUsers query endpoint",
-              "duration": 6,
+              "duration": 1,
               "failureMessages": []
             },
             {
@@ -8992,8 +8992,8 @@
               "failureMessages": []
             }
           ],
-          "startTime": 1784002558984,
-          "endTime": 1784002558992,
+          "startTime": 1784002742804,
+          "endTime": 1784002742807,
           "status": "passed",
           "message": "",
           "name": "D:/Spark +/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-07.test.tsx"
@@ -9008,7 +9008,7 @@
               "fullName": " Challenge 08: Caching and Cache Tags API slice has providesTags on query endpoint",
               "status": "passed",
               "title": "API slice has providesTags on query endpoint",
-              "duration": 1,
+              "duration": 2,
               "failureMessages": []
             },
             {
@@ -9023,8 +9023,8 @@
               "failureMessages": []
             }
           ],
-          "startTime": 1784002558972,
-          "endTime": 1784002558974,
+          "startTime": 1784002742806,
+          "endTime": 1784002742809,
           "status": "passed",
           "message": "",
           "name": "D:/Spark +/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-08.test.tsx"
@@ -9050,7 +9050,7 @@
               "fullName": " Challenge 09: Mutations with useMutation AddPostForm uses useMutation hook",
               "status": "passed",
               "title": "AddPostForm uses useMutation hook",
-              "duration": 1,
+              "duration": 2,
               "failureMessages": []
             },
             {
@@ -9065,8 +9065,8 @@
               "failureMessages": []
             }
           ],
-          "startTime": 1784002558964,
-          "endTime": 1784002558967,
+          "startTime": 1784002742803,
+          "endTime": 1784002742807,
           "status": "passed",
           "message": "",
           "name": "D:/Spark +/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-09.test.tsx"
@@ -9081,7 +9081,7 @@
               "fullName": " Challenge 10: Optimistic Updates API slice mutation has onQueryStarted",
               "status": "passed",
               "title": "API slice mutation has onQueryStarted",
-              "duration": 2,
+              "duration": 3,
               "failureMessages": []
             },
             {
@@ -9092,7 +9092,7 @@
               "fullName": " Challenge 10: Optimistic Updates optimistic update uses queryFulfilled or updateQueryData",
               "status": "passed",
               "title": "optimistic update uses queryFulfilled or updateQueryData",
-              "duration": 1,
+              "duration": 0,
               "failureMessages": []
             },
             {
@@ -9103,12 +9103,12 @@
               "fullName": " Challenge 10: Optimistic Updates has rollback or undo on error",
               "status": "passed",
               "title": "has rollback or undo on error",
-              "duration": 0,
+              "duration": 1,
               "failureMessages": []
             }
           ],
-          "startTime": 1784002558962,
-          "endTime": 1784002558965,
+          "startTime": 1784002742803,
+          "endTime": 1784002742807,
           "status": "passed",
           "message": "",
           "name": "D:/Spark +/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-10.test.tsx"
@@ -9123,7 +9123,7 @@
               "fullName": " Challenge 11: API and Local State Together filtersSlice exists and is in store",
               "status": "passed",
               "title": "filtersSlice exists and is in store",
-              "duration": 2,
+              "duration": 1,
               "failureMessages": []
             },
             {
@@ -9134,7 +9134,7 @@
               "fullName": " Challenge 11: API and Local State Together PostsWithFilters uses useSelector and useGetPostsQuery or query hook",
               "status": "passed",
               "title": "PostsWithFilters uses useSelector and useGetPostsQuery or query hook",
-              "duration": 1,
+              "duration": 2,
               "failureMessages": []
             },
             {
@@ -9145,12 +9145,12 @@
               "fullName": " Challenge 11: API and Local State Together PostsWithFilters has posts-with-filters and filter-controls data-testids",
               "status": "passed",
               "title": "PostsWithFilters has posts-with-filters and filter-controls data-testids",
-              "duration": 0,
+              "duration": 1,
               "failureMessages": []
             }
           ],
-          "startTime": 1784002558962,
-          "endTime": 1784002558965,
+          "startTime": 1784002742807,
+          "endTime": 1784002742811,
           "status": "passed",
           "message": "",
           "name": "D:/Spark +/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-11.test.tsx"
@@ -9191,8 +9191,8 @@
               "failureMessages": []
             }
           ],
-          "startTime": 1784002558962,
-          "endTime": 1784002558966,
+          "startTime": 1784002742803,
+          "endTime": 1784002742807,
           "status": "passed",
           "message": "",
           "name": "D:/Spark +/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-12.test.tsx"
@@ -9207,7 +9207,7 @@
               "fullName": " Challenge 13: Query with Parameters and Detail View API slice has getPostById query endpoint",
               "status": "passed",
               "title": "API slice has getPostById query endpoint",
-              "duration": 1,
+              "duration": 2,
               "failureMessages": []
             },
             {
@@ -9233,8 +9233,8 @@
               "failureMessages": []
             }
           ],
-          "startTime": 1784002558972,
-          "endTime": 1784002558974,
+          "startTime": 1784002742803,
+          "endTime": 1784002742806,
           "status": "passed",
           "message": "",
           "name": "D:/Spark +/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-13.test.tsx"
@@ -9308,12 +9308,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2082,
+                          "duration": 2204,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-14T04:16:04.215Z",
+                          "startTime": "2026-07-14T04:19:08.480Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -9342,12 +9342,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 220,
+                          "duration": 179,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-14T04:16:06.410Z",
+                          "startTime": "2026-07-14T04:19:10.829Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -9369,7 +9369,7 @@
     },
     "aiReviewResults": {
       "challengeId": "13-query-parameters",
-      "timestamp": "2026-07-14T04:16:06.967Z",
+      "timestamp": "2026-07-14T04:19:11.341Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -9377,11 +9377,11 @@
       "readability": 0,
       "maintainability": 0,
       "overall": "",
-      "error": "Groq API error (413): Request too large for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 6684, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+      "error": "Groq API error (413): Request too large for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 6709, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     },
     "aiResults": {
       "challengeId": "13-query-parameters",
-      "timestamp": "2026-07-14T04:16:06.967Z",
+      "timestamp": "2026-07-14T04:19:11.341Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -9389,7 +9389,7 @@
       "readability": 0,
       "maintainability": 0,
       "overall": "",
-      "error": "Groq API error (413): Request too large for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 6684, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+      "error": "Groq API error (413): Request too large for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 6709, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     }
   }
 ]

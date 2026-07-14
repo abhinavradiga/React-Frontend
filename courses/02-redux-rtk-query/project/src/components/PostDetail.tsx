@@ -2,8 +2,8 @@ import { useState } from 'react'
 import { useGetPostByIdQuery } from '../api/apiSlice'
 
 export default function PostDetail() {
-  const [postId, setPostId] = useState(1)
-  const { data: post, isLoading, isError } = useGetPostByIdQuery(postId)
+  const [postId, setPostId] = useState<number | undefined>(1)
+  const { data: post, isLoading, isError } = useGetPostByIdQuery(postId as number, { skip: !postId })
 
   return (
     <div data-testid="post-detail">
@@ -15,8 +15,8 @@ export default function PostDetail() {
           ))}
         </select>
       </div>
-      {isLoading && <p>Loading post...</p>}
-      {isError && <p>Error loading post.</p>}
+      {isLoading && <p data-testid="post-detail-loading">Loading post...</p>}
+      {isError && <p data-testid="post-detail-error">Error loading post.</p>}
       {post && (
         <div>
           <h3>{post.title}</h3>

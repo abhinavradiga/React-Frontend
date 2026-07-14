@@ -299,7 +299,7 @@
     "challengeName": "Query with Parameters and Detail View",
     "aiReview": {
       "challengeId": "13-query-parameters",
-      "timestamp": "2026-07-14T04:16:06.967Z",
+      "timestamp": "2026-07-14T04:19:11.341Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -307,7 +307,7 @@
       "readability": 0,
       "maintainability": 0,
       "overall": "",
-      "error": "Groq API error (413): Request too large for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 6684, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+      "error": "Groq API error (413): Request too large for model `llama-3.1-8b-instant` in organization `org_01ktbwk3q4frv8f8ms6x8d3xmd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 6709, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     }
   }
 ]
